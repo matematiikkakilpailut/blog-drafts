@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="fi">
+  <head>
+    <meta charset="UTF-8">
+    <!-- Begin Jekyll SEO tag v2.5.0 -->
+<title>Polynomien yhteiset alkutekijät, osa 10: sovelluksia | Matematiikkakilpailijat</title>
+<meta name="generator" content="Jekyll v3.8.5" />
+<meta property="og:title" content="Polynomien yhteiset alkutekijät, osa 10: sovelluksia" />
+<meta name="author" content="Olli Järviniemi" />
+<meta property="og:locale" content="fi" />
+<meta name="description" content="Tässä postauksessa esitetään työn sovelluksia neliönjäännöksiä ja korkeampien potenssien jäännöksiä käsitteleviin kysymyksiin." />
+<meta property="og:description" content="Tässä postauksessa esitetään työn sovelluksia neliönjäännöksiä ja korkeampien potenssien jäännöksiä käsitteleviin kysymyksiin." />
+<link rel="canonical" href="https://blog-drafts.matematiikkakilpailut.fi/2019/06/05/PYA02sovelluksia.html" />
+<meta property="og:url" content="https://blog-drafts.matematiikkakilpailut.fi/2019/06/05/PYA02sovelluksia.html" />
+<meta property="og:site_name" content="Matematiikkakilpailijat" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2019-06-05T00:00:00+00:00" />
+<meta property="fb:app_id" content="964806940344711" />
+<script type="application/ld+json">
+{"url":"https://blog-drafts.matematiikkakilpailut.fi/2019/06/05/PYA02sovelluksia.html","author":{"@type":"Person","name":"Olli Järviniemi"},"headline":"Polynomien yhteiset alkutekijät, osa 10: sovelluksia","dateModified":"2019-06-05T00:00:00+00:00","datePublished":"2019-06-05T00:00:00+00:00","description":"Tässä postauksessa esitetään työn sovelluksia neliönjäännöksiä ja korkeampien potenssien jäännöksiä käsitteleviin kysymyksiin.","mainEntityOfPage":{"@type":"WebPage","@id":"https://blog-drafts.matematiikkakilpailut.fi/2019/06/05/PYA02sovelluksia.html"},"@type":"BlogPosting","@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#157878">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/assets/css/style.css?v=2c669b5e01ecebd0ccd9a63f1cd21eeeb0cf1936">
+    <link href="/feed.xml" type="application/atom+xml" rel="alternate" title="Sivuston verkkosyöte">
+
+    <script type="text/x-mathjax-config">
+ MathJax.Hub.Config({
+   tex2jax: {
+     inlineMath: [['$', '$'], ['\\(', '\\)']],
+     displayMath: [['$$', '$$']],
+     processEscapes: true
+   }
+ });
+</script>
+<script
+  type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS_CHTML" 
+  integrity="sha256-nvJJv9wWKEm88qvoQl9ekL2J+k/RWIsaSScxxlsrv8k="
+  crossorigin="anonymous">
+</script>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/fonts/HTML-CSS/TeX/woff/MathJax_Main-Regular.woff"
+      rel="preload" as="font" type="font/woff" crossorigin="anonymous">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/fonts/HTML-CSS/TeX/woff/MathJax_Size1-Regular.woff"
+      rel="preload" as="font" type="font/woff" crossorigin="anonymous">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/fonts/HTML-CSS/TeX/woff/MathJax_Math-Italic.woff"
+      rel="preload" as="font" type="font/woff" crossorigin="anonymous">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/fonts/HTML-CSS/TeX/woff/MathJax_Size2-Regular.woff"
+      rel="preload" as="font" type="font/woff" crossorigin="anonymous">
+
+  </head>
+  <body>
+    <section class="page-header">
+      <h1 class="project-name">Matematiikkakilpailijat</h1>
+      <h2 class="project-tagline">Matematiikan olympiavalmennuksen osallistujien kokemuksia</h2>
+    </section>
+
+    <section class="main-content">
+      <article class="post">
+  <header class="post-header">
+    <h1 class="post-title">Polynomien yhteiset alkutekijät, osa 10: sovelluksia</h1>
+  </header>
+  <section class="post-content">
+    <p>Tässä postauksessa esitetään työn sovelluksia neliönjäännöksiä ja korkeampien potenssien jäännöksiä käsitteleviin kysymyksiin.</p>
+
+<!--jatkuu-->
+
+<p><strong>Sisällysluettelo</strong></p>
+
+<ol>
+  <li><a href="https://blog.matematiikkakilpailut.fi/2019/06/05/PYA11johdanto.html">Osa 1 - johdanto</a></li>
+  <li><a href="https://blog.matematiikkakilpailut.fi/2019/06/05/PYA10esitiedot.html">Osa 2 - esitiedot</a></li>
+  <li><a href="https://blog.matematiikkakilpailut.fi/2019/06/05/PYA09tulokset.html">Osa 3 - tulokset</a></li>
+  <li><a href="https://blog.matematiikkakilpailut.fi/2019/06/05/PYA08motivaatio.html">Osa 4 - motivaatio</a></li>
+  <li><a href="https://blog.matematiikkakilpailut.fi/2019/06/05/PYA07heikko.html">Osa 5 - heikko versio</a></li>
+  <li><a href="https://blog.matematiikkakilpailut.fi/2019/06/05/PYA06yleinen.html">Osa 6 - yleinen tapaus</a></li>
+  <li><a href="https://blog.matematiikkakilpailut.fi/2019/06/05/PYA05lause2.html">Osa 7 - lause 2</a></li>
+  <li><a href="https://blog.matematiikkakilpailut.fi/2019/06/05/PYA04lause3.html">Osa 8 - lause 3</a></li>
+  <li><a href="https://blog.matematiikkakilpailut.fi/2019/06/05/PYA03lause4.html">Osa 9 - lause 4</a></li>
+  <li>Osa 10 - sovelluksia</li>
+  <li><a href="https://blog.matematiikkakilpailut.fi/2019/06/05/PYA01lisaaiheita.html">Osa 11 - lisäaiheita</a></li>
+</ol>
+
+<p>Tämän postauksen sisältöä ei tilanpuutteen vuoksi kirjoitettu lopulliseen tutkielmaan. Pidän tämän postauksen tuloksia hyvin mielenkiintoisina (vaikkakin todistuksia aavistuksen puuduttavina), joten esitän ne tässä.</p>
+
+<p>Ensimmäisenä neliönjäännöksistä tulos, jota olen sivunnut <a href="https://blog.matematiikkakilpailut.fi/2018/12/09/Nelionjaannos.html">aiemminkin</a>.</p>
+
+<h1 id="lause">Lause</h1>
+
+<p>Olkoot $a_1, a_2, \ldots , a_n \in \mathbb{Z}$ sellaisia, ettei minkään joukon $\lbrace a_1, a_2, \ldots , a_n \rbrace$ epätyhjän osajoukon alkioiden tulo ole neliöluku. Olkoon $S \subset \lbrace 1, 2, \ldots , n \rbrace$. Olkoon $T_S$ niiden $p$ joukko, joilla on seuraava ominaisuus:</p>
+
+<p>$a_i$ on neliönjäännös modulo $p$ jos ja vain jos $i \in S$.</p>
+
+<p>Tällöin</p>
+
+<script type="math/tex; mode=display">\delta(T_S) = \frac{1}{2^n}.</script>
+
+<h2 id="todistus">Todistus</h2>
+
+<p>Tutkimme siis polynomien $P_i(x) = x^2 - a_i$ alkutekijöitä.</p>
+
+<p>Osoitetaan ensiksi, että voimme soveltaa lauseen 3 tulosta.</p>
+
+<p><strong>Lemma</strong></p>
+
+<p>Olkoon $F$ polynomin $P_1P_2 \ldots P_n$ juurikunta. $[F : \mathbb{Q}] = 2^n$.</p>
+
+<p><strong>Todistus</strong></p>
+
+<p>Olkoon $B$ joukko, joka sisältää kaikki joukon $\lbrace a_1, a_2, \ldots , a_n \rbrace$ osajoukkojen alkioiden tulot, eli $B$ sisältää $2^n$ alkiota.</p>
+
+<p>Olkoon $C$ joukko, joka sisältää luvut muotoa $\sqrt{b}, b \in B$.</p>
+
+<p>Riittää osoittaa, että $C$:n alkiot ovat lineaarisesti riippumattomia rationaalilukujen yli. Toisin sanoen, <strong>ei</strong> ole olemassa nollasta eroavia rationaalilukua $q_1, q_2, \ldots , q_k$ ja pareittain erisuuria $C$:n alkioita $c_1, c_2, \ldots , c_k$, joilla</p>
+
+<script type="math/tex; mode=display">q_1c_1 + q_2c_2 + \ldots + q_kc_k = 0</script>
+
+<p>Miksi tämä on riittävä ehto? Oletetaan, että $[F : \mathbb{Q}] &lt; 2^n$, tavoitteena vastaoletus yllä esitetyn ehdon kanssa. Käyttäen vastaavanlaista ideaa kuin lauseen 3 todistuksessa, saadaan</p>
+
+<script type="math/tex; mode=display">[F : \mathbb{Q}] = [\mathbb{Q}(\sqrt{a_1}, \ldots , \sqrt{a_n}) : \mathbb{Q}(\sqrt{a_1}, \ldots , \sqrt{a_{n-1}})] \cdots [\mathbb{Q}(\sqrt{a_1}, \sqrt{a_2}) : \mathbb{Q}(\sqrt{a_1})][\mathbb{Q}(\sqrt{a_1}) : \mathbb{Q}].</script>
+
+<p>Oikean puolen tulon jokainen termi on selvästi enintään $2$. Jos kaikki termit olisivat $2$, pätisi $[F : \mathbb{Q}] = 2^n$, mikä ei ole mielenkiintoista. Oletetaan siis, että jokin tulontekijä on $1$. Täten on olemassa sellainen $i$, jolla luvun $\sqrt{a_i}$ minimaalisen polynomin aste kunnassa $\mathbb{Q}(\sqrt{a_1}, \ldots \sqrt{a_{i-1}})$ on $1$, eli $\sqrt{a_i}$ kuuluu tähän kuntaan. Siispä $\sqrt{a_i}$ voidaan esitää polynomina luvuista $\sqrt{a_1}, \ldots , \sqrt{a_{i-1}}$. Nähdään, että tämä on ristiriita lineaarisesti riippumattomuuden kanssa.</p>
+
+<p>On melko tunnettua, vaikkeikaan helppoa todistaa, että neliöjuuret ovat lineaarisesti riippumattomia rationaalilukujen yli (epätriviaaleissa tapauksissa). Lyhyt ja kohtuullisen helppo todistus käyttäen juurikuntien isomorfismeja löytyy Paul Garrettin monisteesta <a href="http://www-users.math.umn.edu/~garrett/m/v/linear_indep_roots.pdf">Linear independence of roots</a>.</p>
+
+<p><strong>Toteutus</strong></p>
+
+<p>Åalapelin palaset on nyt koottu, ja ideana on soveltaa lausetta 3 väitteen todistamiseen, ehkä käyttäen inkluusio-ekskluusiota ja induktiota. Tätä kautta saa todistuksen (lukija voi itse vaikka yrittää), mutta lähestyn ongelmaa eri näkökulmasta.</p>
+
+<p>Olkoon $F$ polynomien $P_1, P_2, \ldots , P_n$ juurikuntien compositum, eli olkoon $F$ pienin kunta, joka sisältää kaikkien polynomien $P_i$ juurikunnat. Edellisestä päättelystä ei ole vaikeaa nähdä, että $C$ on kanta $\mathbb{Q}$-vektoriavaruudelle $F$. Jokainen $F$:n alkio voidaan siis kirjoittaa muodossa</p>
+
+<script type="math/tex; mode=display">\sum q_ic_i,</script>
+
+<p>missä $q_i \in \mathbb{Q}$ ja $c_i \in C$, ja tämä esitys on yksikäsitteinen.</p>
+
+<p>Tutkitaan $F$:n Galois’n ryhmää $G$. Jokainen $\sigma \in G$ kuvaa $C$:n alkion $c$ joko $c$:ksi tai $-c$:ksi. Ideana on seuraava:</p>
+
+<p>Olkoot $s_1, s_2, \ldots , s_n$ kokonaislukuja, jotka ovat jokainen joko $-1$ tai $1$. On olemassa sellainen $\sigma \in G$, jolla $\sigma(\sqrt{a_i}) = s_i\sqrt{a_i}$ kaikilla $i$.</p>
+
+<p>Todistus on triviaali: määritellään $f(\sqrt{a_i}) = s_ia_i$. Voimme vain laajentaa $f$:n olemaan isomorfismi $F \to F$. Se, miksi tämä toimii, johtuu siitä, että $[F : \mathbb{Q}] = 2^n$ - tästä seuraa yllä esitetty $C$:n alkioiden lineaarinen riippumattomuus, ja meillä ei synny ristiriitaista määrittelyä.</p>
+
+<p>(Esimerkki tilanteesta, jossa tulisi ristiriitainen määrittely: vaadimme, että $\sigma(\sqrt{2}) = \sqrt{2}, \sigma(\sqrt{3}) = \sqrt{3}$ ja $\sigma(\sqrt{6}) = -\sqrt{6}$.)</p>
+
+<p>Tämä idea todistaa, että $F$:n Galois’n ryhmän $G$ koko on $2^n$. Lisäksi, on olemassa täsmälleen yksi $\sigma \in G$, jolla $\sigma(\sqrt{a_i}) = \sqrt{a_i}$ jos ja vain jos $i \in S$.</p>
+
+<p>Frobeniuksen lause todistaa väitteen vaikkapa näin: olkoon $P_T$ niiden $P_i$ tulo, joilla $i \not\in S$. Soveltamalla yllä todistettua tulosta polynomille $P_T$ saadaan sen alkutekijöiden tiheydeksi</p>
+
+<script type="math/tex; mode=display">1 - \frac{1}{2^{n - |S|}},</script>
+
+<p>koska ainoa $P_T$:n Galois’n ryhmän alkio $\sigma$, joka ei kuvaa jotain $P_T$:n juurta itselleen, on se $\sigma$ jolla $\sigma(\sqrt{a_i}) = -\sqrt{a_i}$ kaikilla $i \not\in S$.</p>
+
+<p>Soveltamalla lausetta 3 saamme polynomien $P_i, i \in S$ ja $P_T$ yhteisten alkutekijöiden tiheydeksi</p>
+
+<script type="math/tex; mode=display">\frac{1}{2^{|S|}}\Big(1 - \frac{1}{2^{n - |S|}}\Big).</script>
+
+<p>Haluamme vähentää tämän tiheyden tiheydestä</p>
+
+<script type="math/tex; mode=display">\delta\Big(\bigcap_{i \in S} S(P_i)) \Big).</script>
+
+<p>Viimeksi mainittu on lauseen 3 avulla $2^{-\mid S \mid}$, ja väite seuraa.</p>
+
+<p>Tämä todistus on tietyssä mielessä oikea tapa ajatella lausetta 3 - lauseen ehto varmistaa, että polynomin $P_1P_2 \cdots P_n$ Galois’n ryhmä on vain $G_1 \times G_2 \times \cdots \times G_n$, missä $G_i$ on $P_i$:n Galois’n ryhmä. Tämän vuoksi lauseen väite seuraa Frobeniuksen lauseesta.</p>
+
+<p>Tämän idean avulla seuraava väite on ilmeinen:</p>
+
+<p>Olkoot $P_1, P_2, \ldots , P_n$ sellaisia, jotka toteuttavat lauseen 3 ehdot. Olkoon $S$ joukon $\lbrace 1, 2, \ldots , n \rbrace$ jokin osajoukko. Olkoon $T$ niiden $p$ joukko, joilla $p \in S(P_i)$ jos ja vain jos $i \in S$. Tällöin</p>
+
+<script type="math/tex; mode=display">\delta(T) = \prod_{i \in S} \delta(S(P_i)) \prod_{j \not\in S} 1 - \delta(S(P_j)).</script>
+
+<p>Ei kovin yllättävää, mutta miellyttävää, että tämä voidaan todistaa.</p>
+
+<h1 id="korkeampien-potenssien-jäännökset">Korkeampien potenssien jäännökset</h1>
+
+<p>Neliönjäännökset-postauksen viimeisessä harjoitustehtävässä pyydettiin esittämään heuristiikka väitteelle $\delta(S(x^p - a)) = \frac{p-1}{p}$, kun $p$ on alkuluku ja $a$ ei ole kokonaisluvun $p$:nnes potenssi. Esitän ensin oman heuristiikkani, minkä jälkeen todistan väitteen Frobeniuksen lauseella.</p>
+
+<h2 id="heuristiikka">Heuristiikka</h2>
+
+<p>Valitaan jokin satunnainen alkuluku $q$. Tutkitaan kahta eri tapausta.</p>
+
+<ol>
+  <li>
+    <p>$q \not\equiv 1 \pmod{p}$. Funktio $f(x) = x^p$ on injektiivinen modulo $p$ postauksen <a href="https://blog.matematiikkakilpailut.fi/2018/05/17/Juuri.html">Juuren ottaminen moduloissa</a> nojalla. Täten se on myös surjektiivinen, eli yhtälöllä $f(x) \equiv c \pmod{q}$ on ratkaisu kaikilla $c$. Tässä tapauksessa todennäköisyys sille, että $q \in S(x^p - a)$, on $1$.</p>
+  </li>
+  <li>
+    <p>$q \equiv 1 \pmod{p}$. Olkoon $g$ primitiivijuuri modulo $q$. Kaikki $p$:nnet potenssit modulo $q$ ovat muotoa $g^{ip}$, $i \in \mathbb{Z}$ (ja luku $0$). Käyttäen vaikkapa Fermat’n pientä lausetta nähdään, että $p$:nsiä potensseja on $\frac{q-1}{p}$ kappaletta, kun lukua $0$ ei lasketa.
+Siis osuus $\frac{1}{p}$ luvuista $1, 2, \ldots , q-1$ on $p$:nsiä potensseja. Todennäköisyys sille, että juuri luku $a$ on $p$:nnes potenssi on heuristisesti $\frac{1}{p}$.</p>
+  </li>
+</ol>
+
+<p>Tapauksen $1$ mukaiset $q$ muodostavat Dirichlet’n lauseen tiheysversion nojalla osuuden $\frac{p-2}{p-1}$ alkuluvuista, ja tapauksen $2$ mukaisia $q$ on $\frac{1}{p-1}$. Kertomalla tapauksien todennäköisyydet todennäköisyydellä sille, että $a$ on $p$:nnes potenssi, saadaan lopullinen todennäköisyys:</p>
+
+<script type="math/tex; mode=display">\frac{p-2}{p-1} \cdot 1 + \frac{1}{p-1} \cdot \frac{1}{p} = \frac{p-1}{p}.</script>
+
+<h2 id="todistus-1">Todistus</h2>
+
+<p>Polynomin $P(x) = x^p - a$ juuret ovat</p>
+
+<script type="math/tex; mode=display">\sqrt[p]{a}, \sqrt[p]{a}\zeta_p, \sqrt[p]{a}\zeta_p^2 , \ldots , \sqrt[p]{a}\zeta_p^{p-1}.</script>
+
+<p>Huomaamme, että $P$:n juurikunta $F$ on $\mathbb{Q}(\sqrt[p]{a}, \zeta_p)$.</p>
+
+<p>Tutkitaan $P$:n Galois’n ryhmää $G$. Jokainen $\sigma \in G$ määräytyy lukujen $\sigma(\sqrt[p]{a})$ ja $\sigma(\zeta_p)$ avulla. Lisäksi $G$ sisältää kaikki ne kuvakset, mitä voisi olettaa:</p>
+
+<p><strong>Lemma 1</strong></p>
+
+<p>Olkoon $0 \le b &lt; p$ kokonaisluku, ja olkoon $0 &lt; c &lt; p$ kokonaisluku. On olemassa sellainen $\sigma \in G$, jolla pätee:</p>
+
+<ol>
+  <li>
+    <p>$\sigma(\sqrt[p]{a}) = \sqrt[p]{a}\zeta_p^b.$</p>
+  </li>
+  <li>
+    <p>$\sigma(\zeta_p) = \zeta_p^c.$</p>
+  </li>
+</ol>
+
+<p>Lisäksi jokaista $\sigma \in G$ vastaa edellä kuvaillut $b, c$.</p>
+
+<p><strong>Todistus</strong></p>
+
+<p>Väite pätee myös muillekin luvuille kuin alkuluvuille $p$:</p>
+
+<p><strong>Vahvempi versio</strong></p>
+
+<p>Olkoon $m$ positiviinen kokonaisluku, ja olkoon $G$ polynomin $x^m - a$ Galois’n ryhmä. Oletetaan, että $m$ on pariton ja $x^m - a$ ei jakaudu rationaaliluvuissa.</p>
+
+<p>Olkoot $0 \le b, c &lt; p$ kokonaislukuja, joilla $syt(c, m) = 1$. On olemassa sellainen $\sigma \in G$, jolla:</p>
+
+<ol>
+  <li>
+    <p>$\sigma(\sqrt[m]{a}) = \sqrt[m]{a}\zeta_m^b.$</p>
+  </li>
+  <li>
+    <p>$\sigma(\zeta_m) = \zeta_m^c.$</p>
+  </li>
+</ol>
+
+<p>Lisäksi jokaista $\sigma \in G$ vastaa edellä kuvaillut $b, c$.</p>
+
+<p><strong>Todistus vahvemmalle versiolle</strong></p>
+
+<p>On selvää, että jokaisella $\sigma \in G$ on edellä kuvaillut $b, c$. Enää tulee osoittaa toinen suunta. Tämä seuraa, jos osoitetaan, että $\mid G \mid = m\phi(m)$ (miksi?). Tämän on todistanut David Gluck ja I. M. Isaacs artikkelissaan <a href="https://www.ams.org/journals/proc/2007-135-11/S0002-9939-07-08864-8/S0002-9939-07-08864-8.pdf">Radical and cyclotomic extensions of the rational numbers</a> (lause 3.1.).</p>
+
+<p>Lemman 1 avulla tiedämme siis polynomin $x^p - a$ Galois’n ryhmän koon (voimme käyttää vahvempaa versiota, kts. jaottomuuskriteeri alla). Lisäksi ei ole enää vaikeaa laskea niiden kuvausten $\sigma \in G$ määrää, jotka kuvaavat jonkin polynomin $x^p - a$ juuren itselleen. Käyttäen Frobeniuksen lausetta saadaan haluttu väite. En mene yksityiskohtiin tässä, koska en näe niitä kovin kiinnostavina.</p>
+
+<h2 id="variantteja">Variantteja</h2>
+
+<p>Voimme myös laskea vaikkapa polynomien $x^3 - 2$, $x^3 - 3$ yhteisien alkutekijöiden tiheyden. Emme kuitenkaan voi käyttää lausetta 3, koska näiden polynomien juurikuunat sisältävät luvun $\zeta_3$. Voimme kuitenkin tutkia vaikkapa tulon $(x^3 - 2)(x^3 - 3)$ Galois’n ryhmän käyttäytymistä, ja saada sieltä halutun tiheyden.</p>
+
+<p>Polynomit muotoa $x^{p^k} - a$ ovat myös mielenkiintoisia. Esimerkiksi polynomien $x^{p^2} - 2$ ja $x^{p^2} - 2^p$ alkutekijöiden tiheyden tutkiminen antaa jotain uutta.</p>
+
+<p>En mene näihin aiheisiin sen syvemmin. Pointtina on kuitenkin se, että näitä tiheyksiä voidaan laskea. Lisäksi tiheys $1 - \frac{1}{n}$ voidaan saavuttaa kaikilla alkuluvun potensseilla $n$, ainakin jos $n$ ei ole kakkosen potenssi (syy alla).</p>
+
+<p>Vahvemman version käyttäminen vaatii jaottomuuskriteerin:</p>
+
+<p><strong>Polynomin $x^n - a$ jaottomuus</strong></p>
+
+<p>Olkoon $P(x) = x^n - a$, $a \in \mathbb{Q}$. $P$ jakautuu rationaaliluvuissa jos ja vain jos jompikumpi seuraavista ehdoista pätee:</p>
+
+<ol>
+  <li>
+    <p>Jollain $p \mid n$ luku $a$ on jonkin rationaaliluvun $p$:nness potenssi</p>
+  </li>
+  <li>
+    <p>$4 \mid n$ ja $a$ on muotoa $-4c^4$ jollain $c \in \mathbb{Q}$. Tämä johtuu Sophie-Germainin identiteetistä. Kts. esim. <a href="https://blog.matematiikkakilpailut.fi/2018/04/16/Tekijoita.html">tämä postaus</a>.</p>
+  </li>
+</ol>
+
+<p>Todistus ei ole missään nimessä triviaali, mutta netistä pitäisi löytyä todistus väitteelle.</p>
+
+<p>Lisäksi mainitaan vielä helppo kilpailumatematiikkahenkinen fakta joilla ongelman saa redusoitua alkulukujen potensseihin:</p>
+
+<p><strong>Lemma 4</strong></p>
+
+<p>Olkoot $m, n \in \mathbb{Z_+}$, ja olkoon $d$ niiden syt. Olkoon vielä $a \in \mathbb{Z}$. Pätee:</p>
+
+<script type="math/tex; mode=display">S(x^m - a) \cap S(x^n - a) = S(x^d - a).</script>
+
+<p>Kiinnostunut lukija voi itse kokeilla, millaisia tuloksia saa irti näillä tiedoilla. Hyvä harjoitustethävä onkin todistaa, että tiheyden yläraja $1 - \frac{1}{n}$ on saavutettavissa.</p>
+
+<p><a href="https://blog.matematiikkakilpailut.fi/2019/06/05/PYA01lisaaiheita.html">Seuraava postaus.</a></p>
+
+  </section>
+  <footer class="post-footer">
+    <p><time datetime="2019-06-05">5. 6. 2019</time>
+       • Olli Järviniemi
+      <span class="share-buttons">
+  <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fblog-drafts.matematiikkakilpailut.fi%2F2019%2F06%2F05%2FPYA02sovelluksia.html&quote=Polynomien+yhteiset+alkutekij%C3%A4t%2C+osa+10%3A+sovelluksia"
+     title="Jaa Facebookissa" target="_blank" rel="noopener noreferrer nofollow">
+    <svg aria-label="Jaa Facebookissa" role="img" viewBox="0 0 24 24"><title lang="en">Facebook</title><use xlink:href="/assets/images/icons.svg#facebook"/></svg></a>
+  <a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fblog-drafts.matematiikkakilpailut.fi%2F2019%2F06%2F05%2FPYA02sovelluksia.html&text=Polynomien+yhteiset+alkutekij%C3%A4t%2C+osa+10%3A+sovelluksia"
+     target="_blank" rel="noopener noreferrer nofollow" title="Jaa Twitterissä">
+    <svg aria-label="Jaa Twitterissä" role="img" viewBox="0 0 24 24"><title lang="en">Twitter</title><use xlink:href="/assets/images/icons.svg#twitter"/></svg></a>
+  <a href="https://pinterest.com/pin/create/button/?url=https%3A%2F%2Fblog-drafts.matematiikkakilpailut.fi%2F2019%2F06%2F05%2FPYA02sovelluksia.html&description=Polynomien+yhteiset+alkutekij%C3%A4t%2C+osa+10%3A+sovelluksia"
+     target="_blank" rel="noopener noreferrer nofollow" title="Jaa Pinterestissä">
+    <svg aria-label="Jaa Pinterestissä" role="img" viewBox="0 0 24 24"><title lang="en">Pinterest</title><use xlink:href="/assets/images/icons.svg#pinterest"/></svg></a>
+  <a href="https://www.reddit.com/submit?url=https%3A%2F%2Fblog-drafts.matematiikkakilpailut.fi%2F2019%2F06%2F05%2FPYA02sovelluksia.html&title=Polynomien+yhteiset+alkutekij%C3%A4t%2C+osa+10%3A+sovelluksia"
+     target="_blank" rel="noopener noreferrer nofollow" title="Jaa Redditissä">
+    <svg aria-label="Jaa Redditissä" role="img" viewBox="0 0 24 24"><title lang="en">Reddit</title><use xlink:href="/assets/images/icons.svg#reddit"/></svg></a>
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fblog-drafts.matematiikkakilpailut.fi%2F2019%2F06%2F05%2FPYA02sovelluksia.html&title=Polynomien+yhteiset+alkutekij%C3%A4t%2C+osa+10%3A+sovelluksia&source=https%3A%2F%2Fblog-drafts.matematiikkakilpailut.fi"
+     target="_blank" rel="noopener noreferrer nofollow" title="Jaa LinkedInissä">
+    <svg aria-label="Jaa Linkedinissä" role="img" viewBox="0 0 24 24"><title lang="en">LinkedIn</title><use xlink:href="/assets/images/icons.svg#linkedin"/></svg></a>
+  <a href="https://pinboard.in/add?url=https%3A%2F%2Fblog-drafts.matematiikkakilpailut.fi%2F2019%2F06%2F05%2FPYA02sovelluksia.html&title=Polynomien+yhteiset+alkutekij%C3%A4t%2C+osa+10%3A+sovelluksia"
+     target="_blank" rel="noopener noreferrer nofollow" title="Talleta Pinboardiin">
+    <svg aria-label="Talleta Pinboardiin" role="img" viewBox="0 0 24 24"><title lang="en">Pinboard</title><use xlink:href="/assets/images/icons.svg#pinboard"/></svg></a>
+</span>
+
+    </p>
+  </footer>
+</article>
+
+    </section>
+
+    <section class="site-footer">
+      <p>Tekijänoikeus kirjoittajilla. Käytämme sivuilla evästeitä: <a href="/tietosuoja.html">tietosuojalauseke</a>.</p>
+    </section>
+    
+
+  </body>
+</html>

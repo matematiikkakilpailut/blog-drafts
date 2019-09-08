@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="fi">
+  <head>
+    <meta charset="UTF-8">
+    <!-- Begin Jekyll SEO tag v2.5.0 -->
+<title>Polynomien yhteiset alkutekijät, osa 5: heikko versio | Matematiikkakilpailijat</title>
+<meta name="generator" content="Jekyll v3.8.5" />
+<meta property="og:title" content="Polynomien yhteiset alkutekijät, osa 5: heikko versio" />
+<meta name="author" content="Olli Järviniemi" />
+<meta property="og:locale" content="fi" />
+<meta name="description" content="Tässä postauksessa esitetään todistus lauseen 1 heikolle versiolle." />
+<meta property="og:description" content="Tässä postauksessa esitetään todistus lauseen 1 heikolle versiolle." />
+<link rel="canonical" href="https://blog-drafts.matematiikkakilpailut.fi/2019/06/05/PYA07heikko.html" />
+<meta property="og:url" content="https://blog-drafts.matematiikkakilpailut.fi/2019/06/05/PYA07heikko.html" />
+<meta property="og:site_name" content="Matematiikkakilpailijat" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2019-06-05T00:00:00+00:00" />
+<meta property="fb:app_id" content="964806940344711" />
+<script type="application/ld+json">
+{"url":"https://blog-drafts.matematiikkakilpailut.fi/2019/06/05/PYA07heikko.html","author":{"@type":"Person","name":"Olli Järviniemi"},"headline":"Polynomien yhteiset alkutekijät, osa 5: heikko versio","dateModified":"2019-06-05T00:00:00+00:00","datePublished":"2019-06-05T00:00:00+00:00","description":"Tässä postauksessa esitetään todistus lauseen 1 heikolle versiolle.","mainEntityOfPage":{"@type":"WebPage","@id":"https://blog-drafts.matematiikkakilpailut.fi/2019/06/05/PYA07heikko.html"},"@type":"BlogPosting","@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#157878">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/assets/css/style.css?v=2c669b5e01ecebd0ccd9a63f1cd21eeeb0cf1936">
+    <link href="/feed.xml" type="application/atom+xml" rel="alternate" title="Sivuston verkkosyöte">
+
+    <script type="text/x-mathjax-config">
+ MathJax.Hub.Config({
+   tex2jax: {
+     inlineMath: [['$', '$'], ['\\(', '\\)']],
+     displayMath: [['$$', '$$']],
+     processEscapes: true
+   }
+ });
+</script>
+<script
+  type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS_CHTML" 
+  integrity="sha256-nvJJv9wWKEm88qvoQl9ekL2J+k/RWIsaSScxxlsrv8k="
+  crossorigin="anonymous">
+</script>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/fonts/HTML-CSS/TeX/woff/MathJax_Main-Regular.woff"
+      rel="preload" as="font" type="font/woff" crossorigin="anonymous">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/fonts/HTML-CSS/TeX/woff/MathJax_Size1-Regular.woff"
+      rel="preload" as="font" type="font/woff" crossorigin="anonymous">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/fonts/HTML-CSS/TeX/woff/MathJax_Math-Italic.woff"
+      rel="preload" as="font" type="font/woff" crossorigin="anonymous">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/fonts/HTML-CSS/TeX/woff/MathJax_Size2-Regular.woff"
+      rel="preload" as="font" type="font/woff" crossorigin="anonymous">
+
+  </head>
+  <body>
+    <section class="page-header">
+      <h1 class="project-name">Matematiikkakilpailijat</h1>
+      <h2 class="project-tagline">Matematiikan olympiavalmennuksen osallistujien kokemuksia</h2>
+    </section>
+
+    <section class="main-content">
+      <article class="post">
+  <header class="post-header">
+    <h1 class="post-title">Polynomien yhteiset alkutekijät, osa 5: heikko versio</h1>
+  </header>
+  <section class="post-content">
+    <p>Tässä postauksessa esitetään todistus lauseen 1 heikolle versiolle.</p>
+
+<!--jatkuu-->
+
+<p><strong>Sisällysluettelo</strong></p>
+
+<ol>
+  <li><a href="https://blog.matematiikkakilpailut.fi/2019/06/05/PYA11johdanto.html">Osa 1 - johdanto</a></li>
+  <li><a href="https://blog.matematiikkakilpailut.fi/2019/06/05/PYA10esitiedot.html">Osa 2 - esitiedot</a></li>
+  <li><a href="https://blog.matematiikkakilpailut.fi/2019/06/05/PYA09tulokset.html">Osa 3 - tulokset</a></li>
+  <li><a href="https://blog.matematiikkakilpailut.fi/2019/06/05/PYA08motivaatio.html">Osa 4 - motivaatio</a></li>
+  <li>Osa 5 - heikko versio</li>
+  <li><a href="https://blog.matematiikkakilpailut.fi/2019/06/05/PYA06yleinen.html">Osa 6 - yleinen tapaus</a></li>
+  <li><a href="https://blog.matematiikkakilpailut.fi/2019/06/05/PYA05lause2.html">Osa 7 - lause 2</a></li>
+  <li><a href="https://blog.matematiikkakilpailut.fi/2019/06/05/PYA04lause3.html">Osa 8 - lause 3</a></li>
+  <li><a href="https://blog.matematiikkakilpailut.fi/2019/06/05/PYA03lause4.html">Osa 9 - lause 4</a></li>
+  <li><a href="https://blog.matematiikkakilpailut.fi/2019/06/05/PYA02sovelluksia.html">Osa 10 - sovelluksia</a></li>
+  <li><a href="https://blog.matematiikkakilpailut.fi/2019/06/05/PYA01lisaaiheita.html">Osa 11 - lisäaiheita</a></li>
+</ol>
+
+<p>Tavoitteena on osoittaa seuraava väite:</p>
+
+<p>Olkoot $A, B \in \mathbb{Z_c}[x]$ <strong>jaottomia pääpolynomeja</strong>. On olemassa sellainen $D \in \mathbb{Z_c}[x]$, joka toteuttaa seuraavat ehdot:</p>
+
+<ol>
+  <li>$S(A) \cap S(B) \approx S(D)$.</li>
+  <li>$S_v(A) \subset S_v(B) \subset S_v(D)$.</li>
+</ol>
+
+<p>Miksi juuri nämä ehdot? Ehto 1 kertoo, että on vain äärellisen monta myöhemmin korjattavaa alkulukua. Ehto 2 takaa sen, ettei $D$:stä puutu yhtäkään vahvaa alkutekijää. Tämä on tärkeää, koska en löytänyt operaatiota, jolla vahvan alkutekijän voisi luoda (mutta poistaminen onnistuu). Epäilen, että vahvan alkutekijän lisääminen ei edes aina ole mahdollista. Esimerkiksi, onko olemassa polynomi $P$, jolla on muuten samat alkutekijät kuin polynomilla $x^2 + 1$, mutta jolla pätee $2 \in S_v(P)$?</p>
+
+<p>Ehto siitä, että $A, B$ eivät jakaudu, on myös korjattavissa: on intuitiivista, että väite voidaan laajentaa myöhemmin kaikille polynomeille.</p>
+
+<p>Ehto siitä, että $A, B$ ovat pääpolynomeja, ei ole niin ilmeinen. Syy tämän taustalla on ehdon 2 varmistaminen: heikon version todistaminen niin, että ehto 1 toimii, oli suhteellisen helppoa. Ongelmia tuotti ehto 2. Lisäehto siitä, että $A, B$ ovat pääpolynomeja auttaa varmistamaan ehdon 2, kuten myöhemmin nähdään. Yleisen tapauksen todistuksessa saadaan laajennettua väite pääpolynomeilta kaikille polynomeille.</p>
+
+<p>Heikon version ehdot saadaan siis suoraan siitä, mitä muunnoksia kyetään tekemään.</p>
+
+<h1 id="todistus">Todistus</h1>
+
+<p>Kuten edellisessä postauksessa mainittiin, osoitetaan ensin, että on olemassa vastaavuus kompleksijuurien ja nollakohtien (mod $p^k$) välillä.</p>
+
+<h2 id="vastaavuus">Vastaavuus</h2>
+
+<p>Olkoon $A(\alpha) = 0$, $A$ jaoton pääpolynomi, ja olkoon $A(a) \equiv 0 \pmod{p^k}$. Tavoitteena on luoda hyvin määritelty kuvaus, joka kuvaa luvun $\alpha$ lukuun $a$. Tätä alustetaan seuraavalla lemmalla.</p>
+
+<h2 id="lemma-3">Lemma 3</h2>
+
+<p>Olkoon $A \in \mathbb{Z_c}[x]$ jaoton, ja olkoon $\alpha$ jokin sen juuri. Olkoon $p$ sellainen, joka ei jaa $A$:n korkeimman asteen termin kerrointa. Olkoot $k \in \mathbb{Z}_+$ ja $a \in \mathbb{Z}$ sellaisia, joilla $A(a) \equiv 0 \pmod{p^k}$.</p>
+
+<p>Olkoon $P \in \mathbb{Z_c}[x]$ sellainen, jolla $P(\alpha) = 0$. Tällöin $P(a) \equiv 0 \pmod{p^k}$.</p>
+
+<p><strong>Todistus</strong></p>
+
+<p>Olkoon $c_d$ $A$:n korkeimman asteen termin kerroin. Tällöin polynomi $\frac{A}{c_d}$ on luvun $\alpha$ minimaalinen polynomi (koska $A$ on jaoton). Koska $P(\alpha) = 0$, on se jaollinen luvun $\alpha$ minimaalisella polynomilla. Siispä</p>
+
+<script type="math/tex; mode=display">\frac{A}{c_d} \mid P</script>
+
+<p>On siis olemassa sellainen $Q \in \mathbb{Q}[x]$, jolla $P = AQ$.</p>
+
+<p>Riittää osoittaa, että $Q$:n kertoimien nimittäjät eivät ole jaollisia $p$:llä, koska tällöin $P(a) = A(a)Q(a)$ on jaollinen luvulla $p^k$ (laajennettu jaollisuuden määritelmä, mutta sopivalla vakiolla kertominen puolittain toimii myös).</p>
+
+<p>Se, mitä tapahtuu seuraavaksi, ei ole kovin mielenkiintoista. Ideana on vain tehdä vastaoletus ja saada ristiriita kahdella tavalla laskemisella.</p>
+
+<p>Olkoot</p>
+
+<script type="math/tex; mode=display">A(x) = a_{d_a}x^{d_a} + \ldots + a_1x + a_0</script>
+
+<script type="math/tex; mode=display">P(x) = p_{d_p}x^{d_p} + \ldots + p_1x + p_0</script>
+
+<script type="math/tex; mode=display">Q(x) = q_{d_q}x^{d_q} + \ldots + q_1x + q_0</script>
+
+<p>(Lupasin aiemmin, että kirjain $p$ viittaa aina alkulukuun. Tässä tapahtui nyt pieni lipsahdus muuttujien nimeämisessä. $p_i$ ei siis ole välttämättä alkuluku, vaan jokin kokonaisluku.)</p>
+
+<p>Oletetaan, että jonkin $q_i$ nimittäjä on jaollinen $p$:llä. Valitaan näistä $i$ suurin mahdollinen. Tutkitaan termin $x^{d_a + i}$ kerrointa $P$:ssä. Tämä on määritelmän nojalla $p_{d_a + i}$, eli kokonaisluku. Mutta toisaalta, tämä on yhtälön $P = AQ$ nojalla</p>
+
+<script type="math/tex; mode=display">q_ia_{d_a} + q_{i+1}a_{d_a - 1} + \ldots</script>
+
+<p>Termit ovat siis muotoa $q_{i+j}a_{d_a - j}$. Jos $j &gt; 0$, kyseessä on rationaaliluku, jonka nimittäjä ei ole jaollinen $p$:llä, koska luvut $a_0, a_1, \ldots$ ovat kokonaislukuja, ja $i$ määriteltiin olemaan suurin indeksi, jolla luvun $q_i$ nimittäjä on jaollinen $p$:llä.</p>
+
+<p>Summa voidaan siis kirjoittaa muodossa</p>
+
+<script type="math/tex; mode=display">q_ia_{d_a} + \frac{x}{y}</script>
+
+<p>missä $p \nmid y$. Kirjoitetaan $q_ia_{d_a} = \frac{v}{w}$. Koska $p$ jakaa $q_i$:n nimittäjän, ja oletuksen nojalla $p$ ei jaa lukua $a_{d_a}$, pätee $p \mid w$ ja $p \nmid v$. Ja nyt,</p>
+
+<script type="math/tex; mode=display">p_{d_a + i} = \frac{v}{w} + \frac{x}{y} = \frac{vy + wx}{yw}</script>
+
+<p>Tässä $p \mid yw$, mutta $p \nmid vy + wx$, koska $p \mid wx$ ja $p \nmid vy$. Olemme saaneet aikaan ristiriidan.</p>
+
+<h2 id="alustus-lemmalle-4">Alustus lemmalle 4</h2>
+
+<p>Lemma 4 muodostaa halutun kuvauksen, joka formalisoi aiemmin mainitun vastaavuuden. Tätä ennen määritellään joukko $\mathbb{Z_p}(\alpha)$. Määrittely voi tuntua hieman ikävältä, mutta idea on yksinkertainen: haluamme kuvata $\mathbb{Q}(\alpha)$:n alkioita kokonaisluvuille mod $p^k$. Lukua $\frac{1}{p} \in \mathbb{Q}(\alpha)$ on kuitenkin käytännössä katsoen mahdotonta kuvata kokonaisluvuksi mod $p^k$ niin, että lopputulos olisi järkevä. Meidän tulee siis hieman valikoida lukuja, joita kuvaamme.</p>
+
+<p><strong>Määritelmä - $\mathbb{Z_p}(\alpha)$</strong></p>
+
+<p>Kunta $\mathbb{Q}(\alpha)$ voidaan tulkita $\mathbb{Q}$-vektoriavaruutena, jonka kanta on $\lbrace 1, \alpha, \alpha^2, \ldots , \alpha^{n-1}\rbrace$ (tässä $n$ on $\alpha$:n minimaalisen polynomin aste). Olkoon $\mathbb{Z_p}(\alpha)$ niiden $x \in \mathbb{Q}(\alpha)$ joukko, joilla $x$:n esitys kannan avulla ei sisällä rationaalilukuja, joiden nimittäjät ovat jaollisia $p$:llä.</p>
+
+<p>Toisin sanoen, $\mathbb{Z_p}(\alpha)$ sisältää ne luvut $x$, jotka ovat muotoa $P(\alpha)$, $\deg(P) &lt; n$, ja $P$:n kertoimien nimittäjät eivät ole jaollisia $p$:llä.</p>
+
+<p>Esimerkiksi $\mathbb{Z}_7(\sqrt{2})$ sisältää luvut muotoa $a + b\sqrt{2}, a, b \in \mathbb{Q}$, missä $7$ ei jaa lukujen $a, b$ nimittäjiä.</p>
+
+<p>Olkoon $A \in \mathbb{Z_c}[x]$ jaoton, ja olkoon $\alpha$ sen juuri. Olkoon $p$ alkuluku, joka ei jaa $A$:n korkeimman asteen termin kerrointa. Väitän, että $\mathbb{Z_p}(\alpha)$ on rengas, eli siis eritysesti kahden joukon $\mathbb{Z_p}(\alpha)$ tulo on myös tämän joukon alkio.</p>
+
+<p>Tämä on helppoa visualisoida samalla tavalla kuin osoitettiin, että $\alpha^k$ voidaan esittää pienempien $\alpha$:n potenssien avulla. Olkoon $A(x) = a_nx^n + \ldots + a_1x + a_0$. Tällöin</p>
+
+<script type="math/tex; mode=display">\alpha^n = -\frac{a_{n-1}\alpha^{n-1} + \ldots + a_0}{a_n}</script>
+
+<p>Siispä $\alpha^n \in \mathbb{Z_p}(\alpha)$.</p>
+
+<p>Yleisesti, kuvitellaan operaatiosarjaa, jolla redusoidaan $\alpha^k$ pienempien $\alpha$:n potenssien esitykseksi. Tällöin $\alpha^k$:n esityksessä käytetyt kertoimet eivät ole jaollisia $p$:llä (mistä $p$:llä jaollinen nimittäjä muka syntyisi?). Jos ei tähän vielä usko, niin voi osoittaa induktiolla muuttujan $k$ suhteen, että $\alpha^k \in \mathbb{Z_p}(\alpha)$.</p>
+
+<p>Vielä määritellään homomorfismi.</p>
+
+<p><strong>Määritelmä - homomorfismi</strong></p>
+
+<p>Olkoot $R, S$ renkaita (eli kuin kunnat, muttei välttämättä käänteisalkiota. Esim. $\mathbb{Z}$ on rengas). Olkoon $f : R \to S$ kuvaus. Sanotaan, että $f$ on homomorfismi, jos</p>
+
+<ol>
+  <li>$f(xy) = f(x)f(y)$ kaikilla $x, y \in R$.</li>
+  <li>$f(x + y) = f(x) + f(y)$ kaikilla $x, y \in R$.</li>
+  <li>$f(1) = 1$.</li>
+</ol>
+
+<p>Määritelmä on siis täsmälleen sama kuin isomorfismin tapauksessa, paitsi $f$:n ei tarvitse olla bijektio. Esimerkkinä homomorfista $f : \mathbb{Z} \to \mathbb{Z}_2$ (kokonaisluvuille mod $2$) toimii $f(2n) = 0$, $f(2n + 1) = 1$ kaikilla $n \in \mathbb{Z}$. Moduloon redusoiminen on siis vain homomorfismi.</p>
+
+<p>Joku voisi väittää, että tällä $f$ ehto $2$ ei toteudu, onhan $0=f(0) = f(1 + 1) = f(1) + f(1) = 2$. Tämä kuitenkin toteutuu, kun yhtäsuuruutta ajatellaan $S$:n eli $\mathbb{Z}_2$:n näkökulmasta.</p>
+
+<p>Tämä homomorfismi on juurikin se “hyvin määritelty kuvaus” mistä olen aiemmin puhunut:</p>
+
+<h2 id="lemma-4">Lemma 4</h2>
+
+<p>Olkoon $A \in \mathbb{Z_c}[x]$ jaoton, ja olkoon $p$ alkuluku, joka ei jaa $A$:n korkeimman asteen termin kerrointa. Olkoon $A(a) \equiv 0 \pmod{p^k}$.</p>
+
+<p>On olemassa homomorfismi $f : \mathbb{Z_p}(\alpha) \to \mathbb{Z}_{p^k}$ (eli joukolta $\mathbb{Z_p}(\alpha)$ joukolle “kokonaisluvut modulo $p^k$”), jolla $f(\alpha) = a$.</p>
+
+<p><strong>Todistus</strong></p>
+
+<p>Määritellään yksinkertaisesti $f(P(\alpha)) = P(a)$ kaikilla $P$, joiden kertoimien nimittäjät eivät ole jaollisia $P$:llä. On selvää, että $f(\alpha) = a$, ja että $f$ toteuttaa homomorfismin määritelmän ehdot 1, 2, 3. Olemme siis valmiit. Vai olemmeko?</p>
+
+<p>Funktion määritelmään kuuluu, että jokainen alkio kuvautuu täsmälleen yhteen alkioon. Toisin sanoen, jos $a = b$, niin $f(a) = f(b)$. Tämä tulee siis vielä varmistaa (monesti tämä on ilmeistä funktioita määritellessä, mutta tällä kertaa ei).</p>
+
+<p>Olkoot $P_1, P_2$ jotain polynomeja, joiden kertoimet eivät ole jaollisia $p$:llä. Oletetaan, että $P_1(\alpha) = P_2(\alpha)$, ja osoitetaan, että $P_1(a) \equiv P_2(a) \pmod{p^k}$.</p>
+
+<p>Olkoon $P(x) = P_1(x) - P_2(x)$. Tiedämme siis, että $P(\alpha) = 0$, ja haluamme osoittaa, että $P(a) \equiv 0 \pmod{p^k}$. Tämä pätee lemman 3 nojalla.</p>
+
+<h2 id="lemma-5">Lemma 5</h2>
+
+<p>Lemman 5 tavoite on osoittaa, että $S_v(A) \cap S_v(B) \subset S_v(D)$, kun $D$ valitaan sopivasti. Määritellään seuraavaksi $D$.</p>
+
+<p>Olkoon $\alpha$ jokin $A$:n juuri, joka pidetään vakiona tämän todistuksen loppuun saakka. Jaetaan $B$ tekijöihin kunnassa $\mathbb{Q}(\alpha)$. Olkoon siis $B(x) = E_1(x)E_2(x) \ldots E_t(x)$. Esitystapa voidaan valita niin, että $E_i$ ovat pääpolynomeja., koska $B$ on pääpolynomi. Oletetaan tietysti vielä, että $E_i$ ovat ei-vakioita ja jaottomia (kunnassa $\mathbb{Q}(\alpha)$).</p>
+
+<p>Olkoon $\beta_i$ polynomin $E_i$ juuri kaikilla $i$. Olkoot $\gamma_i$ sellaisia, että $\mathbb{Q}(\alpha, \beta_i) = \mathbb{Q}(\gamma_i)$ kaikilla $i$. Kuten Primitive element theoremin todistuksesta voidaan lukea, että $\gamma_i$ voidaan valita olemaan muotoa $\alpha + n_i\beta_i$, missä $n_i$ on sopiva kokonaisluku. Tällä valinnalla ei juurikaan ole väliä, mutta se yksinkertaistaa todistusta.</p>
+
+<p>Olkoon $D_i$ luvun $\gamma_i = \alpha + n_i\beta_i$ minimaalinen polynomi kaikilla $i$. Määritellään $D$ olemaan polynomien $D_i$ tulo. Voidaan osoittaa, että $D$ on kokonaislukukertoiminen (algebralliset kokonaisluvut ovat rengas), mutta tarvittaessa $D$ voitaisiin kertoa kertoimien nimittäjiensä tulolla.</p>
+
+<p>Osoitetaan, että tällä $D$:llä pätee $S_v(A) \cap S_v(B) \subset S_v(D)$.</p>
+
+<p><strong>Todistus</strong></p>
+
+<p>Tutkitaan polynomia $F_i(x) := D_i(\alpha + n_ix)$. Tämä on polynomi, jonka kertoimet ovat kunnassa $\mathbb{Q}(\alpha)$. Lisäksi pätee $F_i(\beta_i) = D_i(\alpha + n_i\beta_i) = D_i(\gamma_i) = 0$. Täten $F_i$ on jaollinen luvun $\beta_i$ minimaalisella polynomilla (kunnassa $\mathbb{Q}(\alpha)$), eli polynomilla $E_i$.</p>
+
+<p>Täten on olemassa sellainen polynomi $G_i \in \mathbb{Q}(\alpha)[x]$, jolla $F_i(x) = E_i(x)G_i(x)$, eli siis $D_i(\alpha + n_ix) = E_i(x)G_i(x)$. Kertomalla tätä muotoa olevat yhtälöt keskenään kaikilla $1 \le i \le t$ saadaan</p>
+
+<script type="math/tex; mode=display">D_1(\alpha + n_1x)\ldots D_t(\alpha + n_tx) = E_1(x) \ldots E_t(x)G_1(x) \ldots G_t(x) = B(x)G_1(x) \ldots G_t(x)</script>
+
+<p>Olkoot $c_1, c_2, \ldots , c_t$ polynomien $G_1, G_2, \ldots , G_t$ kertoimien nimittäjien tulot. Olkoon $H_i(x) = G_i(x) \cdot c_i$, ja olkoon $H$ kaikkien $H_i$ tulo. Tällöin $H_i$:n kertoimet kuuluvat joukkoon $\mathbb{Z_p}(\alpha)$.</p>
+
+<script type="math/tex; mode=display">c_1c_2 \ldots c_t D_1(\alpha + n_1x) \ldots D_t(\alpha + n_tx) = B(x)H(x)</script>
+
+<p>Osoitetaan nyt, että $p \in S_v(A) \cap S_v(B) \implies p \in S_v(D)$.</p>
+
+<p>Olkoon $k$ jokin mielivaltaisen suuri kokonaisluku, ja oletetaan, että $A(a) \equiv B(b) \equiv 0 \pmod{p^k}$.</p>
+
+<p>Olkoon $f : \mathbb{Z_p}(\alpha) \to \mathbb{Z_{p^k}}$ lemman 4 mukainen homomorfismi. Koska $A$ on pääpolynomi, $p$ ei jaa $A$:n korkeimman asteen termin kerrointa, eli tämä kuvaus on olemassa. Sijoitetaan yllä olevaan yhtälöön $x = b$, jolloin</p>
+
+<script type="math/tex; mode=display">c_1c_2 \ldots c_tD_1(\alpha + n_1b) \ldots = B(b)H(b)</script>
+
+<p>Kuvataan molemmat puolet homomorfismilla $f$. Nähdään, että $f(D_i(\alpha + n_ib)) = D_i(a + n_ib)$ (tämän voi todistaa suoraan homomorfismien ominaisuuksista). Siispä</p>
+
+<script type="math/tex; mode=display">c_1 \ldots c_t D_1(a + n_1b) \ldots D_t(a + n_tb) = f(B(b)H(b)) = B(b)f(H(b))</script>
+
+<p>Koska $B(b) \equiv 0 \pmod{p^k}$, pätee $B(b)f(H(b)) \equiv 0 \pmod{p^k}$. Täten</p>
+
+<script type="math/tex; mode=display">c_1 \ldots c_tD_1(a + n_1b) \ldots D_t(a + n_tb) \equiv 0 \pmod{p^k}</script>
+
+<p>Nyt, jos $p$ ei olisi minkään $D_i$ vahva alkutekijä, olisi olemassa sellaiset $e_1, \ldots , e_t$, joilla yhtälöllä $D_i(x) \equiv 0 \pmod{p^{e_i}}$ ei ole ratkaisua. Olkoon $C = v_p(c_1 \ldots c_t)$, missä $v_p$ on <a href="https://blog.matematiikkakilpailut.fi/2018/07/19/Vp.html">p-adic valuation</a>. Ei ole vaikeaa nähdä, että yhtälöllä</p>
+
+<script type="math/tex; mode=display">c_1c_2 \ldots c_tD_1(x_1)D_2(x_2) \ldots D_t(x_t) \equiv 0 \pmod{p^k}</script>
+
+<p>ei ole ratkaisua, kun $k &gt; C + e_1 + e_2 + \ldots + e_t$. Tämä on ristiriita sen kanssa, että</p>
+
+<script type="math/tex; mode=display">c_1 \ldots c_tD_1(a + n_1b) \ldots D_t(a + n_tb) \equiv 0 \pmod{p^k}</script>
+
+<p>kaikilla $k \in \mathbb{Z}_+$ (missä $a, b$ valitaan $k$:n mukaan). Siispä $p$:n pitää olla jonkin $D_i$ vahva alkutekijä. Tämä todistaa väitteen.</p>
+
+<p><strong>Kommentteja</strong></p>
+
+<p>Eikö ideana ollutkaan sieventää $D(a + b)$ modulo $p^k$? Yllä oleva todistus näyttää olevan melko kaukana tästä. Alunperin todistus oli tällainen, ja oikeastaan yllä oleva todistus on myös, mutta sieventäminen on piilotettu.</p>
+
+<p>Mitä se sieventäminen todella on? Käytännössä se on polynomien jakoyhtälöä: esimerkiksi jos $\alpha^2 + 1 = 0$, luvun $\alpha^3$ sieventäminen on oikeasti sitä, että polynomi $x^3$ jaetaan jakokulmassa polynomilla $x^2 + 1$. Siispä jakoyhtälö on formaali tapa esittää sieventäminen.</p>
+
+<p>Tutkitaan siis yhtälöä $D_i(\alpha + n_i\beta_i) = 0$. Käyttäen toistuvasti ehtoa $E_i(\beta_i) = 0$ saadaan ensiksi redusoitua kaikki $\beta_i$:t yhtälöstä. Lopuksi jäljellä on yhtälö muotoa $P(\alpha) = 0$, joka sieventyy käyttäen yhtälöä $A(\alpha) = 0$.</p>
+
+<p>Aivan vastaavasti voidaan suorittaa yhtälön $D_i(a + n_ib) \equiv 0 \pmod{p^k}$ sieventäminen. Osio, jossa “$\beta_i$ tai $b$ sievennetään pois” vastaa lemman todistuksen kuvausta $f$ edeltävää osiota, ja $\alpha$:n tai $a$:n sieventäminen vastaa $f$:n käyttämistä. $f$ antaa formaalin tavan sieventää yhden muuttujan polynomeja.</p>
+
+<h2 id="heikon-version-todistuksen-viimeistely">Heikon version todistuksen viimeistely</h2>
+
+<p>Edellä osoitettiin, että $S_v(A) \cap S_v(B) \subset S_v(D)$. Osoitetaan vielä toinen halutuista ehdoista, eli $S(A) \cap S(B) \approx S(D)$. Tämä on oikeastaan todistettu jo. Nimittäin, valitaan jokin $p \in S_v(D)$. Tällöin $p \in S_v(D_i)$ jollain $i$ (helppo vastaoletustodistus). Tällöin kysymyksen 2 todistuksen nojalla kaikilla paitsi äärellisen monella $p$ pätee väite $p \in S_v(A) \cap S_v(B)$.</p>
+
+<p>Siis kaikki paitsi äärellisen moni $S_v(D)$:n alkio on myös $S_v(A) \cap S_v(B)$:n alkio. Käyttäen ehtoa $S_v(A) \cap S_v(B) \subset S_v(D)$ saadaan ehto</p>
+
+<script type="math/tex; mode=display">S_v(A) \cap S_v(B) \approx S_v(D)</script>
+
+<p>Koska $S_v(P) \approx S(P)$ kaikilla $P \in \mathbb{Z_c}[x]$ lemman 2 nojalla, osoittaa tämä</p>
+
+<script type="math/tex; mode=display">S(A) \cap S(B) \approx S(D)</script>
+
+<p>Kysymys 2 on työssäni lemma 6, joten lemmojen numerointi jatkuu luvusta 7.</p>
+
+<p><a href="https://blog.matematiikkakilpailut.fi/2019/06/05/PYA06yleinen.html">Seuraava postaus.</a></p>
+
+  </section>
+  <footer class="post-footer">
+    <p><time datetime="2019-06-05">5. 6. 2019</time>
+       • Olli Järviniemi
+      <span class="share-buttons">
+  <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fblog-drafts.matematiikkakilpailut.fi%2F2019%2F06%2F05%2FPYA07heikko.html&quote=Polynomien+yhteiset+alkutekij%C3%A4t%2C+osa+5%3A+heikko+versio"
+     title="Jaa Facebookissa" target="_blank" rel="noopener noreferrer nofollow">
+    <svg aria-label="Jaa Facebookissa" role="img" viewBox="0 0 24 24"><title lang="en">Facebook</title><use xlink:href="/assets/images/icons.svg#facebook"/></svg></a>
+  <a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fblog-drafts.matematiikkakilpailut.fi%2F2019%2F06%2F05%2FPYA07heikko.html&text=Polynomien+yhteiset+alkutekij%C3%A4t%2C+osa+5%3A+heikko+versio"
+     target="_blank" rel="noopener noreferrer nofollow" title="Jaa Twitterissä">
+    <svg aria-label="Jaa Twitterissä" role="img" viewBox="0 0 24 24"><title lang="en">Twitter</title><use xlink:href="/assets/images/icons.svg#twitter"/></svg></a>
+  <a href="https://pinterest.com/pin/create/button/?url=https%3A%2F%2Fblog-drafts.matematiikkakilpailut.fi%2F2019%2F06%2F05%2FPYA07heikko.html&description=Polynomien+yhteiset+alkutekij%C3%A4t%2C+osa+5%3A+heikko+versio"
+     target="_blank" rel="noopener noreferrer nofollow" title="Jaa Pinterestissä">
+    <svg aria-label="Jaa Pinterestissä" role="img" viewBox="0 0 24 24"><title lang="en">Pinterest</title><use xlink:href="/assets/images/icons.svg#pinterest"/></svg></a>
+  <a href="https://www.reddit.com/submit?url=https%3A%2F%2Fblog-drafts.matematiikkakilpailut.fi%2F2019%2F06%2F05%2FPYA07heikko.html&title=Polynomien+yhteiset+alkutekij%C3%A4t%2C+osa+5%3A+heikko+versio"
+     target="_blank" rel="noopener noreferrer nofollow" title="Jaa Redditissä">
+    <svg aria-label="Jaa Redditissä" role="img" viewBox="0 0 24 24"><title lang="en">Reddit</title><use xlink:href="/assets/images/icons.svg#reddit"/></svg></a>
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fblog-drafts.matematiikkakilpailut.fi%2F2019%2F06%2F05%2FPYA07heikko.html&title=Polynomien+yhteiset+alkutekij%C3%A4t%2C+osa+5%3A+heikko+versio&source=https%3A%2F%2Fblog-drafts.matematiikkakilpailut.fi"
+     target="_blank" rel="noopener noreferrer nofollow" title="Jaa LinkedInissä">
+    <svg aria-label="Jaa Linkedinissä" role="img" viewBox="0 0 24 24"><title lang="en">LinkedIn</title><use xlink:href="/assets/images/icons.svg#linkedin"/></svg></a>
+  <a href="https://pinboard.in/add?url=https%3A%2F%2Fblog-drafts.matematiikkakilpailut.fi%2F2019%2F06%2F05%2FPYA07heikko.html&title=Polynomien+yhteiset+alkutekij%C3%A4t%2C+osa+5%3A+heikko+versio"
+     target="_blank" rel="noopener noreferrer nofollow" title="Talleta Pinboardiin">
+    <svg aria-label="Talleta Pinboardiin" role="img" viewBox="0 0 24 24"><title lang="en">Pinboard</title><use xlink:href="/assets/images/icons.svg#pinboard"/></svg></a>
+</span>
+
+    </p>
+  </footer>
+</article>
+
+    </section>
+
+    <section class="site-footer">
+      <p>Tekijänoikeus kirjoittajilla. Käytämme sivuilla evästeitä: <a href="/tietosuoja.html">tietosuojalauseke</a>.</p>
+    </section>
+    
+
+  </body>
+</html>

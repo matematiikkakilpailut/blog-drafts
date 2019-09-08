@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="fi">
+  <head>
+    <meta charset="UTF-8">
+    <!-- Begin Jekyll SEO tag v2.5.0 -->
+<title>Polynomien yhteiset alkutekijät, osa 7: lause 2 | Matematiikkakilpailijat</title>
+<meta name="generator" content="Jekyll v3.8.5" />
+<meta property="og:title" content="Polynomien yhteiset alkutekijät, osa 7: lause 2" />
+<meta name="author" content="Olli Järviniemi" />
+<meta property="og:locale" content="fi" />
+<meta name="description" content="Tässä postauksessa todistetaan tutkielma lause 2, eli Schurin lauseelle yleistys. Todistus perustuu Frobeniuksen lauseeseen." />
+<meta property="og:description" content="Tässä postauksessa todistetaan tutkielma lause 2, eli Schurin lauseelle yleistys. Todistus perustuu Frobeniuksen lauseeseen." />
+<link rel="canonical" href="https://blog-drafts.matematiikkakilpailut.fi/2019/06/05/PYA05lause2.html" />
+<meta property="og:url" content="https://blog-drafts.matematiikkakilpailut.fi/2019/06/05/PYA05lause2.html" />
+<meta property="og:site_name" content="Matematiikkakilpailijat" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2019-06-05T00:00:00+00:00" />
+<meta property="fb:app_id" content="964806940344711" />
+<script type="application/ld+json">
+{"url":"https://blog-drafts.matematiikkakilpailut.fi/2019/06/05/PYA05lause2.html","author":{"@type":"Person","name":"Olli Järviniemi"},"headline":"Polynomien yhteiset alkutekijät, osa 7: lause 2","dateModified":"2019-06-05T00:00:00+00:00","datePublished":"2019-06-05T00:00:00+00:00","description":"Tässä postauksessa todistetaan tutkielma lause 2, eli Schurin lauseelle yleistys. Todistus perustuu Frobeniuksen lauseeseen.","mainEntityOfPage":{"@type":"WebPage","@id":"https://blog-drafts.matematiikkakilpailut.fi/2019/06/05/PYA05lause2.html"},"@type":"BlogPosting","@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#157878">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/assets/css/style.css?v=2c669b5e01ecebd0ccd9a63f1cd21eeeb0cf1936">
+    <link href="/feed.xml" type="application/atom+xml" rel="alternate" title="Sivuston verkkosyöte">
+
+    <script type="text/x-mathjax-config">
+ MathJax.Hub.Config({
+   tex2jax: {
+     inlineMath: [['$', '$'], ['\\(', '\\)']],
+     displayMath: [['$$', '$$']],
+     processEscapes: true
+   }
+ });
+</script>
+<script
+  type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS_CHTML" 
+  integrity="sha256-nvJJv9wWKEm88qvoQl9ekL2J+k/RWIsaSScxxlsrv8k="
+  crossorigin="anonymous">
+</script>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/fonts/HTML-CSS/TeX/woff/MathJax_Main-Regular.woff"
+      rel="preload" as="font" type="font/woff" crossorigin="anonymous">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/fonts/HTML-CSS/TeX/woff/MathJax_Size1-Regular.woff"
+      rel="preload" as="font" type="font/woff" crossorigin="anonymous">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/fonts/HTML-CSS/TeX/woff/MathJax_Math-Italic.woff"
+      rel="preload" as="font" type="font/woff" crossorigin="anonymous">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/fonts/HTML-CSS/TeX/woff/MathJax_Size2-Regular.woff"
+      rel="preload" as="font" type="font/woff" crossorigin="anonymous">
+
+  </head>
+  <body>
+    <section class="page-header">
+      <h1 class="project-name">Matematiikkakilpailijat</h1>
+      <h2 class="project-tagline">Matematiikan olympiavalmennuksen osallistujien kokemuksia</h2>
+    </section>
+
+    <section class="main-content">
+      <article class="post">
+  <header class="post-header">
+    <h1 class="post-title">Polynomien yhteiset alkutekijät, osa 7: lause 2</h1>
+  </header>
+  <section class="post-content">
+    <p>Tässä postauksessa todistetaan tutkielma lause 2, eli Schurin lauseelle yleistys. Todistus perustuu Frobeniuksen lauseeseen.</p>
+
+<!--jatkuu-->
+
+<p><strong>Sisällysluettelo</strong></p>
+
+<ol>
+  <li><a href="https://blog.matematiikkakilpailut.fi/2019/06/05/PYA11johdanto.html">Osa 1 - johdanto</a></li>
+  <li><a href="https://blog.matematiikkakilpailut.fi/2019/06/05/PYA10esitiedot.html">Osa 2 - esitiedot</a></li>
+  <li><a href="https://blog.matematiikkakilpailut.fi/2019/06/05/PYA09tulokset.html">Osa 3 - tulokset</a></li>
+  <li><a href="https://blog.matematiikkakilpailut.fi/2019/06/05/PYA08motivaatio.html">Osa 4 - motivaatio</a></li>
+  <li><a href="https://blog.matematiikkakilpailut.fi/2019/06/05/PYA07heikko.html">Osa 5 - heikko versio</a></li>
+  <li><a href="https://blog.matematiikkakilpailut.fi/2019/06/05/PYA06yleinen.html">Osa 6 - yleinen tapaus</a></li>
+  <li>Osa 7 - lause 2</li>
+  <li><a href="https://blog.matematiikkakilpailut.fi/2019/06/05/PYA04lause3.html">Osa 8 - lause 3</a></li>
+  <li><a href="https://blog.matematiikkakilpailut.fi/2019/06/05/PYA03lause4.html">Osa 9 - lause 4</a></li>
+  <li><a href="https://blog.matematiikkakilpailut.fi/2019/06/05/PYA02sovelluksia.html">Osa 10 - sovelluksia</a></li>
+  <li><a href="https://blog.matematiikkakilpailut.fi/2019/06/05/PYA01lisaaiheita.html">Osa 11 - lisäaiheita</a></li>
+</ol>
+
+<p>Tavoitteena on siis osoittaa seuraava lause:</p>
+
+<p>Olkoot $P_1, P_2, \ldots , P_n \in \mathbb{Z_c}[x]$. Pätee</p>
+
+<script type="math/tex; mode=display">\delta(S_v(P_1) \cap \ldots \cap S_v(P_n)) \ge \frac{1}{\deg(P_1) \ldots \deg(P_n)}.</script>
+
+<p>Lauseen 1 ja lemman 2 nojalla riittää osoittaa, että $\delta(S(D)) \ge \frac{1}{\deg(D)}$ kaikilla $D \in \mathbb{Z_c}[x]$.</p>
+
+<p>Väite on osoitettu artikkelissa <a href="https://www.researchgate.net/publication/268860079_Prime_factors_of_a_fn_-1_with_an_irreducible_polynomial_fx">Prime factors of $a^{f(n)} - 1$ with an irreducible polynomial $f(x)$</a> (Christian Ballot, Florian Luca). Mutta miten?</p>
+
+<p>Todistus perustuu Frobeniuksen lauseeseen sekä pienen määrään ryhmänteoriaan. Ensimmäisen ymmärrän ja pystyn selittämään, mutta toisesta minulle ei ole tietoa (mutta ilmeisesti käytetty ryhmäteoria on hyvin standardia).</p>
+
+<p>Väite on oikeastaan osoitettu viitteessä vain jaottomille pääpolynomeille, mutta lemman 8 nojalla väite pätee kaikilla jaottomilla polynomeilla. Väite pätee täten tietysti myös jakautuvilla polynomeilla.</p>
+
+<h2 id="galoisn-ryhmä">Galois’n ryhmä</h2>
+
+<p>Frobeniuksen lausetta varten määritellään Galois’n ryhmä.</p>
+
+<p><strong>Määritelmä - Galois’n ryhmä</strong></p>
+
+<p>Olkoon $P \in \mathbb{Z_c}[x]$, ja olkoon $F$ sen juurikunta. Olkoon $G$ isomorfismien $\sigma : F \to F$ joukko. $G$:tä kutsutaan kunnan $F$ tai polynomin $P$ Galois’n ryhmäksi.</p>
+
+<p><strong>Rakenne</strong></p>
+
+<p>Millaisia ovat isomorfismit $\sigma : F \to F$? Olkoon $P(x) = a_dx^d + a_{d-1}x^{d-1} + \ldots + a_0$, missä $a_i \in \mathbb{Z}$ (tai $a_i \in \mathbb{Q}$, ei väliä). Olkoon $\alpha$ jokin $P$:n juuri. Käytetään isomorfismien seuraavia ominaisuuksia:</p>
+
+<ol>
+  <li>$\sigma(xy) = \sigma(x)\sigma(y)$</li>
+  <li>$\sigma(x + y) = \sigma(x) + \sigma(y)$</li>
+  <li>$\sigma(1) = 1$.</li>
+  <li>$\sigma(q) = q$ kaikilla $q \in \mathbb{Q}$ (seuraa ehdoista 1-3).</li>
+</ol>
+
+<p>Saamme</p>
+
+<script type="math/tex; mode=display">0 = \sigma(0) = \sigma(P(\alpha)) = \sigma(a_d\alpha^d + \ldots + a_0)</script>
+
+<script type="math/tex; mode=display">= \sigma(a_d\alpha^d) + \sigma(a_{d-1}\alpha^{d-1}) + \ldots + \sigma(a_0)</script>
+
+<script type="math/tex; mode=display">= a_d\sigma(\alpha)^d + a_{d-1}\sigma(\alpha)^{d-1} + \ldots + a_0</script>
+
+<script type="math/tex; mode=display">= P(\sigma(\alpha)).</script>
+
+<p>Huomaamme siis, että $\sigma(\alpha)$ on jokin $P$:n juuri. $\sigma$ siis vain kuvaa $P$:n juuria toisikseen. Huomaa, että $\sigma$ on permutaatio, koska isomorfismin tulee olla bijektiivinen. $\sigma$ siis <strong>permutoi</strong> $P$:n juuria. Tämän vuoksi Galois’n ryhmästä puhuttaessa puhutaan usein permutaatioista: Galois’n ryhmän voidaan ajatella olevan joukko permutaatioita.</p>
+
+<p>Tämä osoittaa, että $G$ on äärellinen, ja sen koko on enintään $\deg(P)!$.</p>
+
+<p>Huomataan vielä, että arvot $\sigma(\alpha_1), \sigma(\alpha_2), \ldots , \sigma(\alpha_d)$ määrittävät Galois’n ryhmän alkion $\sigma$ yksikäsitteisesti. Tämä johtuu siitä, että jokainen juurikunnan $F$ alkio voidaan kirjoittaa polynomina muuttujista $\alpha_i$.</p>
+
+<p><strong>Huomautus</strong></p>
+
+<p>Galois’n ryhmä toteuttaa <a href="https://en.wikipedia.org/wiki/Group_(mathematics)">ryhmän</a> vaatimukset.</p>
+
+<p><strong>Esimerkki</strong></p>
+
+<p>Tutkitaan polynomin $P(x) = x^2 - 2$ Galois’n ryhmää. Galois’n ryhmän kuvaukset permutoivat juuria $\lbrace \sqrt{2}, -\sqrt{2} \rbrace$. On siis kaksi eri vaihtoehtoa:</p>
+
+<ol>
+  <li>
+    <p>$\sigma_1(\sqrt{2}) = \sqrt{2}$. Tällöin $\sigma_1(-\sqrt{2}) = -\sigma_1(\sqrt{2}) =  -\sqrt{2}$.</p>
+  </li>
+  <li>
+    <p>$\sigma_2(\sqrt{2}) = -\sqrt{2}$. Tällöin $\sigma_2(-\sqrt{2}) = -\sigma_2(\sqrt{2}) = \sqrt{2}$.</p>
+  </li>
+</ol>
+
+<p>Ensimmäisen kuvauksen tapauksessa $\sigma(a + b\sqrt{2}) = a + b\sigma(\sqrt{2}) = a + b\sqrt{2}$ kaikilla $a, b \in \mathbb{Q}$. Siis kyseessä on identiteettikuvaus.</p>
+
+<p>Toisen kuvauksen tapauksessa $\sigma(a + b\sqrt{2}) = a + b\sigma(\sqrt{2}) = a - b\sqrt{2}$ kaikilla $a, b \in \mathbb{Q}$. Kyseessä on konjugaatio.</p>
+
+<h2 id="frobeniuksen-lause">Frobeniuksen lause</h2>
+
+<p><strong>Permutaation komponenttijako</strong></p>
+
+<p>Olkoon $\sigma$ jokin $P$:n Galois’n ryhmän alkio. $\sigma$ voidaan ajatella permutaationa, joka permutoi joukkoa $\lbrace 1, 2, \ldots , n \rbrace$, missä $n = \deg(P)$. Nämä permutaatiot voivat sisältää pienempiä syklejä. Yllä olevassa esimerkissä $\sigma_1$ muodostaa kaksi yhden pituista sykliä, kun taas $\sigma_2$ muodostaa yhden ison syklin.</p>
+
+<p>Yleisesti permutaatio voidaan jakaa komponentteihin $H_1, H_2, \ldots , H_k$ niin, että $\sigma(h_i) \in H_i$ kaikilla $h_i \in H_i$. Määritelmä on vielä puutteellinen: voisimme aina valita $H_1 = \lbrace 1, 2, \ldots , n \rbrace$. Valitaan siis se jako, joka maksimoi komponenttien määrän $k$. Olkoon komponentin $H_i$ koko $s_i$.</p>
+
+<p>Käytän pian komponenttijakoa Frobeniuksen lauseen yhteydessä, joten merkitään kuvauksen $\sigma$ komponenttien kokoa joukolla $S(\sigma) = \lbrace s_1, s_2, \ldots , s_k \rbrace$. Muodostetaan tämä joukko niin, että poikkeuksellisesti siellä saa olla sama alkio useampaan kertaan.</p>
+
+<p>Esimerkiksi polynomin $x^2 - 2$ juurikunnan tapauksessa $S(\sigma_1) = \lbrace 1, 1 \rbrace$ ja $S(\sigma_2) = \lbrace 2 \rbrace$.</p>
+
+<p><strong>Frobeniuksen lause</strong></p>
+
+<p>Olkoon $P \in \mathbb{Z_c}[x]$, ja olkoon $G$ sen Galois’n ryhmä, ja $g$ Galois’n ryhmän koko. Olkoot $s_1, s_2, \ldots , s_k$ positiivisia kokonaislukuja, joiden summa on $\deg(P)$. Olkoon $N(s_1, s_2, \ldots , s_k)$ niiden $\sigma \in G$ määrä, joilla $S(\sigma) = \lbrace s_1, s_2, \ldots , s_k \rbrace$.</p>
+
+<p>Olkoon $S$ niiden $p$ joukko, joilla $P$ jakautuu täsmälleen $k$ polynomiksi modulo $p$, joiden asteet ovat $s_1, s_2, \ldots , s_k$. Tällöin $\delta(S)$ on olemassa, ja</p>
+
+<script type="math/tex; mode=display">\delta(S) = \frac{N(s_1, s_2, \ldots , s_k)}{g}.</script>
+
+<p><strong>Esimerkki</strong></p>
+
+<p>Määritetään polynomin $P(x) = x^2 - 2$ alkutekijöiden tiheys. Galois’n ryhmän koko tässä tapauksessa on $2$, ja komponenttijaot Galois’n ryhmän alkioille ovat $\lbrace 1, 1 \rbrace$ ja $\lbrace 2 \rbrace$. Niiden $p$ tiheys, joilla $P$ ei jakaudu modulo $p$ on Frobeniuksen lauseen nojalla</p>
+
+<script type="math/tex; mode=display">\frac{N(2)}{g} = \frac{1}{2}.</script>
+
+<p>Ja niiden $p$ tiheys, joilla $P$ jakautuu on vastaavasti $\frac{1}{2}$.</p>
+
+<p><strong>Esimerkki</strong></p>
+
+<p>Olkoon $P \in \mathbb{Z}[x]$ mielivaltainen toisen asteen polynomi. Sen juuret ovat muotoa $a \pm \sqrt{b}$, missä $a, b \in \mathbb{Q}$. Jos $b$ on rationaaliluvun neliö, ovat $P$:n juuret rationaalisia, ja $\delta(S(P)) = 1$. Jos taas $b$ ei ole rationaaliluvun neliö, $P$:n juuret eivät ole rationaalisia. Tällöin $P$:n Galois’n ryhmän koko on $2$: yksi kuvaus on $\sigma_1(a + \sqrt{b}) = a + \sqrt{b}$ (identiteettikuvaus), ja toinen kuvaus on $\sigma_2(a + \sqrt{b}) = a - \sqrt{b}$ (konjugaatio).</p>
+
+<p>Frobeniuksen lauseen nojalla $P$:n alkutekijöiden tiheys on puolet, ja puolet alkuluvuista ovat sellaisia, joilla $P$ ei jakaudu.</p>
+
+<p><strong>Esimerkki</strong></p>
+
+<p>Olkoon $P \in \mathbb{Z_c}[x]$ mielivaltainen. $P$:n Galois’n ryhmän koko on enintään $\deg(P)!$. $P$:n Galois’n ryhmään kuuluu varmasti identiteettikuvaus. Siispä</p>
+
+<script type="math/tex; mode=display">\delta(S(P)) \ge \frac{1}{n!}.</script>
+
+<p>Raja ei tietenkään ole paras mahdollinen, koska myös raja $\delta(S(P)) \ge \frac{1}{n}$ pätee.</p>
+
+<p><strong>Huomautus</strong></p>
+
+<p>Aina ei päde, että $P$:n Galois’n ryhmän koko on $\deg(P)!$. Esimerkki: olkoon $P(x) = x^4 + 1$. Tällöin $P$:n juuret ovat $\zeta_8, \zeta_8^3, \zeta_8^5$ ja $\zeta_8^7$, missä $\zeta_8$ on jokin 8. primitiivinen ykkösjuuri. Siispä $P$:n juurikunta on $\mathbb{Q}(\zeta_8)$, ja mikä tahansa isomorfismi $\sigma : \mathbb{Q}(\zeta_8) \to \mathbb{Q}(\zeta_8)$ määräytyy sen mukaan, mihin se kuvaa luvun $\zeta_8$. Täten $P$:n Galois’n ryhmä on maksimissaan $4$ (ja voidaan osoittaa, että tasan $4$).</p>
+
+<h3 id="frobeniuksen-lauseen-todistus">Frobeniuksen lauseen todistus</h3>
+
+<p>Rehellisesti sanottuna minulla ei ole harmainta aavistustakaan siitä, miten lause osoitetaan. Tässä on muodon vuoksi viite todistukselle:</p>
+
+<p><a href="http://www.fen.bilkent.edu.tr/~franz/cft/cfb.pdf">Franz Lemmermeyer, Class Field Theory, 2007</a> (sivut 165-166).</p>
+
+<p>Väite on osoitettu Dirichlet’n tiheydelle eikä luonnolliselle tiheydelle. Frobeniuksen lause on heikompi versio vaikeammasta (ja paljon tunnetummasta) lauseesta nimeltä Chebotarev Density Theorem, jonka todistus luonnolliselle tiheydelle löytyy nopealla etsimisellä netistä. Olen pitkään koittanut ymmärtää, mikä Chebotarevin lauseen sisältö on, miksi se on parempi kuin Frobeniuksen lause ja miten se liittyy polynomien alkutekijöihin (lause esitetään usein tavalla, joka on näennäisesti hyvin kaukana polynomien alkutekijöistä. Tästä lisää viimeisessä postauksessa). Kovan työn jälkeen pääsin jonkinlaiseen käsitykseen, mutten ole sisäistänyt konseptia niin hyvin, että voisin kirjoittaa siitä.</p>
+
+<h3 id="lauseiden-rajojen-tiukkuus">Lauseiden rajojen tiukkuus</h3>
+
+<p>Olkoon $\phi_k$ $k$:nnes syklotominen polynomi. On tunnettua, että $p \in S(\phi_k) \implies p \mid k$ tai $p \equiv 1 \pmod{k}$. Tämän väitteen todistuksesta voi lukea Evan Chenin monisteesta <a href="http://web.evanchen.cc/handouts/ORPR/ORPR.pdf">Orders Modulo A Prime</a>.</p>
+
+<p>Niiden alkulukujen tiheys, joilla $p \equiv 1 \pmod{k}$, on tunnetusti $\frac{1}{\phi(k)}$ (kiinnostunut lukija löytää tästä lisää tietoa netistä - hakusanat “Dirichlet’s theorem” ja “prime number theorem for arithmetic progressions” riittävät pitkälle). Koska syklotomisten polynomien aste on $\phi(k)$, osoittaa tämä, että raja on saavutettavissa äärettömän monella polynomilla: valitaan $n = 1$, $P_1(x) = \phi_k(x)$.</p>
+
+<p>Esimerkkinä monelle polynomille rajan tiukkuudesta toimii $P_i(x) = \phi_{p_i}(x)$, missä $p_i$ ovat erisuuria alkulukuja. Tämän toimivuus voidaan osoittaa kiinalaisella jäännöslauseella.</p>
+
+<p>Samalla tämä osoittaa lauseen 1 ylärajan: olkoot $P_i$ sellaisia, että $\delta(S(P_1) \cap \ldots \cap S(P_n)) = \frac{1}{\deg(P_1) \cdots}$. Tällöin lauseen 1 mukaisen $D$:n asteen tulee ehdon $\delta(S(D)) \ge \frac{1}{\deg(D)}$ nojalla toteuttaa $\deg(D) \ge \deg(P_1) \ldots \deg(P_n)$.</p>
+
+<h3 id="yläraja">Yläraja</h3>
+
+<p>Pätee siis $\delta(S(D)) \ge \frac{1}{\deg(D)}$. Onko mahdollista saada ylärajaa? Suoraan tämä ei ole mahdollista: polynomin $P(x) = (x - 1)(x - 2) \ldots (x - n)$ alkutekijliden tiheys on $1$ kaikilla $n \in \mathbb{Z}_+$.</p>
+
+<p>Parempi kysymys olisi: onko mahdollista antaa epätriviaalia ylärajaa polynomin $P$ alkutekijöiden tiheydelle, kun $P$:llä ei ole rationaalisia juuria?</p>
+
+<p>Tämäkään ei aivan onnistu: polynomin $(x^2 - 2)(x^2 - 3)(x^2 - 6)$ alkutekijöiden tiheys on $1$ neliönjäännösten multiplikatiivisuuden vuoksi.</p>
+
+<p>Jaottomilla polynomeilla yläraja kuitenkin löytyy. Yläraja on $1 - \frac{1}{\deg(P)}$ kaikilla jaottomilla $P$, ja ylärajan saavuttaminen vaatii, että $\deg(P)$ on alkuluvun potenssi. Tämä on osoitettu artikkelissa <a href="http://www.ams.org/journals/bull/2003-40-04/S0273-0979-03-00992-3/S0273-0979-03-00992-3.pdf">On a theorem of Jordan</a> (Jean-Pierre Serre).</p>
+
+<p><a href="https://blog.matematiikkakilpailut.fi/2019/06/05/PYA04lause3.html">Seuraava postaus.</a></p>
+
+  </section>
+  <footer class="post-footer">
+    <p><time datetime="2019-06-05">5. 6. 2019</time>
+       • Olli Järviniemi
+      <span class="share-buttons">
+  <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fblog-drafts.matematiikkakilpailut.fi%2F2019%2F06%2F05%2FPYA05lause2.html&quote=Polynomien+yhteiset+alkutekij%C3%A4t%2C+osa+7%3A+lause+2"
+     title="Jaa Facebookissa" target="_blank" rel="noopener noreferrer nofollow">
+    <svg aria-label="Jaa Facebookissa" role="img" viewBox="0 0 24 24"><title lang="en">Facebook</title><use xlink:href="/assets/images/icons.svg#facebook"/></svg></a>
+  <a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fblog-drafts.matematiikkakilpailut.fi%2F2019%2F06%2F05%2FPYA05lause2.html&text=Polynomien+yhteiset+alkutekij%C3%A4t%2C+osa+7%3A+lause+2"
+     target="_blank" rel="noopener noreferrer nofollow" title="Jaa Twitterissä">
+    <svg aria-label="Jaa Twitterissä" role="img" viewBox="0 0 24 24"><title lang="en">Twitter</title><use xlink:href="/assets/images/icons.svg#twitter"/></svg></a>
+  <a href="https://pinterest.com/pin/create/button/?url=https%3A%2F%2Fblog-drafts.matematiikkakilpailut.fi%2F2019%2F06%2F05%2FPYA05lause2.html&description=Polynomien+yhteiset+alkutekij%C3%A4t%2C+osa+7%3A+lause+2"
+     target="_blank" rel="noopener noreferrer nofollow" title="Jaa Pinterestissä">
+    <svg aria-label="Jaa Pinterestissä" role="img" viewBox="0 0 24 24"><title lang="en">Pinterest</title><use xlink:href="/assets/images/icons.svg#pinterest"/></svg></a>
+  <a href="https://www.reddit.com/submit?url=https%3A%2F%2Fblog-drafts.matematiikkakilpailut.fi%2F2019%2F06%2F05%2FPYA05lause2.html&title=Polynomien+yhteiset+alkutekij%C3%A4t%2C+osa+7%3A+lause+2"
+     target="_blank" rel="noopener noreferrer nofollow" title="Jaa Redditissä">
+    <svg aria-label="Jaa Redditissä" role="img" viewBox="0 0 24 24"><title lang="en">Reddit</title><use xlink:href="/assets/images/icons.svg#reddit"/></svg></a>
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fblog-drafts.matematiikkakilpailut.fi%2F2019%2F06%2F05%2FPYA05lause2.html&title=Polynomien+yhteiset+alkutekij%C3%A4t%2C+osa+7%3A+lause+2&source=https%3A%2F%2Fblog-drafts.matematiikkakilpailut.fi"
+     target="_blank" rel="noopener noreferrer nofollow" title="Jaa LinkedInissä">
+    <svg aria-label="Jaa Linkedinissä" role="img" viewBox="0 0 24 24"><title lang="en">LinkedIn</title><use xlink:href="/assets/images/icons.svg#linkedin"/></svg></a>
+  <a href="https://pinboard.in/add?url=https%3A%2F%2Fblog-drafts.matematiikkakilpailut.fi%2F2019%2F06%2F05%2FPYA05lause2.html&title=Polynomien+yhteiset+alkutekij%C3%A4t%2C+osa+7%3A+lause+2"
+     target="_blank" rel="noopener noreferrer nofollow" title="Talleta Pinboardiin">
+    <svg aria-label="Talleta Pinboardiin" role="img" viewBox="0 0 24 24"><title lang="en">Pinboard</title><use xlink:href="/assets/images/icons.svg#pinboard"/></svg></a>
+</span>
+
+    </p>
+  </footer>
+</article>
+
+    </section>
+
+    <section class="site-footer">
+      <p>Tekijänoikeus kirjoittajilla. Käytämme sivuilla evästeitä: <a href="/tietosuoja.html">tietosuojalauseke</a>.</p>
+    </section>
+    
+
+  </body>
+</html>

@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="fi">
+  <head>
+    <meta charset="UTF-8">
+    <!-- Begin Jekyll SEO tag v2.5.0 -->
+<title>Catalanin lukujen yleistys | Matematiikkakilpailijat</title>
+<meta name="generator" content="Jekyll v3.8.5" />
+<meta property="og:title" content="Catalanin lukujen yleistys" />
+<meta name="author" content="Joonatan Honkamaa" />
+<meta property="og:locale" content="fi" />
+<meta name="description" content="Tässä postauksessa käydään läpi eräs Suomen loppukilpailutehtävä, joka osoittautuu Catalanin lukujen yleistykseksi. MAOL:n loppukilpailu 2014, Tehtävä 3 Pisteet $P = (a, b)$ ja $Q = (c, d)$ ovat $xy$-tason ensimmäisessä neljänneksessä, ja $a, b, c$ sekä $d$ ovat kokonaislukuja, joille $a&lt;b, a&lt;c, b&lt;d$ ja $c&lt;d$. Reitti pisteestä $P$ pisteeseen $Q$ on positiivisten koordinaattiakselien suuntaisista, yksikön pituisista askelista muodostuva murtoviiva, ja sallittu reitti on reitti, joka ei leikkaa eikä kosketa suoraa $x = y$. Montako sallittua reittiä on?" />
+<meta property="og:description" content="Tässä postauksessa käydään läpi eräs Suomen loppukilpailutehtävä, joka osoittautuu Catalanin lukujen yleistykseksi. MAOL:n loppukilpailu 2014, Tehtävä 3 Pisteet $P = (a, b)$ ja $Q = (c, d)$ ovat $xy$-tason ensimmäisessä neljänneksessä, ja $a, b, c$ sekä $d$ ovat kokonaislukuja, joille $a&lt;b, a&lt;c, b&lt;d$ ja $c&lt;d$. Reitti pisteestä $P$ pisteeseen $Q$ on positiivisten koordinaattiakselien suuntaisista, yksikön pituisista askelista muodostuva murtoviiva, ja sallittu reitti on reitti, joka ei leikkaa eikä kosketa suoraa $x = y$. Montako sallittua reittiä on?" />
+<link rel="canonical" href="https://blog-drafts.matematiikkakilpailut.fi/2018/06/12/Catalan-yleistys.html" />
+<meta property="og:url" content="https://blog-drafts.matematiikkakilpailut.fi/2018/06/12/Catalan-yleistys.html" />
+<meta property="og:site_name" content="Matematiikkakilpailijat" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2018-06-12T00:00:00+00:00" />
+<meta property="fb:app_id" content="964806940344711" />
+<script type="application/ld+json">
+{"url":"https://blog-drafts.matematiikkakilpailut.fi/2018/06/12/Catalan-yleistys.html","author":{"@type":"Person","name":"Joonatan Honkamaa"},"headline":"Catalanin lukujen yleistys","dateModified":"2018-06-12T00:00:00+00:00","datePublished":"2018-06-12T00:00:00+00:00","description":"Tässä postauksessa käydään läpi eräs Suomen loppukilpailutehtävä, joka osoittautuu Catalanin lukujen yleistykseksi. MAOL:n loppukilpailu 2014, Tehtävä 3 Pisteet $P = (a, b)$ ja $Q = (c, d)$ ovat $xy$-tason ensimmäisessä neljänneksessä, ja $a, b, c$ sekä $d$ ovat kokonaislukuja, joille $a&lt;b, a&lt;c, b&lt;d$ ja $c&lt;d$. Reitti pisteestä $P$ pisteeseen $Q$ on positiivisten koordinaattiakselien suuntaisista, yksikön pituisista askelista muodostuva murtoviiva, ja sallittu reitti on reitti, joka ei leikkaa eikä kosketa suoraa $x = y$. Montako sallittua reittiä on?","mainEntityOfPage":{"@type":"WebPage","@id":"https://blog-drafts.matematiikkakilpailut.fi/2018/06/12/Catalan-yleistys.html"},"@type":"BlogPosting","@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#157878">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/assets/css/style.css?v=2c669b5e01ecebd0ccd9a63f1cd21eeeb0cf1936">
+    <link href="/feed.xml" type="application/atom+xml" rel="alternate" title="Sivuston verkkosyöte">
+
+    <script type="text/x-mathjax-config">
+ MathJax.Hub.Config({
+   tex2jax: {
+     inlineMath: [['$', '$'], ['\\(', '\\)']],
+     displayMath: [['$$', '$$']],
+     processEscapes: true
+   }
+ });
+</script>
+<script
+  type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS_CHTML" 
+  integrity="sha256-nvJJv9wWKEm88qvoQl9ekL2J+k/RWIsaSScxxlsrv8k="
+  crossorigin="anonymous">
+</script>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/fonts/HTML-CSS/TeX/woff/MathJax_Main-Regular.woff"
+      rel="preload" as="font" type="font/woff" crossorigin="anonymous">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/fonts/HTML-CSS/TeX/woff/MathJax_Size1-Regular.woff"
+      rel="preload" as="font" type="font/woff" crossorigin="anonymous">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/fonts/HTML-CSS/TeX/woff/MathJax_Math-Italic.woff"
+      rel="preload" as="font" type="font/woff" crossorigin="anonymous">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/fonts/HTML-CSS/TeX/woff/MathJax_Size2-Regular.woff"
+      rel="preload" as="font" type="font/woff" crossorigin="anonymous">
+
+  </head>
+  <body>
+    <section class="page-header">
+      <h1 class="project-name">Matematiikkakilpailijat</h1>
+      <h2 class="project-tagline">Matematiikan olympiavalmennuksen osallistujien kokemuksia</h2>
+    </section>
+
+    <section class="main-content">
+      <article class="post">
+  <header class="post-header">
+    <h1 class="post-title">Catalanin lukujen yleistys</h1>
+  </header>
+  <section class="post-content">
+    <p>Tässä postauksessa käydään läpi eräs Suomen loppukilpailutehtävä, joka osoittautuu <a href="https://blog.matematiikkakilpailut.fi/2018/03/29/Catalanin-luvut.html">Catalanin lukujen</a> yleistykseksi.</p>
+
+<p><strong>MAOL:n loppukilpailu 2014, Tehtävä 3</strong></p>
+
+<p>Pisteet $P = (a, b)$ ja $Q = (c, d)$ ovat $xy$-tason ensimmäisessä neljänneksessä, ja $a, b, c$ sekä $d$ ovat kokonaislukuja, joille $a&lt;b, a&lt;c, b&lt;d$ ja $c&lt;d$. Reitti pisteestä $P$ pisteeseen $Q$ on positiivisten koordinaattiakselien suuntaisista, yksikön pituisista askelista muodostuva murtoviiva, ja sallittu reitti on reitti, joka ei leikkaa eikä kosketa suoraa $x = y$. Montako sallittua reittiä on?</p>
+
+<!--jatkuu-->
+
+<p>Tehtävänannon ymmärtämisen jälkeen kannattaa ensin miettiä tehtävään ratkaisua. Ensin kannattaa yrittää määrittää kaikkien reittien määrä. Myös oikean vastauksen arvaileminen on hyvä tapa lähestyä tehtävää, vaikka ei todistusta keksisikään.</p>
+
+<p><strong>Ratkaisu 1 (malliratkaisu)</strong></p>
+
+<p>Tämän ratkaisun ymmärtämistä auttaa ja tehtävän mielenkiintoisuutta lisää, jos tuntee Catalanin luvut, koska osoittautuu, että tehtävän asetelma on oikeastaan niiden yleistys.</p>
+
+<p>Asetelmaa kannattaa ajatella suorakulmiona, jonka vasemmasta alakulmasta tulee päästä oikeaan yläkulmaan siten, että oikeasta alakulmasta on lohkaistu pois alue, jolle ei saa mennä. Unohdetaan nyt pois lohkaistu alue hetkeksi. Yhteensä askelia matkalla kulmasta kulmaan on $n=(c-a)+(d-b)$ kappaletta. Näistä $k=(d-b)$ on ylöspäin. Voimme ottaa nämä askeleet ylöspäin milloin vain haluamme, joten mahdollisia reittejä on nyt</p>
+
+<script type="math/tex; mode=display">{n \choose k} = {c-a+d-b \choose d-b}</script>
+
+<p>kappaletta.</p>
+
+<p>Asetelmaa tarkastelemalla huomataan, että tämä vastaus on oikea vastaus myös koko tehtävään, jos $c&lt;b$. Oletetaan sitten, että $b \le c$.</p>
+
+<p><img src="/assets/images/Catalan-yleistys.jpg" alt="Kuva tilanteesta. Lähde: malliratkaisu" title="Kuva tilanteesta" /></p>
+
+<p>Kuvassa näkyy tehtävän asetelma. Lähde: malliratkaisu (MAOL)</p>
+
+<p>Tulee vähentää kaikista reiteistä kielletyt reitit. Yritetään laskea niiden määrä. Jokaisella kielletyllä reitillä on vähintään yksi kohta, jossa se leikkaa suoran $x=y$. Tarkastellaan viimeistä tällaista leikkauspistettä, olkoon vaikka $T$. Olkoon pisteen $Q$ peilaus suoran $x=y$ suhteen $Q’$ Selvästi reittejä $T$:stä $Q$:hun on yhtä paljon kuin reittejä $T$:stä $Q’$:uun. Otetaan nyt tarkasteluun kaikki mahdolliset kielletyt reitit $P$:stä $Q$:hun. Peilataan jokaisen reitin pisteen T jälkeinen osuus suoran $x=y$ suhteen, eli muutetaan ylöspäin etenemiset vaakaan etenemisiksi ja päinvastoin. Kiellettyjen reittien määrä ei muutu, mutta nyt jokainen kielletty reitti päätyy pisteen $Q$ sijaan pisteeseen $Q’$. Lisäksi kaikki pisteestä $P$ pisteeseen $Q’$ menevät reitit leikkaavat suoraa $x=y$. Siis kiellettyjen reittien määrä on sama kuin pisteestä $P$ pisteeseen $Q’$ menevien reittien määrä.</p>
+
+<p>Koska $Q’$ on $Q$:n peilaus suoran $x=y$ suhteen, pätee $Q’=(d, c)$. Aiempaa vastaavalla päättelyllä kiellettyjä reittejä eli reittejä $P$:stä $Q’$:uun on yhteensä ${d-a+c-b \choose c-b}$. Tämä tarkoittaa, että sallittuja reittejä on yhteensä</p>
+
+<script type="math/tex; mode=display">{c-a+d-b \choose d-b} -{d-a+c-b \choose c-b}.</script>
+
+<p><strong>Catalanin luvut</strong></p>
+
+<p>Edellä on riittävä ratkaisu kilpailutehtävään, mutta ajatellaanpa seuraavaksi tehtävän erikoistapausta, jossa $b=a+1$ ja $d=c+1$, ja lisäksi vielä $c&gt;a$. Oikea vastaus tähän on siis
+<script type="math/tex">{2(d-b) \choose d-b}-{2(d-b) \choose d-b-1} .</script>
+Tällaisessa lähtötilanteessa olemme yhden askeleen suoraa $x=y$ ylempänä, ja jokaisella askeleella voimme päättää, lähdemmekö kauemmas tästä suorasta, vai menemmekö lähemmäs sitä. Lopputilanteessa meidän tulee olla yhden askeleen päässä suorasta, mutta emme saa missään vaiheessa törmätä siihen. Tämä asetelma on täsmälleen sellainen, jossa $n:$s Catalanin luku kertoo, kuinka monta $2n:$ n mittaista sallittua reittiä on. Tässä tapauksessa $2n=(c+d)-(a+b)=2d-2b$, joten $n:$s Catalanin luku on</p>
+
+<script type="math/tex; mode=display">{2(d-b) \choose d-b}-{2(d-b) \choose d-b+1}={2(d-b) \choose d-b}-{2(d-b) \choose d-b-1}</script>
+
+<p>Tässä erikoistapauksessa saamme siis vastauksen myös Catalanin lukujen avulla. Peilausratkaisu antaa kuitenkin vastauksen kaikkiin mahdollisiin tehtävänannon mukaisiin tapauksiin. Tehtävänannon asetelma on siis Catalanin lukujen yleistys.</p>
+
+<p><strong>Huomatutus</strong></p>
+
+<p>Catalan-postauksessa oleva bittijonoratkaisu äskeistä erikoistapausta vastaavaan kombinatoriseen ongelmaan on oikeastaan formaalisti muotoiltu peilaus, eli käyttää samaa ideaa kuin tämän kilpatehtävän ratkaisu.</p>
+
+<p><strong>Ratkaisu 2 (induktio)</strong></p>
+
+<p>Ratkaisussa 1 ei ole mitään vikaa, mutta se voi olla vaikea keksiä. Olli Järviniemi päätyikin toisenlaiseen ratkaisuun, joka on hieman pidempi, mutta käyttää menetelmänään (monivaiheista) induktiota, joka tehtäviä tehdessä on varmaankin peilausta helpommin mieleen tuleva idea.</p>
+
+<p>Induktion ideana on käyttää hyväksi sitä faktaa, että ongelman erikoistapaus, missä $d - c = 1$ ja $b - a = 1$ on ratkaistu Catalanin lukujen muodossa. Tätä kautta voimme edetä induktion kautta eteenpäin käyttäen jo ennestään ratkaistuja tapauksia.</p>
+
+<p>Osoitetaan induktiolla muuttujan $d-c$ suhteen, ($a$ ja $b$ voivat olla mielivaltaisia, kunhan ne toteuttavat tehtävänannon ehdot) että sallittujen reittien määrä on</p>
+
+<script type="math/tex; mode=display">{c-a+d-b \choose d-b} -{d-a+c-b \choose c-b}</script>
+
+<p>kun $b\le c$, ja</p>
+
+<script type="math/tex; mode=display">{c-a+d-b \choose d-b}</script>
+
+<p>kun $c&lt;b$</p>
+
+<p>Osoitetaan ensin pohjatapaus $d-c=1$. Tämä tarkoittaa siis sitä, että jälkimmäinen piste on yhden askeleen päässä suorasta $x=y$.</p>
+
+<p>Osoitetaan pohjatapaus induktiolla muuttujan $d-b$ suhteen. Tämä muuttuja kuvaa siis sitä, kuinka paljon mennään ylöspäin. Kun $d-b=0$, niin sallittuja reittejä on selvästi vain yksi, kuten kuuluukin. (Alkuperäisen tehtävänannon ehtojen mukaan $d&gt;b$, mutta ei nyt välitetä siitä.) Oletetaan sitten, että väite pätee, kun $d-b=k$ ja osoitetaan, että se pätee, kun $d-b=k+1.$</p>
+
+<p>Osoitetaan tämä induktiolla muuttujan $a$ suhteen siten, että $a$ kulkee arvosta $b-1$ negatiiviseen suuntaan. Tässä induktiossa pohjatapaus on $b=a+1$ ja $d=c+1$, eli Catalanin lukujen nojalla alkuperäinen väitteemme pätee. Oletetaan sitten, että väitteemme pätee, kun $a=b-m$ ja osoitetaan, että se pätee, kun $a=b-m-1$.</p>
+
+<p>Tiedämme, että reittien määrä pisteestä $(d-k-m-1, d-k)$ pisteeseen $(d-1,d)$ toteuttaa väitteemme. Tämä seuraa induktio-oletuksesta liittyen induktioon muuttujan $d - b$ suhteen. Myös reittien määrä pisteestä $(d-k-m, d-k-1)$ pisteeseen $(d-1, d)$ on kaavan ilmoittama, mikä seuraa induktiosta muuttujan $a$ suhteen.</p>
+
+<p>Nyt reittien määrälle $S$ pisteestä $ (d-k-m-1, d-k-1)  $ pisteeseen $(d-1, d)$ pätee:</p>
+
+<script type="math/tex; mode=display">S={2k+m \choose k} -{2k+m \choose k-1}+{2k+m \choose k+1} -{2k+m \choose k}.</script>
+
+<p>Tämä johtuu siitä, että pisteestä $(d - k - m - 1, d - k - 1)$ reittien määrä pisteeseen $(d - 1)$ menee ensimmäisellä askeleella joko ylös tai oikealle.</p>
+
+<p>Pascalin identiteetin nojalla lauseke on sama kuin</p>
+
+<script type="math/tex; mode=display">{2k+m+1 \choose k+1} -{2k+m+1 \choose k}.</script>
+
+<p>Tämä todistaakin indukioaskeleen ja siten koko pohjatapauksen $d-c=1$.</p>
+
+<p>Oletetaan sitten, että väitteemme pätee, kun $d-c=k$ ja osoitetaan väite, kun $d-c=k+1$. Osoitetaan tämä väite induktiolla muuttujan $c-a$ suhteen. Kun $c-a=0$ (Näinkään ei saisi olla, mutta ei välitetä tästäkään), reittejä on selvästi $1$, kuten väitteemme mukaan pitikin olla. Oletetaan, että väitteemme pätee, kun $c-a=m$, ja osoitetaan se, kun $c-a=m+1$. Saamme induktioaskeleen otettua Pascalin identiteetin nojalla täysin vastaavasti kuin tapauksen $d-c=1$ induktiossa.</p>
+
+<p>Nyt siis olemme osoittaneet, että kaikilla tehtävänannon mukaisilla luvuilla väitteemme, eli vastaus tehtävään, pätee. Olemme siis valmiit. Vastaus tehtävään on</p>
+
+<script type="math/tex; mode=display">{c-a+d-b \choose d-b} -{d-a+c-b \choose c-b}</script>
+
+<p>kun $b\le c$, ja</p>
+
+<script type="math/tex; mode=display">{c-a+d-b \choose d-b}</script>
+
+<p>kun $c&lt;b$.</p>
+
+  </section>
+  <footer class="post-footer">
+    <p><time datetime="2018-06-12">12. 6. 2018</time>
+       • Joonatan Honkamaa
+      <span class="share-buttons">
+  <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fblog-drafts.matematiikkakilpailut.fi%2F2018%2F06%2F12%2FCatalan-yleistys.html&quote=Catalanin+lukujen+yleistys"
+     title="Jaa Facebookissa" target="_blank" rel="noopener noreferrer nofollow">
+    <svg aria-label="Jaa Facebookissa" role="img" viewBox="0 0 24 24"><title lang="en">Facebook</title><use xlink:href="/assets/images/icons.svg#facebook"/></svg></a>
+  <a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fblog-drafts.matematiikkakilpailut.fi%2F2018%2F06%2F12%2FCatalan-yleistys.html&text=Catalanin+lukujen+yleistys"
+     target="_blank" rel="noopener noreferrer nofollow" title="Jaa Twitterissä">
+    <svg aria-label="Jaa Twitterissä" role="img" viewBox="0 0 24 24"><title lang="en">Twitter</title><use xlink:href="/assets/images/icons.svg#twitter"/></svg></a>
+  <a href="https://pinterest.com/pin/create/button/?url=https%3A%2F%2Fblog-drafts.matematiikkakilpailut.fi%2F2018%2F06%2F12%2FCatalan-yleistys.html&description=Catalanin+lukujen+yleistys"
+     target="_blank" rel="noopener noreferrer nofollow" title="Jaa Pinterestissä">
+    <svg aria-label="Jaa Pinterestissä" role="img" viewBox="0 0 24 24"><title lang="en">Pinterest</title><use xlink:href="/assets/images/icons.svg#pinterest"/></svg></a>
+  <a href="https://www.reddit.com/submit?url=https%3A%2F%2Fblog-drafts.matematiikkakilpailut.fi%2F2018%2F06%2F12%2FCatalan-yleistys.html&title=Catalanin+lukujen+yleistys"
+     target="_blank" rel="noopener noreferrer nofollow" title="Jaa Redditissä">
+    <svg aria-label="Jaa Redditissä" role="img" viewBox="0 0 24 24"><title lang="en">Reddit</title><use xlink:href="/assets/images/icons.svg#reddit"/></svg></a>
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fblog-drafts.matematiikkakilpailut.fi%2F2018%2F06%2F12%2FCatalan-yleistys.html&title=Catalanin+lukujen+yleistys&source=https%3A%2F%2Fblog-drafts.matematiikkakilpailut.fi"
+     target="_blank" rel="noopener noreferrer nofollow" title="Jaa LinkedInissä">
+    <svg aria-label="Jaa Linkedinissä" role="img" viewBox="0 0 24 24"><title lang="en">LinkedIn</title><use xlink:href="/assets/images/icons.svg#linkedin"/></svg></a>
+  <a href="https://pinboard.in/add?url=https%3A%2F%2Fblog-drafts.matematiikkakilpailut.fi%2F2018%2F06%2F12%2FCatalan-yleistys.html&title=Catalanin+lukujen+yleistys"
+     target="_blank" rel="noopener noreferrer nofollow" title="Talleta Pinboardiin">
+    <svg aria-label="Talleta Pinboardiin" role="img" viewBox="0 0 24 24"><title lang="en">Pinboard</title><use xlink:href="/assets/images/icons.svg#pinboard"/></svg></a>
+</span>
+
+    </p>
+  </footer>
+</article>
+
+    </section>
+
+    <section class="site-footer">
+      <p>Tekijänoikeus kirjoittajilla. Käytämme sivuilla evästeitä: <a href="/tietosuoja.html">tietosuojalauseke</a>.</p>
+    </section>
+    
+
+  </body>
+</html>

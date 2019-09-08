@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="fi">
+  <head>
+    <meta charset="UTF-8">
+    <!-- Begin Jekyll SEO tag v2.5.0 -->
+<title>Numeroiden summa | Matematiikkakilpailijat</title>
+<meta name="generator" content="Jekyll v3.8.5" />
+<meta property="og:title" content="Numeroiden summa" />
+<meta name="author" content="Olli Järviniemi" />
+<meta property="og:locale" content="fi" />
+<meta name="description" content="Tässä postauksessa käsitellään numeroiden summan ominaisuuksia." />
+<meta property="og:description" content="Tässä postauksessa käsitellään numeroiden summan ominaisuuksia." />
+<link rel="canonical" href="https://blog-drafts.matematiikkakilpailut.fi/2018/08/12/Numerot.html" />
+<meta property="og:url" content="https://blog-drafts.matematiikkakilpailut.fi/2018/08/12/Numerot.html" />
+<meta property="og:site_name" content="Matematiikkakilpailijat" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2018-08-12T00:00:00+00:00" />
+<meta property="fb:app_id" content="964806940344711" />
+<script type="application/ld+json">
+{"url":"https://blog-drafts.matematiikkakilpailut.fi/2018/08/12/Numerot.html","author":{"@type":"Person","name":"Olli Järviniemi"},"headline":"Numeroiden summa","dateModified":"2018-08-12T00:00:00+00:00","datePublished":"2018-08-12T00:00:00+00:00","description":"Tässä postauksessa käsitellään numeroiden summan ominaisuuksia.","mainEntityOfPage":{"@type":"WebPage","@id":"https://blog-drafts.matematiikkakilpailut.fi/2018/08/12/Numerot.html"},"@type":"BlogPosting","@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#157878">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/assets/css/style.css?v=2c669b5e01ecebd0ccd9a63f1cd21eeeb0cf1936">
+    <link href="/feed.xml" type="application/atom+xml" rel="alternate" title="Sivuston verkkosyöte">
+
+    <script type="text/x-mathjax-config">
+ MathJax.Hub.Config({
+   tex2jax: {
+     inlineMath: [['$', '$'], ['\\(', '\\)']],
+     displayMath: [['$$', '$$']],
+     processEscapes: true
+   }
+ });
+</script>
+<script
+  type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS_CHTML" 
+  integrity="sha256-nvJJv9wWKEm88qvoQl9ekL2J+k/RWIsaSScxxlsrv8k="
+  crossorigin="anonymous">
+</script>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/fonts/HTML-CSS/TeX/woff/MathJax_Main-Regular.woff"
+      rel="preload" as="font" type="font/woff" crossorigin="anonymous">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/fonts/HTML-CSS/TeX/woff/MathJax_Size1-Regular.woff"
+      rel="preload" as="font" type="font/woff" crossorigin="anonymous">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/fonts/HTML-CSS/TeX/woff/MathJax_Math-Italic.woff"
+      rel="preload" as="font" type="font/woff" crossorigin="anonymous">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/fonts/HTML-CSS/TeX/woff/MathJax_Size2-Regular.woff"
+      rel="preload" as="font" type="font/woff" crossorigin="anonymous">
+
+  </head>
+  <body>
+    <section class="page-header">
+      <h1 class="project-name">Matematiikkakilpailijat</h1>
+      <h2 class="project-tagline">Matematiikan olympiavalmennuksen osallistujien kokemuksia</h2>
+    </section>
+
+    <section class="main-content">
+      <article class="post">
+  <header class="post-header">
+    <h1 class="post-title">Numeroiden summa</h1>
+  </header>
+  <section class="post-content">
+    <p>Tässä postauksessa käsitellään numeroiden summan ominaisuuksia.</p>
+
+<!--jatkuu-->
+
+<p>Olkoon koko tämän postauksen ajan $S(n)$ luvun $n \in \mathbb{N}$ numeroiden summa kymmenjärjestelmäesityksessä (huomautettakoon, että muille kannoille löytyy samanlaisia ominaisuuksia kuin 10-kannalle).</p>
+
+<p>Ensiksi esitellään kaksi suhteellisen yleistä tulosta numeroiden summasta.</p>
+
+<p><strong>Lause 1</strong>
+Kaikilla $a, b \in \mathbb{N}$ pätee <script type="math/tex">S(a+b) \le S(a) + S(b)</script></p>
+
+<p><strong>Lause 2</strong>
+Kaikilla $a, b \in \mathbb{N}$ pätee <script type="math/tex">S(ab) \le S(a)S(b)</script></p>
+
+<p>Tulokset ovat varsin intuitiivisia. Todistetaan ensin lause 1.</p>
+
+<p><strong>Todistus (lause 1)</strong></p>
+
+<p>Lauseen todistus ei vaadi kovin ihmeellisiä temppuja, mutta jossain määrin kertoo, miten funktio $S$ käyttäytyy. Todistukseen ei kannata juuttua liian pitkäksi aikaa.</p>
+
+<p>Todistetaan ensin, että väite pätee, kun $0 &lt; a \le 9$, kaikilla $b$. Tutkitaan mitä tapahtuu, kun $a+b$ lasketaan allekkain. Mahdollisesti jossain kohdissa yli menevä numero lisätään seuraavan kymmenen potenssin kohdalle. Näin käy esimerkiksi tapauksessa $a = 9, b = 123$. Tapauksessa $0 &lt; a \le 9$ voidaan todistaa epäyhtälö $S(a+b) \le S(a) + S(b)$ tutkimalla kahta eri tapausta:</p>
+
+<p>Tapaus 1. Yhteenlaskussa numerot eivät mene seuraavan kymmenen potenssin kohdalle. Tämä tapaus on selvä, tällöin luvun $a+b$ viimeinen numero on sama kuin $b$:n viimeinen numero + $a$. Tässä tapauksessa $S(a+b) = S(a) + S(b)$.</p>
+
+<p>Tapaus 2. Yhteenlaskussa numeroita menee vähintään kerran seuraavaan kymmenen potenssiin. Tällöin summan $a+b$ viimeinen numero on aidosti pienempi kuin $a$:n ja $b:$n viimeisten numeroiden summa. Toisaalta, yli menevä numero voi kasvattaa summaa enää vain maksimissaan yhdellä (miksi?), minkä vuoksi epäyhtälö $S(a+b) \le S(a) + S(b)$ pätee myös tässä tapauksessa.</p>
+
+<p>Siis tapaus $0 &lt; a \le 9$ on selvä.</p>
+
+<p>Yleinen tapaus todistetaan induktiolla luvun $a$ numeroiden määrän suhteen. Käytetään seuraavia faktoja:</p>
+<ol>
+  <li>$S(b_010^k + b’) = S(b_0) + S(b’)$, jos $b’ &lt; 10^k$.</li>
+  <li>$S(n) = S(n10^t)$ kaikilla $n, t \in \mathbb{N}$.</li>
+</ol>
+
+<p>Lisäksi käytetään yllä todistettua tiulosta $S(a+b) \le S(a) + S(b)$, kun $a \le 9$.</p>
+
+<p>Oletetaan, että väite pätee kaikilla $b$, kun $a$:n numeroiden määrä on $\le k$. Todistetaan nyt väite kaikille $b$, kun $a$ sisältää $k+1$ numeroa. Kirjoitetaan $a = a_k10^k + a’$, missä $0 \le a’ &lt; 10^k$ ja $0 &lt; a_k \le 9$. Nyt,</p>
+
+<script type="math/tex; mode=display">S(a+b) = S(a' + a_k10^k + b) \le S(a') + S(a_k10^k + b)</script>
+
+<p>induktio-oletuksen nojalla. Kirjoitetaan $b = b’ + 10^kb_k$, missä $b’ &lt; 10^k$, tavoitteena jakaa $S(a_k10^k + b)$ pienempiin palasiin. Käyttämällä jälleen induktio-oletusta saamme</p>
+
+<script type="math/tex; mode=display">S(a_k10^k + b) = S(a_k10^k + b_k10^k + b') \le S_(a_k10^k + b_k10^k) + S(b')</script>
+
+<p>Voimme arvioida lukua $S(a_k10^k + b_k10^k) = S(a_k + b_k)$ ylöspäin luvuksi $S(a_k) + S(b_k)$, sillä tiedämme lauseen pätevän, kun $a \le 9$.</p>
+
+<p>Yhdistämällä tehdyt havainnot saadaan</p>
+
+<p><script type="math/tex">S(a+b) \le S(a') + S(a_k) + S(b') + S(b_k) = S(a') + S(a_k10^k) + S(b') + S(b_k10^k)</script> <script type="math/tex">= S(a' + a_k10^k) + S(b_k10^k) = S(a) + S(b)</script></p>
+
+<p>Väite on näin ollen todistettu, kun $a$ sisältää $k+1$ numeroa. Induktioaskel on otettu, ja väite $S(a+b) \le S(a) + S(b)$ pätee kaikilla $a, b$.</p>
+
+<p><strong>Korollaari</strong></p>
+
+<script type="math/tex; mode=display">S(c_1 + c_2 + \ldots + c_k) \le S(c_1) + S(c_2) + \ldots + S(c_k)</script>
+
+<p>kaikilla $k, c_i \in \mathbb{N}$</p>
+
+<p>Todistetaan sitten lause 2.</p>
+
+<p><strong>Todistus (lause 2)</strong></p>
+
+<p>Todistetaan väite induktiolla $a$:n numeroiden suhteen. Jos $0 &lt; a \le 9$, voimme käyttää yllä esitettyä korollaaria:</p>
+
+<script type="math/tex; mode=display">S(ab) = S(b + b + \ldots + b) \le S(b) + S(b) + \ldots + S(b) = aS(b)</script>
+
+<p>missä summattavia on $a$ kappaletta.</p>
+
+<p>Oletetaan, että väite pätee kaikilla $a$, joilla on enintään $k$ numeroa. Osoitetaan väite, kun $a$:lla on $k+1$ numeroa. Olkoon $a = a_k10^k + a’$, missä $0 &lt; a_k \le 9$ ja $0 \le a’ &lt; 10^k$. Käyttäen induktio-oletusta ja lausetta 1 saamme</p>
+
+<script type="math/tex; mode=display">S(ab) = S(a_k10^kb + a'b) \le S(a_k10^kb) + S(a'b) \le S(a_kb) + S(a')S(b)
+\le</script>
+
+<script type="math/tex; mode=display">S(a_k)S(b) + S(a')S(b) = (S(a_k10^k) + S(a'))S(b) = S(a_k10^k + a')S(b) = S(a)S(b)</script>
+
+<p>Induktioaskel on otettu ja täten lause 2 pätee.</p>
+
+<p><strong>Esimerkkitehtävä (Venäjä, 1999)</strong></p>
+
+<p>$S(n) = 100$ ja $S(44n) = 800$. Määritä $S(3n)$</p>
+
+<p><strong>Ratkaisu</strong></p>
+
+<p>Käyttäen lauseita 1 ja 2, sekä faktaa $S(10k) = S(k)$:</p>
+
+<p>$S(44n) \le S(4n) + S(40n) = 2S(4n) \le 2S(3n) + 2S(n) \le 8S(n)$</p>
+
+<p>Kuitenkin $S(44n) = 8S(n)$. Täten jokaisessa epäyhtälössä pätee yhtäsuuruus, joten $2S(3n) + 2S(n) = 8S(n)$, eli $S(3n) = 300$.</p>
+
+<p>Seuraava esimerkkitehtävä on jonkin verran vaikeampi kuin edellinen.</p>
+
+<p><strong>Esimerkkitehtävä (Baltian tie 2008, T10)</strong></p>
+
+<p>Määritä lausekkeen</p>
+
+<script type="math/tex; mode=display">\frac{S(n)}{S(16n)}</script>
+
+<p>suurin mahdollinen arvo.</p>
+
+<p><strong>Ratkaisu</strong></p>
+
+<p>Intuitiivisesti maksimin saavuttamiseksi kannattaisi valita sellainen $n$, jolla $S(16n)$ on mahdollisimman pieni. Tähän sopii hyvin $n = 5^4 = 625$, jolloin $S(16n) = S(10^4) = 1$. Lausekkeen arvo on tällöin $S(n) = 13$. Pyritään sitten osoittamaan, että tämä todella on maksimi.</p>
+
+<p>Näemme heti, että $S(16n) \le S(16)S(n) = 7S(n)$ lauseen 2 nojalla. Tässä arvio menee kuitenkin väärään suuntaan, haluaisimme arvioida lukua $S(16n)$ alhaalta päin. Tämän vuoksi on luonnollista kirjoittaa seuraava epäyhtälö:</p>
+
+<script type="math/tex; mode=display">S(k)S(16n) \ge S(16nk)</script>
+
+<p>kaikilla $k \in \mathbb{N}$. Enää tulee valita hyvä $k$:n arvo. Tähän käy $k = 5^4$, jolloin saamme $13S(16n) \ge S(10^4n) = S(n)$. Tämä todistaa, että $13$ todella on maksimi.</p>
+
+<p>Numeroiden summalla on lauseiden 1 ja 2 ohella muitakin tärkeitä ominaisuuksia. $S(n)$ on maksimissaan noin $\log(n)$ (tarkemmin enintään $9* \lfloor \log_{10}(n) \rfloor + 9$, ja tätäkin rajaa lienee mahdollista parantaa). Tätä kautta muodostetut epäyhtälöt voivat olla kriittisiä tehtävän ratkaisemiseksi.</p>
+
+<p><strong>Esimerkkitehtävä (IMO-lyhytlista 2016, N1)</strong></p>
+
+<p>Määritä kaikki kokonaislukukertoimiset polynomit $P$, joilla on seuraava ominaisuus: kaikilla $n \ge 2016$ luku $P(n)$ on positiivinen ja</p>
+
+<script type="math/tex; mode=display">S(P(n)) = P(S(n))</script>
+
+<p><strong>Ratkaisuhahmotelma</strong></p>
+
+<p>Jos $P$ on vakio, tulee olla $P(x) = c$ kaikilla $x$, missä $1 \le c \le 9$ on kokonaisluku. Tämä perustuu melko helposti todistettavaan epäyhtälöön $S(c) &lt; c$ kaikilla $c \ge 10$.</p>
+
+<p>Jos $P$ on lineaarinen, on ainoa ratkaisu $P(n) = n$. Tämän todistaminen jätetään lukijalle.</p>
+
+<p>Oletetaan nyt, että $d = \deg(P) \ge 2$. Valitaan $n = 10^k - 1$. Tällä $n$ pätee</p>
+
+<p>$P(S(n)) = P(9k)$</p>
+
+<p>$P(9k)$ on kokoluokaltaan suunnilleen $(9k)^d$</p>
+
+<p>Tutkitaan sitten lukua $S(P(n))$</p>
+
+<p>$P(n)$ on enintään kokoluokkaa $n^d$, eli noin $10^{kd}$, joten $S(P(n))$ on enintään kokoluokkaa $\log(10^{kd}) = kd \log(10)$.</p>
+
+<p>Sillä $(9k)^d &gt; kd \log(10)$ tarpeeksi suurilla $k$ (ottaen huomioon $d \ge 2$), tehtävällä ei ole ratkaisuja, joissa $\deg(P) \ge 2$.</p>
+
+<p>Täten kaikki ratkaisut ovat aiemmin mainitut vakiofunktiot ja polynomi $P(n) = n$.</p>
+
+<p>Ratkaisuhahmotelman laskut eivät olleet kovin tarkkoja, mutta ideana ratkaisu toimii kuten yllä on esitetty.</p>
+
+<p>Lopuksi mainitaan vielä varsin tunnettu ja helposti todistettava fakta: $n \equiv S(n) \pmod{9}$ kaikilla $n$.</p>
+
+<p><strong>Harjoitustehtäviä</strong></p>
+
+<p>Osoita, että kaikilla $c &gt; 9$ pätee $S(c) &lt; c$.</p>
+
+<p><strong>IMO 1975, T4</strong></p>
+
+<p>Määritä $S(S(S(4444^{4444})))$</p>
+
+<p><strong>Baltian Tie, 2005, T1</strong></p>
+
+<p>Olkoon $a_0$ positiivinen kokonaisluku. Määritellänä jono $\lbrace a_n \rbrace_{n \ge 0}$ seuraavasti: Jos</p>
+
+<script type="math/tex; mode=display">a_n = \sum\limits_{i=0}^j c_i10^i</script>
+
+<p>missä $c_i$:t ovat kokonaislukuja ja $0 \le c_i \le 9$, niin</p>
+
+<script type="math/tex; mode=display">a_{n+1} = c_0^{2005} + c_1^{2005} + \ldots + c_j^{2005}</script>
+
+<p>Voidaanko $a_0$ valita siten, että kaikki termit jonossa ovat erisuuria?</p>
+
+<p><strong>Harshad-luvut (?)</strong></p>
+
+<p>Olkoon $k$ positiivinen kokonaisluku. Osoita, että on olemassa sellainen $n \in \mathbb{N}$, jolla $S(n) = k$, ja $k \mid n$.</p>
+
+  </section>
+  <footer class="post-footer">
+    <p><time datetime="2018-08-12">12. 8. 2018</time>
+       • Olli Järviniemi
+      <span class="share-buttons">
+  <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fblog-drafts.matematiikkakilpailut.fi%2F2018%2F08%2F12%2FNumerot.html&quote=Numeroiden+summa"
+     title="Jaa Facebookissa" target="_blank" rel="noopener noreferrer nofollow">
+    <svg aria-label="Jaa Facebookissa" role="img" viewBox="0 0 24 24"><title lang="en">Facebook</title><use xlink:href="/assets/images/icons.svg#facebook"/></svg></a>
+  <a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fblog-drafts.matematiikkakilpailut.fi%2F2018%2F08%2F12%2FNumerot.html&text=Numeroiden+summa"
+     target="_blank" rel="noopener noreferrer nofollow" title="Jaa Twitterissä">
+    <svg aria-label="Jaa Twitterissä" role="img" viewBox="0 0 24 24"><title lang="en">Twitter</title><use xlink:href="/assets/images/icons.svg#twitter"/></svg></a>
+  <a href="https://pinterest.com/pin/create/button/?url=https%3A%2F%2Fblog-drafts.matematiikkakilpailut.fi%2F2018%2F08%2F12%2FNumerot.html&description=Numeroiden+summa"
+     target="_blank" rel="noopener noreferrer nofollow" title="Jaa Pinterestissä">
+    <svg aria-label="Jaa Pinterestissä" role="img" viewBox="0 0 24 24"><title lang="en">Pinterest</title><use xlink:href="/assets/images/icons.svg#pinterest"/></svg></a>
+  <a href="https://www.reddit.com/submit?url=https%3A%2F%2Fblog-drafts.matematiikkakilpailut.fi%2F2018%2F08%2F12%2FNumerot.html&title=Numeroiden+summa"
+     target="_blank" rel="noopener noreferrer nofollow" title="Jaa Redditissä">
+    <svg aria-label="Jaa Redditissä" role="img" viewBox="0 0 24 24"><title lang="en">Reddit</title><use xlink:href="/assets/images/icons.svg#reddit"/></svg></a>
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fblog-drafts.matematiikkakilpailut.fi%2F2018%2F08%2F12%2FNumerot.html&title=Numeroiden+summa&source=https%3A%2F%2Fblog-drafts.matematiikkakilpailut.fi"
+     target="_blank" rel="noopener noreferrer nofollow" title="Jaa LinkedInissä">
+    <svg aria-label="Jaa Linkedinissä" role="img" viewBox="0 0 24 24"><title lang="en">LinkedIn</title><use xlink:href="/assets/images/icons.svg#linkedin"/></svg></a>
+  <a href="https://pinboard.in/add?url=https%3A%2F%2Fblog-drafts.matematiikkakilpailut.fi%2F2018%2F08%2F12%2FNumerot.html&title=Numeroiden+summa"
+     target="_blank" rel="noopener noreferrer nofollow" title="Talleta Pinboardiin">
+    <svg aria-label="Talleta Pinboardiin" role="img" viewBox="0 0 24 24"><title lang="en">Pinboard</title><use xlink:href="/assets/images/icons.svg#pinboard"/></svg></a>
+</span>
+
+    </p>
+  </footer>
+</article>
+
+    </section>
+
+    <section class="site-footer">
+      <p>Tekijänoikeus kirjoittajilla. Käytämme sivuilla evästeitä: <a href="/tietosuoja.html">tietosuojalauseke</a>.</p>
+    </section>
+    
+
+  </body>
+</html>

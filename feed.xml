@@ -1,0 +1,2145 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="fi"><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="https://blog-drafts.matematiikkakilpailut.fi/feed.xml" rel="self" type="application/atom+xml" /><link href="https://blog-drafts.matematiikkakilpailut.fi/" rel="alternate" type="text/html" hreflang="fi" /><updated>2019-09-08T07:07:14+00:00</updated><id>https://blog-drafts.matematiikkakilpailut.fi/feed.xml</id><title type="html">Matematiikkakilpailijat</title><subtitle>Matematiikan olympiavalmennuksen osallistujien kokemuksia</subtitle><entry><title type="html">Polynomien yhteiset alkutekijät, osa 11: lisäaiheita</title><link href="https://blog-drafts.matematiikkakilpailut.fi/2019/06/05/PYA01lisaaiheita.html" rel="alternate" type="text/html" title="Polynomien yhteiset alkutekijät, osa 11: lisäaiheita" /><published>2019-06-05T00:00:00+00:00</published><updated>2019-06-05T00:00:00+00:00</updated><id>https://blog-drafts.matematiikkakilpailut.fi/2019/06/05/PYA01lisaaiheita</id><content type="html" xml:base="https://blog-drafts.matematiikkakilpailut.fi/2019/06/05/PYA01lisaaiheita.html">&lt;p&gt;Tässä postauksessa esitän lisäaiheita työhön liittyen.&lt;/p&gt;
+
+&lt;!--jatkuu--&gt;
+
+&lt;p&gt;&lt;strong&gt;Sisällysluettelo&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;&lt;a href=&quot;https://blog.matematiikkakilpailut.fi/2019/06/05/PYA11johdanto.html&quot;&gt;Osa 1 - johdanto&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://blog.matematiikkakilpailut.fi/2019/06/05/PYA10esitiedot.html&quot;&gt;Osa 2 - esitiedot&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://blog.matematiikkakilpailut.fi/2019/06/05/PYA09tulokset.html&quot;&gt;Osa 3 - tulokset&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://blog.matematiikkakilpailut.fi/2019/06/05/PYA08motivaatio.html&quot;&gt;Osa 4 - motivaatio&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://blog.matematiikkakilpailut.fi/2019/06/05/PYA07heikko.html&quot;&gt;Osa 5 - heikko versio&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://blog.matematiikkakilpailut.fi/2019/06/05/PYA06yleinen.html&quot;&gt;Osa 6 - yleinen tapaus&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://blog.matematiikkakilpailut.fi/2019/06/05/PYA05lause2.html&quot;&gt;Osa 7 - lause 2&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://blog.matematiikkakilpailut.fi/2019/06/05/PYA04lause3.html&quot;&gt;Osa 8 - lause 3&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://blog.matematiikkakilpailut.fi/2019/06/05/PYA03lause4.html&quot;&gt;Osa 9 - lause 4&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://blog.matematiikkakilpailut.fi/2019/06/05/PYA02sovelluksia.html&quot;&gt;Osa 10 - sovelluksia&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Osa 11 - lisäaiheita&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Postauksessa käydään läpi seuraavia asioita:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Polynomien alkutekijöiden suhtautuminen kirjallisuuden materiaaleihin.&lt;/li&gt;
+  &lt;li&gt;Esimerkkitehtävä (EGMO 2016, P6).&lt;/li&gt;
+  &lt;li&gt;Esimerkkitehtävä (Saksan joukkuevalintakoe 3, 2009, T2).&lt;/li&gt;
+  &lt;li&gt;Alkutekijöiden karakterisoiminen.&lt;/li&gt;
+  &lt;li&gt;Eksponenttiyhtälöt.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h1 id=&quot;alkulukujen-jakautuminen-laajennuksissa&quot;&gt;Alkulukujen jakautuminen laajennuksissa&lt;/h1&gt;
+
+&lt;p&gt;Ennen kuin pääsen itse asiaan, määrittelen pari käsitettä.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Algebrallinen kokonaisluku&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Algebrallista lukua $\alpha$ kutsutaan algebralliseksi kokonaisluvuksi, jos luvun $\alpha$ minimaalinen polynomi on kokonaislukukertoiminen.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Esimerkki&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;$i$ on algebrallinen kokonaisluku (min. pol. on $x^2 + 1$), mutta $\frac{i}{2}$ ei ole (min. pol. on $x^2 + \frac{1}{4}$). Rationaaliluku $r$ on algebrallinen kokonaisluku jos ja vain jos $r$ on kokonaisluku.&lt;/p&gt;
+
+&lt;p&gt;Jokaisella algebrallisella luvulla $\alpha$ on olemassa sellainen $n \in \mathbb{Z_+}$, jolla $n\alpha$ on algebrallinen kokonaisluku. Tämä jätetään helpohkoksi harjoitustehtäväksi.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Ring of integers&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Olkoon $K = \mathbb{Q}(\alpha)$ jollain algebrallisella luvulla $\alpha$. Olkoon $O_K$ niiden $\beta \in K$ joukko, jotka ovat algebrallisia kokonaislukuja. $O_K$ on rengas (todistus on samankaltainen kuin &lt;a href=&quot;https://blog.matematiikkakilpailut.fi/2018/09/02/Algebralliset.html&quot;&gt;tämän postauksen&lt;/a&gt; todistus). Englanniksi sanotaan “$O_K$ is the ring of integers of $K$”. Suomenkieliset termit ovat minulle hieman vieraita, joten käytän englanninkielisiä termejä.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Esimerkki&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Olkoon $K = \mathbb{Q}(i)$. Tällöin $O_K$ ovat ns. Gaussin kokonaisluvut, eli luvut muotoa $a + bi, a, b \in \mathbb{Z}$.&lt;/p&gt;
+
+&lt;p&gt;Gaussin kokonaisluvuista lisää Esa Vesalaisen materiaalissa &lt;a href=&quot;https://matematiikkakilpailut.fi/kirjallisuus/laajalukuteoriamoniste.pdf&quot;&gt;Lyhyt johdatus alkeelliseen lukuteoriaan&lt;/a&gt;, luku 7. Esan materiaalissa on osoitettu seuraava väite alkulukujen jakautumisesta Gaussin kokonaisluvuissa:&lt;/p&gt;
+
+&lt;p&gt;Olkoon $p$ alkuluku. $p$ ei jakaudu Gaussin kokonaisluvuissa $O_{\mathbb{Q}(i)}$ jos ja vain jos $p \equiv 3 \pmod{4}$.&lt;/p&gt;
+
+&lt;p&gt;Tässä kohtaa muistutan seuraavasta väitteestä:&lt;/p&gt;
+
+&lt;p&gt;Olkoon $p$ alkuluku. $p$ ei ole polynomin $x^2 + 1$ alkutekijä jos ja vain jos $p \equiv 3 \pmod{4}$.&lt;/p&gt;
+
+&lt;p&gt;Selvä analogia - onko sellainen olemassa yleisestikin? On. Olin hyvin tyytyväinen löytäessäni tämän tuloksen - olin miettinyt jo pidemmän aikaa tämän väitteen pätemistä (juurikin Gaussin kokonaislukujen vuoksi) ennen kuin löysin viitteen tulokselle. Väitettä kutsutaan Dedekindin tekijöihinjakokriteeriksi (Dedekind’s factorization criterion), ja väitteestä voi lukea lisää kenenkä muunkaan kuin Keith Conradin &lt;a href=&quot;https://kconrad.math.uconn.edu/blurbs/gradnumthy/dedekindf.pdf&quot;&gt;materiaalista&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Jakautuminen&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Olkoon $K = \mathbb{Q}(\alpha)$ jollain algebrallisella luvulla $\alpha$, ja olkoon $O_K$ kuten edellä. Olkoon $f$ luvun $\alpha$ minimaalinen polynomi. Kaikilla paitsi äärellisen monella $p$ pätee seuraava väite:&lt;/p&gt;
+
+&lt;p&gt;$p$ jakautuu samalla tavalla renkaassa $O_K$ kuin $f$ jakautuu modulo $p$.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Huomautus&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Puhun siitä, kuinka $p$ jakautuu joukossa $O_K$. Tämä on kuitenkin hieman virheellistä: $O_K$:ssa &lt;strong&gt;ei välttämättä päde uniikki tekijöihinjako&lt;/strong&gt; kuten kokonaisluvuissa. Esim. jos $K = \mathbb{Q}(\sqrt{-5})$, niin $6 = 2 \cdot 3 = (1 - \sqrt{5})(1 + \sqrt{5})$ antaa kaksi eri tapaa jakaa luku $6$ tekijöihin, ja näitä tulontekijöitä ei voi jakaa eteenpäin tekijöihin.&lt;/p&gt;
+
+&lt;p&gt;Ongelma kierretään tutkimalla ns. ideaaleja. Ideaaleja voi jakaa tekijöihin, ja tällä kertaa tekijöihinjako on uniikki. Jokaista lukua vastaa jokin ideaali (mutta on myös muita ideaaleja). Yleisesti tutkitaan siis, miten $p$:tä vastaava ideaali jakautuu renkaassa $O_K$. Yllä oleva tulos koskee siis ideaalien jakautumista.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Tämä muutos on todellisuudessa melko suuri.&lt;/strong&gt; Syynä siihen, miksi otin väitteen tästä huolimatta esille on se, että &lt;strong&gt;muissa materiaaleissa puhutaan käytännössä aina ideaalien jakautumisesta eikä polynomien alkutekijöistä&lt;/strong&gt;. Nämä kuitenkin vastaavat toisiaan, eli kirjallisuuden tuloksia jakautumisesta voi käyttää suoraan polynomien alkutekijöiden käsittelyyn.&lt;/p&gt;
+
+&lt;p&gt;Lisäksi, usein valitaan $K = \mathbb{Q}(\alpha)$, missä $\alpha$ on algebrallinen kokonaisluku. Tällöin $f$ on kokonaislukukertoiminen. Tällä ei kuitenkaan ole väliä - $f$ voidaan, jälleen kerran, kertoa sopivalla vakiolla, jolloin se on kokonaislukukertoiminen.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Esimerkki&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Gaussin kokonaislukujen tapauksessa $O_K$ käyttäytyy miellyttävästi. Tässä on jonkinlainen esimerkki väitteen vastaavuudesta.&lt;/p&gt;
+
+&lt;p&gt;$x^2 + 1$ ei jakaudu modulo $3$, ja $3$ ei jakaudu Gaussin kokonaisluvuissa (kts. yllä oleva tulos).&lt;/p&gt;
+
+&lt;p&gt;$x^2 + 1$ jakautuu kahdeksi erisuureksi polynomiksi modulo $5$, koska $x^2 + 1 \equiv (x - 2)(x + 2) \pmod{5}$. Vastaavasti, $5 = -(i - 2)(i + 2)$.&lt;/p&gt;
+
+&lt;p&gt;$x^2 + 1$ on neliö mod $2$, koska $x^2 + 1 \equiv (x + 1)^2 \pmod{2}$. Vastaavasti, $2 = -i(i+1)^2$. Huomaa, että tässä $-i$ vastaa vain etumerkkiä, jonka saa kumottua kertomalla sen luvulla $i$.&lt;/p&gt;
+
+&lt;h1 id=&quot;äärellisten-kuntien-kuntalaajennukset&quot;&gt;Äärellisten kuntien kuntalaajennukset&lt;/h1&gt;
+
+&lt;p&gt;Äärellinen kunta on kunta, jossa on vain äärellinen määrä alkioita. Yksinkertaisin esimerkki on kokonaisluvut modulo $p$.&lt;/p&gt;
+
+&lt;p&gt;Äärellisille kunnille pätee seuraavat ominaisuudet:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;Äärellisen kunnan koko on aina alkuluvun potenssi. Jos kunnan koko on $p^k$, niin $p \cdot a = 0$ kaikilla $a$, jotka kuuluvat tähän kuntaan.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Kaikilla alkuluvun potensseilla $p^k$ on olemassa äärellinen kunta $\mathbb{F_{p^k}}$, jonka koko on $p^k$. &lt;strong&gt;Tämä kunta on uniikki&lt;/strong&gt; isomorfisia kuntia lukuun ottamatta.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Äärellisten kuntien kuntalaajennuksista voidaan sanoa seuraavat asiat:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;Olkoon $\mathbb{F}$ äärellinen kunta, ja olkoon $P$ kunnassa $\mathbb{F}$ jaoton polynomi, jonka aste on $d$. Olkoon $\alpha$ $P$:n juuri. Tällöin $[\mathbb{F}(\alpha) : \mathbb{F}] = d$.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Olkoot $\mathbb{F}, P, \alpha$ kuten edellä. $P$:n juurikunta $\mathbb{F}(\alpha_1, \alpha_2, \ldots , \alpha_d)$ on $\mathbb{F}(\alpha)$.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Ominaisuus 3. on täysin sama kuin rationaaliluvuissa. Näetkö, miten 4. seuraa väitteistä 2. ja 3.?&lt;/p&gt;
+
+&lt;p&gt;Seuraavaksi esitetään konkreettinen esimerkki kuntalaajennuksien soveltamisesta kilpailutehtävään. Toivon, että esimerkki on valaiseva.&lt;/p&gt;
+
+&lt;h2 id=&quot;egmo-2016-t6&quot;&gt;EGMO 2016, T6&lt;/h2&gt;
+
+&lt;p&gt;Olkoon $S$ niiden positiivisten kokonaislukujen $n$ joukko, joilla luvulla $n^4$ on tekijä välillä $n^2 + 1, n^2 + 2, \ldots , n^2 + 2n$. Osoita, että on olemassa äärettömän monta $S$:n alkiota, jotka ovat kongruentteja $k \pmod{7}$ jos ja vain jos $k \not\equiv 3, 4 \pmod{7}$.&lt;/p&gt;
+
+&lt;h2 id=&quot;ratkaisu&quot;&gt;Ratkaisu&lt;/h2&gt;
+
+&lt;p&gt;Tutkitaan ensin, milloin tapahtuu $n^2 + k \mid n^4$ jollain $1 \le k \le 2n$. Huomaamme&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;n^2 + k \mid n^4 \Leftrightarrow n^2 + k \mid n^4 - (n^2 + k)(n^2 - k) = k^2&lt;/script&gt;
+
+&lt;p&gt;Siis $n^2 + k \mid k^2$. Luku $k$ ei ole kovin iso: pätee $k \le 2n$, eli&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
+k^2 &lt; 4(n^2 + k). %]]&gt;&lt;/script&gt;
+
+&lt;p&gt;Tutkitaan eri tapauksia:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;$n^2 + k = k^2$. Tämä on mahdoton tapaus - jos $k \le n$, niin oikea puoli on pienempi kuin vasen, ja jos $k &amp;gt; n$, niin oikea puoli on isompi kuin vasen.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;$2(n^2 + k) = k^2$. Tällöin $2n^2 = k^2 - 2k = (k-1)^2 - 1$, eli $(k-1)^2 - 2n^2 = 1$. Tämä on Pellin yhtälö.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;$3(n^2 + k) = k^2$. Tämä saadaan muutettua myös Pellin yhtälöksi standardimenetelmin: $k$:n tulee olla jaollinen kolmella, joten olkoon $k = 3m$. Tällöin yhtälö on $3n^2 = 9m^2 - 9m$, eli $n^2 = 3(m^2 - m)$. Ja vielä, $n$:n tulee olla jaollinen kolmella, eli $n = 3t$, ja yhtälö on $3t^2 = m^2 - m$.
+Kerrotaan yhtälö puolittain neljällä, eli $3(2t)^2 = 4m^2 - 4m = (2m-1)^2 - 1$. Saamme siis $x^2 - 3y^2 = 1$, missä $x = 2m-1$ ja $y = 2t$.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Tutkimme siis yhtälöitä $x^2 - 2y^2 = 1$ ja $x^2 - 3y^2 = 1$. Mikäli Pellin yhtälöt eivät ole tuttuja, kannattanee lukea Matti Lehtisen moniste &lt;a href=&quot;https://matematiikkakilpailut.fi/kirjallisuus/pell.pdf&quot;&gt;Pellin yhtälöistä&lt;/a&gt;. Tulemme käyttämään seuraavia tietoja Pellin yhtälöistä, eli muotoa $x^2 - Dy^2 = 1$ oleviasta yhtälöistä, missä $D &amp;gt; 0$ ei ole neliö:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Tällä yhtälöllä on aina äärettömän monta ratkaisua.&lt;/li&gt;
+  &lt;li&gt;Kaikki positiiviset ratkaisut saadaan löytämällä pienin positiivinen ratkaisu $(x_1, y_1)$, ja asettamalla $n$:nnessä ratkaisussa $x_n$ olemaan luvun $(x_1 + y_1\sqrt{D})^n$ kokonaislukuosa, ja $y_n$ olemaan tämän luvun $\sqrt{D}$-osa.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Tutkitaan ensiksi yhtälöä $x^2 - 2y^2 = 1$. Tämän yhtälön pienin (epätriviaali) ratkaisu on $x = 3, y = 2$. Siispä yleisesti $n$:nnen ratkaisun saa valitsemalla $x_n$ olemaan luvun $(3 + 2\sqrt{2})^n$ kokonaislukuosa, ja $y_n$ olemaan kyseisen luvun $\sqrt{2}$-osa. Tämän voi myös kirjoittaa eksplisiittisenä kaavana:&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;x_n = \frac{(3 + 2\sqrt{2})^n + (3 - 2\sqrt{2})^n}{2}.&lt;/script&gt;
+
+&lt;p&gt;Ideana siis se, että $\sqrt{2}$-osat kumoavat toisensa osoittajassa. Vastaavasti saadaan eksplisiittinen kaava $y_n$:lle.&lt;/p&gt;
+
+&lt;p&gt;Haluamme loppujen lopuksi tutkia lukuja $x_n$ ja $y_n$ modulo $7$. Tutkitaan yllä olevaa $x_n$:n lauseketta: se on, kuten totesimme, kokonaisluku. Jos tutkimme sitä modulo $7$, voidaan luvulla $2$ jakaminen ajatella vain luvulla $4$ kertomisena, koska luvun $2$ käänteisalkio modulo $7$ on $4$. Vastaavasti, $\sqrt{2}$ voidaan tulkita lukuna $3$ modulo $7$, koska $3^2 \equiv 2 \pmod{7}$. Siispä&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;x_n \equiv 4\Big((3 + 2\cdot 3)^n + (3 - 2\cdot 3)^n \Big) \equiv 4(2^n + 4^n) \pmod{7}.&lt;/script&gt;
+
+&lt;p&gt;Tästä on helppoa ratkaista kaikki $x_n$:n mahdolliset arvot modulo $7$, ja vastaavasti saamme $y_n$:n mahdolliset arvot. Menetelmä voi tuntua hieman arvelluttavalta, mutta se toimii kyllä.&lt;/p&gt;
+
+&lt;p&gt;Tutkitaan sitten tapausta $x^2 - 3y^2 = 1$. Tässä saamme pienimmän ratkaisun $x = 2, y = 1$, eli yleisesti&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;x_n = \frac{(2 + \sqrt{3})^n - (2 - \sqrt{3})^n}{2}.&lt;/script&gt;
+
+&lt;p&gt;Nyt ongelmaksi muodostuu se, että $\sqrt{3}$ ei olekaan kokonaisluku modulo $7$. Edellä tutkimme lukuja $x_n$ kunnassa $\mathbb{F_7}$, mutta nyt joudumme tutkimaan isompaa kuntaa $\mathbb{F_7}(\sqrt{3})$. Tämä kunta sisältää siis luvut muotoa $a + b\sqrt{3}$, missä $a, b \in \mathbb{F_7}$. Yhteenlasku ja kertolasku määritellään aivan kuten luulisikin, eli esimerkiksi kertolasku on&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;(a + b\sqrt{3})(c + d\sqrt{3}) = ac + (ad + bc)\sqrt{3} + bd\sqrt{3}^2 = (ac + 3bd) + (ad + bc)\sqrt{3}&lt;/script&gt;
+
+&lt;p&gt;Ajatusta voi helpottaa vertaamalla tilannetta kompleksilukuihin, joille määritellään kertolasku aivan vastaavasti. Sen sijaan, että laajentaisimme reaalilukuja $i$:llä, niin laajennamme kuntaa $\mathbb{F_7}$ luvulla $\sqrt{3}$.&lt;/p&gt;
+
+&lt;p&gt;Siispä, kun yhtäsuuruus tulkitaan kunnassa $\mathbb{F_7}(\sqrt{3})$, pätee&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;x_n = 4\Big( (2 + \sqrt{3})^n - (2 - \sqrt{3})^n \Big),&lt;/script&gt;
+
+&lt;p&gt;ja voimme laskea lukujen $2 \pm \sqrt{3}$ potensseja: $(2 + \sqrt{3})^0 = 1$, eksponentilla $1$ saadaan $(2 + \sqrt{3})^1 = 2 + \sqrt{3}$, eksponentilla $2$ taas $(2 + \sqrt{3})^2 = 4\sqrt{3}$, eksponentilla $3$ vielä $(2 + \sqrt{3})^3 = 5 + \sqrt{3}$, ja vielä $(2 + \sqrt{3})^4 = -1$. Tämän jälkeen potenssit ovat kuten edellä, mutta negaiitivismerkkisiä, ja lopulta $(2 + \sqrt{3})^8 = 1$.&lt;/p&gt;
+
+&lt;p&gt;Tällä idealla saamme laskettua luvun $x_n$ kaikki mahdolliset arvot.&lt;/p&gt;
+
+&lt;p&gt;Tekemällä yllä esitetyt ideat molemmille yhtälöistä $x^2 - 2y^2 = 1$ ja $x^2 - 3y^2 = 1$ sekä purkamalla tehdyt sijoitukset saadaan viimeisteltyä ratkaisu. Itse laskeminen ei ole kovin mielenkiintoista, ja se sivuutetaan.&lt;/p&gt;
+
+&lt;h3 id=&quot;huomautus-fermatn-pieni-lause&quot;&gt;Huomautus (Fermat’n pieni lause)&lt;/h3&gt;
+
+&lt;p&gt;Totesimme edellä. että $(2 + \sqrt{3})^4 = -1$, eli $(2 + \sqrt{3})^8 = 1$ kunnassa $\mathbb{F_7}(\sqrt{3})$. Ei ole yllättävää, että jossain kohtaa potenssiinkorotus johtaa lukuun $1$. Tälle on hyvin yksinkertainen selitys:&lt;/p&gt;
+
+&lt;p&gt;Fermat’n pieni lause todistetaan yleensä seuraavasti: olkoon $a \not\equiv 0 \pmod{p}$. Tällöin luvut $a, 2a, 3a, \ldots , (p-1)a$ ovat vain lukujen $1, 2, \ldots , p-1$ permutaatio. Siispä&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;a \cdot 2a \cdot 3a \cdot \ldots \cdot (p-1)a \equiv 1 \cdot 2 \cdot \ldots \cdot (p-1) \pmod{p}&lt;/script&gt;
+
+&lt;p&gt;Supistamalla termejä pois saadaan $a^{p-1} \equiv 1 \pmod{p}$.&lt;/p&gt;
+
+&lt;p&gt;Todistetaan nyt vastaavasti yleistys Fermat’n pienelle lauseelle mille tahansa äärelliselle kunnalle. Konkreettisena esimerkkinä kannattaa miettiä yllä esitettyä tapausta $\mathbb{F_7}(\sqrt{3})$.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Fermat’n pienen lauseen yleistys&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Olkoon $\mathbb{F_{p^k}}$ (se) kunta, jonka koko on $p^k$. Tällöin $a^{p^k - 1} = 1$ kaikilla $a \in \mathbb{F_{p^k}}$, joilla $a \neq 0$.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Todistus&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Olkoon $S$ joukko, joka sisältää luvut muotoa $at, t \in \mathbb{F_{p^k}}$, missä $t \neq 0$. Osoitetaan, että $S$ sisältää jokaisen joukon $\mathbb{F_{p^k}}$ nollasta eroavan luvun (täsmälleen kerran). Selvästi kaikilla $s \in S$ pätee $s \neq 0$ - muutenhan pätisi $s = at = 0$. Mutta koska $a, t \neq 0$, on niillä olemassa käänteisalkiot $a^{-1}$ ja $t^{-1}$ (käsittelemmehän kuntaa!), ja kertomalla yhtälön $at = 0$ puolittain tulolla $a^{-1}t^{-1}$ saamme $1 = 0$.&lt;/p&gt;
+
+&lt;p&gt;Oletetaan sitten, että $at = at’$ jollain $t, t’ \in \mathbb{F_{p^k}}$. Kertomalla puolittain luvulla $a^{-1}$ saamme $t = t’$.&lt;/p&gt;
+
+&lt;p&gt;Siispä luvut $at, t \in \mathbb{F_{p^k}}$ ovat erisuuria, nollasta eroavia alkioita, mikä todistaa väitteen.&lt;/p&gt;
+
+&lt;p&gt;Ja nyt, kuten Fermat’n pienen lauseen todistuksessa, joukon $S$ alkioiden tulo on sama kuin kunnan $\mathbb{F_{p^k}}$ nollasta eroavien alkioiden tulo. Ja kuten edellisessä todistuksessa, sieventämällä saamme $a^{p^k - 1} = 1$.&lt;/p&gt;
+
+&lt;h3 id=&quot;huomautus-asteet&quot;&gt;Huomautus (asteet)&lt;/h3&gt;
+
+&lt;p&gt;Fermat’n pienen lauseen yleistys takaa, että $(2 + \sqrt{3})^{48} = 1$, mutta totesimme, että $(2 + \sqrt{3})^8 = 1$. Tämä ei ole ristiriita - Fermat’n pieni lause sanoo, että $2^6 \equiv 1 \pmod{7}$, mutta $2^3 \equiv 1 \pmod{7}$.&lt;/p&gt;
+
+&lt;p&gt;Kokonaisluvuille modulo $p$ määritellään usein ns. aste tai kertaluku: olkoon $ord_p(a)$ pienin positiivinen kokonaisluku $e$, jolla $a^e \equiv 1 \pmod{p}$, kun $a \not\equiv 0 \pmod{p}$. Tunnetusti jos $a^x \equiv 1 \pmod{p}$, niin $ord_p(a) \mid x$.&lt;/p&gt;
+
+&lt;p&gt;Voimme yleistää asteen määritelmää yleisesti äärellisille kunnille: esimerkiksi luvun $2 + \sqrt{3}$ asteeksi tulisi $8$ kunnassa $\mathbb{F_7}(\sqrt{3})$. Huomaamme, että tämä aste jakaa luvun $48$, jonka Fermat’n pienen lauseen yleistys antaa, kuten kuuluukin.&lt;/p&gt;
+
+&lt;p&gt;Hyvä tuuri, että luvun $2 + \sqrt{3}$ aste oli niinkin pieni kuin $8$ - muuten manuaalista laskemista olisi tullut paljon enemmän!&lt;/p&gt;
+
+&lt;h3 id=&quot;huomautus-kuntien-isomorfisuus&quot;&gt;Huomautus (kuntien isomorfisuus)&lt;/h3&gt;
+
+&lt;p&gt;Puhumme todistuksessa kunnasta $\mathbb{F_7}(\sqrt{3})$. Tämä on hieman epätyypillistä: kuten yllä huomautettiin, äärelliset kunnat, joiden koot ovat samat, ovat isomorfisia. Yleensä siis kirjoitettaisiin vain $\mathbb{F_{49}}$.&lt;/p&gt;
+
+&lt;p&gt;Esimerkki isomorfisuudesta: $5$ ei ole neliönjäännös modulo $7$, joten kunnan $\mathbb{F_7}(\sqrt{5})$ koko on $49$, ja sen tulisi olla isomorfinen kunnan $\mathbb{F_7}(\sqrt{3})$ kanssa. Näin onkin: olkoon $f$ funktio, jolla $f(a + b\sqrt{3}) = a + 3b\sqrt{5}$. On helppoa varmistaa, että tämä on isomorfismi - tarkistetaan vaikein ehto eli multiplikatiivisuus $f(xy) = f(x)f(y)$:&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;f\Big((a+b\sqrt{3})(c + d\sqrt{3})\Big) = f\Big((ac + 3bd) + (ad + bc)\sqrt{3} \Big) =  ac + 3bd + 3(ad + bc)\sqrt{5}&lt;/script&gt;
+
+&lt;p&gt;ja&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;f(a+b\sqrt{3})f(c+d\sqrt{3}) = (a + 3b\sqrt{5})(c + 3d\sqrt{5}) = (ac + 3bd) + 3(ad + bc)\sqrt{5}.&lt;/script&gt;
+
+&lt;h3 id=&quot;huomautus-alkeellinen-ratkaisu&quot;&gt;Huomautus (alkeellinen ratkaisu)&lt;/h3&gt;
+
+&lt;p&gt;Pellin yhtälön ratkaisuille on olemassa myös yksinkertainen rekursio: jos yhtälön $x^2 - Dy^2 = 1$ pienin (positiivinen) ratkaisu on $(x_1, y_1)$, niin $n+1$:nneksi pienin (positiivinen) ratkaisu saadaan rekursioilla&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;x_{n+1} = x_nx_0 + Dy_ny_0&lt;/script&gt;
+
+&lt;p&gt;ja&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;y_{n+1} = x_ny_0 + y_nx_0.&lt;/script&gt;
+
+&lt;p&gt;Modulotarkastelun voi siis tehdä myös tätäkin kautta, eikä kuntalaajennuksia tarvita. Huomaa, että rekursioyhtälöt muistuttavat kertolaskua&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;(a + b\sqrt{D})(c + d\sqrt{D}) = (ac + Dbd) + (ad + bc)\sqrt{D}.&lt;/script&gt;
+
+&lt;p&gt;Siis $x_n$ vastaa kokonaislukuosaa ja $y_n$ vastaa $\sqrt{D}$-osaa.&lt;/p&gt;
+
+&lt;p&gt;Loppukädessä alkeellinen ratkaisu ja kuntalaajennusratkaisu vastaavat samaa asiaa, mutta eri tavalla muotoiltuna. Kuntalaajennusratkaisu esitettiinkin pääasiallisesti pedagogisista syistä.&lt;/p&gt;
+
+&lt;h3 id=&quot;yhteenveto&quot;&gt;Yhteenveto&lt;/h3&gt;
+
+&lt;p&gt;Äärelliset ja äärettömät kunnat siis toimivat hyvinkin samalla tavalla, ja toisessa ympäristössä toimivia ideoita voidaan usein käyttää toisessa. Lauseen 1 lemma 4 on tämän vuoksi hyvin luonnollinen.&lt;/p&gt;
+
+&lt;p&gt;Esitetään vielä toinen esimerkkitehtävä samassa hengessä.&lt;/p&gt;
+
+&lt;h1 id=&quot;esimerkkitehtävä&quot;&gt;Esimerkkitehtävä&lt;/h1&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;a href=&quot;https://artofproblemsolving.com/community/u328030h289403p11502215&quot;&gt;Saksan joukkuevalintakoe 3, 2009, T2&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Olkoon lukujono $a_1, a_2, \ldots$ määritelty asettamalla $a_1 = 1$ ja $a_{n+1} = a_n^4 - a_n^3 + 2a_n^2 + 1$ kaikilla $n \ge 1$. Osoita, että on olemassa äärettömän monta alkulukua, jotka eivät jaa mitään tämän lukujonon termiä.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Ratkaisu (tai sen yritys)&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Ratkaisuni ei ole täysin toimiva. Tämä ei silti tarkoita, etteikö ratkaisusta voisi oppia jotain.&lt;/p&gt;
+
+&lt;p&gt;Olkoon $P(x) = x^4 - x^3 + 2x^2 + 1$. Osoitetaan, että on olemassa äärettömän monta $p$, jotka eivät ole $P$:n alkutekijöitä, mikä todistaa väitteen. En tiedä tälle mitään kovin yksinkertaista tapaa - yksi olisi todistaa Frobeniuksen lauseella, että vastaava väite pätee kaikille neljännen asteen polynomeille (lukujen $\lbrace 1, 2, 3, 4 \rbrace$ permutaatioita on vain $24$, ja osaryhmiä ei järkyttävän paljoa). Lähestymme ongelmaa kuitenkin toisella tavalla:&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Idea:&lt;/strong&gt; Hajotetaan $P$ kahden neliön summaksi.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Mitä tästä hyötyisi?&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Kuvitellaan vaikka, että $Q(x) = x^2 + (x^2 + x + 1)^2$ jollain $Q$. Valitaan jokin $p \equiv 3 \pmod{4}$. Tällöin $p \in S(Q) \implies a^2 + b^2 \equiv 0 \pmod{p}$ jollain $a, b$, missä siis $a = x$ ja $b = x^2 + x + 1$. Mutta on tunnettua (eikä vaikeaa osoittaa), että tästä seuraa ehdon $p \equiv 3 \pmod{4}$ nojalla $a \equiv b \equiv 0 \pmod{p}$. Siis $x \equiv x^2 + x + 1 \equiv 0 \pmod{p}$. Tämä on selvästi mahdotonta.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Toteutus&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Yritetään siis kirjoittaa $P$ kahden neliön summana. Yksi veikkaus olisi, että $P$ on muotoa $A(x)^2 + B(x)^2$, missä $A$ on toisen asteen polynomi ja $B$ on ensimmäisen asteen polynomi. Ei ole vaikeaa nähdä, että $A$:n tulee olla muotoa $x^2 - \frac{x}{2} + c$ jollain vakiolla $c$. Tehtävä palautuu siis sellaisten vakioiden $a, b, c$ löytämiseen, joilla&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;P(x) = (x^2 - \frac{x}{2} + c)^2 + (ax + b)^2.&lt;/script&gt;
+
+&lt;p&gt;Kerrotaan kaikki auki ja verrataan eri termien kertoimia. Toisen asteen termejä vertaamalla saadaan yhtälö&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\frac{1}{4} + 2c + a^2 = 2.&lt;/script&gt;
+
+&lt;p&gt;Ensimmäisen asteen:&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;-c + 2ab = 0.&lt;/script&gt;
+
+&lt;p&gt;Vakiot:&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;c^2 + b^2 = 1.&lt;/script&gt;
+
+&lt;p&gt;Tämä on yhtälöryhmä, joka ei ole aivan triviaali muttei ihan mahdotonkaan. En kirjoita välivaiheita tähän. Ratkaisut ovat:&lt;/p&gt;
+
+&lt;p&gt;$b$ on yhtälön $64x^6 - 64x^4 + 1 = 0$ ratkaisu.&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;a = -\frac{1}{16b^3},&lt;/script&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;c = -\frac{1}{8b^2}.&lt;/script&gt;
+
+&lt;p&gt;Ei siis rationaaliratkaisuja. Tämä ei kuitenkaan ole ongelma: todellisuudessa haluamme ratkoa tämän yhtälöryhmän modulo $p$, koska haluamme kirjoittaa $P$:n kahden neliön summana mod $p$. Valitaan siis jokin $p$, joka on polynomin $64x^6 - 64x^4 + 1$ alkutekijä. Tällöin $p \neq 2$, eli $a, b, c$ ovat hyvin määriteltyjä kokonaislukuja mod $p$ (eli siis kunnan $\mathbb{F_p}$ alkioita).&lt;/p&gt;
+
+&lt;p&gt;Näillä $p$ pätee $p \in S(P) \implies x^2 - \frac{x}{2} + c \equiv ax + b \equiv 0 \pmod{p}$ jollain kokonaisluvulla $x$, olettaen $p \equiv 3 \pmod{4}$. Ei ole vaikeaa muodostaa tästä ehto $T(b) \equiv 0 \pmod{p}$ polynomille $T$, voimmehan kirjoittaa muuttujat $x, a, c$ muuttujan $b$ avulla.&lt;/p&gt;
+
+&lt;p&gt;Polynomien $T$ ja $64x^6 - 64x^4 + 1$ suurin yhteinen tekijä on 1 (tämä saadaan määrittämällä $T$ ja sytin laskemisella), joten Bezout’n lemman nojalla argumentti menee läpi suurilla $p$.&lt;/p&gt;
+
+&lt;p&gt;Ainoa ongelma on sen takaaminen, että on olemassa äärettömän monta $p$, joilla $p \equiv 3 \pmod{4}$ ja $p$ on polynomin $64x^6 - 64x^4 + 1$ alkutekijä. En näe mitään helppoa tapaa tämän todistamiseksi (tosin tämä väite vaikuttaa pätevän, ainakin tietokoneen mukaan), minkä vuoksi ratkaisu on puutteellinen. Ratkaisu kuitenkin demonstroi keinon hyödyntää vastaavuutta äärettömien ja äärellisten kuntien välillä - ratkaistaan yhtälöryhmä rationaalilukujen laajennuksessa, josta se voidaan tuoda äärettömän moneen eri äärelliseen kuntaan $\mathbb{F_p}$.&lt;/p&gt;
+
+&lt;p&gt;Siirrytään sitten muihin aiheisiin.&lt;/p&gt;
+
+&lt;h1 id=&quot;alkutekijöiden-karakterisointi-kongruenssiehdoin&quot;&gt;Alkutekijöiden karakterisointi kongruenssiehdoin&lt;/h1&gt;
+
+&lt;p&gt;Lähtökohtana toimii seuraava kysymys:&lt;/p&gt;
+
+&lt;p&gt;Millä polynomeilla $P \in \mathbb{Z_c}[x]$ on olemassa kokonaisluvut $m, a_1, a_2, \ldots , a_k$, joilla pätee seuraava ehto:&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;p \in S(P) \Leftrightarrow \exists i: p \equiv a_i \pmod{m}?&lt;/script&gt;
+
+&lt;p&gt;Toisin sanoen, milloin $P$:n alkutekijät voidaan esittää kongruenssiehdoin?&lt;/p&gt;
+
+&lt;p&gt;Esimerkiksi $P(x) = x^2 + 1$ on tällainen polynomi, koska $p \in S(P)$ joss $p$ on $1$ tai $2$ (mod $4$).&lt;/p&gt;
+
+&lt;p&gt;(Yleisesti polynomien alkutekijöille ei tunneta yksinkertaista esitystapaa. Tällä on ilmeisesti jotain kytköksiä ns. &lt;a href=&quot;https://en.wikipedia.org/wiki/Langlands_program&quot;&gt;Langlandsin ohjelmaan&lt;/a&gt;. Olen kuitenkin väärä henkilö kertomaan tästä sen enempää.)&lt;/p&gt;
+
+&lt;p&gt;Arvind Suresh on todistanut työssään &lt;a href=&quot;https://scholarship.claremont.edu/cgi/viewcontent.cgi?article=2095&amp;amp;context=cmc_theses&quot;&gt;On the Characterization of Prime Sets of Polynomials by Congruence Conditions&lt;/a&gt;, että mikäli $P$ on jaoton pääpolynomi, jonka Galois’n ryhmä on Abelin ryhmä, niin tämä toteutuu. Keskitytään tähän hieman tarkemmin.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Abelin ryhmä&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Ryhmää $G$ sanotaan Abelin ryhmäksi, jos $ab = ba$ kaikilla $a, b \in G$.&lt;/p&gt;
+
+&lt;p&gt;Näitä ryhmiä voisi kutsua myös kommutatiivisiksi ryhmiksi, koska mainittu ehto on kommutatiivisuus. Jostain syystä Abelin ryhmä on se termi, jota käytetään kaikkialla. Ainakin se on lyhyempi.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Galois’n ryhmät Abelin ryhminä&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Aiemmista esimerkeistä on selvää, että $x^2 - 2$:n Galois’n ryhmä on Abelin ryhmä. Polynomin $x^3 - 2$ Galois’n ryhmä ei kuitenkaan ole Abelin ryhmä:&lt;/p&gt;
+
+&lt;p&gt;Polynomin $P(x) = x^3 - 2$ juurikunta on $\mathbb{Q}(\sqrt[3]{2}, \omega)$, missä $\omega = \zeta_3$ totetuttaa yhtälön $\omega^2 + \omega + 1 = 0$. Voimme esittää $P$:n juuret muodossa $\sqrt[3]{2}, \sqrt[3]{2}\omega, \sqrt[3]{2}\omega^2$.&lt;/p&gt;
+
+&lt;p&gt;Mitä $P$:n Galois’n ryhmä sisältää? Tätä käsiteltiin edellisessä postauksessa yleisemmin polynomeille muotoa $x^n - a$. Tässä tapauksessa on kuusi eri vaihtoehtoa. Ensinnäkin, luku $\sqrt[3]{2}$ voidaan kuvata mille tahansa juurelle $\sqrt[3]{2}\omega^i$, missä $i = 0, 1, 2$. Lisäksi $\omega$ voidaan kuvata joko itselleen tai yhtälön $x^2 + x + 1 = 0$ toiselle juurelle, joka on $\omega$:n kompleksikonjugaatti $\overline \omega$.&lt;/p&gt;
+
+&lt;p&gt;Eli siis: $P$:n Galois’n ryhmä vastaa kaikkia joukon $\lbrace 1, 2, 3 \rbrace$ permutaatioita.&lt;/p&gt;
+
+&lt;p&gt;Permutaatioryhmät eivät yleisesti ole Abelin ryhmiä. Esimerkki: olkoon $\sigma_1$ permutaatio, jolla $\sigma_1(1) = 2, \sigma_1(2) = 1, \sigma_1(3) = 3$, ja olkoon $\sigma_2$ permutaatio, jolla $\sigma_2(1) = 2, \sigma_2(2) = 3, \sigma_2(3) = 1$. Muodostetaan permutaatiot $\sigma_3$ ja $\sigma_4$ asettamalla $\sigma_3(x) = \sigma_1(\sigma_2(x))$ ja $\sigma_4(x) = \sigma_2(\sigma_1(x))$. (Huomaa siis, että permutaatioryhmien laskutoimitus on “composition”, eli suoritetaan permutaatiot peräkkäin). Osoittautuu, että $\sigma_3 \neq \sigma_4$. Nimittäin,&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\sigma_3(1) = \sigma_1(\sigma_2(1)) = \sigma_1(2) = 1&lt;/script&gt;
+
+&lt;p&gt;ja&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\sigma_4(1) = \sigma_2(\sigma_1(1)) = \sigma_2(2) = 3.&lt;/script&gt;
+
+&lt;p&gt;Kaikkien polynomien Galois’n ryhmät eivät siis ole Abelin ryhmiä.&lt;/p&gt;
+
+&lt;p&gt;Sureshin tulos toimii myös muille kuin pääpolynomeille lemman 8 nojalla. Väite yleistyy myös muille kuin jaottomille polynomeille - relevantti lähde tähän löytyy &lt;a href=&quot;https://math.stackexchange.com/questions/126771/proof-subextension-of-abelian-extension-is-also-abelian&quot;&gt;täältä&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Hyvin mielenkiintoinen kysymys on seuraava, jonka Suresh on esittänyt jatkotutkimusaiheena:&lt;/p&gt;
+
+&lt;p&gt;Oletetaan, että $P$:n alkutekijät voidaan esittää kongruenssiehdoilla. Onko $P$:n Galois’n ryhmä Abelin ryhmä?&lt;/p&gt;
+
+&lt;p&gt;Jos tutkielman aiheet kiinnostavat vielä tämän postaussarjan jälkeenkin, suosittelen vahvasti lukemaan Sureshin työn. Kappale 1 esittelee yleisesti polynomien alkutekijöitä, ja ratkaisee toisen asteen polynomin tapauksen. Kappaleessa 2 esitetään kohtuullisen nopeasti mutta hyvin selkeästi tärkeimpiä asioita polynomien alkutekijöiden kytköksistä syvällisempään teoriaan. Kappaleessa 3 osoitetaan työn päätulos. Sureshin työ on erinomainen lähde, jos on kiinnostunut lukemaan syvemmin algebrallisesta lukuteoriasta. Toinen, aloittelevalle ehkäpä helpompi, materiaali on Evan Chenin &lt;a href=&quot;http://web.evanchen.cc/napkin.html&quot;&gt;Napkin-materiaalin&lt;/a&gt; algebrallista lukuteoriaa käsittelevät luvut.&lt;/p&gt;
+
+&lt;h1 id=&quot;jatkotutkimusaihe-eksponenttiyhtälöt&quot;&gt;Jatkotutkimusaihe: eksponenttiyhtälöt&lt;/h1&gt;
+
+&lt;p&gt;Luonnollinen jatkotutkimusaihe on siirtyä polynomiyhtälöistä eksponenttiyhtälöihin. Mitä voidaan sanoa niistä alkuluvuista $p$, joilla yhtälöllä&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;2^x \equiv 3 \pmod{p}&lt;/script&gt;
+
+&lt;p&gt;on ratkaisu?&lt;/p&gt;
+
+&lt;p&gt;Eksponentiaalisiin rakenteisiin liittyen tunnetuin konjektuuri on Artinin primitiivijuurikonjektuuri:&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Konjektuuri&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Olkoon $a$ kokonaisluku, jonka itseisarvo on suurempaa kuin $1$, ja joka ei ole neliöluku. On olemassa äärettömän monta alkulukua $p$, joilla $a$ on primitiivijuuri modulo $p$.&lt;/p&gt;
+
+&lt;p&gt;Ehkä hieman yllättäen, tämä väite todella on konjektuuri eikä lause.&lt;/p&gt;
+
+&lt;p&gt;Aivan loistava materiaali eksponentiaalisista rakenteista on Pieter Mooren teksti &lt;a href=&quot;http://guests.mpim-bonn.mpg.de/moree/surva.pdf&quot;&gt;Artin’s primitive root conjecture&lt;/a&gt;. Kyseessä on survey-tyyppinen materiaali, eli Moore on esitellyt hyvin laajasti nykyistä kirjallisuutta aiheeseen liittyen.&lt;/p&gt;
+
+&lt;p&gt;Erityisesti yhtälöitä $a^x \equiv b \pmod{p}$ varten hyvä materiaali edellisen lisäksi on Pieter Mooren ja Peter Stevenhagenin artikkeli &lt;a href=&quot;https://core.ac.uk/download/pdf/81106660.pdf&quot;&gt;A Two-Variable Artin Conjecture&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Tulen itse työstämään ainakin jonkin verran eksponentiaalisiin rakenteisiin liittyviä ajatuksia lähiaikoina.&lt;/p&gt;</content><author><name>Olli Järviniemi</name></author><summary type="html">Tässä postauksessa esitän lisäaiheita työhön liittyen.</summary></entry><entry><title type="html">Polynomien yhteiset alkutekijät, osa 10: sovelluksia</title><link href="https://blog-drafts.matematiikkakilpailut.fi/2019/06/05/PYA02sovelluksia.html" rel="alternate" type="text/html" title="Polynomien yhteiset alkutekijät, osa 10: sovelluksia" /><published>2019-06-05T00:00:00+00:00</published><updated>2019-06-05T00:00:00+00:00</updated><id>https://blog-drafts.matematiikkakilpailut.fi/2019/06/05/PYA02sovelluksia</id><content type="html" xml:base="https://blog-drafts.matematiikkakilpailut.fi/2019/06/05/PYA02sovelluksia.html">&lt;p&gt;Tässä postauksessa esitetään työn sovelluksia neliönjäännöksiä ja korkeampien potenssien jäännöksiä käsitteleviin kysymyksiin.&lt;/p&gt;
+
+&lt;!--jatkuu--&gt;
+
+&lt;p&gt;&lt;strong&gt;Sisällysluettelo&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;&lt;a href=&quot;https://blog.matematiikkakilpailut.fi/2019/06/05/PYA11johdanto.html&quot;&gt;Osa 1 - johdanto&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://blog.matematiikkakilpailut.fi/2019/06/05/PYA10esitiedot.html&quot;&gt;Osa 2 - esitiedot&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://blog.matematiikkakilpailut.fi/2019/06/05/PYA09tulokset.html&quot;&gt;Osa 3 - tulokset&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://blog.matematiikkakilpailut.fi/2019/06/05/PYA08motivaatio.html&quot;&gt;Osa 4 - motivaatio&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://blog.matematiikkakilpailut.fi/2019/06/05/PYA07heikko.html&quot;&gt;Osa 5 - heikko versio&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://blog.matematiikkakilpailut.fi/2019/06/05/PYA06yleinen.html&quot;&gt;Osa 6 - yleinen tapaus&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://blog.matematiikkakilpailut.fi/2019/06/05/PYA05lause2.html&quot;&gt;Osa 7 - lause 2&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://blog.matematiikkakilpailut.fi/2019/06/05/PYA04lause3.html&quot;&gt;Osa 8 - lause 3&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://blog.matematiikkakilpailut.fi/2019/06/05/PYA03lause4.html&quot;&gt;Osa 9 - lause 4&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Osa 10 - sovelluksia&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://blog.matematiikkakilpailut.fi/2019/06/05/PYA01lisaaiheita.html&quot;&gt;Osa 11 - lisäaiheita&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Tämän postauksen sisältöä ei tilanpuutteen vuoksi kirjoitettu lopulliseen tutkielmaan. Pidän tämän postauksen tuloksia hyvin mielenkiintoisina (vaikkakin todistuksia aavistuksen puuduttavina), joten esitän ne tässä.&lt;/p&gt;
+
+&lt;p&gt;Ensimmäisenä neliönjäännöksistä tulos, jota olen sivunnut &lt;a href=&quot;https://blog.matematiikkakilpailut.fi/2018/12/09/Nelionjaannos.html&quot;&gt;aiemminkin&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h1 id=&quot;lause&quot;&gt;Lause&lt;/h1&gt;
+
+&lt;p&gt;Olkoot $a_1, a_2, \ldots , a_n \in \mathbb{Z}$ sellaisia, ettei minkään joukon $\lbrace a_1, a_2, \ldots , a_n \rbrace$ epätyhjän osajoukon alkioiden tulo ole neliöluku. Olkoon $S \subset \lbrace 1, 2, \ldots , n \rbrace$. Olkoon $T_S$ niiden $p$ joukko, joilla on seuraava ominaisuus:&lt;/p&gt;
+
+&lt;p&gt;$a_i$ on neliönjäännös modulo $p$ jos ja vain jos $i \in S$.&lt;/p&gt;
+
+&lt;p&gt;Tällöin&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\delta(T_S) = \frac{1}{2^n}.&lt;/script&gt;
+
+&lt;h2 id=&quot;todistus&quot;&gt;Todistus&lt;/h2&gt;
+
+&lt;p&gt;Tutkimme siis polynomien $P_i(x) = x^2 - a_i$ alkutekijöitä.&lt;/p&gt;
+
+&lt;p&gt;Osoitetaan ensiksi, että voimme soveltaa lauseen 3 tulosta.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Lemma&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Olkoon $F$ polynomin $P_1P_2 \ldots P_n$ juurikunta. $[F : \mathbb{Q}] = 2^n$.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Todistus&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Olkoon $B$ joukko, joka sisältää kaikki joukon $\lbrace a_1, a_2, \ldots , a_n \rbrace$ osajoukkojen alkioiden tulot, eli $B$ sisältää $2^n$ alkiota.&lt;/p&gt;
+
+&lt;p&gt;Olkoon $C$ joukko, joka sisältää luvut muotoa $\sqrt{b}, b \in B$.&lt;/p&gt;
+
+&lt;p&gt;Riittää osoittaa, että $C$:n alkiot ovat lineaarisesti riippumattomia rationaalilukujen yli. Toisin sanoen, &lt;strong&gt;ei&lt;/strong&gt; ole olemassa nollasta eroavia rationaalilukua $q_1, q_2, \ldots , q_k$ ja pareittain erisuuria $C$:n alkioita $c_1, c_2, \ldots , c_k$, joilla&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;q_1c_1 + q_2c_2 + \ldots + q_kc_k = 0&lt;/script&gt;
+
+&lt;p&gt;Miksi tämä on riittävä ehto? Oletetaan, että $[F : \mathbb{Q}] &amp;lt; 2^n$, tavoitteena vastaoletus yllä esitetyn ehdon kanssa. Käyttäen vastaavanlaista ideaa kuin lauseen 3 todistuksessa, saadaan&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;[F : \mathbb{Q}] = [\mathbb{Q}(\sqrt{a_1}, \ldots , \sqrt{a_n}) : \mathbb{Q}(\sqrt{a_1}, \ldots , \sqrt{a_{n-1}})] \cdots [\mathbb{Q}(\sqrt{a_1}, \sqrt{a_2}) : \mathbb{Q}(\sqrt{a_1})][\mathbb{Q}(\sqrt{a_1}) : \mathbb{Q}].&lt;/script&gt;
+
+&lt;p&gt;Oikean puolen tulon jokainen termi on selvästi enintään $2$. Jos kaikki termit olisivat $2$, pätisi $[F : \mathbb{Q}] = 2^n$, mikä ei ole mielenkiintoista. Oletetaan siis, että jokin tulontekijä on $1$. Täten on olemassa sellainen $i$, jolla luvun $\sqrt{a_i}$ minimaalisen polynomin aste kunnassa $\mathbb{Q}(\sqrt{a_1}, \ldots \sqrt{a_{i-1}})$ on $1$, eli $\sqrt{a_i}$ kuuluu tähän kuntaan. Siispä $\sqrt{a_i}$ voidaan esitää polynomina luvuista $\sqrt{a_1}, \ldots , \sqrt{a_{i-1}}$. Nähdään, että tämä on ristiriita lineaarisesti riippumattomuuden kanssa.&lt;/p&gt;
+
+&lt;p&gt;On melko tunnettua, vaikkeikaan helppoa todistaa, että neliöjuuret ovat lineaarisesti riippumattomia rationaalilukujen yli (epätriviaaleissa tapauksissa). Lyhyt ja kohtuullisen helppo todistus käyttäen juurikuntien isomorfismeja löytyy Paul Garrettin monisteesta &lt;a href=&quot;http://www-users.math.umn.edu/~garrett/m/v/linear_indep_roots.pdf&quot;&gt;Linear independence of roots&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Toteutus&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Åalapelin palaset on nyt koottu, ja ideana on soveltaa lausetta 3 väitteen todistamiseen, ehkä käyttäen inkluusio-ekskluusiota ja induktiota. Tätä kautta saa todistuksen (lukija voi itse vaikka yrittää), mutta lähestyn ongelmaa eri näkökulmasta.&lt;/p&gt;
+
+&lt;p&gt;Olkoon $F$ polynomien $P_1, P_2, \ldots , P_n$ juurikuntien compositum, eli olkoon $F$ pienin kunta, joka sisältää kaikkien polynomien $P_i$ juurikunnat. Edellisestä päättelystä ei ole vaikeaa nähdä, että $C$ on kanta $\mathbb{Q}$-vektoriavaruudelle $F$. Jokainen $F$:n alkio voidaan siis kirjoittaa muodossa&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\sum q_ic_i,&lt;/script&gt;
+
+&lt;p&gt;missä $q_i \in \mathbb{Q}$ ja $c_i \in C$, ja tämä esitys on yksikäsitteinen.&lt;/p&gt;
+
+&lt;p&gt;Tutkitaan $F$:n Galois’n ryhmää $G$. Jokainen $\sigma \in G$ kuvaa $C$:n alkion $c$ joko $c$:ksi tai $-c$:ksi. Ideana on seuraava:&lt;/p&gt;
+
+&lt;p&gt;Olkoot $s_1, s_2, \ldots , s_n$ kokonaislukuja, jotka ovat jokainen joko $-1$ tai $1$. On olemassa sellainen $\sigma \in G$, jolla $\sigma(\sqrt{a_i}) = s_i\sqrt{a_i}$ kaikilla $i$.&lt;/p&gt;
+
+&lt;p&gt;Todistus on triviaali: määritellään $f(\sqrt{a_i}) = s_ia_i$. Voimme vain laajentaa $f$:n olemaan isomorfismi $F \to F$. Se, miksi tämä toimii, johtuu siitä, että $[F : \mathbb{Q}] = 2^n$ - tästä seuraa yllä esitetty $C$:n alkioiden lineaarinen riippumattomuus, ja meillä ei synny ristiriitaista määrittelyä.&lt;/p&gt;
+
+&lt;p&gt;(Esimerkki tilanteesta, jossa tulisi ristiriitainen määrittely: vaadimme, että $\sigma(\sqrt{2}) = \sqrt{2}, \sigma(\sqrt{3}) = \sqrt{3}$ ja $\sigma(\sqrt{6}) = -\sqrt{6}$.)&lt;/p&gt;
+
+&lt;p&gt;Tämä idea todistaa, että $F$:n Galois’n ryhmän $G$ koko on $2^n$. Lisäksi, on olemassa täsmälleen yksi $\sigma \in G$, jolla $\sigma(\sqrt{a_i}) = \sqrt{a_i}$ jos ja vain jos $i \in S$.&lt;/p&gt;
+
+&lt;p&gt;Frobeniuksen lause todistaa väitteen vaikkapa näin: olkoon $P_T$ niiden $P_i$ tulo, joilla $i \not\in S$. Soveltamalla yllä todistettua tulosta polynomille $P_T$ saadaan sen alkutekijöiden tiheydeksi&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;1 - \frac{1}{2^{n - |S|}},&lt;/script&gt;
+
+&lt;p&gt;koska ainoa $P_T$:n Galois’n ryhmän alkio $\sigma$, joka ei kuvaa jotain $P_T$:n juurta itselleen, on se $\sigma$ jolla $\sigma(\sqrt{a_i}) = -\sqrt{a_i}$ kaikilla $i \not\in S$.&lt;/p&gt;
+
+&lt;p&gt;Soveltamalla lausetta 3 saamme polynomien $P_i, i \in S$ ja $P_T$ yhteisten alkutekijöiden tiheydeksi&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\frac{1}{2^{|S|}}\Big(1 - \frac{1}{2^{n - |S|}}\Big).&lt;/script&gt;
+
+&lt;p&gt;Haluamme vähentää tämän tiheyden tiheydestä&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\delta\Big(\bigcap_{i \in S} S(P_i)) \Big).&lt;/script&gt;
+
+&lt;p&gt;Viimeksi mainittu on lauseen 3 avulla $2^{-\mid S \mid}$, ja väite seuraa.&lt;/p&gt;
+
+&lt;p&gt;Tämä todistus on tietyssä mielessä oikea tapa ajatella lausetta 3 - lauseen ehto varmistaa, että polynomin $P_1P_2 \cdots P_n$ Galois’n ryhmä on vain $G_1 \times G_2 \times \cdots \times G_n$, missä $G_i$ on $P_i$:n Galois’n ryhmä. Tämän vuoksi lauseen väite seuraa Frobeniuksen lauseesta.&lt;/p&gt;
+
+&lt;p&gt;Tämän idean avulla seuraava väite on ilmeinen:&lt;/p&gt;
+
+&lt;p&gt;Olkoot $P_1, P_2, \ldots , P_n$ sellaisia, jotka toteuttavat lauseen 3 ehdot. Olkoon $S$ joukon $\lbrace 1, 2, \ldots , n \rbrace$ jokin osajoukko. Olkoon $T$ niiden $p$ joukko, joilla $p \in S(P_i)$ jos ja vain jos $i \in S$. Tällöin&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\delta(T) = \prod_{i \in S} \delta(S(P_i)) \prod_{j \not\in S} 1 - \delta(S(P_j)).&lt;/script&gt;
+
+&lt;p&gt;Ei kovin yllättävää, mutta miellyttävää, että tämä voidaan todistaa.&lt;/p&gt;
+
+&lt;h1 id=&quot;korkeampien-potenssien-jäännökset&quot;&gt;Korkeampien potenssien jäännökset&lt;/h1&gt;
+
+&lt;p&gt;Neliönjäännökset-postauksen viimeisessä harjoitustehtävässä pyydettiin esittämään heuristiikka väitteelle $\delta(S(x^p - a)) = \frac{p-1}{p}$, kun $p$ on alkuluku ja $a$ ei ole kokonaisluvun $p$:nnes potenssi. Esitän ensin oman heuristiikkani, minkä jälkeen todistan väitteen Frobeniuksen lauseella.&lt;/p&gt;
+
+&lt;h2 id=&quot;heuristiikka&quot;&gt;Heuristiikka&lt;/h2&gt;
+
+&lt;p&gt;Valitaan jokin satunnainen alkuluku $q$. Tutkitaan kahta eri tapausta.&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;$q \not\equiv 1 \pmod{p}$. Funktio $f(x) = x^p$ on injektiivinen modulo $p$ postauksen &lt;a href=&quot;https://blog.matematiikkakilpailut.fi/2018/05/17/Juuri.html&quot;&gt;Juuren ottaminen moduloissa&lt;/a&gt; nojalla. Täten se on myös surjektiivinen, eli yhtälöllä $f(x) \equiv c \pmod{q}$ on ratkaisu kaikilla $c$. Tässä tapauksessa todennäköisyys sille, että $q \in S(x^p - a)$, on $1$.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;$q \equiv 1 \pmod{p}$. Olkoon $g$ primitiivijuuri modulo $q$. Kaikki $p$:nnet potenssit modulo $q$ ovat muotoa $g^{ip}$, $i \in \mathbb{Z}$ (ja luku $0$). Käyttäen vaikkapa Fermat’n pientä lausetta nähdään, että $p$:nsiä potensseja on $\frac{q-1}{p}$ kappaletta, kun lukua $0$ ei lasketa.
+Siis osuus $\frac{1}{p}$ luvuista $1, 2, \ldots , q-1$ on $p$:nsiä potensseja. Todennäköisyys sille, että juuri luku $a$ on $p$:nnes potenssi on heuristisesti $\frac{1}{p}$.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Tapauksen $1$ mukaiset $q$ muodostavat Dirichlet’n lauseen tiheysversion nojalla osuuden $\frac{p-2}{p-1}$ alkuluvuista, ja tapauksen $2$ mukaisia $q$ on $\frac{1}{p-1}$. Kertomalla tapauksien todennäköisyydet todennäköisyydellä sille, että $a$ on $p$:nnes potenssi, saadaan lopullinen todennäköisyys:&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\frac{p-2}{p-1} \cdot 1 + \frac{1}{p-1} \cdot \frac{1}{p} = \frac{p-1}{p}.&lt;/script&gt;
+
+&lt;h2 id=&quot;todistus-1&quot;&gt;Todistus&lt;/h2&gt;
+
+&lt;p&gt;Polynomin $P(x) = x^p - a$ juuret ovat&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\sqrt[p]{a}, \sqrt[p]{a}\zeta_p, \sqrt[p]{a}\zeta_p^2 , \ldots , \sqrt[p]{a}\zeta_p^{p-1}.&lt;/script&gt;
+
+&lt;p&gt;Huomaamme, että $P$:n juurikunta $F$ on $\mathbb{Q}(\sqrt[p]{a}, \zeta_p)$.&lt;/p&gt;
+
+&lt;p&gt;Tutkitaan $P$:n Galois’n ryhmää $G$. Jokainen $\sigma \in G$ määräytyy lukujen $\sigma(\sqrt[p]{a})$ ja $\sigma(\zeta_p)$ avulla. Lisäksi $G$ sisältää kaikki ne kuvakset, mitä voisi olettaa:&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Lemma 1&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Olkoon $0 \le b &amp;lt; p$ kokonaisluku, ja olkoon $0 &amp;lt; c &amp;lt; p$ kokonaisluku. On olemassa sellainen $\sigma \in G$, jolla pätee:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;$\sigma(\sqrt[p]{a}) = \sqrt[p]{a}\zeta_p^b.$&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;$\sigma(\zeta_p) = \zeta_p^c.$&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Lisäksi jokaista $\sigma \in G$ vastaa edellä kuvaillut $b, c$.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Todistus&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Väite pätee myös muillekin luvuille kuin alkuluvuille $p$:&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Vahvempi versio&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Olkoon $m$ positiviinen kokonaisluku, ja olkoon $G$ polynomin $x^m - a$ Galois’n ryhmä. Oletetaan, että $m$ on pariton ja $x^m - a$ ei jakaudu rationaaliluvuissa.&lt;/p&gt;
+
+&lt;p&gt;Olkoot $0 \le b, c &amp;lt; p$ kokonaislukuja, joilla $syt(c, m) = 1$. On olemassa sellainen $\sigma \in G$, jolla:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;$\sigma(\sqrt[m]{a}) = \sqrt[m]{a}\zeta_m^b.$&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;$\sigma(\zeta_m) = \zeta_m^c.$&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Lisäksi jokaista $\sigma \in G$ vastaa edellä kuvaillut $b, c$.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Todistus vahvemmalle versiolle&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;On selvää, että jokaisella $\sigma \in G$ on edellä kuvaillut $b, c$. Enää tulee osoittaa toinen suunta. Tämä seuraa, jos osoitetaan, että $\mid G \mid = m\phi(m)$ (miksi?). Tämän on todistanut David Gluck ja I. M. Isaacs artikkelissaan &lt;a href=&quot;https://www.ams.org/journals/proc/2007-135-11/S0002-9939-07-08864-8/S0002-9939-07-08864-8.pdf&quot;&gt;Radical and cyclotomic extensions of the rational numbers&lt;/a&gt; (lause 3.1.).&lt;/p&gt;
+
+&lt;p&gt;Lemman 1 avulla tiedämme siis polynomin $x^p - a$ Galois’n ryhmän koon (voimme käyttää vahvempaa versiota, kts. jaottomuuskriteeri alla). Lisäksi ei ole enää vaikeaa laskea niiden kuvausten $\sigma \in G$ määrää, jotka kuvaavat jonkin polynomin $x^p - a$ juuren itselleen. Käyttäen Frobeniuksen lausetta saadaan haluttu väite. En mene yksityiskohtiin tässä, koska en näe niitä kovin kiinnostavina.&lt;/p&gt;
+
+&lt;h2 id=&quot;variantteja&quot;&gt;Variantteja&lt;/h2&gt;
+
+&lt;p&gt;Voimme myös laskea vaikkapa polynomien $x^3 - 2$, $x^3 - 3$ yhteisien alkutekijöiden tiheyden. Emme kuitenkaan voi käyttää lausetta 3, koska näiden polynomien juurikuunat sisältävät luvun $\zeta_3$. Voimme kuitenkin tutkia vaikkapa tulon $(x^3 - 2)(x^3 - 3)$ Galois’n ryhmän käyttäytymistä, ja saada sieltä halutun tiheyden.&lt;/p&gt;
+
+&lt;p&gt;Polynomit muotoa $x^{p^k} - a$ ovat myös mielenkiintoisia. Esimerkiksi polynomien $x^{p^2} - 2$ ja $x^{p^2} - 2^p$ alkutekijöiden tiheyden tutkiminen antaa jotain uutta.&lt;/p&gt;
+
+&lt;p&gt;En mene näihin aiheisiin sen syvemmin. Pointtina on kuitenkin se, että näitä tiheyksiä voidaan laskea. Lisäksi tiheys $1 - \frac{1}{n}$ voidaan saavuttaa kaikilla alkuluvun potensseilla $n$, ainakin jos $n$ ei ole kakkosen potenssi (syy alla).&lt;/p&gt;
+
+&lt;p&gt;Vahvemman version käyttäminen vaatii jaottomuuskriteerin:&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Polynomin $x^n - a$ jaottomuus&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Olkoon $P(x) = x^n - a$, $a \in \mathbb{Q}$. $P$ jakautuu rationaaliluvuissa jos ja vain jos jompikumpi seuraavista ehdoista pätee:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;Jollain $p \mid n$ luku $a$ on jonkin rationaaliluvun $p$:nness potenssi&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;$4 \mid n$ ja $a$ on muotoa $-4c^4$ jollain $c \in \mathbb{Q}$. Tämä johtuu Sophie-Germainin identiteetistä. Kts. esim. &lt;a href=&quot;https://blog.matematiikkakilpailut.fi/2018/04/16/Tekijoita.html&quot;&gt;tämä postaus&lt;/a&gt;.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Todistus ei ole missään nimessä triviaali, mutta netistä pitäisi löytyä todistus väitteelle.&lt;/p&gt;
+
+&lt;p&gt;Lisäksi mainitaan vielä helppo kilpailumatematiikkahenkinen fakta joilla ongelman saa redusoitua alkulukujen potensseihin:&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Lemma 4&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Olkoot $m, n \in \mathbb{Z_+}$, ja olkoon $d$ niiden syt. Olkoon vielä $a \in \mathbb{Z}$. Pätee:&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;S(x^m - a) \cap S(x^n - a) = S(x^d - a).&lt;/script&gt;
+
+&lt;p&gt;Kiinnostunut lukija voi itse kokeilla, millaisia tuloksia saa irti näillä tiedoilla. Hyvä harjoitustethävä onkin todistaa, että tiheyden yläraja $1 - \frac{1}{n}$ on saavutettavissa.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://blog.matematiikkakilpailut.fi/2019/06/05/PYA01lisaaiheita.html&quot;&gt;Seuraava postaus.&lt;/a&gt;&lt;/p&gt;</content><author><name>Olli Järviniemi</name></author><summary type="html">Tässä postauksessa esitetään työn sovelluksia neliönjäännöksiä ja korkeampien potenssien jäännöksiä käsitteleviin kysymyksiin.</summary></entry><entry><title type="html">Polynomien yhteiset alkutekijät, osa 9: lause 4</title><link href="https://blog-drafts.matematiikkakilpailut.fi/2019/06/05/PYA03lause4.html" rel="alternate" type="text/html" title="Polynomien yhteiset alkutekijät, osa 9: lause 4" /><published>2019-06-05T00:00:00+00:00</published><updated>2019-06-05T00:00:00+00:00</updated><id>https://blog-drafts.matematiikkakilpailut.fi/2019/06/05/PYA03lause4</id><content type="html" xml:base="https://blog-drafts.matematiikkakilpailut.fi/2019/06/05/PYA03lause4.html">&lt;p&gt;Tässä postauksessa todistetaan tutkielman lause 4, eli että kaikki välin $[0, 1]$ rationaaliluvut esiintyvät jonkin polynomin alkutekijöiden tiheytenä.&lt;/p&gt;
+
+&lt;!--jatkuu--&gt;
+
+&lt;p&gt;&lt;strong&gt;Sisällysluettelo&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;&lt;a href=&quot;https://blog.matematiikkakilpailut.fi/2019/06/05/PYA11johdanto.html&quot;&gt;Osa 1 - johdanto&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://blog.matematiikkakilpailut.fi/2019/06/05/PYA10esitiedot.html&quot;&gt;Osa 2 - esitiedot&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://blog.matematiikkakilpailut.fi/2019/06/05/PYA09tulokset.html&quot;&gt;Osa 3 - tulokset&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://blog.matematiikkakilpailut.fi/2019/06/05/PYA08motivaatio.html&quot;&gt;Osa 4 - motivaatio&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://blog.matematiikkakilpailut.fi/2019/06/05/PYA07heikko.html&quot;&gt;Osa 5 - heikko versio&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://blog.matematiikkakilpailut.fi/2019/06/05/PYA06yleinen.html&quot;&gt;Osa 6 - yleinen tapaus&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://blog.matematiikkakilpailut.fi/2019/06/05/PYA05lause2.html&quot;&gt;Osa 7 - lause 2&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://blog.matematiikkakilpailut.fi/2019/06/05/PYA04lause3.html&quot;&gt;Osa 8 - lause 3&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Osa 9 - lause 4&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://blog.matematiikkakilpailut.fi/2019/06/05/PYA02sovelluksia.html&quot;&gt;Osa 10 - sovelluksia&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://blog.matematiikkakilpailut.fi/2019/06/05/PYA01lisaaiheita.html&quot;&gt;Osa 11 - lisäaiheita&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Frobeniuksen lauseen nojalla $\delta(S(P))$ on aina rationaalinen, joten keskitytään rationaalilukujen tutkimiseen.&lt;/p&gt;
+
+&lt;p&gt;Suunnitelmana on osoittaa väite induktiolla, mikä onnistuu rationaaliluvuilla näppärästi. Saamme luotua polynomeja, joilla on halutunlaisia tiheyksiä käyttäen alla esitettyä lemmaa 4.2. ja lausetta 3.&lt;/p&gt;
+
+&lt;p&gt;Tavoitteena on siis käyttää lausetta 3. Tätä varten pitää luoda metodi, jolla voidaan generoida lauseen 3 mukaisesti riippumattomia polynomeja. Tämän hoitaa lemma 4.2.&lt;/p&gt;
+
+&lt;p&gt;Todistuksen lähtökohtana toimii seuraava jo itsessään kaunis tulos:&lt;/p&gt;
+
+&lt;h2 id=&quot;lemma-41&quot;&gt;Lemma 4.1.&lt;/h2&gt;
+
+&lt;p&gt;Olkoon $k \in \mathbb{Z_+}$, ja olkoon $S$ niiden $1 \le n \le k$ joukko, joilla $syt(n, k) = 1$. Olkoon $H$ jokin $S$:n osajoukko, joka on kertolaskun suhteen suljettu, kun kertolasku tehdään modulo $k$. On olemassa polynomi $P \in \mathbb{Z_c}[x]$, jolla on seuraavat ominaisuudet:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;$p \in S(P)$ jos ja vain jos $p \equiv h \pmod{k}$ jollain $h \in H$.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;$P$:n juurikunta $F_P$ on kunnan $\mathbb{Q}(\zeta_k)$ osakunta.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Tässä $\zeta_k$ on ns. primiitivien $k$:nnes yksikköjuuri (engl. roots of unity). Siis $\zeta_k^k = 1$, mutta $\zeta_k^n \neq 1$ kaikilla $1 \le n &amp;lt; k$.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Todistus&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Tuloksen ovat osoittaneet Ram Murty ja Nithum Thain artikkelissaan &lt;a href=&quot;https://projecteuclid.org/euclid.facm/1229442627&quot;&gt;Primes in Certain Arithmetic Progressions&lt;/a&gt; (Funct. Approx. Comment. Math. Volume 35 (2006), 249-259.). Ehto 1 seuraa lauseista 4 ja 5, ja ehto 2 seuraa konstruktiosta.&lt;/p&gt;
+
+&lt;p&gt;Esimerkiksi syklotomiset polynomit toteuttavat ehdon, kun $H = \lbrace 1 \rbrace$.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Huomautus&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Myös seuraava, samanhenkinen ja kaunis tulos pätee:&lt;/p&gt;
+
+&lt;p&gt;Olkoon $k$ jokin positiivinen kokonaisluku, ja olkoon $T$ jokin $S$:n osajoukko, missä $S$ on kuten lemmassa 4.1.. Oletetaan, että on olemassa polynomi $P \in \mathbb{Z}[x]$ niin, että kaikilla paitsi äärellisen monella $p$ pätee $p \in S(P) \implies p \equiv t \pmod{k}$ jollain $t \in T$. Tällöin $T$:n tulee olla $S$:n jokin kertolaskun suhteen suljettu osajoukko, kun kertolasku tehdään modulo $p$.&lt;/p&gt;
+
+&lt;p&gt;Tämän todistus löytyy artikkelista &lt;a href=&quot;https://kconrad.math.uconn.edu/blurbs/gradnumthy/dirichleteuclid.pdf&quot;&gt;Euclidean Proofs of Dirichlet’s Theorem&lt;/a&gt;, jonka on kirjoittanut Keith Conrad. Artikkelin johdanto on kaikelle yleisölle sopiva ja hyvin mielenkiintoinen, kannattaa vilkaista!&lt;/p&gt;
+
+&lt;h2 id=&quot;lemma-42&quot;&gt;Lemma 4.2.&lt;/h2&gt;
+
+&lt;p&gt;Lemman 4.1. avulla saadaan tarkoituksiamme varten hyvä tulos. Kannattaa yrittää itse todistaa tulos ennen todistuken lukemista - todistus on alkeellinen, eikä kovin vaikea.&lt;/p&gt;
+
+&lt;h3 id=&quot;väite&quot;&gt;Väite&lt;/h3&gt;
+
+&lt;p&gt;Olkoon $n \ge 2$ kokonaisluku. On olemassa äärettömän monta $p$, joita kohden on olemassa $P$, jolla pätee seuraavat ominaisuudet:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;$\delta(S(P)) = \frac{1}{n}$&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Polynomin $P$ juurikunta on kunnan $\mathbb{Q}(\zeta_p)$ osakunta.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;todistus&quot;&gt;Todistus&lt;/h3&gt;
+
+&lt;p&gt;Avainsana on primitiivijuuri. Valitaan $p \equiv 1 \pmod{n}$. Dirichlet’n lauseen nojalla tällaisia $p$ on äärettömän monta. Olkoon $g$ primitiivijuuri modulo $p$.&lt;/p&gt;
+
+&lt;p&gt;Olkoon $p-1 = mn, m \in \mathbb{Z_+}$. Valitaan lemman 4.1. mukaiseksi $H$ luvut muotoa $g^{ni}$, $i = 0, 1, \ldots , m-1$. On helppoa nähdä (Fermat’n pienen lauseen avulla), että $H$ on kertolaskun suhteen suljettu joukko, jonka koko on $m$.&lt;/p&gt;
+
+&lt;p&gt;Dirichlet’n lauseen tiheysversion nojalla niiden $q$ tiheys, joilla $q \equiv h \pmod{p}$ jollain $h \in H$ on $\frac{m}{p-1} = \frac{1}{n}$.&lt;/p&gt;
+
+&lt;p&gt;Valtiaan siis $P$ kuten lemmassa 4.1 tätä $H$ vastaavaksi. Tämä kelpaa.&lt;/p&gt;
+
+&lt;h3 id=&quot;huomautus&quot;&gt;Huomautus&lt;/h3&gt;
+
+&lt;p&gt;Lemman 4.1. avulla voidaan generoida ainoastaan tiheyksiä muotoa $\frac{1}{n}$. Tämä perustuu siihen faktaan, että osaryhmän koko jakaa ryhmän koon, eli siis $\mid H \mid$ jakaa $\mid S \mid \ = \phi(k)$. On siis luonnollista tutkia, miten näitä tiheyksiä voidaan generoida, ja sovittaa muu osa todistuksesta tähän. Siirrymme tähän seuraavaksi.&lt;/p&gt;
+
+&lt;h1 id=&quot;lauseen-todistus&quot;&gt;Lauseen todistus&lt;/h1&gt;
+
+&lt;h2 id=&quot;motivaatio&quot;&gt;Motivaatio&lt;/h2&gt;
+
+&lt;p&gt;Millaisia operaatioita voimme tehdä tiheyksille? Tiedämme, että lauseen 3 avulla kaksi tiheyttä voidaan monessa tapauksessa kertoa keskenään. Tästä ei kuitenkaan ole nyt juurikaan apua: kahden muotoa $\frac{1}{n}$ olevan luvun tulo on tätä muotoa. Ideana on käyttää inkluusio-ekskluusiota. Jos olemme luoneet polynomit $X$ ja $Y$, joiden alkutekijöiden tiheydet ovat $x$ ja $y$, lauseen 3 mukaan yhteisten alkutekijöiden tiheys on $xy$, joten polynomin $XY$ alkutekijöiden tiheys on $x + y - xy$. Tämä osoittautuu hyödyllisemmäksi.&lt;/p&gt;
+
+&lt;p&gt;Aiomme varmaankin valita toisen luvuista $x, y$ olemaan muotoa $\frac{1}{n}$ lemman 4.2. mukaisesti. Kokeilin muutamaa eri ideaa, ja lopulta päädyin seuraavaan ratkaisuun.&lt;/p&gt;
+
+&lt;h2 id=&quot;ratkaisu&quot;&gt;Ratkaisu&lt;/h2&gt;
+
+&lt;p&gt;Osoitetaan induktiolla muuttujan $k$ suhteen, että $\frac{m}{k}$ voidaan esittää jonkin polynomin $P$ alkutekijöiden tiheytenä kaikilla $0 \le m \le k$.&lt;/p&gt;
+
+&lt;p&gt;Tapaus $k = 1$ on selvä. Oletetaan, että väite pätee arvolla $k &amp;lt; n$ ja osoitetaan väite arvolla $k = n$.&lt;/p&gt;
+
+&lt;p&gt;Ratkaisu perustuu identiteettiin&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\frac{m-1}{n-1} + \frac{1}{n} - \frac{m-1}{n(n-1)} = \frac{m}{n}&lt;/script&gt;
+
+&lt;p&gt;$m = 0$ on triviaali tapaus, joten oletetaan $m &amp;gt; 0$. Olkoon $P$ sellainen, jolla $\delta(S(P)) = \frac{m-1}{n-1}$.&lt;/p&gt;
+
+&lt;p&gt;Enää tulee siis vain osoittaa, että voimme valita sellaisen $Q$, jolla $\delta(S(Q)) = \frac{1}{n}$ ja jolla $P$:n ja $Q$:n juurikunnat eivät leikkaa, jolloin lauseen 3 nojalla&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\delta(S(PQ)) = \delta(S(P)) + \delta(S(Q)) - \delta(S(P))\delta(S(Q)) = \frac{m}{n}&lt;/script&gt;
+
+&lt;p&gt;Tämä vaatii vielä viimeisen puristuksen.&lt;/p&gt;
+
+&lt;p&gt;Tutkitaan lemman 4.2. mukaisia polynomeja eri $p$:n arvoilla. Nämä polynomit ovat sellaisia, joiden juurikunta on kunnan $\mathbb{Q}(\zeta_p)$ osakuntia. Väite, jonka haluamme osoittaa onkin seuraava:&lt;/p&gt;
+
+&lt;p&gt;$P$:n juurikunta ei leikkaa kuntaa $\mathbb{Q}(\zeta_p)$, kun $p$ on tarpeeksi suuri.&lt;/p&gt;
+
+&lt;p&gt;Hyvin uskottavan kuuloista.&lt;/p&gt;
+
+&lt;p&gt;Ikävä kyllä minulla ei ole tähän mitään helppoa one-liner -ratkaisua. Ainakin voin opettaa vielä yhden asian teoriasta.&lt;/p&gt;
+
+&lt;h2 id=&quot;fundamental-theorem-of-galois-theory&quot;&gt;Fundamental theorem of Galois theory&lt;/h2&gt;
+
+&lt;p&gt;Esitän vain version, joka käsittelee rationaalilukujen laajennuksia. Yleinen tapaus ei liene vaikeampi, mutta rationaaliluvut ovat tutumpia niin minulle kuin lukijoille.&lt;/p&gt;
+
+&lt;p&gt;Olkoon $F$ jonkin polynomin juurikunta, ja olkoon $G$ sen Galois’n ryhmä. Ennen lauseen väitettä määritellään ns. fixed field. En tiedä tälle termille suomennosta, joten käytän englanninkielistä termiä.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Määritelmä - fixed field&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Olkoon $\sigma \in G$ jokin isomorfismi. Olkoon $K$ niiden $x \in F$ joukko, joilla $\sigma(x) = x$. Joukkoa $K$ kutsutaan $\sigma$:n fixed field:ksi. On helppoa osoittaa, että $K$ todella on kunta.&lt;/p&gt;
+
+&lt;p&gt;Fundamental theorem of Galois theory (suomeksi Galois’n teorian peruslause?) kertoo, että $F$:n osakunnilla ja $G$:n osaryhmien välillä on luonnollinen bijektio. Lauseen yhteyteen listataan usein monia eri ominaisuuksia, tässä tyydytään yhteen yksinkertaiseen lisätulokseen.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Galois’n teorian peruslause&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Olkoon $F$ juurikunta ja olkoon $G$ sen Galois’n ryhmä. Olkoon $H$ jokin $G$:n osaryhmä, ja olkoon $K$ $H$:n alkioiden fixed field:ien leikkaus.&lt;/p&gt;
+
+&lt;p&gt;Olkoon $f$ kuvaus $G$:n osaryhmiltä $F$:n osakunnille, joka määritellään kuvaamalla $H$ kunnalle $K$.&lt;/p&gt;
+
+&lt;p&gt;Väite: $f$ on bijektio.&lt;/p&gt;
+
+&lt;p&gt;Lisäksi, jos $G$:n osaryhmillä $H_1, H_2$ pätee $H_1 \subset H_2$, niin $f(H_2) \subset f(H_1)$.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Esimerkki&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Tutkitaan polynomin $x^2 - 2$ juurikuntaa $\mathbb{Q}(\sqrt{2})$ ja sen Galois’n ryhmää $G$. $G$:hen kuuluu kaksi alkiota $\sigma_1, \sigma_2$, joilla&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\sigma_1(a + b\sqrt{2}) = a + b\sqrt{2}, a, b \in \mathbb{Q}&lt;/script&gt;
+
+&lt;p&gt;ja&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\sigma_2(a + b\sqrt{2}) = a - b\sqrt{2}, a, b \in \mathbb{Q}&lt;/script&gt;
+
+&lt;p&gt;Kuvauksen $\sigma_1$ fixed field on $\mathbb{Q}(\sqrt{2})$, ja kuvauksen $\sigma_2$ fixed field on $\mathbb{Q}$.&lt;/p&gt;
+
+&lt;p&gt;$G$:llä on kaksi osaryhmää: toinen sisältää vain kuvauksen $\sigma_1$, ja toinen sisältää molemmat kuvaukset $\sigma_1$ ja $\sigma_2$. Huomaa, että $\lbrace \sigma_2 \rbrace$ &lt;strong&gt;ei&lt;/strong&gt; ole $G$:n osa&lt;strong&gt;ryhmä&lt;/strong&gt;: kuvauksen $\sigma(x) = \sigma_2(\sigma_2(x))$ tulisi kuulua tähän osa&lt;strong&gt;ryhmään&lt;/strong&gt;, mutta näin ei ole.&lt;/p&gt;
+
+&lt;p&gt;Ensin mainitun $G$:n osaryhmän määritelmän mukainen $K$ on $\mathbb{Q}(\sqrt{2})$. Siispä osaryhmä $\lbrace \sigma_1 \rbrace$ kuvataan kunnan $\mathbb{Q}(\sqrt{2})$ osakunnalle $K = \mathbb{Q}(\sqrt{2})$.&lt;/p&gt;
+
+&lt;p&gt;Jälkimmäisen $G$:n osaryhmän $K$ on vain $\mathbb{Q}$, joten $G$:n osaryhmä $\lbrace \sigma_1, \sigma_2 \rbrace$ kuvataan kunnan $\mathbb{Q}(\sqrt{2})$ osakunnalle $\mathbb{Q}$.&lt;/p&gt;
+
+&lt;h2 id=&quot;todistuksen-viimeistely&quot;&gt;Todistuksen viimeistely&lt;/h2&gt;
+
+&lt;p&gt;Galois’n teorian peruslause on varsin kaunis tulos, mutta miten se hyödyttää meitä? Näin:&lt;/p&gt;
+
+&lt;p&gt;Olkoon $F_P$ jonkin polynomin $P$ juurikunta. $F_P$:llä on vain äärellinen määrä osakuntia (tarkemmin sanoen $P$:n Galois’n ryhmän osaryhmien määrän verran osakuntia).&lt;/p&gt;
+
+&lt;p&gt;Myös muilla kunnilla kuin juurikunnilla on vain äärellinen määrä osakuntia, koska ne voidaan laajentaa juurikunniksi. En ole varma, onko näille väitteille helpompia todistuksia kuin esittämäni. Oli miten oli, tulokset lienevät uskottavia.&lt;/p&gt;
+
+&lt;p&gt;Mihin jäimme lauseen todistuksen kanssa? Halusimme osoittaa, että $\mathbb{Q}(\zeta_p)$ ei voi leikata $P$:n juurikuntaa äärettömän monella $p$.&lt;/p&gt;
+
+&lt;p&gt;Osoitetaan tämä vastaoletuksella. Määritellään $K_p = \mathbb{Q}(\zeta_p) \cap F_P$ kaikilla äärettömän monella lemman 4.2. mukaisella $p$. $K_p$ on kunnan $F_P$ osakunta, joita on edellisen nojalla äärellisen monta. Lisäksi vastaoletuksen nojalla $K_p \neq \mathbb{Q}$ kaikilla näillä $p$.&lt;/p&gt;
+
+&lt;p&gt;On siis olemassa kaksi alkulukua $p \neq q$, joilla $K_p = K_q \neq \mathbb{Q}$. Siis kunnilla $\mathbb{Q}(\zeta_p)$ ja $\mathbb{Q}(\zeta_q)$ on muitakin yhteisiä alkioita kuin rationaaliluvut: kaikilla $x \in K_p = K_q$ pätee $x \in \mathbb{Q}(\zeta_p) \cap \mathbb{Q}(\zeta_q)$.&lt;/p&gt;
+
+&lt;p&gt;Tämä vaikuttaa ristiriidalta, ja sitä se onkin. Kukapa muukaan kuin Keith Conrad on kirjoittanut monisteen &lt;a href=&quot;http://www.math.uconn.edu/~kconrad/blurbs/galoistheory/cyclotomic.pdf&quot;&gt;Cyclotomic extensions&lt;/a&gt;, jonka lause 3.4. osoittaa seuraavan väitteen:&lt;/p&gt;
+
+&lt;p&gt;Olkoot $m$ ja $n$ positiivisia kokonaislukuja, joiden syt on $d$. Tällöin&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\mathbb{Q}(\zeta_m) \cap \mathbb{Q}(\zeta_n) = \mathbb{Q}(\zeta_d).&lt;/script&gt;
+
+&lt;p&gt;Todistus ei ole kamalan vaikea, joten näistä aiheista kiinnostunut lukija voi yrittää ymmärtää sen.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://blog.matematiikkakilpailut.fi/2019/06/05/PYA02sovelluksia.html&quot;&gt;Seuraava postaus.&lt;/a&gt;&lt;/p&gt;</content><author><name>Olli Järviniemi</name></author><summary type="html">Tässä postauksessa todistetaan tutkielman lause 4, eli että kaikki välin $[0, 1]$ rationaaliluvut esiintyvät jonkin polynomin alkutekijöiden tiheytenä.</summary></entry><entry><title type="html">Polynomien yhteiset alkutekijät, osa 8: lause 3</title><link href="https://blog-drafts.matematiikkakilpailut.fi/2019/06/05/PYA04lause3.html" rel="alternate" type="text/html" title="Polynomien yhteiset alkutekijät, osa 8: lause 3" /><published>2019-06-05T00:00:00+00:00</published><updated>2019-06-05T00:00:00+00:00</updated><id>https://blog-drafts.matematiikkakilpailut.fi/2019/06/05/PYA04lause3</id><content type="html" xml:base="https://blog-drafts.matematiikkakilpailut.fi/2019/06/05/PYA04lause3.html">&lt;p&gt;Tässä postauksessa esitetään todistus lauseelle 3, eli muodostetaan tapa laskea polynomien yhteisten alkutekijöiden tiheys tietyin oletuksin.&lt;/p&gt;
+
+&lt;!--jatkuu--&gt;
+
+&lt;p&gt;&lt;strong&gt;Sisällysluettelo&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;&lt;a href=&quot;https://blog.matematiikkakilpailut.fi/2019/06/05/PYA11johdanto.html&quot;&gt;Osa 1 - johdanto&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://blog.matematiikkakilpailut.fi/2019/06/05/PYA10esitiedot.html&quot;&gt;Osa 2 - esitiedot&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://blog.matematiikkakilpailut.fi/2019/06/05/PYA09tulokset.html&quot;&gt;Osa 3 - tulokset&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://blog.matematiikkakilpailut.fi/2019/06/05/PYA08motivaatio.html&quot;&gt;Osa 4 - motivaatio&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://blog.matematiikkakilpailut.fi/2019/06/05/PYA07heikko.html&quot;&gt;Osa 5 - heikko versio&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://blog.matematiikkakilpailut.fi/2019/06/05/PYA06yleinen.html&quot;&gt;Osa 6 - yleinen tapaus&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://blog.matematiikkakilpailut.fi/2019/06/05/PYA05lause2.html&quot;&gt;Osa 7 - lause 2&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Osa 8 - lause 3&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://blog.matematiikkakilpailut.fi/2019/06/05/PYA03lause4.html&quot;&gt;Osa 9 - lause 4&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://blog.matematiikkakilpailut.fi/2019/06/05/PYA02sovelluksia.html&quot;&gt;Osa 10 - sovelluksia&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://blog.matematiikkakilpailut.fi/2019/06/05/PYA01lisaaiheita.html&quot;&gt;Osa 11 - lisäaiheita&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;strong&gt;Tavoite:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Olkoot $P_1, P_2, \ldots , P_n \in \mathbb{Z_c}[x]$. Olkoon $F_i$ polynomin $P_i$ juurikunta, ja olkoon $F$ polynomin $P_1P_2 \ldots P_n$ juurikunta. Oletetaan, että&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;[F : \mathbb{Q}] = [F_1 : \mathbb{Q}] \ldots [F_n : \mathbb{Q}].&lt;/script&gt;
+
+&lt;p&gt;Tällöin&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\delta(S(P_1) \cap \ldots \cap S(P_n)) = \delta(S(P_1)) \ldots \delta(S(P_n)).&lt;/script&gt;
+
+&lt;p&gt;&lt;strong&gt;Idea:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Alkuperäinen ideani ei toiminut, ja huomasin virheen vasta tätä blogipostausta kirjoittaessani. Ideanani oli tutkia lauseen 1 antamia $D$, eli yhteiset alkutekijät karakterisoivaa polynomia. Tämä on kuitenkin turhan monimutkaista, koska saman voi tehdä tutkimalla polynomien tuloja:&lt;/p&gt;
+
+&lt;p&gt;Tutkitaan hetken ajan tapausta $n = 2$. Inkluusio-ekskluusion nojalla pätee&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\delta(S(P_1) \cap S(P_2)) + \delta(S(P_1) \cup S(P_2)) = \delta(S(P_1)) + \delta(S(P_2)).&lt;/script&gt;
+
+&lt;p&gt;Miksi voimme käyttää inkluusioekskluusiota tiheyksille? Tämä toimii kyllä (ja lienee melko intuitiivista): olkoon $S(P, x)$ niiden $P$:n alkutekijöiden $p$ joukko, joilla $p \le x$. Tällöin tavallisen inkluusio-ekskluusion avulla (eli siis $\mid A \cup B \mid + \mid A \cap B \mid \ = \ \mid A \mid + \mid B \mid$) saadaan&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\mid S(P_1, x) \cap S(P_2, x) \mid + \mid S(P_1, x) \cup S(P_2, x) \mid \ = \ \mid S(P_1, x) \mid + \mid S(P_2, x) \mid.&lt;/script&gt;
+
+&lt;p&gt;Jaetaan yhtälö puolittain suureella $\pi(x)$, eli niiden alkulukujen määrällä, jotka ovat enintään $x$. Annetaan vielä $x$:n lähestyä ääretöntä. Yhtälön molemmilla puolilla summataan termejä muotoa&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\lim_{x \to \infty} \frac{\mid S(P_1, x) \mid}{\pi(x)}.&lt;/script&gt;
+
+&lt;p&gt;Mutta tämä on luonnollisen tiheyden määritelmä.&lt;/p&gt;
+
+&lt;p&gt;Jos siis saamme laskettua joukon $S(P_1) \cup S(P_2)$, eli joukon $S(P_1P_2)$, tiheyden, saamme myös tiheyden $\delta(S(P_1) \cap S(P_2))$ laskettua. Tämä on helpompaa kuin se, että generoisimme lauseen 1 avulla sellaisen $D$, jolla $S(D) = S(P_1) \cap S(P_2)$, ja tutkisimme joukon $S(D)$ tiheyttä. Syy tämän taustalla on se, että aiomme käyttää Frobeniuksen lausetta tiheyksien laskemiseen, ja tämä vaatii tietoa polynomien juurista. Tiedämme heti, mitä ovat polynomin $P_1P_2$ juuret, mutta polynomin $D$ juurien käsittely on vaikeampaa.&lt;/p&gt;
+
+&lt;p&gt;Ennen kuin mennään lauseen todistukseen, kirjoittelen muutamia huomioita.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Huomautus&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Kirjoitin tulokset-postauksessa siitä, kuinka lauseen ehto on vain tapa sanoa se, että polynomit $P_i$ eivät kommunikoi keskenään. Tässä kohtaa väite voi tuntua jo hieman uskottavammalta: Frobeniuksen lause ottaa sisään tietoa juurista ja niiden generoimista kuntalaajennuksista, ja antaa takaisin tietoa alkutekijöistä.&lt;/p&gt;
+
+&lt;p&gt;Mainitsin aiemmin myös siitä, että tapauksessa $n = 2$ ehto on ekvivalenttia sen kanssa, että $F_1 \cap F_2 = \mathbb{Q}$ (tämä on melko intuitiivista). Yleisessä tapauksessa ehdosta seuraa kyllä, että juurikunnat eivät leikkaa toisiaan (paitsi rationaaliluvuissa), mutta tämä ei ole riittävä ehto. Ekvivalentti ehto voitaisiin muotoilla seuraavasti:&lt;/p&gt;
+
+&lt;p&gt;Olkoon $P$ polynomien $P_i$ tulo. Oletetaan, että kaikilla $1 \le i \le n$ polynomien $\frac{P}{P_i}$ ja $P_i$ juurikuntien leikkaus on rationaaliluvut.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Huomautus&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Olkoot $P_1(x) = x^3 - 2$ ja $P_2(x) = x^2 + x + 1$. Näiden polynomien juurikunnat leikkaavat: jos $\omega$ on jokin $P_2$:n juuri, niin $\omega^3 = 1$, ja $P_1$:n juuret ovat $\sqrt[3]{2}, \sqrt[3]{2}\omega$ ja $\sqrt[3]{2}\omega^2$. Selvästi $\omega$ kuuluu $P_1$:n juurikuntaan.&lt;/p&gt;
+
+&lt;p&gt;Tällä esimerkillä on mielenkiintoisia ominaisuuksia.&lt;/p&gt;
+
+&lt;p&gt;Jaottomien kolmannen asteen polynomien alkutekijöiden tiheys on joko $\frac{1}{3}$ tai $\frac{2}{3}$ (ei ole vaikeaa osoittaa Frobeniuksen lauseen nojalla, joukolla $\lbrace 1, 2, 3 \rbrace$ kun on vain $6$ permutaatiota, ja ei kovin montaa osaryhmää).&lt;/p&gt;
+
+&lt;p&gt;Osoittautuu, että $\delta(S(P_1)) = \frac{2}{3}$. Lisäksi (jaottomille) toisen asteen polynomeilla pätee $\delta(S(P_2)) = \frac{1}{2}$.&lt;/p&gt;
+
+&lt;p&gt;Yhteisten alkutekijöiden tiheyden olettaisi olevan siis $\frac{1}{3}$, mutta näin ei ole. Tiheys on &lt;strong&gt;vähemmän&lt;/strong&gt;, $\frac{1}{6}$. Inkluusio-ekskluusion nojalla (kts. yllä) $\delta(S(P_1) \cup S(P_2)) = \frac{1}{2} + \frac{1}{3} - \frac{1}{6} = 1$&lt;/p&gt;
+
+&lt;p&gt;Esimerkissä on kolme mielenkiintoista pointtia:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;Yhteisten alkutekijöiden tiheys on vähemmän kuin annettujen polynomien alkutekijöiden tiheys. Tämä yllätti minut täysin - olin pitkään ajatellut tämän olevan mahdotonta, eli ajattelin epäyhtälön $\delta(S(A) \cap S(B)) \ge \delta(S(A))\delta(S(B))$ pätevän aina. Lisäksi en näe intuitiivista syytä sille, mistä tämä johtuu: helpossa esimerkeissä tapahtumat “p on $A$:n alkutekijä” ja “p on $B$:n alkutekijä” ovat riippumattomia, tai toisen pätevyys aiheuttaa suuremman todennäköisyyden myös toiselle päteä. Näin käy esimerkiksi jos $A(x) = x^{10} - 2$ ja $B(x) = x^6 - 2$, mutta nyt tilanne on päinvastainen.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;$\delta(S(P_1) \cup S(P_2)) = 1$. Tämä ei vielä todista, että kaikki $p$ ovat polynomin $P_1P_2$ alkutekijöitä (poikkeustapauksia voisi olla hyvin harvassa ilman, että tämä vaikuttaa tiheyteen), mutta tämäkin pätee. Aiemmin esitettiin polynomi $(x^2 - 2)(x^2 - 3)(x^2 - 6)$ ratkaisuna ongelmaan “onko olemassa polynomia, jolla ei ole rationaalisia juuria, mutta jonka alkutekijöitä ovat kaikki alkuluvut?”. Polynomi $P_1P_2$ antaa ratkaisun, jonka aste on $5$. Epätriviaaliksi harjoitustehtäväksi jätetään sen osoittaminen, että ei ole olemassa ratkaisua, jonka aste on alle $5$.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Jos $\alpha$ ja $\beta$ ovat mielivaltaiset polynomien $P_1$ ja $P_2$ juuret, niin pätee $[\mathbb{Q}(\alpha, \beta) : \mathbb{Q}] = 6$. Tästä huolimatta juurikunnat leikkaavat.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Miksi kaikki alkuluvut ovat joko $P_1$:n tai $P_2$:n alkutekijöitä? Jos $p \equiv 1 \pmod{3}$, niin se on kolmannen syklotomisen polynomin $P_2$ alkutekijä. Jos taas $p \equiv 2 \pmod{3}$, niin funktio $f(x) = x^3$ on bijektio mod $p$, eli $p \in S(P_1)$. Jos taas $p = 3$, niin $p \in S(P_1)$.&lt;/p&gt;
+
+&lt;p&gt;Seuraavaksi osoitetaan lause 3. Todistus ei sisällä mitään kovin mielenkiintoista, mutta demonstroi Frobeniuksen lauseen käyttämistä tositilanteissa. Itse pidän todistusta hieman puuduttavana, lähinnä koska todistuksen toteutus on melko vaivalloinen. Idea lauseessa 3 on siitä huolimatta hyvin luonnollinen.&lt;/p&gt;
+
+&lt;h2 id=&quot;todistus&quot;&gt;Todistus&lt;/h2&gt;
+
+&lt;p&gt;Todistan väitteen vain tapauksessa $n = 2$. Todistin työssäni yleisen tapauksen induktiolla - todistus oli mielestäni hyvin puuduttava, eikä sisältänyt mitään oivaltavaa. Siispä keskitytään hieman mielenkiintoisempaan osaan todistuksesta.&lt;/p&gt;
+
+&lt;p&gt;Oletetaan siis, että $n = 2$.&lt;/p&gt;
+
+&lt;p&gt;Olkoon $G_1$ polynomin $P_1$ Galois’n ryhmä, $G_2$ vastaavasti $P_2$:n, ja vielä $G_{12}$ polynomin $P_1P_2$ Galois’n ryhmä.&lt;/p&gt;
+
+&lt;p&gt;Jos $A, B$ ovat joukkoja, joukolla $A \times B$ viitataan parien $(a, b), a \in A, b \in B$ joukkoon.&lt;/p&gt;
+
+&lt;p&gt;Keith Conradin &lt;a href=&quot;http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.211.2314&amp;amp;rep=rep1&amp;amp;type=pdf&quot;&gt;Galois Theory At Work&lt;/a&gt;-monisteen (linkki) lause 5.1. kertoo, että $G_{12}$ on isomorfinen joukon $G_1 \times G_2$ kanssa, seuraten ehdosta $[F : \mathbb{Q}] = [F_1 : \mathbb{Q}][F_2 : \mathbb{Q}]$. On siis olemassa bijektio $f$ näiden joukkojen välillä. Tämä bijektio on varsin luonnollinen: olkoon $\sigma_{12} \in G_{12}$ jokin alkio. Määritellään $\sigma_1(x) = \sigma_{12}(x)$ kaikilla $x \in F_1$, ja määritellään vastaavasti $\sigma_2$. On selvää, että $\sigma_i \in G_i$, $i = 1, 2$. Kuvataan $f(\sigma_{12}) = (\sigma_1, \sigma_2)$.&lt;/p&gt;
+
+&lt;p&gt;Joukon $G_{12}$ koko on bijektion olemassaolon vuoksi joukkojen $G_1$ ja $G_2$ kokojen tulo.&lt;/p&gt;
+
+&lt;p&gt;Suunnitelmana on käyttää Frobeniuksen lausetta polynomin $P_1P_2$ alkutekijöiden tiheyden määrittämiseen. Tätä varten meidän tulee määrittää niiden $\sigma_{12} \in G_{12}$ määrä, jotka kuvaavat jonkin polynomin $P_1P_2$ juurista itselleen. Olkoon näiden kuvausten joukko $N_{12}$. Määritellään vastaavasti $N_1$ ja $N_2$.&lt;/p&gt;
+
+&lt;p&gt;Frobeniuksen lause sanoo siis, että&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\delta(S(P_1P_2)) = \frac{\mid N_{12} \mid}{\mid G_{12} \mid}.&lt;/script&gt;
+
+&lt;p&gt;Miten määritämme joukon $N_{12}$ koon? Ideana on valita joukon $G_{12}$ alkioita $\sigma_{12}$, ja tutkia, millainen pari $(\sigma_1, \sigma_2)$ tulee ulos kuvatessa bijektiolla $f$. Tähän on neljä tapausta:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;$\sigma_1 \in N_1, \sigma_2 \in N_2$. Tämä tarkoittaa siis, että on olemassa polynomin $P_1$ juuri $\alpha_1$, jolla $\sigma_1(\alpha_1) = \alpha_1$ (ja vastaavasti polynomille $P_2$). Bijektion määrittelyn nojalla nyt pätee $\sigma_{12}(\alpha_1) = \sigma_1(\alpha_1) = \alpha_1$. Siis kuvaus $\sigma_{12}$ kuvaa polynomin $P_1P_2$ juuren $\alpha_1$ itselleen, eli $\sigma_{12} \in N_{12}$. Siis jos $f(\sigma_{12}) \in N_1 \times N_2$, pätee $\sigma_{12} \in N_{12}$.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;$\sigma_1 \in N_1$, mutta $\sigma_2 \not\in N_2$. Voimme edetä kuten tapauksessa 1: missään kohtaa ei käytetty tietoa $\sigma_2 \in N_2$. Tässä tapauksessa pätee myös $\sigma_{12} \in N_{12}$.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;$\sigma_1 \not\in N_1$ ja $\sigma_2 \in N_2$. Tapauksen 1 käsittely toimii tutkimalla kuvausta $\sigma_2$ ja jotain polynomin $P_2$ juurta $\alpha_2$. SIis $\sigma_{12} \in N_{12}$.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;$\sigma_1 \not\in N_1$ ja $\sigma_2 \not\in N_2$. Tässä tapauksessa päteekin $\sigma_{12} \not\in N_{12}$. Tämä on helppoa osoittaa vastaoletuksella: oletetaan, että olisi olemassa jokin polynomin $P_1P_2$ juuri $\alpha$, jolla $\sigma_{12}(\alpha) = \alpha$. Jos $\alpha$ on $P_1$:n juuri, pätee bijektion määrittelyn nojalla $\sigma_1(\alpha) = \sigma_{12}(\alpha) = \alpha$, ristiriita ehdon $\sigma_1 \not\in N_1$ kanssa. Vastaavasti ristiriita, jos $\alpha$ on $P_2$:n juuri.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Tapauskäsittelyn pohjalta on helppoa laskea joukon $N_{12}$ koko: se on tapausten $1, 2, 3$ mukaisten parien $(\sigma_1, \sigma_2)$ määrä. Ensimmäisen tapauksen kuvaksien määrä on $\mid N_1 \mid \cdot \mid N_2 \mid$. Toisen tapauksen mukaisia pareja on&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\mid N_1 \mid (\mid G_2 \mid - \mid N_2 \mid).&lt;/script&gt;
+
+&lt;p&gt;Kolmannen tapauksen mukaisia taas on&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;(\mid G_1 \mid - \mid N_1 \mid)\mid N_2 \mid.&lt;/script&gt;
+
+&lt;p&gt;Summaamalla nämä yhteen saadaan&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\mid N_{12} \mid \ =  \ \mid N_1 \mid \mid G_2 \mid + \mid N_2 \mid\mid G_1 \mid - \mid N_1 \mid \mid N_2 \mid.&lt;/script&gt;
+
+&lt;p&gt;Frobeniuksen lauseen nojalla&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\delta(S(P_1P_2)) = \frac{\mid N_{12} \mid}{\mid G_{12} \mid} = \frac{\mid N_1 \mid }{\mid G_1 \mid} + \frac{\mid N_2 \mid}{\mid G_2 \mid} - \frac{\mid N_1 \mid \mid N_2 \mid}{\mid G_1 \mid \mid G_2 \mid},&lt;/script&gt;
+
+&lt;p&gt;missä on Frobeniuksen lauseen nojalla&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\delta(S(P_i)) = \frac{\mid N_i \mid}{\mid G_i \mid},&lt;/script&gt;
+
+&lt;p&gt;joten yllä oleva summa on vain&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\delta(S(P_1)) + \delta(S(P_2)) - \delta(S(P_1))\delta(S(P_2)).&lt;/script&gt;
+
+&lt;p&gt;Inkluusio-ekskluusion nojalla $\delta(S(P_1) \cap \delta(S(P_2)) = \delta(S(P_1))\delta(S(P_2))$.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://blog.matematiikkakilpailut.fi/2019/06/05/PYA03lause4.html&quot;&gt;Seuraava postaus.&lt;/a&gt;&lt;/p&gt;</content><author><name>Olli Järviniemi</name></author><summary type="html">Tässä postauksessa esitetään todistus lauseelle 3, eli muodostetaan tapa laskea polynomien yhteisten alkutekijöiden tiheys tietyin oletuksin.</summary></entry><entry><title type="html">Polynomien yhteiset alkutekijät, osa 7: lause 2</title><link href="https://blog-drafts.matematiikkakilpailut.fi/2019/06/05/PYA05lause2.html" rel="alternate" type="text/html" title="Polynomien yhteiset alkutekijät, osa 7: lause 2" /><published>2019-06-05T00:00:00+00:00</published><updated>2019-06-05T00:00:00+00:00</updated><id>https://blog-drafts.matematiikkakilpailut.fi/2019/06/05/PYA05lause2</id><content type="html" xml:base="https://blog-drafts.matematiikkakilpailut.fi/2019/06/05/PYA05lause2.html">&lt;p&gt;Tässä postauksessa todistetaan tutkielma lause 2, eli Schurin lauseelle yleistys. Todistus perustuu Frobeniuksen lauseeseen.&lt;/p&gt;
+
+&lt;!--jatkuu--&gt;
+
+&lt;p&gt;&lt;strong&gt;Sisällysluettelo&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;&lt;a href=&quot;https://blog.matematiikkakilpailut.fi/2019/06/05/PYA11johdanto.html&quot;&gt;Osa 1 - johdanto&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://blog.matematiikkakilpailut.fi/2019/06/05/PYA10esitiedot.html&quot;&gt;Osa 2 - esitiedot&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://blog.matematiikkakilpailut.fi/2019/06/05/PYA09tulokset.html&quot;&gt;Osa 3 - tulokset&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://blog.matematiikkakilpailut.fi/2019/06/05/PYA08motivaatio.html&quot;&gt;Osa 4 - motivaatio&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://blog.matematiikkakilpailut.fi/2019/06/05/PYA07heikko.html&quot;&gt;Osa 5 - heikko versio&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://blog.matematiikkakilpailut.fi/2019/06/05/PYA06yleinen.html&quot;&gt;Osa 6 - yleinen tapaus&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Osa 7 - lause 2&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://blog.matematiikkakilpailut.fi/2019/06/05/PYA04lause3.html&quot;&gt;Osa 8 - lause 3&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://blog.matematiikkakilpailut.fi/2019/06/05/PYA03lause4.html&quot;&gt;Osa 9 - lause 4&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://blog.matematiikkakilpailut.fi/2019/06/05/PYA02sovelluksia.html&quot;&gt;Osa 10 - sovelluksia&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://blog.matematiikkakilpailut.fi/2019/06/05/PYA01lisaaiheita.html&quot;&gt;Osa 11 - lisäaiheita&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Tavoitteena on siis osoittaa seuraava lause:&lt;/p&gt;
+
+&lt;p&gt;Olkoot $P_1, P_2, \ldots , P_n \in \mathbb{Z_c}[x]$. Pätee&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\delta(S_v(P_1) \cap \ldots \cap S_v(P_n)) \ge \frac{1}{\deg(P_1) \ldots \deg(P_n)}.&lt;/script&gt;
+
+&lt;p&gt;Lauseen 1 ja lemman 2 nojalla riittää osoittaa, että $\delta(S(D)) \ge \frac{1}{\deg(D)}$ kaikilla $D \in \mathbb{Z_c}[x]$.&lt;/p&gt;
+
+&lt;p&gt;Väite on osoitettu artikkelissa &lt;a href=&quot;https://www.researchgate.net/publication/268860079_Prime_factors_of_a_fn_-1_with_an_irreducible_polynomial_fx&quot;&gt;Prime factors of $a^{f(n)} - 1$ with an irreducible polynomial $f(x)$&lt;/a&gt; (Christian Ballot, Florian Luca). Mutta miten?&lt;/p&gt;
+
+&lt;p&gt;Todistus perustuu Frobeniuksen lauseeseen sekä pienen määrään ryhmänteoriaan. Ensimmäisen ymmärrän ja pystyn selittämään, mutta toisesta minulle ei ole tietoa (mutta ilmeisesti käytetty ryhmäteoria on hyvin standardia).&lt;/p&gt;
+
+&lt;p&gt;Väite on oikeastaan osoitettu viitteessä vain jaottomille pääpolynomeille, mutta lemman 8 nojalla väite pätee kaikilla jaottomilla polynomeilla. Väite pätee täten tietysti myös jakautuvilla polynomeilla.&lt;/p&gt;
+
+&lt;h2 id=&quot;galoisn-ryhmä&quot;&gt;Galois’n ryhmä&lt;/h2&gt;
+
+&lt;p&gt;Frobeniuksen lausetta varten määritellään Galois’n ryhmä.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Määritelmä - Galois’n ryhmä&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Olkoon $P \in \mathbb{Z_c}[x]$, ja olkoon $F$ sen juurikunta. Olkoon $G$ isomorfismien $\sigma : F \to F$ joukko. $G$:tä kutsutaan kunnan $F$ tai polynomin $P$ Galois’n ryhmäksi.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Rakenne&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Millaisia ovat isomorfismit $\sigma : F \to F$? Olkoon $P(x) = a_dx^d + a_{d-1}x^{d-1} + \ldots + a_0$, missä $a_i \in \mathbb{Z}$ (tai $a_i \in \mathbb{Q}$, ei väliä). Olkoon $\alpha$ jokin $P$:n juuri. Käytetään isomorfismien seuraavia ominaisuuksia:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;$\sigma(xy) = \sigma(x)\sigma(y)$&lt;/li&gt;
+  &lt;li&gt;$\sigma(x + y) = \sigma(x) + \sigma(y)$&lt;/li&gt;
+  &lt;li&gt;$\sigma(1) = 1$.&lt;/li&gt;
+  &lt;li&gt;$\sigma(q) = q$ kaikilla $q \in \mathbb{Q}$ (seuraa ehdoista 1-3).&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Saamme&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;0 = \sigma(0) = \sigma(P(\alpha)) = \sigma(a_d\alpha^d + \ldots + a_0)&lt;/script&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;= \sigma(a_d\alpha^d) + \sigma(a_{d-1}\alpha^{d-1}) + \ldots + \sigma(a_0)&lt;/script&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;= a_d\sigma(\alpha)^d + a_{d-1}\sigma(\alpha)^{d-1} + \ldots + a_0&lt;/script&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;= P(\sigma(\alpha)).&lt;/script&gt;
+
+&lt;p&gt;Huomaamme siis, että $\sigma(\alpha)$ on jokin $P$:n juuri. $\sigma$ siis vain kuvaa $P$:n juuria toisikseen. Huomaa, että $\sigma$ on permutaatio, koska isomorfismin tulee olla bijektiivinen. $\sigma$ siis &lt;strong&gt;permutoi&lt;/strong&gt; $P$:n juuria. Tämän vuoksi Galois’n ryhmästä puhuttaessa puhutaan usein permutaatioista: Galois’n ryhmän voidaan ajatella olevan joukko permutaatioita.&lt;/p&gt;
+
+&lt;p&gt;Tämä osoittaa, että $G$ on äärellinen, ja sen koko on enintään $\deg(P)!$.&lt;/p&gt;
+
+&lt;p&gt;Huomataan vielä, että arvot $\sigma(\alpha_1), \sigma(\alpha_2), \ldots , \sigma(\alpha_d)$ määrittävät Galois’n ryhmän alkion $\sigma$ yksikäsitteisesti. Tämä johtuu siitä, että jokainen juurikunnan $F$ alkio voidaan kirjoittaa polynomina muuttujista $\alpha_i$.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Huomautus&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Galois’n ryhmä toteuttaa &lt;a href=&quot;https://en.wikipedia.org/wiki/Group_(mathematics)&quot;&gt;ryhmän&lt;/a&gt; vaatimukset.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Esimerkki&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Tutkitaan polynomin $P(x) = x^2 - 2$ Galois’n ryhmää. Galois’n ryhmän kuvaukset permutoivat juuria $\lbrace \sqrt{2}, -\sqrt{2} \rbrace$. On siis kaksi eri vaihtoehtoa:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;$\sigma_1(\sqrt{2}) = \sqrt{2}$. Tällöin $\sigma_1(-\sqrt{2}) = -\sigma_1(\sqrt{2}) =  -\sqrt{2}$.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;$\sigma_2(\sqrt{2}) = -\sqrt{2}$. Tällöin $\sigma_2(-\sqrt{2}) = -\sigma_2(\sqrt{2}) = \sqrt{2}$.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Ensimmäisen kuvauksen tapauksessa $\sigma(a + b\sqrt{2}) = a + b\sigma(\sqrt{2}) = a + b\sqrt{2}$ kaikilla $a, b \in \mathbb{Q}$. Siis kyseessä on identiteettikuvaus.&lt;/p&gt;
+
+&lt;p&gt;Toisen kuvauksen tapauksessa $\sigma(a + b\sqrt{2}) = a + b\sigma(\sqrt{2}) = a - b\sqrt{2}$ kaikilla $a, b \in \mathbb{Q}$. Kyseessä on konjugaatio.&lt;/p&gt;
+
+&lt;h2 id=&quot;frobeniuksen-lause&quot;&gt;Frobeniuksen lause&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;Permutaation komponenttijako&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Olkoon $\sigma$ jokin $P$:n Galois’n ryhmän alkio. $\sigma$ voidaan ajatella permutaationa, joka permutoi joukkoa $\lbrace 1, 2, \ldots , n \rbrace$, missä $n = \deg(P)$. Nämä permutaatiot voivat sisältää pienempiä syklejä. Yllä olevassa esimerkissä $\sigma_1$ muodostaa kaksi yhden pituista sykliä, kun taas $\sigma_2$ muodostaa yhden ison syklin.&lt;/p&gt;
+
+&lt;p&gt;Yleisesti permutaatio voidaan jakaa komponentteihin $H_1, H_2, \ldots , H_k$ niin, että $\sigma(h_i) \in H_i$ kaikilla $h_i \in H_i$. Määritelmä on vielä puutteellinen: voisimme aina valita $H_1 = \lbrace 1, 2, \ldots , n \rbrace$. Valitaan siis se jako, joka maksimoi komponenttien määrän $k$. Olkoon komponentin $H_i$ koko $s_i$.&lt;/p&gt;
+
+&lt;p&gt;Käytän pian komponenttijakoa Frobeniuksen lauseen yhteydessä, joten merkitään kuvauksen $\sigma$ komponenttien kokoa joukolla $S(\sigma) = \lbrace s_1, s_2, \ldots , s_k \rbrace$. Muodostetaan tämä joukko niin, että poikkeuksellisesti siellä saa olla sama alkio useampaan kertaan.&lt;/p&gt;
+
+&lt;p&gt;Esimerkiksi polynomin $x^2 - 2$ juurikunnan tapauksessa $S(\sigma_1) = \lbrace 1, 1 \rbrace$ ja $S(\sigma_2) = \lbrace 2 \rbrace$.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Frobeniuksen lause&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Olkoon $P \in \mathbb{Z_c}[x]$, ja olkoon $G$ sen Galois’n ryhmä, ja $g$ Galois’n ryhmän koko. Olkoot $s_1, s_2, \ldots , s_k$ positiivisia kokonaislukuja, joiden summa on $\deg(P)$. Olkoon $N(s_1, s_2, \ldots , s_k)$ niiden $\sigma \in G$ määrä, joilla $S(\sigma) = \lbrace s_1, s_2, \ldots , s_k \rbrace$.&lt;/p&gt;
+
+&lt;p&gt;Olkoon $S$ niiden $p$ joukko, joilla $P$ jakautuu täsmälleen $k$ polynomiksi modulo $p$, joiden asteet ovat $s_1, s_2, \ldots , s_k$. Tällöin $\delta(S)$ on olemassa, ja&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\delta(S) = \frac{N(s_1, s_2, \ldots , s_k)}{g}.&lt;/script&gt;
+
+&lt;p&gt;&lt;strong&gt;Esimerkki&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Määritetään polynomin $P(x) = x^2 - 2$ alkutekijöiden tiheys. Galois’n ryhmän koko tässä tapauksessa on $2$, ja komponenttijaot Galois’n ryhmän alkioille ovat $\lbrace 1, 1 \rbrace$ ja $\lbrace 2 \rbrace$. Niiden $p$ tiheys, joilla $P$ ei jakaudu modulo $p$ on Frobeniuksen lauseen nojalla&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\frac{N(2)}{g} = \frac{1}{2}.&lt;/script&gt;
+
+&lt;p&gt;Ja niiden $p$ tiheys, joilla $P$ jakautuu on vastaavasti $\frac{1}{2}$.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Esimerkki&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Olkoon $P \in \mathbb{Z}[x]$ mielivaltainen toisen asteen polynomi. Sen juuret ovat muotoa $a \pm \sqrt{b}$, missä $a, b \in \mathbb{Q}$. Jos $b$ on rationaaliluvun neliö, ovat $P$:n juuret rationaalisia, ja $\delta(S(P)) = 1$. Jos taas $b$ ei ole rationaaliluvun neliö, $P$:n juuret eivät ole rationaalisia. Tällöin $P$:n Galois’n ryhmän koko on $2$: yksi kuvaus on $\sigma_1(a + \sqrt{b}) = a + \sqrt{b}$ (identiteettikuvaus), ja toinen kuvaus on $\sigma_2(a + \sqrt{b}) = a - \sqrt{b}$ (konjugaatio).&lt;/p&gt;
+
+&lt;p&gt;Frobeniuksen lauseen nojalla $P$:n alkutekijöiden tiheys on puolet, ja puolet alkuluvuista ovat sellaisia, joilla $P$ ei jakaudu.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Esimerkki&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Olkoon $P \in \mathbb{Z_c}[x]$ mielivaltainen. $P$:n Galois’n ryhmän koko on enintään $\deg(P)!$. $P$:n Galois’n ryhmään kuuluu varmasti identiteettikuvaus. Siispä&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\delta(S(P)) \ge \frac{1}{n!}.&lt;/script&gt;
+
+&lt;p&gt;Raja ei tietenkään ole paras mahdollinen, koska myös raja $\delta(S(P)) \ge \frac{1}{n}$ pätee.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Huomautus&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Aina ei päde, että $P$:n Galois’n ryhmän koko on $\deg(P)!$. Esimerkki: olkoon $P(x) = x^4 + 1$. Tällöin $P$:n juuret ovat $\zeta_8, \zeta_8^3, \zeta_8^5$ ja $\zeta_8^7$, missä $\zeta_8$ on jokin 8. primitiivinen ykkösjuuri. Siispä $P$:n juurikunta on $\mathbb{Q}(\zeta_8)$, ja mikä tahansa isomorfismi $\sigma : \mathbb{Q}(\zeta_8) \to \mathbb{Q}(\zeta_8)$ määräytyy sen mukaan, mihin se kuvaa luvun $\zeta_8$. Täten $P$:n Galois’n ryhmä on maksimissaan $4$ (ja voidaan osoittaa, että tasan $4$).&lt;/p&gt;
+
+&lt;h3 id=&quot;frobeniuksen-lauseen-todistus&quot;&gt;Frobeniuksen lauseen todistus&lt;/h3&gt;
+
+&lt;p&gt;Rehellisesti sanottuna minulla ei ole harmainta aavistustakaan siitä, miten lause osoitetaan. Tässä on muodon vuoksi viite todistukselle:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://www.fen.bilkent.edu.tr/~franz/cft/cfb.pdf&quot;&gt;Franz Lemmermeyer, Class Field Theory, 2007&lt;/a&gt; (sivut 165-166).&lt;/p&gt;
+
+&lt;p&gt;Väite on osoitettu Dirichlet’n tiheydelle eikä luonnolliselle tiheydelle. Frobeniuksen lause on heikompi versio vaikeammasta (ja paljon tunnetummasta) lauseesta nimeltä Chebotarev Density Theorem, jonka todistus luonnolliselle tiheydelle löytyy nopealla etsimisellä netistä. Olen pitkään koittanut ymmärtää, mikä Chebotarevin lauseen sisältö on, miksi se on parempi kuin Frobeniuksen lause ja miten se liittyy polynomien alkutekijöihin (lause esitetään usein tavalla, joka on näennäisesti hyvin kaukana polynomien alkutekijöistä. Tästä lisää viimeisessä postauksessa). Kovan työn jälkeen pääsin jonkinlaiseen käsitykseen, mutten ole sisäistänyt konseptia niin hyvin, että voisin kirjoittaa siitä.&lt;/p&gt;
+
+&lt;h3 id=&quot;lauseiden-rajojen-tiukkuus&quot;&gt;Lauseiden rajojen tiukkuus&lt;/h3&gt;
+
+&lt;p&gt;Olkoon $\phi_k$ $k$:nnes syklotominen polynomi. On tunnettua, että $p \in S(\phi_k) \implies p \mid k$ tai $p \equiv 1 \pmod{k}$. Tämän väitteen todistuksesta voi lukea Evan Chenin monisteesta &lt;a href=&quot;http://web.evanchen.cc/handouts/ORPR/ORPR.pdf&quot;&gt;Orders Modulo A Prime&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Niiden alkulukujen tiheys, joilla $p \equiv 1 \pmod{k}$, on tunnetusti $\frac{1}{\phi(k)}$ (kiinnostunut lukija löytää tästä lisää tietoa netistä - hakusanat “Dirichlet’s theorem” ja “prime number theorem for arithmetic progressions” riittävät pitkälle). Koska syklotomisten polynomien aste on $\phi(k)$, osoittaa tämä, että raja on saavutettavissa äärettömän monella polynomilla: valitaan $n = 1$, $P_1(x) = \phi_k(x)$.&lt;/p&gt;
+
+&lt;p&gt;Esimerkkinä monelle polynomille rajan tiukkuudesta toimii $P_i(x) = \phi_{p_i}(x)$, missä $p_i$ ovat erisuuria alkulukuja. Tämän toimivuus voidaan osoittaa kiinalaisella jäännöslauseella.&lt;/p&gt;
+
+&lt;p&gt;Samalla tämä osoittaa lauseen 1 ylärajan: olkoot $P_i$ sellaisia, että $\delta(S(P_1) \cap \ldots \cap S(P_n)) = \frac{1}{\deg(P_1) \cdots}$. Tällöin lauseen 1 mukaisen $D$:n asteen tulee ehdon $\delta(S(D)) \ge \frac{1}{\deg(D)}$ nojalla toteuttaa $\deg(D) \ge \deg(P_1) \ldots \deg(P_n)$.&lt;/p&gt;
+
+&lt;h3 id=&quot;yläraja&quot;&gt;Yläraja&lt;/h3&gt;
+
+&lt;p&gt;Pätee siis $\delta(S(D)) \ge \frac{1}{\deg(D)}$. Onko mahdollista saada ylärajaa? Suoraan tämä ei ole mahdollista: polynomin $P(x) = (x - 1)(x - 2) \ldots (x - n)$ alkutekijliden tiheys on $1$ kaikilla $n \in \mathbb{Z}_+$.&lt;/p&gt;
+
+&lt;p&gt;Parempi kysymys olisi: onko mahdollista antaa epätriviaalia ylärajaa polynomin $P$ alkutekijöiden tiheydelle, kun $P$:llä ei ole rationaalisia juuria?&lt;/p&gt;
+
+&lt;p&gt;Tämäkään ei aivan onnistu: polynomin $(x^2 - 2)(x^2 - 3)(x^2 - 6)$ alkutekijöiden tiheys on $1$ neliönjäännösten multiplikatiivisuuden vuoksi.&lt;/p&gt;
+
+&lt;p&gt;Jaottomilla polynomeilla yläraja kuitenkin löytyy. Yläraja on $1 - \frac{1}{\deg(P)}$ kaikilla jaottomilla $P$, ja ylärajan saavuttaminen vaatii, että $\deg(P)$ on alkuluvun potenssi. Tämä on osoitettu artikkelissa &lt;a href=&quot;http://www.ams.org/journals/bull/2003-40-04/S0273-0979-03-00992-3/S0273-0979-03-00992-3.pdf&quot;&gt;On a theorem of Jordan&lt;/a&gt; (Jean-Pierre Serre).&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://blog.matematiikkakilpailut.fi/2019/06/05/PYA04lause3.html&quot;&gt;Seuraava postaus.&lt;/a&gt;&lt;/p&gt;</content><author><name>Olli Järviniemi</name></author><summary type="html">Tässä postauksessa todistetaan tutkielma lause 2, eli Schurin lauseelle yleistys. Todistus perustuu Frobeniuksen lauseeseen.</summary></entry><entry><title type="html">Polynomien yhteiset alkutekijät, osa 6: yleinen tapaus</title><link href="https://blog-drafts.matematiikkakilpailut.fi/2019/06/05/PYA06yleinen.html" rel="alternate" type="text/html" title="Polynomien yhteiset alkutekijät, osa 6: yleinen tapaus" /><published>2019-06-05T00:00:00+00:00</published><updated>2019-06-05T00:00:00+00:00</updated><id>https://blog-drafts.matematiikkakilpailut.fi/2019/06/05/PYA06yleinen</id><content type="html" xml:base="https://blog-drafts.matematiikkakilpailut.fi/2019/06/05/PYA06yleinen.html">&lt;p&gt;Tässä postauksessa esitetään tapa laajentaa heikko versio lauseesta 1 yleiseen tapaukseen.&lt;/p&gt;
+
+&lt;!--jatkuu--&gt;
+
+&lt;p&gt;&lt;strong&gt;Sisällysluettelo&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;&lt;a href=&quot;https://blog.matematiikkakilpailut.fi/2019/06/05/PYA11johdanto.html&quot;&gt;Osa 1 - johdanto&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://blog.matematiikkakilpailut.fi/2019/06/05/PYA10esitiedot.html&quot;&gt;Osa 2 - esitiedot&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://blog.matematiikkakilpailut.fi/2019/06/05/PYA09tulokset.html&quot;&gt;Osa 3 - tulokset&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://blog.matematiikkakilpailut.fi/2019/06/05/PYA08motivaatio.html&quot;&gt;Osa 4 - motivaatio&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://blog.matematiikkakilpailut.fi/2019/06/05/PYA07heikko.html&quot;&gt;Osa 5 - heikko versio&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Osa 6 - yleinen tapaus&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://blog.matematiikkakilpailut.fi/2019/06/05/PYA05lause2.html&quot;&gt;Osa 7 - lause 2&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://blog.matematiikkakilpailut.fi/2019/06/05/PYA04lause3.html&quot;&gt;Osa 8 - lause 3&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://blog.matematiikkakilpailut.fi/2019/06/05/PYA03lause4.html&quot;&gt;Osa 9 - lause 4&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://blog.matematiikkakilpailut.fi/2019/06/05/PYA02sovelluksia.html&quot;&gt;Osa 10 - sovelluksia&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://blog.matematiikkakilpailut.fi/2019/06/05/PYA01lisaaiheita.html&quot;&gt;Osa 11 - lisäaiheita&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Tämän postauksen tulokset ovat täysin alkeellisia, joten jätän joitain rutiininomaisia tarkistuksia lukijalle.&lt;/p&gt;
+
+&lt;p&gt;Ensiksi tämän postauksen tärkein ja vaikein lemma, joka on mielestäni melko pitkästyttävä. On varmaankin nautinnollisempaa yrittää todistaa lause itse kuin lukea kirjoittamani todistus.&lt;/p&gt;
+
+&lt;h2 id=&quot;lemma-7&quot;&gt;Lemma 7&lt;/h2&gt;
+
+&lt;p&gt;Olkoot $A, B \in \mathbb{Z_c}[x]$. Oletetaan, että on olemassa sellainen $D \in \mathbb{Z_c}[x]$, jolla pätee seuraavat ehdot:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;$S(A) \cap S(B) \approx S(D)$&lt;/li&gt;
+  &lt;li&gt;$S_v(A) \cap S_v(B) \subset S_v(D)$&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Tällöin on olemassa sellainen $D_1$, jolla $S_d(A) \cap S_d(B) = S_d(D_1)$.&lt;/p&gt;
+
+&lt;p&gt;Lemma 7 siis osoittaa, että mikäli on olemassa $D$, joka on melkein toimiva, niin on olemassa täysin toimiva $D_1$.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Todistus&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Pätee $S_d(A) \cap S_d(B) \approx S_d(D)$ seuraten ehdosta 1.&lt;/p&gt;
+
+&lt;p&gt;Tutkitaan siis niitä äärellisen montaa $p$, joilla $p^k$ kuuluu vain toiseen joukoista $S_d(A) \cap S_d(B)$ ja $S_d(D)$. Käsitellään nämä $p$ jakaantumalla kahteen eri tapaukseen sen mukaan, kumpaan näistä joukoista $p^k$ ei kuulu.&lt;/p&gt;
+
+&lt;p&gt;Tapaus 1. $p^k \in S_d(A) \cap S_d(B)$, mutta $p^k \not\in S_d(D)$. Ehdon 2 nojalla tälöin $p \not\in S_v(A) \cap S_v(B)$, koska muuten $p \in S_v(D)$. Olkoon $v_1$ suurin luku, jolla $p^{v_1} \in S_d(A) \cap S_d(B)$. Olkoon $v_2$ vastaavasti suurin, jolla $p^{v_2} \in S_d(D)$. Olkoon $D_p(x) = p^{v_2 - v_1}D(x)$. Ei ole vaikeaa osoittaa, että polynomilla $D_p$ on seuraava ominaisuus:&lt;/p&gt;
+
+&lt;p&gt;Kaikilla alkuluvuilla $q \neq p$ pätee $q^t \in S_d(D) \Leftrightarrow q^t \in S_d(D_p)$ kaikilla $t \in \mathbb{Z_+}$, ja $p^s \in S_d(A) \cap S_d(B) \Leftrightarrow p^s \in S_d(D_p) \forall s \in \mathbb{Z_+}$.&lt;/p&gt;
+
+&lt;p&gt;Tämä operaatio siis korjaa alkuluvun $p$.&lt;/p&gt;
+
+&lt;p&gt;Tapaus 2. $p^k \in S_d(D)$, mutta $p^k \not\in S_d(A) \cap S_d(B)$. Ideana on eliminoida $D$:n alkutekijä $p$. Jos $D(0) = 0$, muutetaan $D$ polynomiksi $D(x + C)$, missä $C$ on mielivaltaisen suuri vakio. Tämä ei muuta tekijöitä. Oletetaan siis, että $D(0) \neq 0$.&lt;/p&gt;
+
+&lt;p&gt;Olkoon $v = v_p(D(0))$, mikä on äärellinen edellisen nojalla. Valitaan&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;D_p(x) = \frac{D(p^{v+1}x)}{p^v}.&lt;/script&gt;
+
+&lt;p&gt;Ei ole vaikeaa osoittaa, että seuraavat ehdot pätevät:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;$D_p$:n kaikki kertoimet vakiokerrointa lukuun ottamatta ovat jaollisia $p$:llä. Siis $p \not\in S(D_p)$.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Kaikilla $q \neq p$ pätee $q^t \in S_d(D) \Leftrightarrow q^t \in S_d(D_p)$.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Tämän jälkeen kerrotaan $D_p$ sopivalla $p$:n potenssilla, jotta alkuluku $p$ saadaan korjatuksi.&lt;/p&gt;
+
+&lt;p&gt;Suorittamalla operaatiot kaikille äärellisen monelle $p$ saadaan luotua $D_1$, jolla $p^k \in S_d(A) \cap S_d(B) \Leftrightarrow p^k \in S_d(D_1)$. Lemman 1 nojalla pätee $S_d(A) \cap S_d(B) = S_d(D_1)$.&lt;/p&gt;
+
+&lt;h2 id=&quot;lemma-8&quot;&gt;Lemma 8&lt;/h2&gt;
+
+&lt;p&gt;Lemma 8 käsittelee pääpolynomeja: tällä saadaan korjattua heikossa versiossa tehty oletus siitä, että $A$ ja $B$ ovat pääpolynomeja.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Väite&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Olkoon $P \in \mathbb{Z_c}[x]$. On olemassa pääpolynomi $Q \in \mathbb{Z_c}[x]$, jolla $S(P) \approx S(Q)$ ja $S_v(P) \subset S_v(Q)$.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Todistus&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Olkoon $d = \deg(P)$ ja $c$ polynomin $P$ korkeimman asteen termin kerroin. Valitaan&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;Q(x) = c^{d-1}P(\frac{x}{c}).&lt;/script&gt;
+
+&lt;p&gt;Ei ole vaikeaa osoittaa, että $q^t \in S_d(Q) \Leftrightarrow q^t \in S_d(P)$ kaikilla alkuluvuilla $q \nmid c$. Lisäksi on helppoa osoittaa $S_v(P) \subset S_v(Q)$. Lisäksi helppo lasku osoittaa, että $Q$ on kokonaislukukertoiminen pääpolynomi.&lt;/p&gt;
+
+&lt;h2 id=&quot;lemma-9&quot;&gt;Lemma 9&lt;/h2&gt;
+
+&lt;p&gt;Lemma 9 osoittaa, että lauseen 1 väite pätee kaikilla jaottomilla $A, B$. Tämän jälkeen ei ole enää vaikeaa osoittaa väitettä kaikille $A, B$.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Väite&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Olkoot $A, B \in \mathbb{Z_c}[x]$ jaottomia. On olemassa sellainen $D$, jolla $S_d(A) \cap S_d(B) = S_d(D)$.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Todistus&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Väite seuraa pääpolynomeille suoraan heikon version ja lemman 7 avulla.&lt;/p&gt;
+
+&lt;p&gt;Olkoot $A, B \in \mathbb{Z_c}[x]$ nyt mielivaltaisia jaottomia polynomeja. Olkoot $A_1, B_1$ ne pääpolynomit, jotka saadaan lemmasta 8 polynomeille $A, B$. Tällöin $A_1, B_1$ ovat myös jaottomia. Siispä on olemassa sellainen $D_1$, jolla $S_d(A_1) \cap S_d(B_1) = S_d(D_1)$.&lt;/p&gt;
+
+&lt;p&gt;Lemman 8 nojalla pätee $S_v(A) \cap S_v(B) \subset S_v(A_1) \cap S_v(B_1) = S_v(D_1)$. Vastaavasti, $S(A) \cap S(B) \approx S(A_1) \cap S(B_1) = S(D_1)$. Polynomi $D_1$ on täten lemman 7 mukaisesti tarpeeksi lähellä toimivuutta polynomeille $A, B$, joten on olemassa sellainen $D$, jolla $S_d(A) \cap S_d(B) = S_d(D)$.&lt;/p&gt;
+
+&lt;h2 id=&quot;lemma-10&quot;&gt;Lemma 10&lt;/h2&gt;
+
+&lt;p&gt;Lemma 10 on hyvin helppo, mutta myös mielenkiintoinen - se todistaa lauseen 1 väitteen tekijöiden yhdisteelle leikkauksen sijasta.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Väite&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Olkoot $A, B \in \mathbb{Z_c}[x]$. On olemassa sellainen $D \in \mathbb{Z_c}[x]$, jolla $S_d(A) \cup S_d(B) = S_d(D)$.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Todistus&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Valitaan $D = AB$. Ei ole vaikeaa nähdä, että $D$ toteuttaa lemman 7 ehdot polynomeille $A, B$. Vaikka lemmassa 7 puhutaankin joukkojen $S(A) \cap S(B)$ leikkauksesta, ei missään käytetty tietoa siitä, että kyseessä on juuri leikkaus eikä vaikkapa unioni. Siispä on olemassa sellainen $D_1$, jolla $S_d(A) \cap S_d(B) = S_d(D_1)$.&lt;/p&gt;
+
+&lt;p&gt;Lemman tuloksen voi yleistää induktiolla mielivaltaiselle määrälle polynomeja.&lt;/p&gt;
+
+&lt;h1 id=&quot;lauseen-1-todistus&quot;&gt;Lauseen 1 todistus&lt;/h1&gt;
+
+&lt;p&gt;Pääsemme vihdoinkin itse asiaan. Väite pätee jo jaottomille $A, B$ lemman 9 nojalla. Osoitetaan väite nyt mielivaltaisille $A, B$. Ideana on yhdistellä lemman 9 mukaisia polynomeja $A$:n ja $B$:n jaottomille tekijöille lemman 10 avulla. Tämä ei ole kovin vaikeaa.&lt;/p&gt;
+
+&lt;p&gt;Olkoot $A = A_1A_2 \ldots A_a$ ja $B = B_1B_2 \ldots B_b$, missä $A_i, B_j \in \mathbb{Z_c}[x]$ ovat jaottomia. (Tämä tekijöihinjako on mahdollinen, kts. esitiedot.)&lt;/p&gt;
+
+&lt;p&gt;Olkoon $D_{i, j}$ lemman 9 mukaisesti sellainen, jolla $S_d(A_i) \cap S_d(B_j) = S_d(D_{i, j})$. Olkoon $D$ lemman 10 mukaisesti sellainen, jolla&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;S_d(D) = \bigcup_{i, j} S_d(D_{i, j}).&lt;/script&gt;
+
+&lt;p&gt;On suoraviivaista tarkistaa, että $S_v(D) = S_v(A) \cap S_v(B)$ (valitse jokin $p \in S_v(D)$, ja osoita, että $p \in S_v(A) \cap S_v(B)$. Toista toiseen suuntaan). Täten lemman 7 nojalla on olemassa selliainen $D_1$, jolla $S_d(D_1) = S_d(A_1) \cap S_d(B_1)$.&lt;/p&gt;
+
+&lt;h2 id=&quot;dn-aste&quot;&gt;$D$:n aste&lt;/h2&gt;
+
+&lt;p&gt;Lauseessa luvattiin myös, että $\deg(D) = \deg(P_1)\deg(P_2) \ldots \deg(P_n)$. Riittää osoittaa tämä kun $n = 2$, koska induktio hoitaa loput $n$.&lt;/p&gt;
+
+&lt;p&gt;Tutkitaan ensin heikon version tuottamaa $D$. Se on tulo polynomeista $D_1, D_2, \ldots , D_t$. Polynomin $D_i$ aste on sama kuin kuntalaajennuksen $\mathbb{Q}(\gamma_i) / \mathbb{Q}$ aste. Siispä&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\deg(D_i) = [\mathbb{Q}(\gamma_i) : \mathbb{Q}] = [\mathbb{Q}(\alpha, \beta_i) : \mathbb{Q}].&lt;/script&gt;
+
+&lt;p&gt;Käyttäen tulon kuntalaajennusten multiplikatiivisuutta&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;= [\mathbb{Q}(\alpha, \beta_i) : \mathbb{Q}(\alpha)][\mathbb{Q}(\alpha) : \mathbb{Q}].&lt;/script&gt;
+
+&lt;p&gt;Kuntalaajennuksen $\mathbb{Q}(\alpha) / \mathbb{Q}$ aste on luvun $\alpha$ minimaalisen polynomin aste (kunnassa $\mathbb{Q}$), eli $\deg(A)$.&lt;/p&gt;
+
+&lt;p&gt;Olkoon $K = \mathbb{Q}(\alpha)$. Kuntalaajennuksen $\mathbb{Q}(\alpha, \beta_i) / \mathbb{Q}(\alpha) = K(\beta_i) / K$ aste on luvun $\beta_i$ minimaalisen polynomin aste (kunnassa $K$), eli $\deg(E_i)$.&lt;/p&gt;
+
+&lt;p&gt;Siis $\deg(D_i) = \deg(A)\deg(E_i)$. Täten&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\deg(D) = \deg(D_1D_2 \ldots D_t) = \deg(D_1) + \deg(D_2) + \ldots + \deg(D_t)&lt;/script&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;= \deg(A) \sum \deg(E_i) = \deg(A)\deg(B).&lt;/script&gt;
+
+&lt;p&gt;Tämä osoittaa väitteen. Se, että tämä on joskus pienin mahdollinen aste, todistetaan lauseen 2 yhteydessä.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://blog.matematiikkakilpailut.fi/2019/06/05/PYA05lause2.html&quot;&gt;Seuraava postaus.&lt;/a&gt;&lt;/p&gt;</content><author><name>Olli Järviniemi</name></author><summary type="html">Tässä postauksessa esitetään tapa laajentaa heikko versio lauseesta 1 yleiseen tapaukseen.</summary></entry><entry><title type="html">Polynomien yhteiset alkutekijät, osa 5: heikko versio</title><link href="https://blog-drafts.matematiikkakilpailut.fi/2019/06/05/PYA07heikko.html" rel="alternate" type="text/html" title="Polynomien yhteiset alkutekijät, osa 5: heikko versio" /><published>2019-06-05T00:00:00+00:00</published><updated>2019-06-05T00:00:00+00:00</updated><id>https://blog-drafts.matematiikkakilpailut.fi/2019/06/05/PYA07heikko</id><content type="html" xml:base="https://blog-drafts.matematiikkakilpailut.fi/2019/06/05/PYA07heikko.html">&lt;p&gt;Tässä postauksessa esitetään todistus lauseen 1 heikolle versiolle.&lt;/p&gt;
+
+&lt;!--jatkuu--&gt;
+
+&lt;p&gt;&lt;strong&gt;Sisällysluettelo&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;&lt;a href=&quot;https://blog.matematiikkakilpailut.fi/2019/06/05/PYA11johdanto.html&quot;&gt;Osa 1 - johdanto&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://blog.matematiikkakilpailut.fi/2019/06/05/PYA10esitiedot.html&quot;&gt;Osa 2 - esitiedot&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://blog.matematiikkakilpailut.fi/2019/06/05/PYA09tulokset.html&quot;&gt;Osa 3 - tulokset&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://blog.matematiikkakilpailut.fi/2019/06/05/PYA08motivaatio.html&quot;&gt;Osa 4 - motivaatio&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Osa 5 - heikko versio&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://blog.matematiikkakilpailut.fi/2019/06/05/PYA06yleinen.html&quot;&gt;Osa 6 - yleinen tapaus&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://blog.matematiikkakilpailut.fi/2019/06/05/PYA05lause2.html&quot;&gt;Osa 7 - lause 2&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://blog.matematiikkakilpailut.fi/2019/06/05/PYA04lause3.html&quot;&gt;Osa 8 - lause 3&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://blog.matematiikkakilpailut.fi/2019/06/05/PYA03lause4.html&quot;&gt;Osa 9 - lause 4&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://blog.matematiikkakilpailut.fi/2019/06/05/PYA02sovelluksia.html&quot;&gt;Osa 10 - sovelluksia&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://blog.matematiikkakilpailut.fi/2019/06/05/PYA01lisaaiheita.html&quot;&gt;Osa 11 - lisäaiheita&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Tavoitteena on osoittaa seuraava väite:&lt;/p&gt;
+
+&lt;p&gt;Olkoot $A, B \in \mathbb{Z_c}[x]$ &lt;strong&gt;jaottomia pääpolynomeja&lt;/strong&gt;. On olemassa sellainen $D \in \mathbb{Z_c}[x]$, joka toteuttaa seuraavat ehdot:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;$S(A) \cap S(B) \approx S(D)$.&lt;/li&gt;
+  &lt;li&gt;$S_v(A) \subset S_v(B) \subset S_v(D)$.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Miksi juuri nämä ehdot? Ehto 1 kertoo, että on vain äärellisen monta myöhemmin korjattavaa alkulukua. Ehto 2 takaa sen, ettei $D$:stä puutu yhtäkään vahvaa alkutekijää. Tämä on tärkeää, koska en löytänyt operaatiota, jolla vahvan alkutekijän voisi luoda (mutta poistaminen onnistuu). Epäilen, että vahvan alkutekijän lisääminen ei edes aina ole mahdollista. Esimerkiksi, onko olemassa polynomi $P$, jolla on muuten samat alkutekijät kuin polynomilla $x^2 + 1$, mutta jolla pätee $2 \in S_v(P)$?&lt;/p&gt;
+
+&lt;p&gt;Ehto siitä, että $A, B$ eivät jakaudu, on myös korjattavissa: on intuitiivista, että väite voidaan laajentaa myöhemmin kaikille polynomeille.&lt;/p&gt;
+
+&lt;p&gt;Ehto siitä, että $A, B$ ovat pääpolynomeja, ei ole niin ilmeinen. Syy tämän taustalla on ehdon 2 varmistaminen: heikon version todistaminen niin, että ehto 1 toimii, oli suhteellisen helppoa. Ongelmia tuotti ehto 2. Lisäehto siitä, että $A, B$ ovat pääpolynomeja auttaa varmistamaan ehdon 2, kuten myöhemmin nähdään. Yleisen tapauksen todistuksessa saadaan laajennettua väite pääpolynomeilta kaikille polynomeille.&lt;/p&gt;
+
+&lt;p&gt;Heikon version ehdot saadaan siis suoraan siitä, mitä muunnoksia kyetään tekemään.&lt;/p&gt;
+
+&lt;h1 id=&quot;todistus&quot;&gt;Todistus&lt;/h1&gt;
+
+&lt;p&gt;Kuten edellisessä postauksessa mainittiin, osoitetaan ensin, että on olemassa vastaavuus kompleksijuurien ja nollakohtien (mod $p^k$) välillä.&lt;/p&gt;
+
+&lt;h2 id=&quot;vastaavuus&quot;&gt;Vastaavuus&lt;/h2&gt;
+
+&lt;p&gt;Olkoon $A(\alpha) = 0$, $A$ jaoton pääpolynomi, ja olkoon $A(a) \equiv 0 \pmod{p^k}$. Tavoitteena on luoda hyvin määritelty kuvaus, joka kuvaa luvun $\alpha$ lukuun $a$. Tätä alustetaan seuraavalla lemmalla.&lt;/p&gt;
+
+&lt;h2 id=&quot;lemma-3&quot;&gt;Lemma 3&lt;/h2&gt;
+
+&lt;p&gt;Olkoon $A \in \mathbb{Z_c}[x]$ jaoton, ja olkoon $\alpha$ jokin sen juuri. Olkoon $p$ sellainen, joka ei jaa $A$:n korkeimman asteen termin kerrointa. Olkoot $k \in \mathbb{Z}_+$ ja $a \in \mathbb{Z}$ sellaisia, joilla $A(a) \equiv 0 \pmod{p^k}$.&lt;/p&gt;
+
+&lt;p&gt;Olkoon $P \in \mathbb{Z_c}[x]$ sellainen, jolla $P(\alpha) = 0$. Tällöin $P(a) \equiv 0 \pmod{p^k}$.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Todistus&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Olkoon $c_d$ $A$:n korkeimman asteen termin kerroin. Tällöin polynomi $\frac{A}{c_d}$ on luvun $\alpha$ minimaalinen polynomi (koska $A$ on jaoton). Koska $P(\alpha) = 0$, on se jaollinen luvun $\alpha$ minimaalisella polynomilla. Siispä&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\frac{A}{c_d} \mid P&lt;/script&gt;
+
+&lt;p&gt;On siis olemassa sellainen $Q \in \mathbb{Q}[x]$, jolla $P = AQ$.&lt;/p&gt;
+
+&lt;p&gt;Riittää osoittaa, että $Q$:n kertoimien nimittäjät eivät ole jaollisia $p$:llä, koska tällöin $P(a) = A(a)Q(a)$ on jaollinen luvulla $p^k$ (laajennettu jaollisuuden määritelmä, mutta sopivalla vakiolla kertominen puolittain toimii myös).&lt;/p&gt;
+
+&lt;p&gt;Se, mitä tapahtuu seuraavaksi, ei ole kovin mielenkiintoista. Ideana on vain tehdä vastaoletus ja saada ristiriita kahdella tavalla laskemisella.&lt;/p&gt;
+
+&lt;p&gt;Olkoot&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;A(x) = a_{d_a}x^{d_a} + \ldots + a_1x + a_0&lt;/script&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;P(x) = p_{d_p}x^{d_p} + \ldots + p_1x + p_0&lt;/script&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;Q(x) = q_{d_q}x^{d_q} + \ldots + q_1x + q_0&lt;/script&gt;
+
+&lt;p&gt;(Lupasin aiemmin, että kirjain $p$ viittaa aina alkulukuun. Tässä tapahtui nyt pieni lipsahdus muuttujien nimeämisessä. $p_i$ ei siis ole välttämättä alkuluku, vaan jokin kokonaisluku.)&lt;/p&gt;
+
+&lt;p&gt;Oletetaan, että jonkin $q_i$ nimittäjä on jaollinen $p$:llä. Valitaan näistä $i$ suurin mahdollinen. Tutkitaan termin $x^{d_a + i}$ kerrointa $P$:ssä. Tämä on määritelmän nojalla $p_{d_a + i}$, eli kokonaisluku. Mutta toisaalta, tämä on yhtälön $P = AQ$ nojalla&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;q_ia_{d_a} + q_{i+1}a_{d_a - 1} + \ldots&lt;/script&gt;
+
+&lt;p&gt;Termit ovat siis muotoa $q_{i+j}a_{d_a - j}$. Jos $j &amp;gt; 0$, kyseessä on rationaaliluku, jonka nimittäjä ei ole jaollinen $p$:llä, koska luvut $a_0, a_1, \ldots$ ovat kokonaislukuja, ja $i$ määriteltiin olemaan suurin indeksi, jolla luvun $q_i$ nimittäjä on jaollinen $p$:llä.&lt;/p&gt;
+
+&lt;p&gt;Summa voidaan siis kirjoittaa muodossa&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;q_ia_{d_a} + \frac{x}{y}&lt;/script&gt;
+
+&lt;p&gt;missä $p \nmid y$. Kirjoitetaan $q_ia_{d_a} = \frac{v}{w}$. Koska $p$ jakaa $q_i$:n nimittäjän, ja oletuksen nojalla $p$ ei jaa lukua $a_{d_a}$, pätee $p \mid w$ ja $p \nmid v$. Ja nyt,&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;p_{d_a + i} = \frac{v}{w} + \frac{x}{y} = \frac{vy + wx}{yw}&lt;/script&gt;
+
+&lt;p&gt;Tässä $p \mid yw$, mutta $p \nmid vy + wx$, koska $p \mid wx$ ja $p \nmid vy$. Olemme saaneet aikaan ristiriidan.&lt;/p&gt;
+
+&lt;h2 id=&quot;alustus-lemmalle-4&quot;&gt;Alustus lemmalle 4&lt;/h2&gt;
+
+&lt;p&gt;Lemma 4 muodostaa halutun kuvauksen, joka formalisoi aiemmin mainitun vastaavuuden. Tätä ennen määritellään joukko $\mathbb{Z_p}(\alpha)$. Määrittely voi tuntua hieman ikävältä, mutta idea on yksinkertainen: haluamme kuvata $\mathbb{Q}(\alpha)$:n alkioita kokonaisluvuille mod $p^k$. Lukua $\frac{1}{p} \in \mathbb{Q}(\alpha)$ on kuitenkin käytännössä katsoen mahdotonta kuvata kokonaisluvuksi mod $p^k$ niin, että lopputulos olisi järkevä. Meidän tulee siis hieman valikoida lukuja, joita kuvaamme.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Määritelmä - $\mathbb{Z_p}(\alpha)$&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Kunta $\mathbb{Q}(\alpha)$ voidaan tulkita $\mathbb{Q}$-vektoriavaruutena, jonka kanta on $\lbrace 1, \alpha, \alpha^2, \ldots , \alpha^{n-1}\rbrace$ (tässä $n$ on $\alpha$:n minimaalisen polynomin aste). Olkoon $\mathbb{Z_p}(\alpha)$ niiden $x \in \mathbb{Q}(\alpha)$ joukko, joilla $x$:n esitys kannan avulla ei sisällä rationaalilukuja, joiden nimittäjät ovat jaollisia $p$:llä.&lt;/p&gt;
+
+&lt;p&gt;Toisin sanoen, $\mathbb{Z_p}(\alpha)$ sisältää ne luvut $x$, jotka ovat muotoa $P(\alpha)$, $\deg(P) &amp;lt; n$, ja $P$:n kertoimien nimittäjät eivät ole jaollisia $p$:llä.&lt;/p&gt;
+
+&lt;p&gt;Esimerkiksi $\mathbb{Z}_7(\sqrt{2})$ sisältää luvut muotoa $a + b\sqrt{2}, a, b \in \mathbb{Q}$, missä $7$ ei jaa lukujen $a, b$ nimittäjiä.&lt;/p&gt;
+
+&lt;p&gt;Olkoon $A \in \mathbb{Z_c}[x]$ jaoton, ja olkoon $\alpha$ sen juuri. Olkoon $p$ alkuluku, joka ei jaa $A$:n korkeimman asteen termin kerrointa. Väitän, että $\mathbb{Z_p}(\alpha)$ on rengas, eli siis eritysesti kahden joukon $\mathbb{Z_p}(\alpha)$ tulo on myös tämän joukon alkio.&lt;/p&gt;
+
+&lt;p&gt;Tämä on helppoa visualisoida samalla tavalla kuin osoitettiin, että $\alpha^k$ voidaan esittää pienempien $\alpha$:n potenssien avulla. Olkoon $A(x) = a_nx^n + \ldots + a_1x + a_0$. Tällöin&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\alpha^n = -\frac{a_{n-1}\alpha^{n-1} + \ldots + a_0}{a_n}&lt;/script&gt;
+
+&lt;p&gt;Siispä $\alpha^n \in \mathbb{Z_p}(\alpha)$.&lt;/p&gt;
+
+&lt;p&gt;Yleisesti, kuvitellaan operaatiosarjaa, jolla redusoidaan $\alpha^k$ pienempien $\alpha$:n potenssien esitykseksi. Tällöin $\alpha^k$:n esityksessä käytetyt kertoimet eivät ole jaollisia $p$:llä (mistä $p$:llä jaollinen nimittäjä muka syntyisi?). Jos ei tähän vielä usko, niin voi osoittaa induktiolla muuttujan $k$ suhteen, että $\alpha^k \in \mathbb{Z_p}(\alpha)$.&lt;/p&gt;
+
+&lt;p&gt;Vielä määritellään homomorfismi.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Määritelmä - homomorfismi&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Olkoot $R, S$ renkaita (eli kuin kunnat, muttei välttämättä käänteisalkiota. Esim. $\mathbb{Z}$ on rengas). Olkoon $f : R \to S$ kuvaus. Sanotaan, että $f$ on homomorfismi, jos&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;$f(xy) = f(x)f(y)$ kaikilla $x, y \in R$.&lt;/li&gt;
+  &lt;li&gt;$f(x + y) = f(x) + f(y)$ kaikilla $x, y \in R$.&lt;/li&gt;
+  &lt;li&gt;$f(1) = 1$.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Määritelmä on siis täsmälleen sama kuin isomorfismin tapauksessa, paitsi $f$:n ei tarvitse olla bijektio. Esimerkkinä homomorfista $f : \mathbb{Z} \to \mathbb{Z}_2$ (kokonaisluvuille mod $2$) toimii $f(2n) = 0$, $f(2n + 1) = 1$ kaikilla $n \in \mathbb{Z}$. Moduloon redusoiminen on siis vain homomorfismi.&lt;/p&gt;
+
+&lt;p&gt;Joku voisi väittää, että tällä $f$ ehto $2$ ei toteudu, onhan $0=f(0) = f(1 + 1) = f(1) + f(1) = 2$. Tämä kuitenkin toteutuu, kun yhtäsuuruutta ajatellaan $S$:n eli $\mathbb{Z}_2$:n näkökulmasta.&lt;/p&gt;
+
+&lt;p&gt;Tämä homomorfismi on juurikin se “hyvin määritelty kuvaus” mistä olen aiemmin puhunut:&lt;/p&gt;
+
+&lt;h2 id=&quot;lemma-4&quot;&gt;Lemma 4&lt;/h2&gt;
+
+&lt;p&gt;Olkoon $A \in \mathbb{Z_c}[x]$ jaoton, ja olkoon $p$ alkuluku, joka ei jaa $A$:n korkeimman asteen termin kerrointa. Olkoon $A(a) \equiv 0 \pmod{p^k}$.&lt;/p&gt;
+
+&lt;p&gt;On olemassa homomorfismi $f : \mathbb{Z_p}(\alpha) \to \mathbb{Z}_{p^k}$ (eli joukolta $\mathbb{Z_p}(\alpha)$ joukolle “kokonaisluvut modulo $p^k$”), jolla $f(\alpha) = a$.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Todistus&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Määritellään yksinkertaisesti $f(P(\alpha)) = P(a)$ kaikilla $P$, joiden kertoimien nimittäjät eivät ole jaollisia $P$:llä. On selvää, että $f(\alpha) = a$, ja että $f$ toteuttaa homomorfismin määritelmän ehdot 1, 2, 3. Olemme siis valmiit. Vai olemmeko?&lt;/p&gt;
+
+&lt;p&gt;Funktion määritelmään kuuluu, että jokainen alkio kuvautuu täsmälleen yhteen alkioon. Toisin sanoen, jos $a = b$, niin $f(a) = f(b)$. Tämä tulee siis vielä varmistaa (monesti tämä on ilmeistä funktioita määritellessä, mutta tällä kertaa ei).&lt;/p&gt;
+
+&lt;p&gt;Olkoot $P_1, P_2$ jotain polynomeja, joiden kertoimet eivät ole jaollisia $p$:llä. Oletetaan, että $P_1(\alpha) = P_2(\alpha)$, ja osoitetaan, että $P_1(a) \equiv P_2(a) \pmod{p^k}$.&lt;/p&gt;
+
+&lt;p&gt;Olkoon $P(x) = P_1(x) - P_2(x)$. Tiedämme siis, että $P(\alpha) = 0$, ja haluamme osoittaa, että $P(a) \equiv 0 \pmod{p^k}$. Tämä pätee lemman 3 nojalla.&lt;/p&gt;
+
+&lt;h2 id=&quot;lemma-5&quot;&gt;Lemma 5&lt;/h2&gt;
+
+&lt;p&gt;Lemman 5 tavoite on osoittaa, että $S_v(A) \cap S_v(B) \subset S_v(D)$, kun $D$ valitaan sopivasti. Määritellään seuraavaksi $D$.&lt;/p&gt;
+
+&lt;p&gt;Olkoon $\alpha$ jokin $A$:n juuri, joka pidetään vakiona tämän todistuksen loppuun saakka. Jaetaan $B$ tekijöihin kunnassa $\mathbb{Q}(\alpha)$. Olkoon siis $B(x) = E_1(x)E_2(x) \ldots E_t(x)$. Esitystapa voidaan valita niin, että $E_i$ ovat pääpolynomeja., koska $B$ on pääpolynomi. Oletetaan tietysti vielä, että $E_i$ ovat ei-vakioita ja jaottomia (kunnassa $\mathbb{Q}(\alpha)$).&lt;/p&gt;
+
+&lt;p&gt;Olkoon $\beta_i$ polynomin $E_i$ juuri kaikilla $i$. Olkoot $\gamma_i$ sellaisia, että $\mathbb{Q}(\alpha, \beta_i) = \mathbb{Q}(\gamma_i)$ kaikilla $i$. Kuten Primitive element theoremin todistuksesta voidaan lukea, että $\gamma_i$ voidaan valita olemaan muotoa $\alpha + n_i\beta_i$, missä $n_i$ on sopiva kokonaisluku. Tällä valinnalla ei juurikaan ole väliä, mutta se yksinkertaistaa todistusta.&lt;/p&gt;
+
+&lt;p&gt;Olkoon $D_i$ luvun $\gamma_i = \alpha + n_i\beta_i$ minimaalinen polynomi kaikilla $i$. Määritellään $D$ olemaan polynomien $D_i$ tulo. Voidaan osoittaa, että $D$ on kokonaislukukertoiminen (algebralliset kokonaisluvut ovat rengas), mutta tarvittaessa $D$ voitaisiin kertoa kertoimien nimittäjiensä tulolla.&lt;/p&gt;
+
+&lt;p&gt;Osoitetaan, että tällä $D$:llä pätee $S_v(A) \cap S_v(B) \subset S_v(D)$.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Todistus&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Tutkitaan polynomia $F_i(x) := D_i(\alpha + n_ix)$. Tämä on polynomi, jonka kertoimet ovat kunnassa $\mathbb{Q}(\alpha)$. Lisäksi pätee $F_i(\beta_i) = D_i(\alpha + n_i\beta_i) = D_i(\gamma_i) = 0$. Täten $F_i$ on jaollinen luvun $\beta_i$ minimaalisella polynomilla (kunnassa $\mathbb{Q}(\alpha)$), eli polynomilla $E_i$.&lt;/p&gt;
+
+&lt;p&gt;Täten on olemassa sellainen polynomi $G_i \in \mathbb{Q}(\alpha)[x]$, jolla $F_i(x) = E_i(x)G_i(x)$, eli siis $D_i(\alpha + n_ix) = E_i(x)G_i(x)$. Kertomalla tätä muotoa olevat yhtälöt keskenään kaikilla $1 \le i \le t$ saadaan&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;D_1(\alpha + n_1x)\ldots D_t(\alpha + n_tx) = E_1(x) \ldots E_t(x)G_1(x) \ldots G_t(x) = B(x)G_1(x) \ldots G_t(x)&lt;/script&gt;
+
+&lt;p&gt;Olkoot $c_1, c_2, \ldots , c_t$ polynomien $G_1, G_2, \ldots , G_t$ kertoimien nimittäjien tulot. Olkoon $H_i(x) = G_i(x) \cdot c_i$, ja olkoon $H$ kaikkien $H_i$ tulo. Tällöin $H_i$:n kertoimet kuuluvat joukkoon $\mathbb{Z_p}(\alpha)$.&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;c_1c_2 \ldots c_t D_1(\alpha + n_1x) \ldots D_t(\alpha + n_tx) = B(x)H(x)&lt;/script&gt;
+
+&lt;p&gt;Osoitetaan nyt, että $p \in S_v(A) \cap S_v(B) \implies p \in S_v(D)$.&lt;/p&gt;
+
+&lt;p&gt;Olkoon $k$ jokin mielivaltaisen suuri kokonaisluku, ja oletetaan, että $A(a) \equiv B(b) \equiv 0 \pmod{p^k}$.&lt;/p&gt;
+
+&lt;p&gt;Olkoon $f : \mathbb{Z_p}(\alpha) \to \mathbb{Z_{p^k}}$ lemman 4 mukainen homomorfismi. Koska $A$ on pääpolynomi, $p$ ei jaa $A$:n korkeimman asteen termin kerrointa, eli tämä kuvaus on olemassa. Sijoitetaan yllä olevaan yhtälöön $x = b$, jolloin&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;c_1c_2 \ldots c_tD_1(\alpha + n_1b) \ldots = B(b)H(b)&lt;/script&gt;
+
+&lt;p&gt;Kuvataan molemmat puolet homomorfismilla $f$. Nähdään, että $f(D_i(\alpha + n_ib)) = D_i(a + n_ib)$ (tämän voi todistaa suoraan homomorfismien ominaisuuksista). Siispä&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;c_1 \ldots c_t D_1(a + n_1b) \ldots D_t(a + n_tb) = f(B(b)H(b)) = B(b)f(H(b))&lt;/script&gt;
+
+&lt;p&gt;Koska $B(b) \equiv 0 \pmod{p^k}$, pätee $B(b)f(H(b)) \equiv 0 \pmod{p^k}$. Täten&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;c_1 \ldots c_tD_1(a + n_1b) \ldots D_t(a + n_tb) \equiv 0 \pmod{p^k}&lt;/script&gt;
+
+&lt;p&gt;Nyt, jos $p$ ei olisi minkään $D_i$ vahva alkutekijä, olisi olemassa sellaiset $e_1, \ldots , e_t$, joilla yhtälöllä $D_i(x) \equiv 0 \pmod{p^{e_i}}$ ei ole ratkaisua. Olkoon $C = v_p(c_1 \ldots c_t)$, missä $v_p$ on &lt;a href=&quot;https://blog.matematiikkakilpailut.fi/2018/07/19/Vp.html&quot;&gt;p-adic valuation&lt;/a&gt;. Ei ole vaikeaa nähdä, että yhtälöllä&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;c_1c_2 \ldots c_tD_1(x_1)D_2(x_2) \ldots D_t(x_t) \equiv 0 \pmod{p^k}&lt;/script&gt;
+
+&lt;p&gt;ei ole ratkaisua, kun $k &amp;gt; C + e_1 + e_2 + \ldots + e_t$. Tämä on ristiriita sen kanssa, että&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;c_1 \ldots c_tD_1(a + n_1b) \ldots D_t(a + n_tb) \equiv 0 \pmod{p^k}&lt;/script&gt;
+
+&lt;p&gt;kaikilla $k \in \mathbb{Z}_+$ (missä $a, b$ valitaan $k$:n mukaan). Siispä $p$:n pitää olla jonkin $D_i$ vahva alkutekijä. Tämä todistaa väitteen.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Kommentteja&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Eikö ideana ollutkaan sieventää $D(a + b)$ modulo $p^k$? Yllä oleva todistus näyttää olevan melko kaukana tästä. Alunperin todistus oli tällainen, ja oikeastaan yllä oleva todistus on myös, mutta sieventäminen on piilotettu.&lt;/p&gt;
+
+&lt;p&gt;Mitä se sieventäminen todella on? Käytännössä se on polynomien jakoyhtälöä: esimerkiksi jos $\alpha^2 + 1 = 0$, luvun $\alpha^3$ sieventäminen on oikeasti sitä, että polynomi $x^3$ jaetaan jakokulmassa polynomilla $x^2 + 1$. Siispä jakoyhtälö on formaali tapa esittää sieventäminen.&lt;/p&gt;
+
+&lt;p&gt;Tutkitaan siis yhtälöä $D_i(\alpha + n_i\beta_i) = 0$. Käyttäen toistuvasti ehtoa $E_i(\beta_i) = 0$ saadaan ensiksi redusoitua kaikki $\beta_i$:t yhtälöstä. Lopuksi jäljellä on yhtälö muotoa $P(\alpha) = 0$, joka sieventyy käyttäen yhtälöä $A(\alpha) = 0$.&lt;/p&gt;
+
+&lt;p&gt;Aivan vastaavasti voidaan suorittaa yhtälön $D_i(a + n_ib) \equiv 0 \pmod{p^k}$ sieventäminen. Osio, jossa “$\beta_i$ tai $b$ sievennetään pois” vastaa lemman todistuksen kuvausta $f$ edeltävää osiota, ja $\alpha$:n tai $a$:n sieventäminen vastaa $f$:n käyttämistä. $f$ antaa formaalin tavan sieventää yhden muuttujan polynomeja.&lt;/p&gt;
+
+&lt;h2 id=&quot;heikon-version-todistuksen-viimeistely&quot;&gt;Heikon version todistuksen viimeistely&lt;/h2&gt;
+
+&lt;p&gt;Edellä osoitettiin, että $S_v(A) \cap S_v(B) \subset S_v(D)$. Osoitetaan vielä toinen halutuista ehdoista, eli $S(A) \cap S(B) \approx S(D)$. Tämä on oikeastaan todistettu jo. Nimittäin, valitaan jokin $p \in S_v(D)$. Tällöin $p \in S_v(D_i)$ jollain $i$ (helppo vastaoletustodistus). Tällöin kysymyksen 2 todistuksen nojalla kaikilla paitsi äärellisen monella $p$ pätee väite $p \in S_v(A) \cap S_v(B)$.&lt;/p&gt;
+
+&lt;p&gt;Siis kaikki paitsi äärellisen moni $S_v(D)$:n alkio on myös $S_v(A) \cap S_v(B)$:n alkio. Käyttäen ehtoa $S_v(A) \cap S_v(B) \subset S_v(D)$ saadaan ehto&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;S_v(A) \cap S_v(B) \approx S_v(D)&lt;/script&gt;
+
+&lt;p&gt;Koska $S_v(P) \approx S(P)$ kaikilla $P \in \mathbb{Z_c}[x]$ lemman 2 nojalla, osoittaa tämä&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;S(A) \cap S(B) \approx S(D)&lt;/script&gt;
+
+&lt;p&gt;Kysymys 2 on työssäni lemma 6, joten lemmojen numerointi jatkuu luvusta 7.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://blog.matematiikkakilpailut.fi/2019/06/05/PYA06yleinen.html&quot;&gt;Seuraava postaus.&lt;/a&gt;&lt;/p&gt;</content><author><name>Olli Järviniemi</name></author><summary type="html">Tässä postauksessa esitetään todistus lauseen 1 heikolle versiolle.</summary></entry><entry><title type="html">Polynomien yhteiset alkutekijät, osa 4: motivaatio</title><link href="https://blog-drafts.matematiikkakilpailut.fi/2019/06/05/PYA08motivaatio.html" rel="alternate" type="text/html" title="Polynomien yhteiset alkutekijät, osa 4: motivaatio" /><published>2019-06-05T00:00:00+00:00</published><updated>2019-06-05T00:00:00+00:00</updated><id>https://blog-drafts.matematiikkakilpailut.fi/2019/06/05/PYA08motivaatio</id><content type="html" xml:base="https://blog-drafts.matematiikkakilpailut.fi/2019/06/05/PYA08motivaatio.html">&lt;p&gt;Tässä postauksessa esitetään motivaatio lauseen 1 todistuksen takana.&lt;/p&gt;
+
+&lt;!--jatkuu--&gt;
+
+&lt;p&gt;&lt;strong&gt;Sisällysluettelo&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;&lt;a href=&quot;https://blog.matematiikkakilpailut.fi/2019/06/05/PYA11johdanto.html&quot;&gt;Osa 1 - johdanto&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://blog.matematiikkakilpailut.fi/2019/06/05/PYA10esitiedot.html&quot;&gt;Osa 2 - esitiedot&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://blog.matematiikkakilpailut.fi/2019/06/05/PYA09tulokset.html&quot;&gt;Osa 3 - tulokset&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Osa 4 - motivaatio&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://blog.matematiikkakilpailut.fi/2019/06/05/PYA07heikko.html&quot;&gt;Osa 5 - heikko versio&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://blog.matematiikkakilpailut.fi/2019/06/05/PYA06yleinen.html&quot;&gt;Osa 6 - yleinen tapaus&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://blog.matematiikkakilpailut.fi/2019/06/05/PYA05lause2.html&quot;&gt;Osa 7 - lause 2&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://blog.matematiikkakilpailut.fi/2019/06/05/PYA04lause3.html&quot;&gt;Osa 8 - lause 3&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://blog.matematiikkakilpailut.fi/2019/06/05/PYA03lause4.html&quot;&gt;Osa 9 - lause 4&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://blog.matematiikkakilpailut.fi/2019/06/05/PYA02sovelluksia.html&quot;&gt;Osa 10 - sovelluksia&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://blog.matematiikkakilpailut.fi/2019/06/05/PYA01lisaaiheita.html&quot;&gt;Osa 11 - lisäaiheita&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;kysymys-2&quot;&gt;Kysymys 2&lt;/h2&gt;
+
+&lt;p&gt;Kysymyksenä 2 oli: onko $S(A) \cap S(B)$ ääretön kaikilla $A, B \in \mathbb{Z_c}[x]$? Esitetään tälle väitteelle todistus. Todistus ei ole minun, vaan voidaan löytää esimerkiksi artikkelista &lt;a href=&quot;https://www.jstor.org/stable/2317521?seq=1#page_scan_tab_contents&quot;&gt;On the prime divisors of polynomials&lt;/a&gt; (Irving Grest, John Brillhart).&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Todistus&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Olkoot $\alpha, \beta$ jotkin $A$:n ja $B$:n juuret. Olkoon $\gamma$ sellainen, että $\mathbb{Q}(\alpha, \beta) = \mathbb{Q}(\gamma)$ (mahdollista Primitive element theoremin nojalla, kts. esitiedot). Olkoon $D$ luvun $\gamma$ minimaalinen polynomi. Osoitetaan, että $D$:llä on seuraava ominaisuus:&lt;/p&gt;
+
+&lt;p&gt;Kaikki paitsi äärellisen moni $D$:n alkutekijä on sekä $A$:n että $B$:n alkutekijä.&lt;/p&gt;
+
+&lt;p&gt;Huomaa, että $D$ ei ole välttämättä kokonaislukukertoiminen, mutta $D$:tä voidaan kertoa sopivalla kokonaisluvulla, eikä todistettava väite muutu. Tämä on esimerkki laajennetun jaollisuuden määritelmän kiertämisestä. Oletetaan siis, että $D$ on kokonaislukukertoiminen.&lt;/p&gt;
+
+&lt;p&gt;Koska $\alpha \in \mathbb{Q}(\alpha) \subset \mathbb{Q}(\alpha, \beta) = \mathbb{Q}(\gamma)$, voidaan $\alpha$ esittää polynomina luvusta $\gamma$. Siis $\alpha = q_0 + q_1\gamma + \ldots + q_{n-1}\gamma^{n-1}$ jollain rationaaliluvuilla $q_i$ ja kokonaisluvulla $n$. Olkoon $A_1(x) = q_0 + q_1x + \ldots + q_{n-1}x^{n-1}$. Tällöin&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;A(A_1(\gamma)) = A(\alpha) = 0&lt;/script&gt;
+
+&lt;p&gt;Polynomilla $A(A_1(\gamma))$ on siis juuri kohdassa $\gamma$, joten se on jaollinen luvun $\gamma$ minimaalisella polynomilla (kts. esitiedot), eli polynomilla $D$. Täten&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;D(x) \mid A(A_1(x))&lt;/script&gt;
+
+&lt;p&gt;On siis olemassa polynomi $R \in \mathbb{Q}[x]$, jolla $A(A_1(x)) = D(x)R(x)$. Nyt olemme melkein valmiit. Tutkitaan niitä $p \in S(D)$, jotka eivät jaa polynomien $A_1, R$ minkään kertoimen nimittäjää, eli siis kaikkia paitsi äärellisen montaa $S(D)$:n alkiota. Koska $p \in S(D)$, on olemassa sellainen $n \in \mathbb{Z}$, jolla $D(n) \equiv 0 \pmod{p}$.&lt;/p&gt;
+
+&lt;p&gt;Luku $R(n)$ on rationaaliluku, jonka nimittäjä ei ole jaollinen $p$:llä. Siispä se voidaan tulkita kokonaislukuna modulo $p$ (kts. jaollisuus rationaaliluvuissa). Siispä&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;D(n)R(n) \equiv 0 \pmod{p}&lt;/script&gt;
+
+&lt;p&gt;Mutta $D(n)R(n) = A(A_1(n))$, joten&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;A(A_1(n)) \equiv 0 \pmod{p}&lt;/script&gt;
+
+&lt;p&gt;Siis yhtälöllä $A(x) \equiv 0 \pmod{p}$ on ratkaisu $x = A_1(n)$. Ongelmaksi kuitenkin muodostuu se, että $A_1(n)$ ei välttämättä ole kokonaisluku. Mutta $A_1(n)$ on rationaaliluku, jonka nimittäjä ei ole jaollinen $p$:llä (kosta tutkimme vain niitä $p$, joilla $A_1$:n kertoimien nimittäjät eivät ole jaollisia $p$:llä). Siispä se voidaan tulkita kokonaislukuna modulo $p$, joten yhtälöllä $A(x) \equiv 0 \pmod{p}$ on kokonaislukuratkaisu $x$. Siispä $p \in S(A)$. Vastaavasti osoitetaan, että kaikilla paitsi äärellisen monella $p$ pätee $p \in S(D) \implies p \in S(B)$. Tämä osoittaa väitteen.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Lukijan vakuuttaminen&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Lukijaa voi arvelluttaa edellisen todistuksen rationaalilukujen tulkitseminen kokonaislukuina. Kuten aiemmin todettiin, laajennettu jaollisuuden määritelmä voidaan poistaa todistuksista, mutta tämä muuttaa niitä hieman vaivalloiseksi. Esitän tässä ideat, joilla muunnokset voi yllä olevaan todistukseen tehdä, mutta myöhempien todistuksien yhteydessä en enää näin tee. Kannattaa siis luottaa laajennettuun määritelmään.&lt;/p&gt;
+
+&lt;p&gt;Muunnokset ovat tässä tapauksessa vaikeita. Usein riittää vain kertoa polynomeja joillain vakioilla, mutta tässä pitää tehdä paljon enemmän. Seuraava todistus voi tuntua hieman puuduttavalta, ja sen voi halutessaan sivuuttaa.&lt;/p&gt;
+
+&lt;p&gt;Olkoon $d = \deg(A)$ ja $c$ polynomin $R$ kertoimien nimittäjien tulo. Olkoon $A_1(n) = \frac{f(n)}{g(n)}$, missä murtoluku on supistetussa muodossa. Huomaa, että $g$ on rajoitettu funktio, koska $g(n)$ jakaa polynomin $A_1$ kertoimien nimittäjien tulon kaikilla $n$. Olkoon vielä $R_1(x) = cR(x)$.&lt;/p&gt;
+
+&lt;p&gt;Olkoon $p \nmid cg(n)$ jokin $D$:n alkutekijä, ja olkoon $D(n) \equiv 0 \pmod{p}$. Koska $g$ on rajoitettu, tarkastelemme kaikkia paitsi äärellisen montaa $D$:n alkutekijää.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Idea:&lt;/strong&gt; Luku $A_1(n)$ tulkittuna kokonaislukuna modulo $p$ on vain $f(n)g(n)^{p-2}$. Osoitetaan suoraan, ilman huijauksia muotoa “tulkitaan kokonaislukuna modulo $p$”, että $A(f(n)g(n)^{p-2}) \equiv 0 \pmod{p}$.&lt;/p&gt;
+
+&lt;p&gt;Sijoitetaan yhtälöön $A(A_1(x)) = D(x)R(x)$ arvo $x = n$.&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;A(A_1(n)) = D(n)R(n)&lt;/script&gt;
+
+&lt;p&gt;Kerrotaan molemmat puolet luvulla $cg(n)^d$. Saadaan&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;cg(n)^dA(A_1(n)) = D(n)R_1(n)g(n)^d&lt;/script&gt;
+
+&lt;p&gt;Tutkitaan vasemman puolen lauseketta. Saamme&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;cg(n)^dA(A_1(n)) = cg(n)^dA\Big( \frac{f(n)}{g(n)} \Big) = cg(n)^d\Big( a_d\frac{f(n)^d}{g(n)^d} + \ldots + a_0 \Big)&lt;/script&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;= c(a_df(n)^d + a_{d-1}f(n)^{d-1}g(n) + \ldots + a_0g(n)^d)&lt;/script&gt;
+
+&lt;p&gt;Tämä on edelleen yhtä suuri kuin $D(n)R_1(n)g(n)^d$.&lt;/p&gt;
+
+&lt;p&gt;Koksa $D(n) \equiv 0 \pmod{p}$, on siis $D(n)R_1(n)g(n)^d$ jaollinen $p$:llä, ja niin on myös yllä oleva lauseke. Koska $p \nmid cg(n)$, eli erityisesti $p \nmid c$, pätee&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;a_df(n)^d + a_{d-1}f(n)^{d-1}g(n) + \ldots + a_0g(n)^d \equiv 0 \pmod{p}&lt;/script&gt;
+
+&lt;p&gt;Kerrotaan tämä puolittain luvulla $g(n)^{(p-1) - d}$. Saadaan&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;a_df(n)^dg(n)^{(p-1) - d} + a_{d-1}f(n)^{d-1}g(n)^{(p-1) - (d - 1)} + \ldots + a_0g(n)^{p-1} \equiv 0 \pmod{p}&lt;/script&gt;
+
+&lt;p&gt;Kaikilla $i$ pätee $(p-1) - (d-i) \equiv (p-2)(d-i) \pmod{p-1}$. Fermat’n pienen lauseen nojalla&lt;/p&gt;
+
+&lt;p&gt;$g(n)^{(p-1) - (d - i)} \equiv g(n)^{(p-2)(d - i)} \pmod{p}$ &lt;/p&gt;
+
+&lt;p&gt;Siis edellinen yhtälö voidaan kirjoittaa muodossa&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;a_df(n)^dg(n)^{(p-2)d} + a_{d-1}f(n)^{d-1}g(n)^{(p-2)(d-1)} + \ldots + a_0 \equiv 0 \pmod{p}&lt;/script&gt;
+
+&lt;p&gt;Mutta yhtälön vasen puoli on vain $A(f(n)g(n)^{p-2})$. Siis $A(f(n)g(n)^{p-2}) \equiv 0 \pmod{p}$, joten $p \in S(A)$.&lt;/p&gt;
+
+&lt;h1 id=&quot;suunnitelma&quot;&gt;Suunnitelma&lt;/h1&gt;
+
+&lt;p&gt;Esitetään suunnitelma, jolla lause 1 todistetaan.&lt;/p&gt;
+
+&lt;h2 id=&quot;esimerkki&quot;&gt;Esimerkki&lt;/h2&gt;
+
+&lt;p&gt;Matemaatikko David Hilbertille omistetaan lainaus “The art of doing mathematics is finding that special case that contains all the germs of generality.”. Toimimme niin tässä.&lt;/p&gt;
+
+&lt;p&gt;Olkoon $A(x) = x^2 + 1$, $B(x) = x^2 - 2$. Edellisessä todistuksessa voidaan valita vaikkapa $\alpha = i$, $\beta = \sqrt{2}$, ja $\gamma = \alpha + \beta$. Tällöin luvun $\gamma$ minimaalinen polynomi on $D(x) = x^4 - 2x^2 + 9$ (minimaalisen polynomin laskeminen ei ole aivan triviaalia, eikä siihen keskitytä nyt). Todistus osoittaa, että $S(D) \subset S(A) \cap S(B)$ (poislukien äärellisen monta poikkeustapausta).&lt;/p&gt;
+
+&lt;p&gt;Todistuksesta tulee helposti mieleen seuraava kysymys: onko polynomeilla $A, B$ muita yhteisiä alkutekijöitä kuin $D$:n alkutekijät? Testasin konkreettisia esimerkkejä tietokoneella, ja vastaus vaikutti olevan tässä, ja monessa muussakin, tapauksessa kielteinen. Mitä tapahtuu?&lt;/p&gt;
+
+&lt;p&gt;Olkoot $A_1, B_1$ kuten todistuksessa. Nämä voitaisiin laskea, mutta tämä ei ole kovin kiinnostavaa eikä tarpeellista. Todistus osoittaa, että äärellisen montaa $p$ lukuun ottamatta pätee $D(n) \equiv 0 \pmod{p} \implies A(A_1(n)) \equiv B(B_1(n)) \equiv 0 \pmod{p}$. On siis olemassa polynomit $A_1, B_1$, joiden avulla $D$:n nollakohdasta (modulo $p$) voidaan generoida $A$:lle ja $B$:lle nollakohdat.&lt;/p&gt;
+
+&lt;p&gt;Olisi mukavaa, jos olisi olemassa sellainen kahden muuttujan polynomi, jolla $A$:n ja $B$:n nollakohdista $a, b$ (modulo $p$) voitaisiin generoida $D$:n nollakohta (modulo $p$). Helppo veikkaus tälle polynomille olisi $P(a, b) = a + b$, sama kuin mitä käytettiin $\gamma$:n generoimiseen luvuista $\alpha, \beta$. Huomaa, että sama toimi aiemmin jo toiseen suuntaan: voidaan ajatella, että $\alpha, \beta$ on generoitu luvusta $\gamma$ polynomeilla $A_1, B_1$, ja $a$ ja $b$ on generoitu luvusta $n$ polynomeilla $A_1$ ja $B_1$.&lt;/p&gt;
+
+&lt;p&gt;Osoitetaan siis seuraava väite:&lt;/p&gt;
+
+&lt;p&gt;Jos $A(a) \equiv B(b) \equiv 0 \pmod{p}$, niin $D(a+b) \equiv 0 \pmod{p}$.&lt;/p&gt;
+
+&lt;p&gt;Tämän voi tehdä manuaalisilla laskuilla aivan suoraan. Tarvitsemme vain tietoja $A(a) \equiv B(b) \equiv 0 \pmod{p}$, eli $a^2 \equiv -1 \pmod{p}$, $b^2 \equiv 2 \pmod{p}$.&lt;/p&gt;
+
+&lt;p&gt;Käytän pientä kikkaa, jolla laskut saa pidettyä melko siisteinä: olkoon $t = (a+b)^2$. Tällöin&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;t = a^2 + 2ab + b^2 \equiv -1 + 2ab + 2 \equiv 2ab + 1 \pmod{p}&lt;/script&gt;
+
+&lt;p&gt;Nyt,&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;D(a+b) = (a+b)^4 - 2(a+b)^2 + 9 = t^2 - 2t + 9 \equiv (2ab + 1)^2 - 2(2ab + 1) + 9&lt;/script&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\equiv 4a^2 b^2 + 4ab + 1 - (4ab + 2) + 9 \equiv 4 \cdot (-1) \cdot 2 + 8 \equiv 0 \pmod{p}&lt;/script&gt;
+
+&lt;p&gt;Kysymys kuuluu: voidaanko näin tehdä aina? Yleisessä tapauksessa tulee ongelmia, joihin keskitytään sen jälkeen, kun kerätään hieman intuitiota.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Idea&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Luvut $a, b$ ajavat samaa asiaa modulo $p$ kuin luvut $i, \sqrt{2}$ kompleksiluvuissa. Nimittäin, $a^2 \equiv -1 \pmod{p}$, $i^2 = -1$. Vastaavasti $b^2 \equiv 2 \pmod{p}$, $\sqrt{2}^2 = 2$.&lt;/p&gt;
+
+&lt;p&gt;Huomaa, että täsmälleen edellisten laskujen kaltaisesti voidaan osoittaa, että $D(\alpha + \beta)$ todella on $0$. Idean mukainen vastaavuus tuntuu olevan vahva.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Idea&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Kysymyksen 2 vastaus osoittaa siis seuraavan väitteen:&lt;/p&gt;
+
+&lt;p&gt;Olkoot $A, B$ jaottomia polynomeja, ja olkoot niillä juuret $\alpha, \beta$. Oletetaan, että $\mathbb{Q}(\alpha) \subset \mathbb{Q}(\beta)$. Tällöin $S(B) \subset S(A)$ (poislukien äärellisen monta $p \in S(B)$, joilla voi päteä $p \not\in S(A)$).&lt;/p&gt;
+
+&lt;p&gt;(Tämä tehtiin kysymyksen 2 ratkaisussa polynomeille $A$ ja $D$)&lt;/p&gt;
+
+&lt;p&gt;Tapauksessa $\mathbb{Q}(\alpha) = \mathbb{Q}(\beta)$ pätee siis sekä $S(B) \subset S(A)$ että $S(A) \subset S(B)$. Täten $S(A) \approx S(B)$.&lt;/p&gt;
+
+&lt;p&gt;Juuret siis todella kertovat alkutekijöistä, mikä omilta osin perustelee lauseen 3 ehtoa. Tämä on kantava teema, ja yksi työn tärkeimmistä ideoista: &lt;strong&gt;polynomin juuret kertovat sen alkutekijöistä.&lt;/strong&gt; Tämä näkyy lauseiden todistuksissa, ja olen lisäksi kirjoittanut viimeiseen blogipostaukseen hieman erilaisia tapoja demonstroida tätä.&lt;/p&gt;
+
+&lt;h3 id=&quot;ongelmia&quot;&gt;Ongelmia&lt;/h3&gt;
+
+&lt;p&gt;Olkoot $A(x) = (x^2 - 2)(x^2 - 3)$ ja $B(x) = x^2 - 5$. Intuitiivisesti yllä oleva menettely ei toimi (ja se oikeasti ei toimi): varmaankin on väliä, valitaanko $A$:lta juuri $\alpha = \sqrt{2}$ vai $\alpha’ = \sqrt{3}$: näiden muodostamat kunnat $\mathbb{Q}(\alpha), \mathbb{Q}(\alpha’)$ eivät ole samat.&lt;/p&gt;
+
+&lt;p&gt;Todistuksessa tulee siis ongelma, jos $A$ tai $B$ jakautuu. Kunnat $\mathbb{Q}(\alpha’)$ ja $\mathbb{Q}(\alpha)$ ovat kuitenkin isomorfiset, jos $A$ ei jakaudu (esim. $A = x^2 - 2$, niin $\mathbb{Q}(\sqrt{2})$ ja $\mathbb{Q}(-\sqrt{2})$ ovat isomorfisia). Kuntia $K_1, K_2$ sanotaan isomorfisiksi, jos on olemassa funktio $f : K_1 \to K_2$, jolla on seuraavat ominaisuudet:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;$f(xy) = f(x)f(y)$ kaikilla $x, y \in K_1$.&lt;/li&gt;
+  &lt;li&gt;$f(x + y) = f(x) + f(y)$ kaikilla $x, y \in K_1$.&lt;/li&gt;
+  &lt;li&gt;$f(1) = 1$.&lt;/li&gt;
+  &lt;li&gt;$f$ on bijektio.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Isomorfisuus käytännössä tarkoittaa sitä, että kuntien rakenne on sama, mutta alkiot on vain nimetty eri tavalla.&lt;/p&gt;
+
+&lt;p&gt;Jaottomilla polynomeilla $A$ pätee se, että $\mathbb{Q}(\alpha)$ ja $\mathbb{Q}(\alpha’)$ ovat isomorfisia, kun $\alpha, \alpha’$ ovat $A$:n juuria. Tämän takia todistuksessa ei ole väliä sillä, mikä näistä valitaan.&lt;/p&gt;
+
+&lt;p&gt;Intuitio sanoo, että valittuamme todistuksessa juuren $\alpha$ haluaisimme, että $\mathbb{Q}(\alpha, \beta)$ ja $\mathbb{Q}(\alpha, \beta’)$ ovat isomorfisia kaikilla $B$:n juurilla $\beta, \beta’$ - emme halua, että sillä on väliä, minkä juuren $B$:ltä valitsemme.&lt;/p&gt;
+
+&lt;p&gt;Tämä ei kuitenkaan aina päde, vaikka $A$ ja $B$ eivät jakautuisi rationaaliluvuissa.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Mistä ongelma johtuu?&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Ongelma esiintyy silloin, kun $B$ jakautuu kunnassa $\mathbb{Q}(\alpha)$ (aivan kuten ongelma esiintyy, jos $A$ jakautuu kunnassa $\mathbb{Q}$). Yksinkertainen esimerkki: $A(x) = x^2 - 2$, $B(x) = x^4 - 2$. Tällöin $B(x) = (x^2 - \alpha)(x^2 + \alpha)$.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Miten tämä näkyy käytännössä?&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Olkoon $A(x) = (x^2 - 123)^2 - 2$ ja $B(x) = (x^2 - 456)^2 - 2$. Olkoon $D$ luvun $\gamma$ minimaalinen polynomi, missä $\gamma$ on kuten kysymyksen 2 ratkaisussa. Oletetaan yksinkertaisuuden vuoksi, että $\gamma$ voidaan valita olemaan muotoa $\alpha + \beta$, missä $A(\alpha) = B(\beta) = 0$ ovat joitain $A$:n ja $B$:n juuria.&lt;/p&gt;
+
+&lt;p&gt;Ongelmaksi tulee se, että ehdoista $A(a) \equiv B(b) \equiv 0 \pmod{p}$ ei suoraan edellisen esimerkin kaltaisten laskujen kautta saada yhtälöä $D(a+b) \equiv 0 \pmod{p}$ todistettua.&lt;/p&gt;
+
+&lt;p&gt;Yhtälöä $D(\alpha + \beta) = 0$ ei voi todistaa suoraan vastaavien sievennyksien kautta todeksi. Tämä johtuu siitä, että juurien $\alpha$ ja $\beta$ välillä vallitsee epätriviaali yhtälö: jos vaikkapa&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\alpha = \sqrt{\sqrt{2} + 123}&lt;/script&gt;
+
+&lt;p&gt;ja&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\beta = \sqrt{\sqrt{2} + 456}&lt;/script&gt;
+
+&lt;p&gt;niin pätee yhtälö&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\alpha^2 = \beta^2 - 333&lt;/script&gt;
+
+&lt;p&gt;Jos tätä tietoa käyttää sievennyksissä apuna, argumentti menee läpi, mutta ilman tätä sieventäminen ei toimi.&lt;/p&gt;
+
+&lt;p&gt;Huomaa, että yhtälö $\alpha^2 = \beta^2 - 333$ tarkoittaa, että luvun $\beta$ minimaalinen polynomi $B_1(x) = x^2 + (\alpha^2 - 333)$ kunnassa $\mathbb{Q}(\alpha)$ ei ole sama kuin minimaalinen polynomi $B$ kunnassa $\mathbb{Q}$. Toisin sanoen, $B$ jakautuu kunnassa $\mathbb{Q}(\alpha)$, ja tästä tulee ongelmia - meidän tulee käyttää tätä ehtoa hyväksi, ja tämä vaatii asian tiedostamista.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Miten ongelma ratkaistaan?&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Ratkaisu ongelmaan on varsin yksinkertainen (vaikkakin tähän päätyminen vei paljon aikaa): olkoon $\alpha$ jokin $A$:n juuri. Olkoon $B = E_1E_2 \ldots E_t$, missä $E_i \in \mathbb{Q}(\alpha)[x]$ ovat kunnassa $\mathbb{Q}(\alpha)$ jaottomia. Olkoon $\beta_i$ jokin polynomin $E_i$ juuri kaikilla $i$. Ideana on jokaista $i$ kohden valita $\gamma_i$, jolla $\mathbb{Q}(\alpha, \beta_i) = \mathbb{Q}(\gamma_i)$, ja kertoa lukujen $\gamma_i$ minimaaliset polynomit keskenään. Tämä konstruktio toimii.&lt;/p&gt;
+
+&lt;h3 id=&quot;todistuksen-rakenne&quot;&gt;Todistuksen rakenne&lt;/h3&gt;
+
+&lt;p&gt;Jaoin todistuksen heti alusta lähtien kahteen osaan:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Osoitetaan, että saadaan luotua “melkein toimiva” $D$.&lt;/li&gt;
+  &lt;li&gt;“Korjataan” tätä $D$.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Edellisissä osioissa on monessa kohtaa poissuljettu jotkin äärellisen monta poikkeustapausta. Tämä ei ole ongelma, koska yksittäisen polynomin alkutekijöitä voidaan muuttaa tiettyjen alkeellisten operaatioiden kautta. Osassa 2. käsitellään nämä korjaukset, joten riittää löytää miltei toimiva $D$.&lt;/p&gt;
+
+&lt;p&gt;Kutsun osan 1 todistusta lauseen 1 &lt;strong&gt;heikoksi versioksi&lt;/strong&gt;. Heikon version todistus perustuu yllä esitetyn konstruktion toimivuuden todistamiseen. Tämä tehdään todistamalla, että on olemassa vastaavuus “polynomin juuret $\to$ nollakohta modulo $p$”. Lopullinen todistus on aika paljon yksinkertaisempi (ja toimivampi) kuin se, jonka keksin ensimmäisenä.&lt;/p&gt;
+
+&lt;p&gt;Osan 2 todistus, eli &lt;strong&gt;yleisen tapauksen todistus&lt;/strong&gt;, on täysin alkeellinen, eli se ei käytä algebrallista lukuteoriaa. Lemmat ovat enemmän tai vähemmän kisamatematiikkahenkisiä. Suosittelen yrittämään lemmojen todistamista itse.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://blog.matematiikkakilpailut.fi/2019/06/05/PYA07heikko.html&quot;&gt;Seuraava postaus.&lt;/a&gt;&lt;/p&gt;</content><author><name>Olli Järviniemi</name></author><summary type="html">Tässä postauksessa esitetään motivaatio lauseen 1 todistuksen takana.</summary></entry><entry><title type="html">Polynomien yhteiset alkutekijät, osa 3: tulokset</title><link href="https://blog-drafts.matematiikkakilpailut.fi/2019/06/05/PYA09tulokset.html" rel="alternate" type="text/html" title="Polynomien yhteiset alkutekijät, osa 3: tulokset" /><published>2019-06-05T00:00:00+00:00</published><updated>2019-06-05T00:00:00+00:00</updated><id>https://blog-drafts.matematiikkakilpailut.fi/2019/06/05/PYA09tulokset</id><content type="html" xml:base="https://blog-drafts.matematiikkakilpailut.fi/2019/06/05/PYA09tulokset.html">&lt;p&gt;Tässä postauksessa esitetään tutkielman merkittävimmät tulokset.&lt;/p&gt;
+
+&lt;!--jatkuu--&gt;
+
+&lt;p&gt;&lt;strong&gt;Sisällysluettelo&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;&lt;a href=&quot;https://blog.matematiikkakilpailut.fi/2019/06/05/PYA11johdanto.html&quot;&gt;Osa 1 - johdanto&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://blog.matematiikkakilpailut.fi/2019/06/05/PYA10esitiedot.html&quot;&gt;Osa 2 - esitiedot&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Osa 3 - tulokset&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://blog.matematiikkakilpailut.fi/2019/06/05/PYA08motivaatio.html&quot;&gt;Osa 4 - motivaatio&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://blog.matematiikkakilpailut.fi/2019/06/05/PYA07heikko.html&quot;&gt;Osa 5 - heikko versio&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://blog.matematiikkakilpailut.fi/2019/06/05/PYA06yleinen.html&quot;&gt;Osa 6 - yleinen tapaus&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://blog.matematiikkakilpailut.fi/2019/06/05/PYA05lause2.html&quot;&gt;Osa 7 - lause 2&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://blog.matematiikkakilpailut.fi/2019/06/05/PYA04lause3.html&quot;&gt;Osa 8 - lause 3&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://blog.matematiikkakilpailut.fi/2019/06/05/PYA03lause4.html&quot;&gt;Osa 9 - lause 4&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://blog.matematiikkakilpailut.fi/2019/06/05/PYA02sovelluksia.html&quot;&gt;Osa 10 - sovelluksia&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://blog.matematiikkakilpailut.fi/2019/06/05/PYA01lisaaiheita.html&quot;&gt;Osa 11 - lisäaiheita&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Ennen kuin mennään varsinaisiin päätuloksiin, pidetään jännitystä yllä ja esitetään ensiksi kaksi lemmaa, jotka kertovat paljon polynomien tekijöistä. Syynä se, että tulokset aukeavat tämän jälkeen ehkä hieman paremmin.&lt;/p&gt;
+
+&lt;h2 id=&quot;lemma-1&quot;&gt;Lemma 1&lt;/h2&gt;
+
+&lt;p&gt;Olkoon positiivisen kokonaisluvun $m$ alkutekijähajotelma $p_1^{\alpha_1}p_2^{\alpha_2} \ldots p_n^{\alpha_n}$, ja olkoon $P \in \mathbb{Z}[x]$. Tällöin $m \in S_d(P)$ jos ja vain jos $p_i^{\alpha_i} \in S_d(P)$ kaikilla $i$.&lt;/p&gt;
+
+&lt;p&gt;Lemma 1 on hyvin kilpailumatematiikkahenkinen, ja sopii hyvin helpohkoksi harjoitustehtäväksi. Lemma 1 siis kertoo, että täytyy vain tutkia joukon $S(P)$ alkuluvun potensseja, ja tätä kautta saadaan rakennettua koko joukko.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Todistus&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Jos $m \in S_d(P)$, yhtälöllä $P(x) \equiv 0 \pmod{m}$ on ratkaisu $x = x_0$. Tällöin yhtälöillä $P(x) \equiv 0 \pmod{p_i^{\alpha_i}}$ on tietysti myös ratkaisu $x = x_0$. Tämä osoittaa väitteen “vain jos” -suunnan.&lt;/p&gt;
+
+&lt;p&gt;Sitten vaikeampi “jos”-suunta. Oletetaan siis, että $p_i^{\alpha_i} \in S_d(P)$ kaikilla $i$. Tällöin yhtälöillä $P(x) \equiv 0 \pmod{p_i^{\alpha_i}}$ on ratkaisu kaikilla $i$. Merkitään näiden yhtälöiden ratkaisuja $x_1, x_2, \ldots , x_n$. Muodostetaan näiden avulla ratkaisu yhtälölle $P(x) \equiv 0 \pmod{m}$.&lt;/p&gt;
+
+&lt;p&gt;Tutkitaan kongruenssiyhtälöryhmää $x \equiv x_i \pmod{p_i^{\alpha_i}}$ kaikilla $1 \le i \le n$. Tällä yhtälöryhmällä on kiinalaisen jäännöslauseen nojalla ratkaisu. Olkoon $y$ jokin ratkaisu. Tällä $y$ pätee&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;P(y) \equiv P(x_i) \equiv 0 \pmod{p_i^{\alpha_i}} \ \forall 1 \le i \le n&lt;/script&gt;
+
+&lt;p&gt;Siis luku $P(y)$ on jaollinen luvulla $p_i^{\alpha_i}$ kaikilla $i$. Täten $P(y)$ on jaollinen näiden lukujen tulolla, eli $m \mid P(y)$. Tämä osoittaa väitteen “jos”-suunnan.&lt;/p&gt;
+
+&lt;h2 id=&quot;lemma-2&quot;&gt;Lemma 2&lt;/h2&gt;
+
+&lt;p&gt;Olkoon $P \in \mathbb{Z}[x]$. Kaikilla paitsi äärellisen monella $p$ pätee $p \in S(P) \implies p \in S_v(P)$. Käyttäen $\approx$-notaatiota (kts. edellinen postaus) voidaan sama ilmaista sanoen $S(P) \approx S_v(P)$.&lt;/p&gt;
+
+&lt;p&gt;Tämä tulos on postauksessa &lt;a href=&quot;https://blog.matematiikkakilpailut.fi/2018/09/23/Hensel.html&quot;&gt;Henselin lemma&lt;/a&gt; harjoitustehtävä “Sovelluksen 1 yleistys”. Todistus käytännössä katsoen lukee kyseisessä blogipostauksessa, mutta esitetään se kuitenkin tässä.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Todistus&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Osoitetaan väite ensin jos $P$ ei jakaudu rationaaliluvuissa. Olkoon $p \in S(P)$ jokin alkuluku, ja olkoon $n$ sellainen, että $p \mid P(n)$. Jos $p \nmid P’(n)$, Henselin lemman nojalla (katso em. postauksen korollaari) pätee $p \in S_v(P)$. Riittää siis osoittaa, että vain äärellisen monella $p$ on olemassa sellainen $n$, että $p \mid P(n)$ ja $p \mid P’(n)$. Tämä pätee ns. Bezout’n lemman nojalla: Bezout’n lemma sanoo, että mikäli $A, B \in \mathbb{Z}[x]$ ovat yhteistekijättömiä, niin on olemassa polynomit $X, Y \in \mathbb{Z}[x]$ ja kokonaisluku $N \neq 0$, joilla&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;AX + BY = N.&lt;/script&gt;
+
+&lt;p&gt;Polynomit $P$ ja $P’$ ovat yhteistekijättömiä, koska $P$ on jaoton ja $\deg(P) &amp;gt; \deg(P’)$. Siis $PX + P’Y = N$ sopivilla $X, Y \in \mathbb{Z}[x]$ ja $N \in \mathbb{Z}$, $N \neq 0$. Täten jos $p \mid P(n)$ ja $p \mid P’(n)$, niin $p \mid P(n)X(n) + P’(n)Y(n) = N$, mikä pätee vain äärellisen monella $p$.&lt;/p&gt;
+
+&lt;p&gt;Olemme siis todistaneet väitteen jaottomille $P$. Osoitetaan se vielä, kun $P$ jakautuu.&lt;/p&gt;
+
+&lt;p&gt;Yleisessä tapauksessa hajotetaan $P$ jaottomien polynomien tuloksi: $P = P_1P_2 \ldots P_n$, missä $P_i \in \mathbb{Z}[x]$ eivät jakaudu. Polynomit $P_i$ voidaan siis valita kokonaislukukertoimisiksi, kuten todettiin edellisessä postauksessa. Nyt, jos $p \in S(P)$, pätee $p \in S(P_i)$ jollain $i$. Soveltaen edellisen kappaleen tulosta polynomille $P_i$ saadaan, että kaikilla paitsi äärellisen monella $p$ pätee $p \in S_v(P_i)$, joten $p \in S_v(P)$. Tämä osoittaa väitteen kaikille $P$.&lt;/p&gt;
+
+&lt;h1 id=&quot;tulokset&quot;&gt;Tulokset&lt;/h1&gt;
+
+&lt;h2 id=&quot;lause-1&quot;&gt;Lause 1&lt;/h2&gt;
+
+&lt;p&gt;Tutkielman päätulos on seuraava:&lt;/p&gt;
+
+&lt;p&gt;Olkoot $P_1, P_2, \ldots , P_n \in \mathbb{Z_c}[x]$. On olemassa sellainen $D \in \mathbb{Z_c}[x]$, jolla&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;S_d(D) = S_d(P_1) \cap S_d(P_2) \cap \ldots \cap S_d(P_n).&lt;/script&gt;
+
+&lt;p&gt;Todistus on konstruktiivinen, eli se antaa tavan löytää tällaisen $D$, eikä vain todista sen olemassaoloa. Lisäksi konstruoidun $D$ aste on $\deg(P_1)\deg(P_2) \ldots \deg(P_n)$. Aina ei ole olemassa pienempiasteista $D$, joka kelpaisi lauseen 1 mukaiseksi $S$. Konstruktio on siis jollain mittapuulla luonnollinen, “paras mahdollinen”.&lt;/p&gt;
+
+&lt;p&gt;Selvästi riittää osoittaa väite tapauksessa $n = 2$, koska $n &amp;gt; 2$ seuraa suoraan induktiolla. Tämän vuoksi lauseen todistuksessa keskitytään vain tapaukseen $n = 2$.&lt;/p&gt;
+
+&lt;p&gt;Tutki-Kokeile-Kehitä -kilpailun finaalin jälkeen aloin tutkimaan seuraavaa lauseen 1 yleistystä: lause 1 voidaan tulkita niin, että yhtälöryhmällä $P_i(x_i) \equiv 0 \pmod{p}$ on ratkaisu modulo $p$ jos ja vain jos yhtälöllä $D(x) \equiv 0 \pmod{p}$ on ratkaisu modulo $p$. Tämä voidaan yleistää yleiselle polynomiyhtälöryhmälle:&lt;/p&gt;
+
+&lt;h2 id=&quot;lause-1-1&quot;&gt;Lause 1’&lt;/h2&gt;
+
+&lt;p&gt;Olkoot $F_1, F_2, \ldots , F_k$ kokonaislukukertoimisia polynomeja muuttujissa $x_1, x_2, \ldots , x_n$. On olemassa sellainen $D \in \mathbb{Z}[x]$, jolla pätee seuraava väite:&lt;/p&gt;
+
+&lt;p&gt;Yhtälöryhmällä&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;F_1(x_1, x_2, \ldots , x_n) \equiv 0 \pmod{p}&lt;/script&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;F_2(x_1, x_2, \ldots , x_n) \equiv 0 \pmod{p}&lt;/script&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\ldots&lt;/script&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;F_k(x_1, x_2, \ldots , x_n) \equiv 0 \pmod{p}&lt;/script&gt;
+
+&lt;p&gt;on ratkaisu modulo $p$ jos ja vain jos yhtälöllä $D(x) \equiv 0 \pmod{p}$ on ratkaisu modulo $p$.&lt;/p&gt;
+
+&lt;p&gt;Polynomiyhtälöryhmän ratkeaminen voidaan siis redusoida yhden yhtälön tutkimiseksi. Kaunista.&lt;/p&gt;
+
+&lt;p&gt;Lause 1’ seuraa suoraan lauseesta 1, sekä James Axin työn Solving Diophantine Problems Modulo Every Prime lauseesta 1. Tämä tulos on seuraava:&lt;/p&gt;
+
+&lt;p&gt;Olkoot $F_1, \ldots , F_k$ kuten yllä. Niiden $p$ joukko, joilla yllä esitetyllä yhtälöryhmällä $F_i(x_1, \ldots , x_n) \equiv 0 \pmod{p}$ on ratkaisu modulo $p$, voidaan esittää yhdistelmänä leikkauksia, unioneja ja komplementteja joukoista muotoa $S(P), P \in \mathbb{Z}[x]$.&lt;/p&gt;
+
+&lt;p&gt;Lause 1’ seuraa siis James Axin lauseesta 1 sekä minun lauseesta 1, sekä seuraavista huomioista:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;Olkoot $A, B \in \mathbb{Z}[x]$. On olemassa sellainen $D \in \mathbb{Z}[x]$, että $S(A) \cup S(B) = S(D)$. Tämä on triviaalia: valitaan $D = AB$.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Ax käyttää komplementteja vain käsitelläkseen äärellisen montaa alkulukua, eli hän haluaa poistaa äärellisen monta alkulukua jostain joukosta $S$, ja hän tekee sen tutkimalla joukkoa $S \cap S(nx + 1)^c$, missä $S(P)^c$ kuvaa joukon $S(P)$. Polynomilla $nx + 1$ on tietysti alkutekijöinään täsmälleen ne alkuluvut $p$, jotka eivät jaa lukua $n$.
+Todistamme lauseen 1 todistuksessa, että tämä äärellisen monen alkutekijän poistaminen voidaan tehdä myös muulla tavalla ilman komplementteja.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;lause-2&quot;&gt;Lause 2&lt;/h2&gt;
+
+&lt;p&gt;Lause 2 toimii yleistyksenä Schurin lauseelle.&lt;/p&gt;
+
+&lt;p&gt;Olkoot $P_1, P_2, \ldots , P_n \in \mathbb{Z_c}[x]$. Pätee&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\delta(S_v(P_1) \cap S_v(P_2) \cap \ldots \cap S_v(P_n)) \ge \frac{1}{\deg(P_1)\deg(P_2) \ldots \deg(P_n)}&lt;/script&gt;
+
+&lt;p&gt;(Vasemman puolen tiheys on olemassa)&lt;/p&gt;
+
+&lt;p&gt;Lauseen 2 todistus seuraa suoraan lauseesta 1 ja lemmasta 2, kun osoitetaan, että $\delta(S(P)) \ge \frac{1}{\deg(P)}$ kaikilla $P \in \mathbb{Z_c}[x]$ (miksi? Muista raja $D$:n asteelle). Tämän osoittaminen ei ole kuitenkaan aivan triviaalia.&lt;/p&gt;
+
+&lt;p&gt;Lisäksi lauseen 2 alaraja on tiukka, eli se saavutetaan jollain polynomien $P_i$ valinnoilla (ja tarkemmin, monenlaisilla eri valinnoilla).&lt;/p&gt;
+
+&lt;h2 id=&quot;lause-3&quot;&gt;Lause 3&lt;/h2&gt;
+
+&lt;p&gt;Monessa tapauksessa polynomien $P_i$ yhteisten alkutekijöiden tiheys voidaan laskea. Lauseen väite on hieman tekninen, joten määritellään sitä ennen ns. juurikunta (engl. splitting field).&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Juurikunta&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Olkoon polynomin $P \in \mathbb{Z_c}[x]$ juuret $\alpha_1, \alpha_2, \ldots , \alpha_n$. Polynomin $P$ juurikunta määritellään olemaan kunta $\mathbb{Q}(\alpha_1, \alpha_2, \ldots , \alpha_n)$.&lt;/p&gt;
+
+&lt;p&gt;Juurikunta on siis pienin kunta, jossa $P$ jakautuu ensimmäisen asteen tekijöihin. Se on samalla pienin kunta, joka sisältää kaikki $P$:n juuret.&lt;/p&gt;
+
+&lt;p&gt;Lauseen 3 muotoilu on seuraava:&lt;/p&gt;
+
+&lt;p&gt;Olkoot $P_1, P_2, \ldots , P_n \in \mathbb{Z_c}[x]$. Olkoon $F_i$ polynomin $P_i$ juurikunta, ja olkoon $F$ polynomin $P_1P_2 \ldots P_n$ juurikunta (eli siis pienin kunta, joka sisältää kaikkien $P_i$ kaikki juuret). Oletetaan, että&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;[F : \mathbb{Q}] = [F_1 : \mathbb{Q}][F_2 : \mathbb{Q}] \cdots [F_n : \mathbb{Q}]&lt;/script&gt;
+
+&lt;p&gt;Tällöin pätee&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\delta(S(P_1) \cap S(P_2) \cap \ldots \cap S(P_n)) = \delta(S(P_1))\delta(S(P_2)) \cdots \delta(S(P_n))&lt;/script&gt;
+
+&lt;p&gt;Mitä lause käytännössä kertoo? Ehtoa juurikuntien laajennuksien asteista voiadan ajatella ehtona siitä, että polynomit $P_i$ eivät “kommunikoi keskenään”. Tällöin yhteisten alkutekijöiden tiheys on se, minkä sen olettaisikin olevan.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Esimerkki&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Olkoot $P_1(x) = x^2 - 2$ ja $P_2(x) = x^2 - 3$. Juurikunnat $F_1$ ja $F_2$ ovat tällöin $\mathbb{Q}(\sqrt{2}, -\sqrt{2})$ ja $\mathbb{Q}(\sqrt{3}, -\sqrt{3})$. Mutta selvästi $\mathbb{Q}(\sqrt{2}, -\sqrt{2}) = \mathbb{Q}(\sqrt{2})$, koska luku $-\sqrt{2}$ kuuluu kuntaan $\mathbb{Q}(\sqrt{2})$. Täten&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;F_1 = \mathbb{Q}(\sqrt{2})&lt;/script&gt;
+
+&lt;p&gt;ja vastaavasti&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;F_2 = \mathbb{Q}(\sqrt{3})&lt;/script&gt;
+
+&lt;p&gt;Lisäksi&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;F = \mathbb{Q}(\sqrt{2}, -\sqrt{2}, \sqrt{3}, -\sqrt{3}) = \mathbb{Q}(\sqrt{2}, \sqrt{3})&lt;/script&gt;
+
+&lt;p&gt;Edellisessä postauksessa totesimme, että $[F : \mathbb{Q}] = 4$. Siispä&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;[F : \mathbb{Q}] = 4 = 2 \cdot 2 = [F_1 : \mathbb{Q}][F_2 : \mathbb{Q}]&lt;/script&gt;
+
+&lt;p&gt;Ehto siis toteutuu. Tiheydet $\delta(S(P_1)), \delta(S(P_2))$ ovat molemmat $\frac{1}{2}$, mikä on todistettu postauksessa &lt;a href=&quot;https://blog.matematiikkakilpailut.fi/2018/12/09/Nelionjaannos.html&quot;&gt;Neliönjäännökset&lt;/a&gt; (tälle esitetään myöhemmin toinen, parin rivin todistus käyttäen voimakasta Frobeniuksen lausetta). Lauseen 3 nojalla pätee&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\delta(S(P_1) \cap S(P_2)) = \delta(S(P_1))\delta(S(P_2)) = \frac{1}{2} \cdot \frac{1}{2} = \frac{1}{4}&lt;/script&gt;
+
+&lt;p&gt;Tiheys vastaa heuristiikkaa, joka esitettiin &lt;a href=&quot;https://blog.matematiikkakilpailut.fi/2018/12/09/Nelionjaannos.html&quot;&gt;Neliönjäännökset&lt;/a&gt;-postauksessa. Lausetta voidaan oikeastaan pitää heuristiikan yleistyksenä (ja formaalina todistuksena):&lt;/p&gt;
+
+&lt;p&gt;Valitaan jokin satunnainen alkuluku $p$. Todennäköisyys tapahtumalle ““$p$ on polynomin $P_i$ alkutekijä” on $\delta(S(P_i))$. Jos oletamme, että nämä tapahtumat ovat toisistaan riippumattomia, niin tapahtuman “p on $P_i$:n alkutekijä kaikilla $i$” todennäköisyys on vain erillisten tapahtumien todennäköisyyksien tulo,&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\delta(S(P_1))\delta(S(P_2)) \cdots \delta(S(P_n))&lt;/script&gt;
+
+&lt;p&gt;Lauseen ehto $[F : \mathbb{Q}] = [F_1 : \mathbb{Q}] \ldots [F_n : \mathbb{Q}]$ siis takaa tämän tapahtumien riippumattomuuden. Tämä voi tuntua absurdilta: miten polynomien juurikunnat kertovat yhtään mitään niiden alkutekijöistä? Tämä on loistava, syvällinen kysymys. Olen tutkielman tekemisen aikana lukuisten esimerkkien kautta saanut tähän jonkinnäköistä intuitiota, jota pyrin jakamaan lukijoille. Tähän kysymykseen pyritään vastaamaan pala palalta eri postauksissa.&lt;/p&gt;
+
+&lt;p&gt;Mainitaan vielä, että tapauksessa $n = 2$ ehto $[F : \mathbb{Q}] = [F_1 : \mathbb{Q}][F_2 : \mathbb{Q}]$ on ekvivalenttia ehdon $F_1 \cap F_2 = \mathbb{Q}$ kanssa. Jälkimmäinen ehto on minusta intuitiivisempi tapa ajatella riippumattomuutta.&lt;/p&gt;
+
+&lt;p&gt;Myöhemmässä postauksessa todistan lausetta 3 käyttäen &lt;a href=&quot;https://blog.matematiikkakilpailut.fi/2018/12/09/Nelionjaannos.html&quot;&gt;Neliönjäännökset&lt;/a&gt;-postauksessa esitettyjen heuristiikkojen tulosten paikkansapitävyyden. Ensimmäinen tulos on, tämän työn termistöä käyttäen, polynomien $x^2 - a_i$ yhteisten alkutekijöiden tiheys. Toinen tulos on viimeisen harjotustehtävän mukaisten polynomien $x^q - a$ alkutekijöiden tiheys, sekä tätä muotoa olevien polynomien yhteiset alkutekijät. Näitä asioita en tilanpuutteen vuoksi esittänyt varsinaisessa tutkielmassani.&lt;/p&gt;
+
+&lt;h2 id=&quot;lause-4&quot;&gt;Lause 4&lt;/h2&gt;
+
+&lt;p&gt;Mitä arvoja $\delta(S(P))$ voi saada? Lause 4 vastaa tähän kysymykseen:&lt;/p&gt;
+
+&lt;p&gt;Olkoon $r \in [0, 1]$. On olemassa sellainen $P$, jolla $\delta(S(P)) = r$, jos ja vain jos $r$ on rationaalinen.&lt;/p&gt;
+
+&lt;p&gt;Oikeastaan osoitin pelkästään “jos”-puolen - “vain jos”-puoli seuraa suoraan myöhemmin esitettävästä Frobeniuksen lauseesta.&lt;/p&gt;
+
+&lt;p&gt;Lause 4 on tuloksena mielenkiintoinen, mutta sillä ei tunnu olevan mielenkiintoisia seurauksia (jos keksit jotain, kerro minulle!). Se kuitenkin toimii esimerkkinä siitä, mitä työn tuloksilla voidaan todistaa.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://blog.matematiikkakilpailut.fi/2019/06/05/PYA08motivaatio.html&quot;&gt;Seuraava postaus.&lt;/a&gt;&lt;/p&gt;</content><author><name>Olli Järviniemi</name></author><summary type="html">Tässä postauksessa esitetään tutkielman merkittävimmät tulokset.</summary></entry><entry><title type="html">Polynomien yhteiset alkutekijät, osa 2: esitiedot</title><link href="https://blog-drafts.matematiikkakilpailut.fi/2019/06/05/PYA10esitiedot.html" rel="alternate" type="text/html" title="Polynomien yhteiset alkutekijät, osa 2: esitiedot" /><published>2019-06-05T00:00:00+00:00</published><updated>2019-06-05T00:00:00+00:00</updated><id>https://blog-drafts.matematiikkakilpailut.fi/2019/06/05/PYA10esitiedot</id><content type="html" xml:base="https://blog-drafts.matematiikkakilpailut.fi/2019/06/05/PYA10esitiedot.html">&lt;p&gt;Tässä postauksessa esitetään tutkielman kannalta tärkeitä esitietoja sekä notaatioita.&lt;/p&gt;
+
+&lt;!--jatkuu--&gt;
+
+&lt;p&gt;&lt;strong&gt;Sisällysluettelo&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;&lt;a href=&quot;https://blog.matematiikkakilpailut.fi/2019/06/05/PYA11johdanto.html&quot;&gt;Osa 1 - johdanto&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Osa 2 - esitiedot&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://blog.matematiikkakilpailut.fi/2019/06/05/PYA09tulokset.html&quot;&gt;Osa 3 - tulokset&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://blog.matematiikkakilpailut.fi/2019/06/05/PYA08motivaatio.html&quot;&gt;Osa 4 - motivaatio&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://blog.matematiikkakilpailut.fi/2019/06/05/PYA07heikko.html&quot;&gt;Osa 5 - heikko versio&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://blog.matematiikkakilpailut.fi/2019/06/05/PYA06yleinen.html&quot;&gt;Osa 6 - yleinen tapaus&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://blog.matematiikkakilpailut.fi/2019/06/05/PYA05lause2.html&quot;&gt;Osa 7 - lause 2&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://blog.matematiikkakilpailut.fi/2019/06/05/PYA04lause3.html&quot;&gt;Osa 8 - lause 3&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://blog.matematiikkakilpailut.fi/2019/06/05/PYA03lause4.html&quot;&gt;Osa 9 - lause 4&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://blog.matematiikkakilpailut.fi/2019/06/05/PYA02sovelluksia.html&quot;&gt;Osa 10 - sovelluksia&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://blog.matematiikkakilpailut.fi/2019/06/05/PYA01lisaaiheita.html&quot;&gt;Osa 11 - lisäaiheita&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Tämä on postaussarjan vaikein postaus, koska uusia asioita tulee paljon. Samalla postaus on hyvin pitkä, koska olen koittanut avata sisältöä esimerkkien kautta. Kannattaa edetä rauhassa. Netistä löytää helposti oheismateriaalia, joiden kautta voi etsiä lisäselitystä epäselviin kohtiini. Kaikkia esitietoja ei tulla käyttämään ihan heti, joten niihin voi olla hyvä palata myöhemmin.&lt;/p&gt;
+
+&lt;h1 id=&quot;perusjuttuja&quot;&gt;Perusjuttuja&lt;/h1&gt;
+
+&lt;p&gt;&lt;strong&gt;Notaatio&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Muuttujalla $p$ viitataan &lt;strong&gt;aina&lt;/strong&gt; alkulukuun. Muuttujat $n, m, k$ viittaavat kokonaislukuihin, useimmiten positiivisiin kokonaislukuihin.&lt;/p&gt;
+
+&lt;p&gt;Kokonaislukukertoimisten polynomien joukkoa merkitään $\mathbb{Z}[x]$. Ei-vakioita kokonaislukukertoimia polynomeja merkitään $\mathbb{Z_c}[x]$ (tämä notaatio siksi, että vakiopolynomit eivät ole mielenkiintoisia).&lt;/p&gt;
+
+&lt;p&gt;Polynomin $P$ &lt;strong&gt;alkutekijöiksi&lt;/strong&gt; kutsutaan niitä $p$, joilla yhtälöllä $P(x) \equiv 0 \pmod{p}$ on ratkaisu. $P$:n alkutekijöiden joukkoa merkitään notaatiolla $S(P)$. Yleisesti sanotaan, että $m \in \mathbb{Z_+}$ on $P$:n tekijä, jos yhtälöllä $P(x) \equiv 0 \pmod{m}$ on ratkaisu. Tekijöiden joukkoa merkitään $S_d(P)$. Vielä kolmas määritelmä: $p$:tä kutsutaan $P$:n &lt;strong&gt;vahvaksi alkutekijäksi&lt;/strong&gt;, jos $p^k \in S_d(P)$ kaikilla $k \in \mathbb{Z_+}$. Vahvojen alkutekijöiden joukkoa merkitään $S_v(P)$. Ei ole ilmeistä, että vahvoja alkutekijöitä on olemassa, mutta &lt;strong&gt;kaikki paitsi äärellisen moni alkutekijä on vahva alkutekijä&lt;/strong&gt;. Tämä ei ole triviaalia, ja tähän palataan myöhemmin itse todistuksessa.&lt;/p&gt;
+
+&lt;p&gt;Olkoot $S_1, S_2 \subset \mathbb{Z_+}$. Kirjoitetaan, että $S_1 \approx S_2$, ja sanotaan, että joukot $S_1$ ja $S_2$ ovat miltei samat, jos seuraava ehto pätee: on olemassa vain äärellisen monta alkulukua $p$, joita kohden on olemassa $k \in \mathbb{Z_+}$, jolla $p^k$ kuuluu vain toiseen joukoista $S_1, S_2$. Määritelmä voi tuntua tässä kohtaa oudolta. Määritelmän hyödyllisyys perustuu siihen, että joukon $S_d(P)$ alkiot määräytyvät joukon $S_d(P)$ niiden alkioiden perusteella, jotka ovat alkulukujen potensseja (tarkempi kuvaus myöhemmin), joten määritelmä antaa kätevän tavan verrata tällaisia joukkoja.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Polynomit kongruensseissa&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Muistutetaan, että jos $a \equiv b \pmod{m}$, niin $P(a) \equiv P(b) \pmod{m}$ kaikilla $P \in \mathbb{Z}[x]$. Tätä tulosta tullaan käyttämään ilman, että sitä erikseen mainitaan. Tämä tulos on myös hyvin oleellinen kilpailumatematiikassa.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Tekijöihinjako&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://math.dartmouth.edu/archive/m31w05/public_html/Q-Z-Reducibility.pdf&quot;&gt;On tunnettua&lt;/a&gt;, että jos $P \in \mathbb{Z}[x]$ jakautuu rationaalilukukertoimisten polynomien tuloksi, niin se jakautuu myös kokonaislukukertoimisten polynomien tuloksi. Siispä kun työssä jaetaan jotain $P \in \mathbb{Z}[x]$ tekijöihin, valitaan tekijät kokonaislukukertoimisiksi.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Laajennettu jaollisuus&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Työssä käytetään paikoittain jaollisuutta rationaaliluvuille. Tästä voi lukea tarkemmin &lt;a href=&quot;https://blog.matematiikkakilpailut.fi/2018/11/09/Jaollisuus.html&quot;&gt;tästä postauksesta&lt;/a&gt;. Tässä on kyse enemmänkin yksinkertaisuudesta ja intuitiosta kuin siitä, että tällä saavutettaisiin mitään konkreettista. Esimerkiksi polynomi $P(x) = \frac{1}{2}x^2 - 1$ käyttäytyy työn kannalta käytännössä katsoen täsmälleen samalla tavalla kuin polynomi $2P(x) = x^2 - 2$. Yleisesti voitaisiin siis kertoa kaikki rationaalilukuja kertovat lausekkeet sopivalla kokonaisluvulla. Tätä ideaa käytetään vain parissa kohdassa, ja mainitsen siitä erikseen.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Tiheys&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Aiemmin puhuttiin osuuksista: kysymyksenä 3 oli, kuinka suuri osuus alkuluvuista ovat polynomin $P$ alkutekijöitä. Määritellään tämä eksaktisti:&lt;/p&gt;
+
+&lt;p&gt;Olkoon $\mathbb{P}$ alkulukujen joukko, ja olkoon $S$ jokin sen osajoukko. Olkoon $S(x)$ joukon $S$ niiden alkioiden määrä, jotka ovat enintään $x$. Alkulukujen joukolle vastaavaa suuretta merkitään perinteisesti $\pi(x)$, eli $\pi(x)$ on niiden alkulukujen määrä, jotka ovat enintään $x$. Joukon $S$ luonnollinen &lt;strong&gt;tiheys&lt;/strong&gt; (joukon $\mathbb{P}$ suhteen) määritellään raja-arvona&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\lim_{x \to \infty} \frac{S(x)}{\pi(x)}&lt;/script&gt;
+
+&lt;p&gt;Tiheyttä merkitään $\delta(S)$. Huomaa, että tiheyden ei välttämättä tarvitse olla olemassa, mutta tässä työssä ei tällaisia joukkoja esiinny (keksitkö sellaisen joukon $S$, jonka tiheys ei ole olemassa?). Esimerkiksi kaikilla $P \in \mathbb{Z}[x]$ tiheys $\delta(S(P))$ on olemassa. Tämä todistetaan myöhemmin.&lt;/p&gt;
+
+&lt;p&gt;Tiheyksiä voidaan määritellä myös muiden joukkojen suhteen. On myös muunlaisia tiheyksiä, tunnetuin on Dirichlet’n tiheys (tätä ei tarvita tässä työssä, mutta mainitsen sen yleisen mielenkiinnon vuoksi). Tämä määritellään niin, että suhteen $\frac{S(x)}{\pi(x)}$ sijasta tutkitaankin joukon $S$ enintään $x$ olevien alkioiden käänteislukujen summaa, ja jaetaan tämä vastaavalla suureella kaikkien alkulukujen yli. Osoittautuu, että jos luonnollinen tiheys $\delta(S)$ on olemassa, niin myös Dirichlet’n tiheys on, ja nämä tiheydet ovat samat. Dirichlet’n tiheys voi olla olemassa myös silloin kun $\delta(S)$ ei ole, joten Dirichlet’n tiheyttä voidaan ajatella luonnollisen tiheyden yleistyksenä.&lt;/p&gt;
+
+&lt;h1 id=&quot;kovempi-kama&quot;&gt;Kovempi kama&lt;/h1&gt;
+
+&lt;p&gt;Seuraavaksi ne asiat, joita moni lukija ei varmaankaan ole aiemmin nähnyt, mutta toivottavasti oppii tämän ja mahdollisesti muiden materiaalien kautta. Tämän osion asiat ovat se, mihin aiemmin viitattiin korkeammalla matematiikalla. Vastedes viittaan tämäntyyppisiin asioihin käsitteellä algebrallinen lukuteoria, vaikka tämä ei olekaan aivan korrektia.&lt;/p&gt;
+
+&lt;p&gt;Ennen teoriaa haluan mainita, että vaikka määritelmissä on monessa kohtaa rationaalilukuja $\mathbb{Q}$, voi määritelmät laajentaa vastaavasti myös muille kunnille. Kunnan määritelmän voi lukea vaikkapa &lt;a href=&quot;https://blog.matematiikkakilpailut.fi/2018/09/02/Algebralliset.html&quot;&gt;täältä&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Lukua $\alpha$ kutsutaan &lt;strong&gt;algebralliseksi luvuksi&lt;/strong&gt;, jos on olemassa sellainen polynomi $P \in \mathbb{Z_c}[x]$, jonka nollakohta se on. Usein algebrallisia lukuja merkitään kirjaimin $\alpha, \beta, \gamma, \ldots$, ja niin tehdään myös näissä blogipostauksissa.&lt;/p&gt;
+
+&lt;h3 id=&quot;minimaalinen-polynomi&quot;&gt;Minimaalinen polynomi&lt;/h3&gt;
+
+&lt;p&gt;Jokaiselle algebralliselle luvulle $\alpha$ määritellään ns. &lt;strong&gt;minimaalinen polynomi&lt;/strong&gt; $P \in \mathbb{Q}[x]$ olemaan se polynomi, joka toteuttaa seuraavat ehdot:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;$P$:n korkeimman asteen termin kerroin on $1$. Englanniksi termi tällaiselle polynomille on “monic polynomial”. Ilmeisesti suomennos tälle termille on “pääpolynomi”.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;$P(\alpha) = 0$.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;$P$ on ehdon 2 täyttävistä polynomeista asteiltaan pienin, kun nollapolynomia ei huomioida.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Minimaalisella polynomilla pätee seuraava ominaisuus: jos $Q(\alpha) = 0$ jollain $\mathbb{Q}(\alpha)$, niin $P \mid Q$. Tämä jätetään harjoitustehtäväksi, vinkkinä mainittaan polynomien jakoyhtälö. &lt;strong&gt;Fakta on erittäin tärkeä, ja sitä tullaan käyttämään myöhemmin.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Esimerkiksi siis luvun $\sqrt{2}$ minimaalinen polynomi on $x^2 - 2$, ja luvun $\frac{\sqrt{2}}{100}$ minimaalinen polynomi on $x^2 - \frac{2}{100^2}$.&lt;/p&gt;
+
+&lt;h3 id=&quot;kuntalaajennus&quot;&gt;Kuntalaajennus&lt;/h3&gt;
+
+&lt;p&gt;Olkoon $\alpha$ jokin algebrallinen luku. Olkoon $K$ niiden lukujen joukko, jotka ovat muotoa $P(\alpha)$, missä $P$ käy läpi kaikki rationaalilukukertoimiset polynomit. $K$ on kunta, ja sitä merkitään notaatiolla $\mathbb{Q}(\alpha)$. Tätä kutsutaan kuntalaajennukseksi.&lt;/p&gt;
+
+&lt;p&gt;(Mitä tarkalleen kutsutaan kuntalaajennukseksi? Kuntalaajennus on kaksi kuntaa $A, B$, joilla pätee $A \subset B$, ja $A$:n laskutoimitukset ovat samat kuin $B$:n.)&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Esimerkki&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Jos $\alpha = \sqrt{2}$, on $K = \mathbb{Q}(\sqrt{2})$ luvut muotoa $a + b\sqrt{2}$, missä $a, b \in \mathbb{Q}$. On selvää, että tämä on yhteen- ja kertolaskun suhteen suljettu joukko. Ainoa arvelluttava asia on kunnan erityisominaisuus eli käänteisalkion olemassaolo. Tässä erikoistapauksessa ominaisuus on helppo tarkistaa: luvun $a + b\sqrt{2} \neq 0$ käänteisluvuksi käy&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\frac{1}{a + b\sqrt{2}} = \frac{a - b\sqrt{2}}{(a + b\sqrt{2})(a - b\sqrt{2})} = \frac{a - b\sqrt{2}}{a^2 - 2b^2}  = \frac{a}{a^2 - 2b^2} + \frac{-b}{a^2 - 2b^2}\sqrt{2}\in \mathbb{Q}(\sqrt{2})&lt;/script&gt;
+
+&lt;p&gt;Kyseessä siis todella on kunta.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Perustelu yleiselle tapaukselle&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Olkoon $K’$ niiden lukujen joukko, jotka ovat muotoa $q_0 + q_1\alpha + q_2\alpha^2 + \ldots + q_{n-1}\alpha^{n-1}$, missä $q_i$ ovat rationaalilukuja ja $n$ on luvun $\alpha$ minimaalisen polynomin aste. Toisin sanoen, $K’$ sisältää luvut muotoa $Q(\alpha)$, missä $\deg(Q) &amp;lt; n$. Osoitetaan ensin, että $K’ = K$. Tämä on varsin tärkeää muistaa myös jatkossa, koska se helpottaa ajattelua.&lt;/p&gt;
+
+&lt;p&gt;Valitaan jokin joukon $K$ alkio, olkoon se $T(\alpha)$, missä $T \in \mathbb{Q}[x]$. Olkoon $P$ luvun $\alpha$ minimaalinen polynomi. Polynomien jakoyhtälöllä saadaan $T(x) = P(x)Q(x) + R(x)$ jollain sopivilla $Q, R \in \mathbb{Q}[x]$, joilla $\deg(R) &amp;lt; \deg(P)$. Siis $T(\alpha) = R(\alpha)$, eli $T(\alpha) = R(\alpha) \in K’$. Siis kaikki $K$:n alkiot ovat $K’$:n alkioita, joten $K$ on $K’$:n osajoukko. Mutta on triviaalia, että $K’$ on $K$:n osajoukko, joten $K = K’$.&lt;/p&gt;
+
+&lt;p&gt;Ehkä havainnollistavampi ja minulle mieluisampi tapa edellisen väitteen perustelulle on seuraava: olkoon $\alpha$ vaikkapa polynomin $P(x) = x^3 - x - 1$ juuri. Tällöin&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\alpha^3 = \alpha + 1 \in K'&lt;/script&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\alpha^4 = \alpha \cdot \alpha^3 = \alpha (\alpha + 1) = \alpha^2 + \alpha \in K'&lt;/script&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\alpha^5 = \alpha \cdot \alpha^4 = \alpha (\alpha^2 + \alpha) = \alpha^3 + \alpha^2 = (\alpha + 1) + \alpha^2 = \alpha^2 + \alpha + 1 \in K'&lt;/script&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\ldots&lt;/script&gt;
+
+&lt;p&gt;Ideana siis, että luku $\alpha^m$ voidaan aina esittää pienempien $\alpha$:n potenssien avulla redusoimalla potenssia annetun minimaalisen polynomin avulla. Jos kaikki luvut muotoa $\alpha^n, n \in \mathbb{N}$ kuuluvat joukkoon $K’$, niin varmasti $K = K’$.&lt;/p&gt;
+
+&lt;p&gt;On selvää, että $K$ on kertolaskun suhteen suljettu joukko: kahden polynomin tulo on polynomi. Koska $K = K’$, on myös $K’$ kertolaskun suhteen suljettu. Tämän voi myös ajatella niin, että kahden $K’$:n alkion tulo on polynomi $\alpha$:sta, jonka korkeat $\alpha$:n potenssit voidaan redusoida yllä kuvaillulla tavalla.&lt;/p&gt;
+
+&lt;p&gt;Tämä siis osoittaa, että $K$ on rengas. Mutta miksi se on kunta, eli miksi käänteisalkio on aina olemassa? En tiedä tälle yksinkertaista todistusta, minkä vuoksi perustelu tässä jää puutteelliseksi. Annan kuitenkin heuristisen perustelun ja teen tästä formaalin käyttäen ns. dimensiolausetta, mutta koska tämä ei oikein liity itse työhön, on tämä perustelu lykätty tämän postauksen loppuun.&lt;/p&gt;
+
+&lt;h3 id=&quot;kuntalaajennuksen-aste&quot;&gt;Kuntalaajennuksen aste&lt;/h3&gt;
+
+&lt;p&gt;Huomautus: tätä osiota varten on hyvä lukea postaus &lt;a href=&quot;https://blog.matematiikkakilpailut.fi/2018/09/02/Algebralliset.html&quot;&gt;Algebrallisista luvuista ja vektoriavaruuksista&lt;/a&gt;. Toisaalta, jos osaa olla välittämättä niistä kohdista mitä ei ymmärrä, ja poimii perusidean kuntalaajennuksen asteesta, niin voi pärjätä ihan hyvin.&lt;/p&gt;
+
+&lt;p&gt;Kuntalaajennus on siis kaksi kuntaa $A \subset B$. Kunta $B$ voidaan siis tulkita $A$-vektoriavaruutena: $B$ alkioita voidaan laskea yhteen, ja niitä voidaan kertoa $A$:n alkioilla. Olkoon tämän vektoriavaruuden kannan koko $d$. Koon $d$ ei tarvitse olla äärellinen, kuten tapauksessa $A = \mathbb{Q}$, $B = \mathbb{R}$, mutta meitä kiinnostavissa tapauksissa näin on. Tämän kuntalaajennuksen, jota merkitään $B / A$, asteeksi määritellään $d$.&lt;/p&gt;
+
+&lt;p&gt;Esimerkiksi jos $A = \mathbb{Q}$, $B = \mathbb{Q}(\sqrt{2})$: määritelmän mukaiseksi kannaksi kelpaa $\lbrace 1, \sqrt{2} \rbrace$, joten kuntalaajennuksen $B / A$ aste on $2$.&lt;/p&gt;
+
+&lt;p&gt;Kuntalaajennuksen aste käytännössä katsoen kertoo, kuinka suuri laajennus kyseessä on.&lt;/p&gt;
+
+&lt;p&gt;Yleisesti jos $\alpha$ on algebrallinen luku, niin kuntalaajennuksen $\mathbb{Q}(\alpha) / \mathbb{Q}$ aste on sama kuin $\alpha$:n minimaalisen polynomin aste. Tämä siksi, että kuntalaajennuksen asteen määritelmän mukaiseksi kannaksi $\mathbb{Q}$-vektoriavaruudelle $\mathbb{Q}(\alpha)$ voidaan valita joukko $S = \lbrace 1, \alpha, \alpha^2, \ldots , \alpha^{d-1} \rbrace$, missä $d$ on luvun $\alpha$ minimaalisen polynomin aste. Tämä on melko ilmeistä, mutta perustelen sen kuitenkin:&lt;/p&gt;
+
+&lt;p&gt;Joukon $S$ alkiot selvästi virittävät, edellisen osion merkintöjä käyttäen, joukon $K’$. Mutta koska $K’ = K = \mathbb{Q}(\alpha)$, virittää joukko $S$ vektoriavaruuden $B = \mathbb{Q}(\alpha)$. Lisäksi $S$:n alkiot ovat keskenään lineaarisesti riippumattomia. Tämän osoittaminen jätetään harjoitustehtäväksi, vinkkinä vastaoletus ja minimaalisen polynomin määritelmä.&lt;/p&gt;
+
+&lt;p&gt;Mainitaan vielä uudestaan tärkein asia:&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Kuntalaajennuksen $\mathbb{Q}(\alpha) / \mathbb{Q}$ aste on luvun $\alpha$ minimaalisen polynomin aste.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Kuntalaajennuksen $B / A$ astetta merkitään $[B : A]$.&lt;/p&gt;
+
+&lt;h3 id=&quot;kuntalaajennusten-asteiden-multiplikatiivisuus&quot;&gt;Kuntalaajennusten asteiden multiplikatiivisuus&lt;/h3&gt;
+
+&lt;p&gt;Olkoot $A \subset B \subset C$ kuntia. Kuntalaajennusten asteille pätee seuraava kaava:&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;[C : A] = [C : B][B : A]&lt;/script&gt;
+
+&lt;p&gt;En todista väitettä tässä, vaikka todistus ei vaadikaan mitään kovin ihmeellistä. Tätä multiplikatiivista ominaisuutta ei käytetä itse päätuloksen todistuksessa, mutta sitä käytetään muiden tulosten osoittamisessa. Se ei siis ole aivan kriittisessä roolissa.&lt;/p&gt;
+
+&lt;p&gt;Kaava käytännössä kertoo, että $C$:n koko $A$:han verrattuna saadaan tutkimalla $C$:n kokoa $B$:hen verrattuna, ja $B$:n kokoa $A$:han verrattuna. Varsin intuitiivista.&lt;/p&gt;
+
+&lt;p&gt;Otetaan tästä vielä esimerkki, joka demonstroi samalla kahta peräkkäistä kuntalaajennusta.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Esimerkki&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Olkoot $A = \mathbb{Q}$, $B = \mathbb{Q}(\sqrt{2})$, ja $C = B(\sqrt{3})$. Periaate kuntalaajennukselle $C / B$ toimii kuten rationaalilukujen tapauksessa:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;Määritetään luvun $\sqrt{3}$ minimaalinen polynomi kunnassa $B$. eli se polynomi $P \in B[x]$, jolla $P(\sqrt{3}) = 0$, $P$ on pääpolynomi, ja $P$:n aste on minimaalinen. Ei ole vaikeaa todistaa, että $P$ ei voi olla ensimmäisen asteen polynomi. Siispä sen aste on vähintään 2, joten polynomi $P(x) = x^2 - 3$ on minimaalinen polynomi. Tässä tapauksessa minimaalinen polynomi kunnassa $B$ on sama kuin rationaaliluvuissa $\mathbb{Q}$, mutta aina näin ei ole.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;$C$ voidaan ajatella $B$-vektoriavaruutena, jonka kanta on $\lbrace 1, \sqrt{3} \rbrace$. Toisin sanoen, $C$ sisältää luvut muotoa $x + y\sqrt{3}$, $x, y \in B$. Tämä on analogista rationaalilukuihin verrattuna.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Siispä $[C : B] = 2$.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;On helppoa nähdä, että $[B : A] = 2$. Kaavan nojalla tulisi päteä $[C : A] = [C : B][B : A] = 2 \cdot 2 = 4$. Osoitetaan tämä tutkimalla joukon $C$ alkioita. Kohdan 2. nojalla $C$ sisältää luvut muotoa $x + y\sqrt{3}, x, y \in B$. Toisaalta, $B$ sisältää luvut muotoa $a + b\sqrt{2}, a, b \in \mathbb{Q}$. Olkoon siis $x = a + b\sqrt{2}$, $y = c + d\sqrt{3}$. $C$:n alkiot ovat muotoa&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;x + y\sqrt{3} = a + b\sqrt{2} + (c + d\sqrt{2})\sqrt{3} = a + b\sqrt{2} + c\sqrt{3} + d\sqrt{6}&lt;/script&gt;
+
+&lt;p&gt;$C$ on $A$-vektoriavaruus, jonka kantana on $\lbrace 1, \sqrt{2}, \sqrt{3}, \sqrt{6} \rbrace$ (on selvää, että nämä luvut virittävät $C$:n, mutta ei aivan ilmeistä, että ne ovat lineaarisesti riippumattomia. Tämän osoittaminen sivuutetaan, vaikkakin se on mahdollista tehdä täysin alkeellisesti). Siis $[C : A] = 4$, kuten kuuluukin.&lt;/p&gt;
+
+&lt;h3 id=&quot;primitive-element-theorem&quot;&gt;Primitive element theorem&lt;/h3&gt;
+
+&lt;p&gt;Tutkitaan edellisen esimerkin mukaista $C$. $C$ on siis se kunta, joka saadaan lisäämällä rationaalilukuihin ensiksi luku $\sqrt{2}$ ja sitten luku $\sqrt{3}$. Tämä voidaan kirjoittaa muodossa $C = \mathbb{Q}(\sqrt{2}, \sqrt{3})$. Luonnollinen kysymys on, olisiko tämän laajennuksen voinut tehdä vain yhdellä alkiolla $\gamma$? Toisin sanoen, onko olemassa sellainen $\gamma$, jolla $\mathbb{Q}(\sqrt{2}, \sqrt{3}) = \mathbb{Q}(\gamma)$?&lt;/p&gt;
+
+&lt;p&gt;Vastaus on kyllä, esimerkiksi valinta $\gamma = \sqrt{2} + \sqrt{3}$ toimii. Esitetään tälle nopeasti todistus.&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\frac{1}{\gamma} = \sqrt{3} - \sqrt{2} \in \mathbb{Q}(\gamma)&lt;/script&gt;
+
+&lt;p&gt;Siispä&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\frac{1}{2}(\gamma + \frac{1}{\gamma}) = \sqrt{3} \in \mathbb{Q}(\gamma)&lt;/script&gt;
+
+&lt;p&gt;Täten $\sqrt{3} \in \mathbb{Q}(\gamma)$, joten $\sqrt{2} \in \mathbb{Q}(\gamma)$, joten $\mathbb{Q}(\sqrt{2}, \sqrt{3}) \subset \mathbb{Q}(\gamma)$. Toisaalta pätee tietysti $\mathbb{Q}(\gamma) \subset \mathbb{Q}(\sqrt{2}, \sqrt{3})$, joten nämä kunnat ovat samat.&lt;/p&gt;
+
+&lt;p&gt;Päteekö tämä yleisestikin? Eli onko kaikilla algebrallisilla luvuilla $\alpha, \beta$ olemassa $\gamma$, joilla $\mathbb{Q}(\alpha, \beta) = \mathbb{Q}(\gamma)$? On olemassa. Tämä tulos tunnetaan nimellä &lt;strong&gt;prmitive element theorem&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;Tämä tulos on (minun mielestäni) niin mielenkiintoinen, että sille esitetään todistus, vaikkei tämä liitykään kovin vahvasti itse työhön (tulosta toki tullaan käyttämään hyvin monessa kohtaa). Todistus on melko vaikea, mutta se antaa lisäharjoitusta kuntalaajennuksista ja minimaalisista polynomeista.&lt;/p&gt;
+
+&lt;p&gt;Väite yleistyy suoraviivaisesti induktiolla $n$:lle luvulle, eli laajennus $\mathbb{Q}(\alpha_1, \alpha_2, \ldots , \alpha_n)$ voidaan tehdä yhdellä alkiolla. Toisin sanoen, &lt;strong&gt;kaikki rationaalilukujen (äärelliset) laajennukset ovat muotoa $\mathbb{Q}(\alpha)$.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Väitteen todistus perustuu &lt;a href=&quot;http://pi.math.cornell.edu/~kbrown/6310/primitive.pdf&quot;&gt;Ken Brownin luentomateriaaliin&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h3 id=&quot;todistus-primitive-element-theorem&quot;&gt;Todistus (Primitive element theorem)&lt;/h3&gt;
+
+&lt;p&gt;Olkoot $\alpha, \beta$ algebrallisia lukuja, ja olkoot $f, g \in \mathbb{Q}[x]$ niiden minimaaliset polynomit. Olkoon $\gamma = \alpha + \lambda\beta$, missä $\lambda \in \mathbb{Q}$ on myöhemmin valittava vakio. Tulemme valitsemaan luvun $\lambda$ niin, että $\mathbb{Q}(\alpha, \beta) = \mathbb{Q}(\gamma)$.&lt;/p&gt;
+
+&lt;p&gt;Olkoon $g_{\gamma}$ luvun $\beta$ minimaalinen polynomi kunnassa $\mathbb{Q}(\gamma)$. Aiomme osoittaa, että $\deg(g_{\gamma}) = 1$. Tämä todistaa väitteen, koska silloin on olemassa $a, b \in \mathbb{Q}(\gamma)$, joilla $g_{\gamma}(x) = ax + b$, eli $0 = g_{\gamma}(\beta) = a\beta + b$, eli $\beta = -\frac{b}{a}$. Tällöin $\beta \in \mathbb{Q}(\gamma)$, eli myös $\alpha = \gamma - \lambda\beta \in \mathbb{Q}(\gamma)$.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Idea:&lt;/strong&gt; Etsitään kaksi polynomia, jotka $g_{\gamma}$ jakaa. Osoitetaan, että näiden polynomien syt on 1.&lt;/p&gt;
+
+&lt;p&gt;Koska $g \in \mathbb{Q}[x]$, ovat $g$:n kertoimet rationaalilukuja ja täten kunnan $\mathbb{Q}(\gamma)$ alkioita. Voidaan siis kirjoittaa, hieman erikoisesti mutta hyödyllisesti, $g \in \mathbb{Q}(\gamma)[x]$. Lisäksi määritelmän nojalla $g(\beta) = 0$. $g$ on siis polynomi, jonka kertoimet ovat kunnassa $\mathbb{Q}(\gamma)$, ja jolla on nollakohta $\beta$. Sen siis tulee olla jaollinen luvun $\beta$ minimaalisella polynomilla kunnassa $\mathbb{Q}(\gamma)$, eli polynomilla $g_{\gamma}$. Tämä saattaa tuntua hämmentävältä, joten esitetään tämä vielä toisella tavalla:&lt;/p&gt;
+
+&lt;p&gt;Jaetaan polynomi $g \in \mathbb{Q}(\gamma)[x]$ polynomilla $g_{\gamma} \in \mathbb{Q}(\gamma)[x]$ jakokulmassa. Siis $g = g_{\gamma}A + B$, missä $\deg(B) &amp;lt; \deg(g_{\gamma})$, $B \in \mathbb{Q}(\gamma)[x]$. Sijoittamalla muuttujaksi $\beta$ saadaan $g(\beta) = g_{\gamma}(\beta)A(\beta) + B(\beta)$. Koska $g(\beta) = 0 = g_{\gamma}(\beta)$, pätee $B(\beta) = 0$. Mutta $g_{\gamma}$ määriteltiin olemaan luvun $\beta$ minimaalinen polynomi, ja pätee $\deg(B) &amp;lt; \deg(g’)$. Tämä on määritelmien nojalla mahdollista vain, jos $B$ on nollapolynomi, eli $g_{\gamma} \mid g$.&lt;/p&gt;
+
+&lt;p&gt;Siis&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;g_{\gamma} \mid g.&lt;/script&gt;
+
+&lt;p&gt;Etsitään sitten, idean mukaisesti, vielä toinen polynomi $h$, jolla pätee $g_{\gamma} \mid h$. Tämä $h$ valitaan asettamalla $h(x) = f(\gamma - \lambda x)$. Tällöin $h(\beta) = f(\alpha) = 0$, ja $h \in \mathbb{Q}(\gamma)[x]$. Kuten edellä, tulee myös $h$:n olla jaollinen polynomilla $g_{\gamma}$. Siis&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;g_{\gamma} \mid h.&lt;/script&gt;
+
+&lt;p&gt;Osoittaaksemme $\deg(g_{\gamma}) = 1$ riittää siis osoittaa, että polynomien $g$ ja $h$ suurimman yhteisen tekijän aste on $1$ (huomaa, että tiedämme sytin asteen olevan vähintään $1$, koska $g(\beta) = h(\beta) = 0$). Osoitetaan tämä vastaoletuksella: polynomien $g$ ja $h$ suurimman yhteisen tekijän aste on vähintään $2$.&lt;/p&gt;
+
+&lt;p&gt;Tällöin on olemassa jokin algebrallinen luku $\beta’$, jolla $g(\beta’) = h(\beta’) = 0$. Osoitetaan, että $\beta’ \neq \beta$, eli siis että $\beta$ ei ole $g$:n kaksinkertainen juuri, minkä jälkeen saatetaan todistus maaliin.&lt;/p&gt;
+
+&lt;p&gt;Oletetaan, että $\beta$ on $g$:n kaksinkertainen juuri. $g$ on rationaaliluvuissa jaoton (onhan se luvun $\beta$ minimaalinen polynomi). Mutta jos $\beta$ olisi $g$:n kaksinkertainen juuri, voitaisiin kirjoittaa $g(x) = (x - \beta)^2q(x)$ jollain polynomilla $q$. Derivoimalla ja sijoittamalla $x = \beta$ saadaan $g’(\beta) = 0$. Tämä on kuitenkin ristiriidassa sen kanssa, että $g$ on luvun $\beta$ minimaalinen polynomi.&lt;/p&gt;
+
+&lt;p&gt;On siis olemassa sellainen $\beta’ \neq \beta$, joka on polynomien $g$ ja $h$ yhteinen nollakohta. Siis $h(\beta’) = 0$. Polynomin $h$ määritelmän nojalla pätee $h(\beta’) = f(\gamma - \lambda\beta’)$. Kirjoitetaan $\alpha’ = \gamma - \lambda\beta’$. Tällöin&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\alpha' = \gamma - \lambda\beta' = \alpha + \lambda\beta - \lambda\beta' = \alpha + \lambda(\beta - \beta')&lt;/script&gt;
+
+&lt;p&gt;Täten&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\lambda = \frac{\alpha' - \alpha}{\beta - \beta'}&lt;/script&gt;
+
+&lt;p&gt;Tässä yhtälössä $\alpha’, \beta’$ ovat polynomien $f$ ja $g$ juuria, joten niille on vain äärellisen monta eri vaihtoehtoa. Siis jos $\lambda$ ei ole muotoa&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\frac{\alpha' - \alpha}{\beta - \beta'}&lt;/script&gt;
+
+&lt;p&gt;olemme saaneet ristiriidan. Tämä todistaa väitteen.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Siis kaikki paitsi äärellisen moni $\lambda$ kelpaa.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Lopuksi vielä aiemmin luvattu perustelu sille, että $\mathbb{Q}(\alpha)$ on näillä määritelmillä kunta.&lt;/p&gt;
+
+&lt;h3 id=&quot;perustelu-sille-että-mathbbqalphaon-kunta&quot;&gt;Perustelu sille, että $\mathbb{Q}(\alpha)$ on kunta&lt;/h3&gt;
+
+&lt;p&gt;Olkoon $d$ luvun $\alpha$ minimaalisen polynomin aste kunnan $\mathbb{Q}$ yli. Olkoon $R \in \mathbb{Q}[x]$ jokin polynomi, jolla $R(\alpha) \neq 0$. Tavoitteena on löytää sellainen polynomi $Q \in \mathbb{Q}[x]$, jolla $\frac{1}{R(\alpha)} = Q(\alpha)$. Toisin sanoen, $1 = R(\alpha)Q(\alpha)$.&lt;/p&gt;
+
+&lt;p&gt;Olkoon $K’$ kuten aiemmin, eli $\mathbb{Q}$-vektoriavaruus, jonka kanta on $\lbrace 1, \alpha, \alpha^2, \ldots , \alpha^{d-1} \rbrace$ (eli luvut muotoa $q_0 + q_1\alpha + \ldots + q_{d-1}\alpha^{d-1}$). Määritellään kuvaus $L : K’ \to K’$ asettamalla $L(x) = R(\alpha)x$. Riittää osoittaa, että $L$ on surjektio, jolloin voidaan valita sellainen $x$, jolla $L(x) = 1$. Tämä antaa halutun lopputuloksen.&lt;/p&gt;
+
+&lt;p&gt;Ennen tätä: olkoon $S$ jokin äärellinen joukko, ja olkoon $f : S \to S$ jokin kuvaus. Vakuuta itsesi siitä, että $f$ on injektio jos ja vain jos se on surjektio.&lt;/p&gt;
+
+&lt;p&gt;Ideana $L$:n todistamiseksi surjektioksi on vastaava idea: $L$ on selvästi injektio, koska se on ensimmäisen asteen polynomi. Siispä se on surjektio?&lt;/p&gt;
+
+&lt;p&gt;Tämä ei ihan vakuuta. Tämä implikaatio kyllä pätee, mutta se vaatii hieman teoriaa.&lt;/p&gt;
+
+&lt;p&gt;$L$ on ns. lineaarikuvaus: $L(x + y) = L(x) + L(y)$ kaikilla $x, y \in K’$, ja $L(ax) = aL(x)$ kaikilla rationaaliluvuilla $a$. Yleisesti vektoriavaruuksille määritellään lineaarikuvaus vastaavasti.&lt;/p&gt;
+
+&lt;p&gt;Lineaarikuvaksilla vektoriavaruuksilta itselleen pätee väite “$L$ on injektio jos ja vain jos se on surjektio”. Tämä on erikoistapaus vahvemmasta väitteestä, niin kutsutusta dimensiolauseesta:&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Dimensiolause&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Olkoon notaatio kuten edellä. Olkoon $A$ niiden $x \in K’$ joukko, joilla $L(x) = 0$ (engl. kernel). Olkoon $B$ niiden $y \in K’$ joukko, joilla on olemassa $x \in K’$, jolla $L(x) = y$ (kuva, engl. image). $A$ ja $B$ ovat $\mathbb{Q}$-vektoriavaruuksia (helppoa todistaa). Olkoot niiden ulottuvuudet $a$ ja $b$. Määritellään $d$ olemaan $\mathbb{Q}$-vektoriavaruuden $K’$ ulottuvuus. Pätee&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;d = a + b&lt;/script&gt;
+
+&lt;p&gt;Dimensiolause siis kertoo, että mitä lähempänä injektiivisyyttä $L$ on, sitä lähempänä se on surjektiivisuutta. Erityisesti, jos $A = \lbrace 0 \rbrace$, niin $B = K’$, eli $L$ on surjektio. Tämä todistaa, että $\mathbb{Q}(\alpha)$ on kunta.&lt;/p&gt;
+
+&lt;p&gt;Tässä &lt;a href=&quot;https://en.wikipedia.org/wiki/Rank%E2%80%93nullity_theorem&quot;&gt;Wikipedia-sivu&lt;/a&gt; dimensiolauseesta.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://blog.matematiikkakilpailut.fi/2019/06/05/PYA09tulokset.html&quot;&gt;Seuraava postaus.&lt;/a&gt;&lt;/p&gt;</content><author><name>Olli Järviniemi</name></author><summary type="html">Tässä postauksessa esitetään tutkielman kannalta tärkeitä esitietoja sekä notaatioita.</summary></entry></feed>

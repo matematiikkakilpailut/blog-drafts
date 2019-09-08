@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="fi">
+  <head>
+    <meta charset="UTF-8">
+    <!-- Begin Jekyll SEO tag v2.5.0 -->
+<title>Polynomien yhteiset alkutekijät, osa 11: lisäaiheita | Matematiikkakilpailijat</title>
+<meta name="generator" content="Jekyll v3.8.5" />
+<meta property="og:title" content="Polynomien yhteiset alkutekijät, osa 11: lisäaiheita" />
+<meta name="author" content="Olli Järviniemi" />
+<meta property="og:locale" content="fi" />
+<meta name="description" content="Tässä postauksessa esitän lisäaiheita työhön liittyen." />
+<meta property="og:description" content="Tässä postauksessa esitän lisäaiheita työhön liittyen." />
+<link rel="canonical" href="https://blog-drafts.matematiikkakilpailut.fi/2019/06/05/PYA01lisaaiheita.html" />
+<meta property="og:url" content="https://blog-drafts.matematiikkakilpailut.fi/2019/06/05/PYA01lisaaiheita.html" />
+<meta property="og:site_name" content="Matematiikkakilpailijat" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2019-06-05T00:00:00+00:00" />
+<meta property="fb:app_id" content="964806940344711" />
+<script type="application/ld+json">
+{"url":"https://blog-drafts.matematiikkakilpailut.fi/2019/06/05/PYA01lisaaiheita.html","author":{"@type":"Person","name":"Olli Järviniemi"},"headline":"Polynomien yhteiset alkutekijät, osa 11: lisäaiheita","dateModified":"2019-06-05T00:00:00+00:00","datePublished":"2019-06-05T00:00:00+00:00","description":"Tässä postauksessa esitän lisäaiheita työhön liittyen.","mainEntityOfPage":{"@type":"WebPage","@id":"https://blog-drafts.matematiikkakilpailut.fi/2019/06/05/PYA01lisaaiheita.html"},"@type":"BlogPosting","@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#157878">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/assets/css/style.css?v=2c669b5e01ecebd0ccd9a63f1cd21eeeb0cf1936">
+    <link href="/feed.xml" type="application/atom+xml" rel="alternate" title="Sivuston verkkosyöte">
+
+    <script type="text/x-mathjax-config">
+ MathJax.Hub.Config({
+   tex2jax: {
+     inlineMath: [['$', '$'], ['\\(', '\\)']],
+     displayMath: [['$$', '$$']],
+     processEscapes: true
+   }
+ });
+</script>
+<script
+  type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS_CHTML" 
+  integrity="sha256-nvJJv9wWKEm88qvoQl9ekL2J+k/RWIsaSScxxlsrv8k="
+  crossorigin="anonymous">
+</script>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/fonts/HTML-CSS/TeX/woff/MathJax_Main-Regular.woff"
+      rel="preload" as="font" type="font/woff" crossorigin="anonymous">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/fonts/HTML-CSS/TeX/woff/MathJax_Size1-Regular.woff"
+      rel="preload" as="font" type="font/woff" crossorigin="anonymous">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/fonts/HTML-CSS/TeX/woff/MathJax_Math-Italic.woff"
+      rel="preload" as="font" type="font/woff" crossorigin="anonymous">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/fonts/HTML-CSS/TeX/woff/MathJax_Size2-Regular.woff"
+      rel="preload" as="font" type="font/woff" crossorigin="anonymous">
+
+  </head>
+  <body>
+    <section class="page-header">
+      <h1 class="project-name">Matematiikkakilpailijat</h1>
+      <h2 class="project-tagline">Matematiikan olympiavalmennuksen osallistujien kokemuksia</h2>
+    </section>
+
+    <section class="main-content">
+      <article class="post">
+  <header class="post-header">
+    <h1 class="post-title">Polynomien yhteiset alkutekijät, osa 11: lisäaiheita</h1>
+  </header>
+  <section class="post-content">
+    <p>Tässä postauksessa esitän lisäaiheita työhön liittyen.</p>
+
+<!--jatkuu-->
+
+<p><strong>Sisällysluettelo</strong></p>
+
+<ol>
+  <li><a href="https://blog.matematiikkakilpailut.fi/2019/06/05/PYA11johdanto.html">Osa 1 - johdanto</a></li>
+  <li><a href="https://blog.matematiikkakilpailut.fi/2019/06/05/PYA10esitiedot.html">Osa 2 - esitiedot</a></li>
+  <li><a href="https://blog.matematiikkakilpailut.fi/2019/06/05/PYA09tulokset.html">Osa 3 - tulokset</a></li>
+  <li><a href="https://blog.matematiikkakilpailut.fi/2019/06/05/PYA08motivaatio.html">Osa 4 - motivaatio</a></li>
+  <li><a href="https://blog.matematiikkakilpailut.fi/2019/06/05/PYA07heikko.html">Osa 5 - heikko versio</a></li>
+  <li><a href="https://blog.matematiikkakilpailut.fi/2019/06/05/PYA06yleinen.html">Osa 6 - yleinen tapaus</a></li>
+  <li><a href="https://blog.matematiikkakilpailut.fi/2019/06/05/PYA05lause2.html">Osa 7 - lause 2</a></li>
+  <li><a href="https://blog.matematiikkakilpailut.fi/2019/06/05/PYA04lause3.html">Osa 8 - lause 3</a></li>
+  <li><a href="https://blog.matematiikkakilpailut.fi/2019/06/05/PYA03lause4.html">Osa 9 - lause 4</a></li>
+  <li><a href="https://blog.matematiikkakilpailut.fi/2019/06/05/PYA02sovelluksia.html">Osa 10 - sovelluksia</a></li>
+  <li>Osa 11 - lisäaiheita</li>
+</ol>
+
+<p>Postauksessa käydään läpi seuraavia asioita:</p>
+
+<ol>
+  <li>Polynomien alkutekijöiden suhtautuminen kirjallisuuden materiaaleihin.</li>
+  <li>Esimerkkitehtävä (EGMO 2016, P6).</li>
+  <li>Esimerkkitehtävä (Saksan joukkuevalintakoe 3, 2009, T2).</li>
+  <li>Alkutekijöiden karakterisoiminen.</li>
+  <li>Eksponenttiyhtälöt.</li>
+</ol>
+
+<h1 id="alkulukujen-jakautuminen-laajennuksissa">Alkulukujen jakautuminen laajennuksissa</h1>
+
+<p>Ennen kuin pääsen itse asiaan, määrittelen pari käsitettä.</p>
+
+<p><strong>Algebrallinen kokonaisluku</strong></p>
+
+<p>Algebrallista lukua $\alpha$ kutsutaan algebralliseksi kokonaisluvuksi, jos luvun $\alpha$ minimaalinen polynomi on kokonaislukukertoiminen.</p>
+
+<p><strong>Esimerkki</strong></p>
+
+<p>$i$ on algebrallinen kokonaisluku (min. pol. on $x^2 + 1$), mutta $\frac{i}{2}$ ei ole (min. pol. on $x^2 + \frac{1}{4}$). Rationaaliluku $r$ on algebrallinen kokonaisluku jos ja vain jos $r$ on kokonaisluku.</p>
+
+<p>Jokaisella algebrallisella luvulla $\alpha$ on olemassa sellainen $n \in \mathbb{Z_+}$, jolla $n\alpha$ on algebrallinen kokonaisluku. Tämä jätetään helpohkoksi harjoitustehtäväksi.</p>
+
+<p><strong>Ring of integers</strong></p>
+
+<p>Olkoon $K = \mathbb{Q}(\alpha)$ jollain algebrallisella luvulla $\alpha$. Olkoon $O_K$ niiden $\beta \in K$ joukko, jotka ovat algebrallisia kokonaislukuja. $O_K$ on rengas (todistus on samankaltainen kuin <a href="https://blog.matematiikkakilpailut.fi/2018/09/02/Algebralliset.html">tämän postauksen</a> todistus). Englanniksi sanotaan “$O_K$ is the ring of integers of $K$”. Suomenkieliset termit ovat minulle hieman vieraita, joten käytän englanninkielisiä termejä.</p>
+
+<p><strong>Esimerkki</strong></p>
+
+<p>Olkoon $K = \mathbb{Q}(i)$. Tällöin $O_K$ ovat ns. Gaussin kokonaisluvut, eli luvut muotoa $a + bi, a, b \in \mathbb{Z}$.</p>
+
+<p>Gaussin kokonaisluvuista lisää Esa Vesalaisen materiaalissa <a href="https://matematiikkakilpailut.fi/kirjallisuus/laajalukuteoriamoniste.pdf">Lyhyt johdatus alkeelliseen lukuteoriaan</a>, luku 7. Esan materiaalissa on osoitettu seuraava väite alkulukujen jakautumisesta Gaussin kokonaisluvuissa:</p>
+
+<p>Olkoon $p$ alkuluku. $p$ ei jakaudu Gaussin kokonaisluvuissa $O_{\mathbb{Q}(i)}$ jos ja vain jos $p \equiv 3 \pmod{4}$.</p>
+
+<p>Tässä kohtaa muistutan seuraavasta väitteestä:</p>
+
+<p>Olkoon $p$ alkuluku. $p$ ei ole polynomin $x^2 + 1$ alkutekijä jos ja vain jos $p \equiv 3 \pmod{4}$.</p>
+
+<p>Selvä analogia - onko sellainen olemassa yleisestikin? On. Olin hyvin tyytyväinen löytäessäni tämän tuloksen - olin miettinyt jo pidemmän aikaa tämän väitteen pätemistä (juurikin Gaussin kokonaislukujen vuoksi) ennen kuin löysin viitteen tulokselle. Väitettä kutsutaan Dedekindin tekijöihinjakokriteeriksi (Dedekind’s factorization criterion), ja väitteestä voi lukea lisää kenenkä muunkaan kuin Keith Conradin <a href="https://kconrad.math.uconn.edu/blurbs/gradnumthy/dedekindf.pdf">materiaalista</a>.</p>
+
+<p><strong>Jakautuminen</strong></p>
+
+<p>Olkoon $K = \mathbb{Q}(\alpha)$ jollain algebrallisella luvulla $\alpha$, ja olkoon $O_K$ kuten edellä. Olkoon $f$ luvun $\alpha$ minimaalinen polynomi. Kaikilla paitsi äärellisen monella $p$ pätee seuraava väite:</p>
+
+<p>$p$ jakautuu samalla tavalla renkaassa $O_K$ kuin $f$ jakautuu modulo $p$.</p>
+
+<p><strong>Huomautus</strong></p>
+
+<p>Puhun siitä, kuinka $p$ jakautuu joukossa $O_K$. Tämä on kuitenkin hieman virheellistä: $O_K$:ssa <strong>ei välttämättä päde uniikki tekijöihinjako</strong> kuten kokonaisluvuissa. Esim. jos $K = \mathbb{Q}(\sqrt{-5})$, niin $6 = 2 \cdot 3 = (1 - \sqrt{5})(1 + \sqrt{5})$ antaa kaksi eri tapaa jakaa luku $6$ tekijöihin, ja näitä tulontekijöitä ei voi jakaa eteenpäin tekijöihin.</p>
+
+<p>Ongelma kierretään tutkimalla ns. ideaaleja. Ideaaleja voi jakaa tekijöihin, ja tällä kertaa tekijöihinjako on uniikki. Jokaista lukua vastaa jokin ideaali (mutta on myös muita ideaaleja). Yleisesti tutkitaan siis, miten $p$:tä vastaava ideaali jakautuu renkaassa $O_K$. Yllä oleva tulos koskee siis ideaalien jakautumista.</p>
+
+<p><strong>Tämä muutos on todellisuudessa melko suuri.</strong> Syynä siihen, miksi otin väitteen tästä huolimatta esille on se, että <strong>muissa materiaaleissa puhutaan käytännössä aina ideaalien jakautumisesta eikä polynomien alkutekijöistä</strong>. Nämä kuitenkin vastaavat toisiaan, eli kirjallisuuden tuloksia jakautumisesta voi käyttää suoraan polynomien alkutekijöiden käsittelyyn.</p>
+
+<p>Lisäksi, usein valitaan $K = \mathbb{Q}(\alpha)$, missä $\alpha$ on algebrallinen kokonaisluku. Tällöin $f$ on kokonaislukukertoiminen. Tällä ei kuitenkaan ole väliä - $f$ voidaan, jälleen kerran, kertoa sopivalla vakiolla, jolloin se on kokonaislukukertoiminen.</p>
+
+<p><strong>Esimerkki</strong></p>
+
+<p>Gaussin kokonaislukujen tapauksessa $O_K$ käyttäytyy miellyttävästi. Tässä on jonkinlainen esimerkki väitteen vastaavuudesta.</p>
+
+<p>$x^2 + 1$ ei jakaudu modulo $3$, ja $3$ ei jakaudu Gaussin kokonaisluvuissa (kts. yllä oleva tulos).</p>
+
+<p>$x^2 + 1$ jakautuu kahdeksi erisuureksi polynomiksi modulo $5$, koska $x^2 + 1 \equiv (x - 2)(x + 2) \pmod{5}$. Vastaavasti, $5 = -(i - 2)(i + 2)$.</p>
+
+<p>$x^2 + 1$ on neliö mod $2$, koska $x^2 + 1 \equiv (x + 1)^2 \pmod{2}$. Vastaavasti, $2 = -i(i+1)^2$. Huomaa, että tässä $-i$ vastaa vain etumerkkiä, jonka saa kumottua kertomalla sen luvulla $i$.</p>
+
+<h1 id="äärellisten-kuntien-kuntalaajennukset">Äärellisten kuntien kuntalaajennukset</h1>
+
+<p>Äärellinen kunta on kunta, jossa on vain äärellinen määrä alkioita. Yksinkertaisin esimerkki on kokonaisluvut modulo $p$.</p>
+
+<p>Äärellisille kunnille pätee seuraavat ominaisuudet:</p>
+
+<ol>
+  <li>
+    <p>Äärellisen kunnan koko on aina alkuluvun potenssi. Jos kunnan koko on $p^k$, niin $p \cdot a = 0$ kaikilla $a$, jotka kuuluvat tähän kuntaan.</p>
+  </li>
+  <li>
+    <p>Kaikilla alkuluvun potensseilla $p^k$ on olemassa äärellinen kunta $\mathbb{F_{p^k}}$, jonka koko on $p^k$. <strong>Tämä kunta on uniikki</strong> isomorfisia kuntia lukuun ottamatta.</p>
+  </li>
+</ol>
+
+<p>Äärellisten kuntien kuntalaajennuksista voidaan sanoa seuraavat asiat:</p>
+
+<ol>
+  <li>
+    <p>Olkoon $\mathbb{F}$ äärellinen kunta, ja olkoon $P$ kunnassa $\mathbb{F}$ jaoton polynomi, jonka aste on $d$. Olkoon $\alpha$ $P$:n juuri. Tällöin $[\mathbb{F}(\alpha) : \mathbb{F}] = d$.</p>
+  </li>
+  <li>
+    <p>Olkoot $\mathbb{F}, P, \alpha$ kuten edellä. $P$:n juurikunta $\mathbb{F}(\alpha_1, \alpha_2, \ldots , \alpha_d)$ on $\mathbb{F}(\alpha)$.</p>
+  </li>
+</ol>
+
+<p>Ominaisuus 3. on täysin sama kuin rationaaliluvuissa. Näetkö, miten 4. seuraa väitteistä 2. ja 3.?</p>
+
+<p>Seuraavaksi esitetään konkreettinen esimerkki kuntalaajennuksien soveltamisesta kilpailutehtävään. Toivon, että esimerkki on valaiseva.</p>
+
+<h2 id="egmo-2016-t6">EGMO 2016, T6</h2>
+
+<p>Olkoon $S$ niiden positiivisten kokonaislukujen $n$ joukko, joilla luvulla $n^4$ on tekijä välillä $n^2 + 1, n^2 + 2, \ldots , n^2 + 2n$. Osoita, että on olemassa äärettömän monta $S$:n alkiota, jotka ovat kongruentteja $k \pmod{7}$ jos ja vain jos $k \not\equiv 3, 4 \pmod{7}$.</p>
+
+<h2 id="ratkaisu">Ratkaisu</h2>
+
+<p>Tutkitaan ensin, milloin tapahtuu $n^2 + k \mid n^4$ jollain $1 \le k \le 2n$. Huomaamme</p>
+
+<script type="math/tex; mode=display">n^2 + k \mid n^4 \Leftrightarrow n^2 + k \mid n^4 - (n^2 + k)(n^2 - k) = k^2</script>
+
+<p>Siis $n^2 + k \mid k^2$. Luku $k$ ei ole kovin iso: pätee $k \le 2n$, eli</p>
+
+<script type="math/tex; mode=display">% <![CDATA[
+k^2 < 4(n^2 + k). %]]></script>
+
+<p>Tutkitaan eri tapauksia:</p>
+
+<ol>
+  <li>
+    <p>$n^2 + k = k^2$. Tämä on mahdoton tapaus - jos $k \le n$, niin oikea puoli on pienempi kuin vasen, ja jos $k &gt; n$, niin oikea puoli on isompi kuin vasen.</p>
+  </li>
+  <li>
+    <p>$2(n^2 + k) = k^2$. Tällöin $2n^2 = k^2 - 2k = (k-1)^2 - 1$, eli $(k-1)^2 - 2n^2 = 1$. Tämä on Pellin yhtälö.</p>
+  </li>
+  <li>
+    <p>$3(n^2 + k) = k^2$. Tämä saadaan muutettua myös Pellin yhtälöksi standardimenetelmin: $k$:n tulee olla jaollinen kolmella, joten olkoon $k = 3m$. Tällöin yhtälö on $3n^2 = 9m^2 - 9m$, eli $n^2 = 3(m^2 - m)$. Ja vielä, $n$:n tulee olla jaollinen kolmella, eli $n = 3t$, ja yhtälö on $3t^2 = m^2 - m$.
+Kerrotaan yhtälö puolittain neljällä, eli $3(2t)^2 = 4m^2 - 4m = (2m-1)^2 - 1$. Saamme siis $x^2 - 3y^2 = 1$, missä $x = 2m-1$ ja $y = 2t$.</p>
+  </li>
+</ol>
+
+<p>Tutkimme siis yhtälöitä $x^2 - 2y^2 = 1$ ja $x^2 - 3y^2 = 1$. Mikäli Pellin yhtälöt eivät ole tuttuja, kannattanee lukea Matti Lehtisen moniste <a href="https://matematiikkakilpailut.fi/kirjallisuus/pell.pdf">Pellin yhtälöistä</a>. Tulemme käyttämään seuraavia tietoja Pellin yhtälöistä, eli muotoa $x^2 - Dy^2 = 1$ oleviasta yhtälöistä, missä $D &gt; 0$ ei ole neliö:</p>
+
+<ol>
+  <li>Tällä yhtälöllä on aina äärettömän monta ratkaisua.</li>
+  <li>Kaikki positiiviset ratkaisut saadaan löytämällä pienin positiivinen ratkaisu $(x_1, y_1)$, ja asettamalla $n$:nnessä ratkaisussa $x_n$ olemaan luvun $(x_1 + y_1\sqrt{D})^n$ kokonaislukuosa, ja $y_n$ olemaan tämän luvun $\sqrt{D}$-osa.</li>
+</ol>
+
+<p>Tutkitaan ensiksi yhtälöä $x^2 - 2y^2 = 1$. Tämän yhtälön pienin (epätriviaali) ratkaisu on $x = 3, y = 2$. Siispä yleisesti $n$:nnen ratkaisun saa valitsemalla $x_n$ olemaan luvun $(3 + 2\sqrt{2})^n$ kokonaislukuosa, ja $y_n$ olemaan kyseisen luvun $\sqrt{2}$-osa. Tämän voi myös kirjoittaa eksplisiittisenä kaavana:</p>
+
+<script type="math/tex; mode=display">x_n = \frac{(3 + 2\sqrt{2})^n + (3 - 2\sqrt{2})^n}{2}.</script>
+
+<p>Ideana siis se, että $\sqrt{2}$-osat kumoavat toisensa osoittajassa. Vastaavasti saadaan eksplisiittinen kaava $y_n$:lle.</p>
+
+<p>Haluamme loppujen lopuksi tutkia lukuja $x_n$ ja $y_n$ modulo $7$. Tutkitaan yllä olevaa $x_n$:n lauseketta: se on, kuten totesimme, kokonaisluku. Jos tutkimme sitä modulo $7$, voidaan luvulla $2$ jakaminen ajatella vain luvulla $4$ kertomisena, koska luvun $2$ käänteisalkio modulo $7$ on $4$. Vastaavasti, $\sqrt{2}$ voidaan tulkita lukuna $3$ modulo $7$, koska $3^2 \equiv 2 \pmod{7}$. Siispä</p>
+
+<script type="math/tex; mode=display">x_n \equiv 4\Big((3 + 2\cdot 3)^n + (3 - 2\cdot 3)^n \Big) \equiv 4(2^n + 4^n) \pmod{7}.</script>
+
+<p>Tästä on helppoa ratkaista kaikki $x_n$:n mahdolliset arvot modulo $7$, ja vastaavasti saamme $y_n$:n mahdolliset arvot. Menetelmä voi tuntua hieman arvelluttavalta, mutta se toimii kyllä.</p>
+
+<p>Tutkitaan sitten tapausta $x^2 - 3y^2 = 1$. Tässä saamme pienimmän ratkaisun $x = 2, y = 1$, eli yleisesti</p>
+
+<script type="math/tex; mode=display">x_n = \frac{(2 + \sqrt{3})^n - (2 - \sqrt{3})^n}{2}.</script>
+
+<p>Nyt ongelmaksi muodostuu se, että $\sqrt{3}$ ei olekaan kokonaisluku modulo $7$. Edellä tutkimme lukuja $x_n$ kunnassa $\mathbb{F_7}$, mutta nyt joudumme tutkimaan isompaa kuntaa $\mathbb{F_7}(\sqrt{3})$. Tämä kunta sisältää siis luvut muotoa $a + b\sqrt{3}$, missä $a, b \in \mathbb{F_7}$. Yhteenlasku ja kertolasku määritellään aivan kuten luulisikin, eli esimerkiksi kertolasku on</p>
+
+<script type="math/tex; mode=display">(a + b\sqrt{3})(c + d\sqrt{3}) = ac + (ad + bc)\sqrt{3} + bd\sqrt{3}^2 = (ac + 3bd) + (ad + bc)\sqrt{3}</script>
+
+<p>Ajatusta voi helpottaa vertaamalla tilannetta kompleksilukuihin, joille määritellään kertolasku aivan vastaavasti. Sen sijaan, että laajentaisimme reaalilukuja $i$:llä, niin laajennamme kuntaa $\mathbb{F_7}$ luvulla $\sqrt{3}$.</p>
+
+<p>Siispä, kun yhtäsuuruus tulkitaan kunnassa $\mathbb{F_7}(\sqrt{3})$, pätee</p>
+
+<script type="math/tex; mode=display">x_n = 4\Big( (2 + \sqrt{3})^n - (2 - \sqrt{3})^n \Big),</script>
+
+<p>ja voimme laskea lukujen $2 \pm \sqrt{3}$ potensseja: $(2 + \sqrt{3})^0 = 1$, eksponentilla $1$ saadaan $(2 + \sqrt{3})^1 = 2 + \sqrt{3}$, eksponentilla $2$ taas $(2 + \sqrt{3})^2 = 4\sqrt{3}$, eksponentilla $3$ vielä $(2 + \sqrt{3})^3 = 5 + \sqrt{3}$, ja vielä $(2 + \sqrt{3})^4 = -1$. Tämän jälkeen potenssit ovat kuten edellä, mutta negaiitivismerkkisiä, ja lopulta $(2 + \sqrt{3})^8 = 1$.</p>
+
+<p>Tällä idealla saamme laskettua luvun $x_n$ kaikki mahdolliset arvot.</p>
+
+<p>Tekemällä yllä esitetyt ideat molemmille yhtälöistä $x^2 - 2y^2 = 1$ ja $x^2 - 3y^2 = 1$ sekä purkamalla tehdyt sijoitukset saadaan viimeisteltyä ratkaisu. Itse laskeminen ei ole kovin mielenkiintoista, ja se sivuutetaan.</p>
+
+<h3 id="huomautus-fermatn-pieni-lause">Huomautus (Fermat’n pieni lause)</h3>
+
+<p>Totesimme edellä. että $(2 + \sqrt{3})^4 = -1$, eli $(2 + \sqrt{3})^8 = 1$ kunnassa $\mathbb{F_7}(\sqrt{3})$. Ei ole yllättävää, että jossain kohtaa potenssiinkorotus johtaa lukuun $1$. Tälle on hyvin yksinkertainen selitys:</p>
+
+<p>Fermat’n pieni lause todistetaan yleensä seuraavasti: olkoon $a \not\equiv 0 \pmod{p}$. Tällöin luvut $a, 2a, 3a, \ldots , (p-1)a$ ovat vain lukujen $1, 2, \ldots , p-1$ permutaatio. Siispä</p>
+
+<script type="math/tex; mode=display">a \cdot 2a \cdot 3a \cdot \ldots \cdot (p-1)a \equiv 1 \cdot 2 \cdot \ldots \cdot (p-1) \pmod{p}</script>
+
+<p>Supistamalla termejä pois saadaan $a^{p-1} \equiv 1 \pmod{p}$.</p>
+
+<p>Todistetaan nyt vastaavasti yleistys Fermat’n pienelle lauseelle mille tahansa äärelliselle kunnalle. Konkreettisena esimerkkinä kannattaa miettiä yllä esitettyä tapausta $\mathbb{F_7}(\sqrt{3})$.</p>
+
+<p><strong>Fermat’n pienen lauseen yleistys</strong></p>
+
+<p>Olkoon $\mathbb{F_{p^k}}$ (se) kunta, jonka koko on $p^k$. Tällöin $a^{p^k - 1} = 1$ kaikilla $a \in \mathbb{F_{p^k}}$, joilla $a \neq 0$.</p>
+
+<p><strong>Todistus</strong></p>
+
+<p>Olkoon $S$ joukko, joka sisältää luvut muotoa $at, t \in \mathbb{F_{p^k}}$, missä $t \neq 0$. Osoitetaan, että $S$ sisältää jokaisen joukon $\mathbb{F_{p^k}}$ nollasta eroavan luvun (täsmälleen kerran). Selvästi kaikilla $s \in S$ pätee $s \neq 0$ - muutenhan pätisi $s = at = 0$. Mutta koska $a, t \neq 0$, on niillä olemassa käänteisalkiot $a^{-1}$ ja $t^{-1}$ (käsittelemmehän kuntaa!), ja kertomalla yhtälön $at = 0$ puolittain tulolla $a^{-1}t^{-1}$ saamme $1 = 0$.</p>
+
+<p>Oletetaan sitten, että $at = at’$ jollain $t, t’ \in \mathbb{F_{p^k}}$. Kertomalla puolittain luvulla $a^{-1}$ saamme $t = t’$.</p>
+
+<p>Siispä luvut $at, t \in \mathbb{F_{p^k}}$ ovat erisuuria, nollasta eroavia alkioita, mikä todistaa väitteen.</p>
+
+<p>Ja nyt, kuten Fermat’n pienen lauseen todistuksessa, joukon $S$ alkioiden tulo on sama kuin kunnan $\mathbb{F_{p^k}}$ nollasta eroavien alkioiden tulo. Ja kuten edellisessä todistuksessa, sieventämällä saamme $a^{p^k - 1} = 1$.</p>
+
+<h3 id="huomautus-asteet">Huomautus (asteet)</h3>
+
+<p>Fermat’n pienen lauseen yleistys takaa, että $(2 + \sqrt{3})^{48} = 1$, mutta totesimme, että $(2 + \sqrt{3})^8 = 1$. Tämä ei ole ristiriita - Fermat’n pieni lause sanoo, että $2^6 \equiv 1 \pmod{7}$, mutta $2^3 \equiv 1 \pmod{7}$.</p>
+
+<p>Kokonaisluvuille modulo $p$ määritellään usein ns. aste tai kertaluku: olkoon $ord_p(a)$ pienin positiivinen kokonaisluku $e$, jolla $a^e \equiv 1 \pmod{p}$, kun $a \not\equiv 0 \pmod{p}$. Tunnetusti jos $a^x \equiv 1 \pmod{p}$, niin $ord_p(a) \mid x$.</p>
+
+<p>Voimme yleistää asteen määritelmää yleisesti äärellisille kunnille: esimerkiksi luvun $2 + \sqrt{3}$ asteeksi tulisi $8$ kunnassa $\mathbb{F_7}(\sqrt{3})$. Huomaamme, että tämä aste jakaa luvun $48$, jonka Fermat’n pienen lauseen yleistys antaa, kuten kuuluukin.</p>
+
+<p>Hyvä tuuri, että luvun $2 + \sqrt{3}$ aste oli niinkin pieni kuin $8$ - muuten manuaalista laskemista olisi tullut paljon enemmän!</p>
+
+<h3 id="huomautus-kuntien-isomorfisuus">Huomautus (kuntien isomorfisuus)</h3>
+
+<p>Puhumme todistuksessa kunnasta $\mathbb{F_7}(\sqrt{3})$. Tämä on hieman epätyypillistä: kuten yllä huomautettiin, äärelliset kunnat, joiden koot ovat samat, ovat isomorfisia. Yleensä siis kirjoitettaisiin vain $\mathbb{F_{49}}$.</p>
+
+<p>Esimerkki isomorfisuudesta: $5$ ei ole neliönjäännös modulo $7$, joten kunnan $\mathbb{F_7}(\sqrt{5})$ koko on $49$, ja sen tulisi olla isomorfinen kunnan $\mathbb{F_7}(\sqrt{3})$ kanssa. Näin onkin: olkoon $f$ funktio, jolla $f(a + b\sqrt{3}) = a + 3b\sqrt{5}$. On helppoa varmistaa, että tämä on isomorfismi - tarkistetaan vaikein ehto eli multiplikatiivisuus $f(xy) = f(x)f(y)$:</p>
+
+<script type="math/tex; mode=display">f\Big((a+b\sqrt{3})(c + d\sqrt{3})\Big) = f\Big((ac + 3bd) + (ad + bc)\sqrt{3} \Big) =  ac + 3bd + 3(ad + bc)\sqrt{5}</script>
+
+<p>ja</p>
+
+<script type="math/tex; mode=display">f(a+b\sqrt{3})f(c+d\sqrt{3}) = (a + 3b\sqrt{5})(c + 3d\sqrt{5}) = (ac + 3bd) + 3(ad + bc)\sqrt{5}.</script>
+
+<h3 id="huomautus-alkeellinen-ratkaisu">Huomautus (alkeellinen ratkaisu)</h3>
+
+<p>Pellin yhtälön ratkaisuille on olemassa myös yksinkertainen rekursio: jos yhtälön $x^2 - Dy^2 = 1$ pienin (positiivinen) ratkaisu on $(x_1, y_1)$, niin $n+1$:nneksi pienin (positiivinen) ratkaisu saadaan rekursioilla</p>
+
+<script type="math/tex; mode=display">x_{n+1} = x_nx_0 + Dy_ny_0</script>
+
+<p>ja</p>
+
+<script type="math/tex; mode=display">y_{n+1} = x_ny_0 + y_nx_0.</script>
+
+<p>Modulotarkastelun voi siis tehdä myös tätäkin kautta, eikä kuntalaajennuksia tarvita. Huomaa, että rekursioyhtälöt muistuttavat kertolaskua</p>
+
+<script type="math/tex; mode=display">(a + b\sqrt{D})(c + d\sqrt{D}) = (ac + Dbd) + (ad + bc)\sqrt{D}.</script>
+
+<p>Siis $x_n$ vastaa kokonaislukuosaa ja $y_n$ vastaa $\sqrt{D}$-osaa.</p>
+
+<p>Loppukädessä alkeellinen ratkaisu ja kuntalaajennusratkaisu vastaavat samaa asiaa, mutta eri tavalla muotoiltuna. Kuntalaajennusratkaisu esitettiinkin pääasiallisesti pedagogisista syistä.</p>
+
+<h3 id="yhteenveto">Yhteenveto</h3>
+
+<p>Äärelliset ja äärettömät kunnat siis toimivat hyvinkin samalla tavalla, ja toisessa ympäristössä toimivia ideoita voidaan usein käyttää toisessa. Lauseen 1 lemma 4 on tämän vuoksi hyvin luonnollinen.</p>
+
+<p>Esitetään vielä toinen esimerkkitehtävä samassa hengessä.</p>
+
+<h1 id="esimerkkitehtävä">Esimerkkitehtävä</h1>
+
+<p><strong><a href="https://artofproblemsolving.com/community/u328030h289403p11502215">Saksan joukkuevalintakoe 3, 2009, T2</a></strong></p>
+
+<p>Olkoon lukujono $a_1, a_2, \ldots$ määritelty asettamalla $a_1 = 1$ ja $a_{n+1} = a_n^4 - a_n^3 + 2a_n^2 + 1$ kaikilla $n \ge 1$. Osoita, että on olemassa äärettömän monta alkulukua, jotka eivät jaa mitään tämän lukujonon termiä.</p>
+
+<p><strong>Ratkaisu (tai sen yritys)</strong></p>
+
+<p>Ratkaisuni ei ole täysin toimiva. Tämä ei silti tarkoita, etteikö ratkaisusta voisi oppia jotain.</p>
+
+<p>Olkoon $P(x) = x^4 - x^3 + 2x^2 + 1$. Osoitetaan, että on olemassa äärettömän monta $p$, jotka eivät ole $P$:n alkutekijöitä, mikä todistaa väitteen. En tiedä tälle mitään kovin yksinkertaista tapaa - yksi olisi todistaa Frobeniuksen lauseella, että vastaava väite pätee kaikille neljännen asteen polynomeille (lukujen $\lbrace 1, 2, 3, 4 \rbrace$ permutaatioita on vain $24$, ja osaryhmiä ei järkyttävän paljoa). Lähestymme ongelmaa kuitenkin toisella tavalla:</p>
+
+<p><strong>Idea:</strong> Hajotetaan $P$ kahden neliön summaksi.</p>
+
+<p><strong>Mitä tästä hyötyisi?</strong></p>
+
+<p>Kuvitellaan vaikka, että $Q(x) = x^2 + (x^2 + x + 1)^2$ jollain $Q$. Valitaan jokin $p \equiv 3 \pmod{4}$. Tällöin $p \in S(Q) \implies a^2 + b^2 \equiv 0 \pmod{p}$ jollain $a, b$, missä siis $a = x$ ja $b = x^2 + x + 1$. Mutta on tunnettua (eikä vaikeaa osoittaa), että tästä seuraa ehdon $p \equiv 3 \pmod{4}$ nojalla $a \equiv b \equiv 0 \pmod{p}$. Siis $x \equiv x^2 + x + 1 \equiv 0 \pmod{p}$. Tämä on selvästi mahdotonta.</p>
+
+<p><strong>Toteutus</strong></p>
+
+<p>Yritetään siis kirjoittaa $P$ kahden neliön summana. Yksi veikkaus olisi, että $P$ on muotoa $A(x)^2 + B(x)^2$, missä $A$ on toisen asteen polynomi ja $B$ on ensimmäisen asteen polynomi. Ei ole vaikeaa nähdä, että $A$:n tulee olla muotoa $x^2 - \frac{x}{2} + c$ jollain vakiolla $c$. Tehtävä palautuu siis sellaisten vakioiden $a, b, c$ löytämiseen, joilla</p>
+
+<script type="math/tex; mode=display">P(x) = (x^2 - \frac{x}{2} + c)^2 + (ax + b)^2.</script>
+
+<p>Kerrotaan kaikki auki ja verrataan eri termien kertoimia. Toisen asteen termejä vertaamalla saadaan yhtälö</p>
+
+<script type="math/tex; mode=display">\frac{1}{4} + 2c + a^2 = 2.</script>
+
+<p>Ensimmäisen asteen:</p>
+
+<script type="math/tex; mode=display">-c + 2ab = 0.</script>
+
+<p>Vakiot:</p>
+
+<script type="math/tex; mode=display">c^2 + b^2 = 1.</script>
+
+<p>Tämä on yhtälöryhmä, joka ei ole aivan triviaali muttei ihan mahdotonkaan. En kirjoita välivaiheita tähän. Ratkaisut ovat:</p>
+
+<p>$b$ on yhtälön $64x^6 - 64x^4 + 1 = 0$ ratkaisu.</p>
+
+<script type="math/tex; mode=display">a = -\frac{1}{16b^3},</script>
+
+<script type="math/tex; mode=display">c = -\frac{1}{8b^2}.</script>
+
+<p>Ei siis rationaaliratkaisuja. Tämä ei kuitenkaan ole ongelma: todellisuudessa haluamme ratkoa tämän yhtälöryhmän modulo $p$, koska haluamme kirjoittaa $P$:n kahden neliön summana mod $p$. Valitaan siis jokin $p$, joka on polynomin $64x^6 - 64x^4 + 1$ alkutekijä. Tällöin $p \neq 2$, eli $a, b, c$ ovat hyvin määriteltyjä kokonaislukuja mod $p$ (eli siis kunnan $\mathbb{F_p}$ alkioita).</p>
+
+<p>Näillä $p$ pätee $p \in S(P) \implies x^2 - \frac{x}{2} + c \equiv ax + b \equiv 0 \pmod{p}$ jollain kokonaisluvulla $x$, olettaen $p \equiv 3 \pmod{4}$. Ei ole vaikeaa muodostaa tästä ehto $T(b) \equiv 0 \pmod{p}$ polynomille $T$, voimmehan kirjoittaa muuttujat $x, a, c$ muuttujan $b$ avulla.</p>
+
+<p>Polynomien $T$ ja $64x^6 - 64x^4 + 1$ suurin yhteinen tekijä on 1 (tämä saadaan määrittämällä $T$ ja sytin laskemisella), joten Bezout’n lemman nojalla argumentti menee läpi suurilla $p$.</p>
+
+<p>Ainoa ongelma on sen takaaminen, että on olemassa äärettömän monta $p$, joilla $p \equiv 3 \pmod{4}$ ja $p$ on polynomin $64x^6 - 64x^4 + 1$ alkutekijä. En näe mitään helppoa tapaa tämän todistamiseksi (tosin tämä väite vaikuttaa pätevän, ainakin tietokoneen mukaan), minkä vuoksi ratkaisu on puutteellinen. Ratkaisu kuitenkin demonstroi keinon hyödyntää vastaavuutta äärettömien ja äärellisten kuntien välillä - ratkaistaan yhtälöryhmä rationaalilukujen laajennuksessa, josta se voidaan tuoda äärettömän moneen eri äärelliseen kuntaan $\mathbb{F_p}$.</p>
+
+<p>Siirrytään sitten muihin aiheisiin.</p>
+
+<h1 id="alkutekijöiden-karakterisointi-kongruenssiehdoin">Alkutekijöiden karakterisointi kongruenssiehdoin</h1>
+
+<p>Lähtökohtana toimii seuraava kysymys:</p>
+
+<p>Millä polynomeilla $P \in \mathbb{Z_c}[x]$ on olemassa kokonaisluvut $m, a_1, a_2, \ldots , a_k$, joilla pätee seuraava ehto:</p>
+
+<script type="math/tex; mode=display">p \in S(P) \Leftrightarrow \exists i: p \equiv a_i \pmod{m}?</script>
+
+<p>Toisin sanoen, milloin $P$:n alkutekijät voidaan esittää kongruenssiehdoin?</p>
+
+<p>Esimerkiksi $P(x) = x^2 + 1$ on tällainen polynomi, koska $p \in S(P)$ joss $p$ on $1$ tai $2$ (mod $4$).</p>
+
+<p>(Yleisesti polynomien alkutekijöille ei tunneta yksinkertaista esitystapaa. Tällä on ilmeisesti jotain kytköksiä ns. <a href="https://en.wikipedia.org/wiki/Langlands_program">Langlandsin ohjelmaan</a>. Olen kuitenkin väärä henkilö kertomaan tästä sen enempää.)</p>
+
+<p>Arvind Suresh on todistanut työssään <a href="https://scholarship.claremont.edu/cgi/viewcontent.cgi?article=2095&amp;context=cmc_theses">On the Characterization of Prime Sets of Polynomials by Congruence Conditions</a>, että mikäli $P$ on jaoton pääpolynomi, jonka Galois’n ryhmä on Abelin ryhmä, niin tämä toteutuu. Keskitytään tähän hieman tarkemmin.</p>
+
+<p><strong>Abelin ryhmä</strong></p>
+
+<p>Ryhmää $G$ sanotaan Abelin ryhmäksi, jos $ab = ba$ kaikilla $a, b \in G$.</p>
+
+<p>Näitä ryhmiä voisi kutsua myös kommutatiivisiksi ryhmiksi, koska mainittu ehto on kommutatiivisuus. Jostain syystä Abelin ryhmä on se termi, jota käytetään kaikkialla. Ainakin se on lyhyempi.</p>
+
+<p><strong>Galois’n ryhmät Abelin ryhminä</strong></p>
+
+<p>Aiemmista esimerkeistä on selvää, että $x^2 - 2$:n Galois’n ryhmä on Abelin ryhmä. Polynomin $x^3 - 2$ Galois’n ryhmä ei kuitenkaan ole Abelin ryhmä:</p>
+
+<p>Polynomin $P(x) = x^3 - 2$ juurikunta on $\mathbb{Q}(\sqrt[3]{2}, \omega)$, missä $\omega = \zeta_3$ totetuttaa yhtälön $\omega^2 + \omega + 1 = 0$. Voimme esittää $P$:n juuret muodossa $\sqrt[3]{2}, \sqrt[3]{2}\omega, \sqrt[3]{2}\omega^2$.</p>
+
+<p>Mitä $P$:n Galois’n ryhmä sisältää? Tätä käsiteltiin edellisessä postauksessa yleisemmin polynomeille muotoa $x^n - a$. Tässä tapauksessa on kuusi eri vaihtoehtoa. Ensinnäkin, luku $\sqrt[3]{2}$ voidaan kuvata mille tahansa juurelle $\sqrt[3]{2}\omega^i$, missä $i = 0, 1, 2$. Lisäksi $\omega$ voidaan kuvata joko itselleen tai yhtälön $x^2 + x + 1 = 0$ toiselle juurelle, joka on $\omega$:n kompleksikonjugaatti $\overline \omega$.</p>
+
+<p>Eli siis: $P$:n Galois’n ryhmä vastaa kaikkia joukon $\lbrace 1, 2, 3 \rbrace$ permutaatioita.</p>
+
+<p>Permutaatioryhmät eivät yleisesti ole Abelin ryhmiä. Esimerkki: olkoon $\sigma_1$ permutaatio, jolla $\sigma_1(1) = 2, \sigma_1(2) = 1, \sigma_1(3) = 3$, ja olkoon $\sigma_2$ permutaatio, jolla $\sigma_2(1) = 2, \sigma_2(2) = 3, \sigma_2(3) = 1$. Muodostetaan permutaatiot $\sigma_3$ ja $\sigma_4$ asettamalla $\sigma_3(x) = \sigma_1(\sigma_2(x))$ ja $\sigma_4(x) = \sigma_2(\sigma_1(x))$. (Huomaa siis, että permutaatioryhmien laskutoimitus on “composition”, eli suoritetaan permutaatiot peräkkäin). Osoittautuu, että $\sigma_3 \neq \sigma_4$. Nimittäin,</p>
+
+<script type="math/tex; mode=display">\sigma_3(1) = \sigma_1(\sigma_2(1)) = \sigma_1(2) = 1</script>
+
+<p>ja</p>
+
+<script type="math/tex; mode=display">\sigma_4(1) = \sigma_2(\sigma_1(1)) = \sigma_2(2) = 3.</script>
+
+<p>Kaikkien polynomien Galois’n ryhmät eivät siis ole Abelin ryhmiä.</p>
+
+<p>Sureshin tulos toimii myös muille kuin pääpolynomeille lemman 8 nojalla. Väite yleistyy myös muille kuin jaottomille polynomeille - relevantti lähde tähän löytyy <a href="https://math.stackexchange.com/questions/126771/proof-subextension-of-abelian-extension-is-also-abelian">täältä</a>.</p>
+
+<p>Hyvin mielenkiintoinen kysymys on seuraava, jonka Suresh on esittänyt jatkotutkimusaiheena:</p>
+
+<p>Oletetaan, että $P$:n alkutekijät voidaan esittää kongruenssiehdoilla. Onko $P$:n Galois’n ryhmä Abelin ryhmä?</p>
+
+<p>Jos tutkielman aiheet kiinnostavat vielä tämän postaussarjan jälkeenkin, suosittelen vahvasti lukemaan Sureshin työn. Kappale 1 esittelee yleisesti polynomien alkutekijöitä, ja ratkaisee toisen asteen polynomin tapauksen. Kappaleessa 2 esitetään kohtuullisen nopeasti mutta hyvin selkeästi tärkeimpiä asioita polynomien alkutekijöiden kytköksistä syvällisempään teoriaan. Kappaleessa 3 osoitetaan työn päätulos. Sureshin työ on erinomainen lähde, jos on kiinnostunut lukemaan syvemmin algebrallisesta lukuteoriasta. Toinen, aloittelevalle ehkäpä helpompi, materiaali on Evan Chenin <a href="http://web.evanchen.cc/napkin.html">Napkin-materiaalin</a> algebrallista lukuteoriaa käsittelevät luvut.</p>
+
+<h1 id="jatkotutkimusaihe-eksponenttiyhtälöt">Jatkotutkimusaihe: eksponenttiyhtälöt</h1>
+
+<p>Luonnollinen jatkotutkimusaihe on siirtyä polynomiyhtälöistä eksponenttiyhtälöihin. Mitä voidaan sanoa niistä alkuluvuista $p$, joilla yhtälöllä</p>
+
+<script type="math/tex; mode=display">2^x \equiv 3 \pmod{p}</script>
+
+<p>on ratkaisu?</p>
+
+<p>Eksponentiaalisiin rakenteisiin liittyen tunnetuin konjektuuri on Artinin primitiivijuurikonjektuuri:</p>
+
+<p><strong>Konjektuuri</strong></p>
+
+<p>Olkoon $a$ kokonaisluku, jonka itseisarvo on suurempaa kuin $1$, ja joka ei ole neliöluku. On olemassa äärettömän monta alkulukua $p$, joilla $a$ on primitiivijuuri modulo $p$.</p>
+
+<p>Ehkä hieman yllättäen, tämä väite todella on konjektuuri eikä lause.</p>
+
+<p>Aivan loistava materiaali eksponentiaalisista rakenteista on Pieter Mooren teksti <a href="http://guests.mpim-bonn.mpg.de/moree/surva.pdf">Artin’s primitive root conjecture</a>. Kyseessä on survey-tyyppinen materiaali, eli Moore on esitellyt hyvin laajasti nykyistä kirjallisuutta aiheeseen liittyen.</p>
+
+<p>Erityisesti yhtälöitä $a^x \equiv b \pmod{p}$ varten hyvä materiaali edellisen lisäksi on Pieter Mooren ja Peter Stevenhagenin artikkeli <a href="https://core.ac.uk/download/pdf/81106660.pdf">A Two-Variable Artin Conjecture</a>.</p>
+
+<p>Tulen itse työstämään ainakin jonkin verran eksponentiaalisiin rakenteisiin liittyviä ajatuksia lähiaikoina.</p>
+
+  </section>
+  <footer class="post-footer">
+    <p><time datetime="2019-06-05">5. 6. 2019</time>
+       • Olli Järviniemi
+      <span class="share-buttons">
+  <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fblog-drafts.matematiikkakilpailut.fi%2F2019%2F06%2F05%2FPYA01lisaaiheita.html&quote=Polynomien+yhteiset+alkutekij%C3%A4t%2C+osa+11%3A+lis%C3%A4aiheita"
+     title="Jaa Facebookissa" target="_blank" rel="noopener noreferrer nofollow">
+    <svg aria-label="Jaa Facebookissa" role="img" viewBox="0 0 24 24"><title lang="en">Facebook</title><use xlink:href="/assets/images/icons.svg#facebook"/></svg></a>
+  <a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fblog-drafts.matematiikkakilpailut.fi%2F2019%2F06%2F05%2FPYA01lisaaiheita.html&text=Polynomien+yhteiset+alkutekij%C3%A4t%2C+osa+11%3A+lis%C3%A4aiheita"
+     target="_blank" rel="noopener noreferrer nofollow" title="Jaa Twitterissä">
+    <svg aria-label="Jaa Twitterissä" role="img" viewBox="0 0 24 24"><title lang="en">Twitter</title><use xlink:href="/assets/images/icons.svg#twitter"/></svg></a>
+  <a href="https://pinterest.com/pin/create/button/?url=https%3A%2F%2Fblog-drafts.matematiikkakilpailut.fi%2F2019%2F06%2F05%2FPYA01lisaaiheita.html&description=Polynomien+yhteiset+alkutekij%C3%A4t%2C+osa+11%3A+lis%C3%A4aiheita"
+     target="_blank" rel="noopener noreferrer nofollow" title="Jaa Pinterestissä">
+    <svg aria-label="Jaa Pinterestissä" role="img" viewBox="0 0 24 24"><title lang="en">Pinterest</title><use xlink:href="/assets/images/icons.svg#pinterest"/></svg></a>
+  <a href="https://www.reddit.com/submit?url=https%3A%2F%2Fblog-drafts.matematiikkakilpailut.fi%2F2019%2F06%2F05%2FPYA01lisaaiheita.html&title=Polynomien+yhteiset+alkutekij%C3%A4t%2C+osa+11%3A+lis%C3%A4aiheita"
+     target="_blank" rel="noopener noreferrer nofollow" title="Jaa Redditissä">
+    <svg aria-label="Jaa Redditissä" role="img" viewBox="0 0 24 24"><title lang="en">Reddit</title><use xlink:href="/assets/images/icons.svg#reddit"/></svg></a>
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fblog-drafts.matematiikkakilpailut.fi%2F2019%2F06%2F05%2FPYA01lisaaiheita.html&title=Polynomien+yhteiset+alkutekij%C3%A4t%2C+osa+11%3A+lis%C3%A4aiheita&source=https%3A%2F%2Fblog-drafts.matematiikkakilpailut.fi"
+     target="_blank" rel="noopener noreferrer nofollow" title="Jaa LinkedInissä">
+    <svg aria-label="Jaa Linkedinissä" role="img" viewBox="0 0 24 24"><title lang="en">LinkedIn</title><use xlink:href="/assets/images/icons.svg#linkedin"/></svg></a>
+  <a href="https://pinboard.in/add?url=https%3A%2F%2Fblog-drafts.matematiikkakilpailut.fi%2F2019%2F06%2F05%2FPYA01lisaaiheita.html&title=Polynomien+yhteiset+alkutekij%C3%A4t%2C+osa+11%3A+lis%C3%A4aiheita"
+     target="_blank" rel="noopener noreferrer nofollow" title="Talleta Pinboardiin">
+    <svg aria-label="Talleta Pinboardiin" role="img" viewBox="0 0 24 24"><title lang="en">Pinboard</title><use xlink:href="/assets/images/icons.svg#pinboard"/></svg></a>
+</span>
+
+    </p>
+  </footer>
+</article>
+
+    </section>
+
+    <section class="site-footer">
+      <p>Tekijänoikeus kirjoittajilla. Käytämme sivuilla evästeitä: <a href="/tietosuoja.html">tietosuojalauseke</a>.</p>
+    </section>
+    
+
+  </body>
+</html>

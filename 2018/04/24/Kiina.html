@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="fi">
+  <head>
+    <meta charset="UTF-8">
+    <!-- Begin Jekyll SEO tag v2.5.0 -->
+<title>Kiinatehtävä, osa 3 | Matematiikkakilpailijat</title>
+<meta name="generator" content="Jekyll v3.8.5" />
+<meta property="og:title" content="Kiinatehtävä, osa 3" />
+<meta name="author" content="Olli Järviniemi" />
+<meta property="og:locale" content="fi" />
+<meta name="description" content="Tässä postauksessa käsitellään seuraavan tehtävän ratkaisu: Kiinan IMO-joukkueen valintakoe 2, 2015, tehtävä 6 Osoita, että on olemassa äärettömän monta $n \in \mathbb{Z_+}$ joilla $n^2 + 1$ ei ole jaollinen millään alkuluvun neliöllä (engl. squarefree)" />
+<meta property="og:description" content="Tässä postauksessa käsitellään seuraavan tehtävän ratkaisu: Kiinan IMO-joukkueen valintakoe 2, 2015, tehtävä 6 Osoita, että on olemassa äärettömän monta $n \in \mathbb{Z_+}$ joilla $n^2 + 1$ ei ole jaollinen millään alkuluvun neliöllä (engl. squarefree)" />
+<link rel="canonical" href="https://blog-drafts.matematiikkakilpailut.fi/2018/04/24/Kiina.html" />
+<meta property="og:url" content="https://blog-drafts.matematiikkakilpailut.fi/2018/04/24/Kiina.html" />
+<meta property="og:site_name" content="Matematiikkakilpailijat" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2018-04-24T00:00:00+00:00" />
+<meta property="fb:app_id" content="964806940344711" />
+<script type="application/ld+json">
+{"url":"https://blog-drafts.matematiikkakilpailut.fi/2018/04/24/Kiina.html","author":{"@type":"Person","name":"Olli Järviniemi"},"headline":"Kiinatehtävä, osa 3","dateModified":"2018-04-24T00:00:00+00:00","datePublished":"2018-04-24T00:00:00+00:00","description":"Tässä postauksessa käsitellään seuraavan tehtävän ratkaisu: Kiinan IMO-joukkueen valintakoe 2, 2015, tehtävä 6 Osoita, että on olemassa äärettömän monta $n \\in \\mathbb{Z_+}$ joilla $n^2 + 1$ ei ole jaollinen millään alkuluvun neliöllä (engl. squarefree)","mainEntityOfPage":{"@type":"WebPage","@id":"https://blog-drafts.matematiikkakilpailut.fi/2018/04/24/Kiina.html"},"@type":"BlogPosting","@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#157878">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/assets/css/style.css?v=2c669b5e01ecebd0ccd9a63f1cd21eeeb0cf1936">
+    <link href="/feed.xml" type="application/atom+xml" rel="alternate" title="Sivuston verkkosyöte">
+
+    <script type="text/x-mathjax-config">
+ MathJax.Hub.Config({
+   tex2jax: {
+     inlineMath: [['$', '$'], ['\\(', '\\)']],
+     displayMath: [['$$', '$$']],
+     processEscapes: true
+   }
+ });
+</script>
+<script
+  type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS_CHTML" 
+  integrity="sha256-nvJJv9wWKEm88qvoQl9ekL2J+k/RWIsaSScxxlsrv8k="
+  crossorigin="anonymous">
+</script>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/fonts/HTML-CSS/TeX/woff/MathJax_Main-Regular.woff"
+      rel="preload" as="font" type="font/woff" crossorigin="anonymous">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/fonts/HTML-CSS/TeX/woff/MathJax_Size1-Regular.woff"
+      rel="preload" as="font" type="font/woff" crossorigin="anonymous">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/fonts/HTML-CSS/TeX/woff/MathJax_Math-Italic.woff"
+      rel="preload" as="font" type="font/woff" crossorigin="anonymous">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/fonts/HTML-CSS/TeX/woff/MathJax_Size2-Regular.woff"
+      rel="preload" as="font" type="font/woff" crossorigin="anonymous">
+
+  </head>
+  <body>
+    <section class="page-header">
+      <h1 class="project-name">Matematiikkakilpailijat</h1>
+      <h2 class="project-tagline">Matematiikan olympiavalmennuksen osallistujien kokemuksia</h2>
+    </section>
+
+    <section class="main-content">
+      <article class="post">
+  <header class="post-header">
+    <h1 class="post-title">Kiinatehtävä, osa 3</h1>
+  </header>
+  <section class="post-content">
+    <p>Tässä postauksessa käsitellään seuraavan tehtävän ratkaisu:</p>
+
+<p><strong>Kiinan IMO-joukkueen valintakoe 2, 2015, tehtävä 6</strong></p>
+
+<p>Osoita, että on olemassa äärettömän monta $n \in \mathbb{Z_+}$ joilla $n^2 + 1$ ei ole jaollinen millään alkuluvun neliöllä (engl. squarefree)</p>
+
+<!--jatkuu-->
+
+<p><strong>Ratkaisu</strong></p>
+
+<p>On luonnollista tutkia, milloin väite ei päde, eli milloin pätee
+$n^2 + 1 \equiv 0 \pmod{p^2}$ jollain alkuluvulla $p$. Tämä tietysti vaatii, että $n^2 + 1 \equiv 0 \pmod{p}$, eli $p \equiv 1 \pmod{4}$. Tämä ei kuitenkaan vielä anna riittävästi tietoa: ensinnäkin, onko jokaisella $p \equiv 1 \pmod{4}$ olemassa ratkaisu kongruenssiyhtälölle $x^2 + 1 \equiv 0 \pmod{p^2}$, ja toisekseen, kuinka monta (keskenään epäkongruenttia) ratkaisua yhtälöllä on? Nämä kysymykset ovat helppoja vastata:</p>
+
+<p><strong>Lemma 1</strong></p>
+
+<p>Kongruenssiyhtälöllä $x^2 + 1 \equiv 0 \pmod{p^2}$ on täsmälleen kaksi keskenään epäkongruenttia ratkaisua kaikilla alkuluvuilla $p \equiv 1 \pmod{4}$</p>
+
+<p><strong>Todistus</strong></p>
+
+<p>Kirjoitetaan $x = pk + y$, missä $0 \le k &lt; p$ ja $0 \le y &lt; p$ ovat muuttujia. Yhtälö muuttuu muotoon</p>
+
+<p>$2pk + y^2 + 1 \equiv 0 \pmod{p^2}$</p>
+
+<p>Saamme luotua kaksi ratkaisua: valitaan $y$ niin, että $y^2 \equiv -1 \pmod{p}$ (tämä on mahdollista). Kirjoitetaan $pt = y^2 + 1$ Nyt tulee enää valita $k$ niin, että $2pk + pt \equiv 0 \pmod{p^2}$, eli $k \equiv \frac{-t}{2} \pmod{p}$. Sillä $y$:lle on kaksi eri vaihtoehtoa, myös $x$:lle on kaksi eri vaihtoehtoa.</p>
+
+<p>Todistetaan sitten, että useampaa ratkaisua ei ole. Olkoon $f(x) = x^2$. Oletetaan, että $f(a) \equiv f(b) \equiv -1 \pmod{p^2}$. Pyritään todistamaan, että $a \equiv \pm b \pmod{p^2}$. Lemman tulos seuraa tästä.</p>
+
+<p>Pätee $0 \equiv f(a) - f(b) \equiv a^2 - b^2 \equiv (a-b)(a+b) \pmod{p^2}$</p>
+
+<p>Jos $p^2 \mid a - b$, väite pätee, samoin jos $p^2 \mid a + b$. Voiko päteä $p \mid a - b$ ja $p \mid a + b$? Ei, sillä tästä seuraisi $p \mid 2a$, eli $p \mid a$. Mutta oletimme $f(a) \equiv -1 \pmod{p^2}$, joten tämä on ristiriita.</p>
+
+<p><strong>Huomautus</strong>
+Tarvitsemme lemmasta vain osuutta “enintään kaksi ratkaisua”.</p>
+
+<p>Tehtävänannon väite seuraa nyt helpolla seula-argumentilla: jos valitsemme satunnaisen positiivisen kokonaisluvun $n$ kuinka suurella todennäköisyydellä $n^2 + 1$ on jaollinen jollain alkuluvun neliöllä? Emme voi kuitenkaan sanoa, että valitaan satunnainen positiivinen kokonaisluku: tulee valita jokin äärellisen kokoinen väli, jolta $n$ valitaan (aiemmin netissä on ollut ratkaisu, jossa näin ei tehdä. Ratkaisu polynomille $n^2 + 1$ ei juurikaan muutu, mutta postauksessa oli myös esitetty yleistys muillekin polynomeille. Todistus yleiselle tapaukselle oli virheellinen juurikin tästä syystä). Olkoon $N$ mielivaltaisen suuri luku, ja valitaan $n$ satunnaisesti väliltä $[1, N]$.</p>
+
+<p>Kuinka monta $x \in [1, N]$ on olemassa, joilla $x^2 + 1 \equiv 0 \pmod{p^2}$, kun $p$ on annettu vakio? Lemman nojalla tämä on enintään $2\lceil \frac{N}{p^2} \rceil$. Täten niiden $n$ määrä, joilla $n^2 + 1 \equiv 0 \pmod{p^2}$ jollain $p$, kun $1 \le n \le N$, on enintään</p>
+
+<script type="math/tex; mode=display">\sum 2 \Big\lceil \frac{N}{p^2} \Big\rceil \le 2 \sum \frac{N}{p^2} + 1</script>
+
+<p>missä summa käy läpi ne $p$, joilla $p \equiv 1 \pmod{4}$. Lisäksi summassa täytyy käydä vain ne $p$ läpi, joilla $N^2 + 1 \le p^2$, koska jos $p^2$ olisi suurempi kuin tämä, yhtälöllä $x^2 + 1 \equiv 0 \pmod{p^2}$ ei voi olla ratkaisua $1 \le x \le N$. Summa voidaan asettaa käymään läpi alkuluvut $p$, joilla $p \le N+1$.</p>
+
+<p>Täten niiden $n$ määrä, joilla $n^2 + 1$ on neliövapaa, on</p>
+
+<script type="math/tex; mode=display">N - 2\sum\frac{N}{p^2} + 1 = N(1 - 2\sum \frac{1}{p^2}) - 2\sum1</script>
+
+<p><a href="https://en.wikipedia.org/wiki/Prime_number_theorem">Alkulukulauseen</a> nojalla summa $2 \sum 1$ on kokoluokkaa $\frac{N+1}{\ln(N+1)}$ (tätä voi myös arvioida alaspäin vaikkapa arvoksi $\frac{N}{3}$), jos summa kävisi läpi kaikki alkuluvut väliltä $[1, N]$. Lisäksi summaa $\frac{1}{p^2}$ voidaan arvioida olevan alle $\frac{1}{4}$ seuraavasti, käyttäen faktaa $p \ge 5$ kaikilla summattavilla $p$:</p>
+
+<script type="math/tex; mode=display">\sum \frac{1}{p^2} \le \sum \frac{1}{p^2 - p} = \sum \frac{1}{p-1} - \frac{1}{p} \le (\frac{1}{4} - \frac{1}{5}) + (\frac{1}{5} - \frac{1}{6}) + \ldots = \frac{1}{4}</script>
+
+<p>Täten</p>
+
+<script type="math/tex; mode=display">N(1 - 2\sum \frac{1}{p^2}) - 2\sum 1 \approx 0.5N - \frac{N+1}{\ln(N+1)} > 0.1N</script>
+
+<p>kun $N$ on suuri.</p>
+
+<p>Tämä todistaa väitteen.</p>
+
+<p><strong>Huomautus</strong></p>
+
+<p>Samaan tapaan voi todistaa väitteen kaikille toisen asteen polynomeille $P$ polynomin $n^2 + 1$ sijasta, joilla ei ole olemassa sellaista $p$, jolla $P(n) \equiv 0 \pmod{p^2}$ kaikilla $n$. Tämä on jätetty harjoitustehtäväksi postauksessa 
+<a href="https://blog.matematiikkakilpailut.fi/2018/09/23/Hensel.html">Henselin lemma</a>.</p>
+
+<p>Yleinen tapaus on kuitenkin avoin ongelma, vaikkakin tapaus $\deg(P) = 3$ on myös todistettu. Netistä löytää lisää hakusanalla “square-free values of polynomials”.</p>
+
+  </section>
+  <footer class="post-footer">
+    <p><time datetime="2018-04-24">24. 4. 2018</time>
+       • Olli Järviniemi
+      <span class="share-buttons">
+  <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fblog-drafts.matematiikkakilpailut.fi%2F2018%2F04%2F24%2FKiina.html&quote=Kiinateht%C3%A4v%C3%A4%2C+osa+3"
+     title="Jaa Facebookissa" target="_blank" rel="noopener noreferrer nofollow">
+    <svg aria-label="Jaa Facebookissa" role="img" viewBox="0 0 24 24"><title lang="en">Facebook</title><use xlink:href="/assets/images/icons.svg#facebook"/></svg></a>
+  <a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fblog-drafts.matematiikkakilpailut.fi%2F2018%2F04%2F24%2FKiina.html&text=Kiinateht%C3%A4v%C3%A4%2C+osa+3"
+     target="_blank" rel="noopener noreferrer nofollow" title="Jaa Twitterissä">
+    <svg aria-label="Jaa Twitterissä" role="img" viewBox="0 0 24 24"><title lang="en">Twitter</title><use xlink:href="/assets/images/icons.svg#twitter"/></svg></a>
+  <a href="https://pinterest.com/pin/create/button/?url=https%3A%2F%2Fblog-drafts.matematiikkakilpailut.fi%2F2018%2F04%2F24%2FKiina.html&description=Kiinateht%C3%A4v%C3%A4%2C+osa+3"
+     target="_blank" rel="noopener noreferrer nofollow" title="Jaa Pinterestissä">
+    <svg aria-label="Jaa Pinterestissä" role="img" viewBox="0 0 24 24"><title lang="en">Pinterest</title><use xlink:href="/assets/images/icons.svg#pinterest"/></svg></a>
+  <a href="https://www.reddit.com/submit?url=https%3A%2F%2Fblog-drafts.matematiikkakilpailut.fi%2F2018%2F04%2F24%2FKiina.html&title=Kiinateht%C3%A4v%C3%A4%2C+osa+3"
+     target="_blank" rel="noopener noreferrer nofollow" title="Jaa Redditissä">
+    <svg aria-label="Jaa Redditissä" role="img" viewBox="0 0 24 24"><title lang="en">Reddit</title><use xlink:href="/assets/images/icons.svg#reddit"/></svg></a>
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fblog-drafts.matematiikkakilpailut.fi%2F2018%2F04%2F24%2FKiina.html&title=Kiinateht%C3%A4v%C3%A4%2C+osa+3&source=https%3A%2F%2Fblog-drafts.matematiikkakilpailut.fi"
+     target="_blank" rel="noopener noreferrer nofollow" title="Jaa LinkedInissä">
+    <svg aria-label="Jaa Linkedinissä" role="img" viewBox="0 0 24 24"><title lang="en">LinkedIn</title><use xlink:href="/assets/images/icons.svg#linkedin"/></svg></a>
+  <a href="https://pinboard.in/add?url=https%3A%2F%2Fblog-drafts.matematiikkakilpailut.fi%2F2018%2F04%2F24%2FKiina.html&title=Kiinateht%C3%A4v%C3%A4%2C+osa+3"
+     target="_blank" rel="noopener noreferrer nofollow" title="Talleta Pinboardiin">
+    <svg aria-label="Talleta Pinboardiin" role="img" viewBox="0 0 24 24"><title lang="en">Pinboard</title><use xlink:href="/assets/images/icons.svg#pinboard"/></svg></a>
+</span>
+
+    </p>
+  </footer>
+</article>
+
+    </section>
+
+    <section class="site-footer">
+      <p>Tekijänoikeus kirjoittajilla. Käytämme sivuilla evästeitä: <a href="/tietosuoja.html">tietosuojalauseke</a>.</p>
+    </section>
+    
+
+  </body>
+</html>

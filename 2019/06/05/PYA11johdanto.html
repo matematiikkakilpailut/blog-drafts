@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="fi">
+  <head>
+    <meta charset="UTF-8">
+    <!-- Begin Jekyll SEO tag v2.5.0 -->
+<title>Polynomien yhteiset alkutekijät, osa 1: johdanto | Matematiikkakilpailijat</title>
+<meta name="generator" content="Jekyll v3.8.5" />
+<meta property="og:title" content="Polynomien yhteiset alkutekijät, osa 1: johdanto" />
+<meta name="author" content="Olli Järviniemi" />
+<meta property="og:locale" content="fi" />
+<meta name="description" content="Tässä postauksessa esitetään ensimmäinen osa sarjasta blogipostauksia, jotka käsittelevät tekemääni tutkielmaa. Ensimmäisen osan tarkoitus on antaa kokonaiskatsaus projektista." />
+<meta property="og:description" content="Tässä postauksessa esitetään ensimmäinen osa sarjasta blogipostauksia, jotka käsittelevät tekemääni tutkielmaa. Ensimmäisen osan tarkoitus on antaa kokonaiskatsaus projektista." />
+<link rel="canonical" href="https://blog-drafts.matematiikkakilpailut.fi/2019/06/05/PYA11johdanto.html" />
+<meta property="og:url" content="https://blog-drafts.matematiikkakilpailut.fi/2019/06/05/PYA11johdanto.html" />
+<meta property="og:site_name" content="Matematiikkakilpailijat" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2019-06-05T00:00:00+00:00" />
+<meta property="fb:app_id" content="964806940344711" />
+<script type="application/ld+json">
+{"url":"https://blog-drafts.matematiikkakilpailut.fi/2019/06/05/PYA11johdanto.html","author":{"@type":"Person","name":"Olli Järviniemi"},"headline":"Polynomien yhteiset alkutekijät, osa 1: johdanto","dateModified":"2019-06-05T00:00:00+00:00","datePublished":"2019-06-05T00:00:00+00:00","description":"Tässä postauksessa esitetään ensimmäinen osa sarjasta blogipostauksia, jotka käsittelevät tekemääni tutkielmaa. Ensimmäisen osan tarkoitus on antaa kokonaiskatsaus projektista.","mainEntityOfPage":{"@type":"WebPage","@id":"https://blog-drafts.matematiikkakilpailut.fi/2019/06/05/PYA11johdanto.html"},"@type":"BlogPosting","@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#157878">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/assets/css/style.css?v=2c669b5e01ecebd0ccd9a63f1cd21eeeb0cf1936">
+    <link href="/feed.xml" type="application/atom+xml" rel="alternate" title="Sivuston verkkosyöte">
+
+    <script type="text/x-mathjax-config">
+ MathJax.Hub.Config({
+   tex2jax: {
+     inlineMath: [['$', '$'], ['\\(', '\\)']],
+     displayMath: [['$$', '$$']],
+     processEscapes: true
+   }
+ });
+</script>
+<script
+  type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS_CHTML" 
+  integrity="sha256-nvJJv9wWKEm88qvoQl9ekL2J+k/RWIsaSScxxlsrv8k="
+  crossorigin="anonymous">
+</script>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/fonts/HTML-CSS/TeX/woff/MathJax_Main-Regular.woff"
+      rel="preload" as="font" type="font/woff" crossorigin="anonymous">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/fonts/HTML-CSS/TeX/woff/MathJax_Size1-Regular.woff"
+      rel="preload" as="font" type="font/woff" crossorigin="anonymous">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/fonts/HTML-CSS/TeX/woff/MathJax_Math-Italic.woff"
+      rel="preload" as="font" type="font/woff" crossorigin="anonymous">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/fonts/HTML-CSS/TeX/woff/MathJax_Size2-Regular.woff"
+      rel="preload" as="font" type="font/woff" crossorigin="anonymous">
+
+  </head>
+  <body>
+    <section class="page-header">
+      <h1 class="project-name">Matematiikkakilpailijat</h1>
+      <h2 class="project-tagline">Matematiikan olympiavalmennuksen osallistujien kokemuksia</h2>
+    </section>
+
+    <section class="main-content">
+      <article class="post">
+  <header class="post-header">
+    <h1 class="post-title">Polynomien yhteiset alkutekijät, osa 1: johdanto</h1>
+  </header>
+  <section class="post-content">
+    <p>Tässä postauksessa esitetään ensimmäinen osa sarjasta blogipostauksia, jotka käsittelevät tekemääni tutkielmaa. Ensimmäisen osan tarkoitus on antaa kokonaiskatsaus projektista.</p>
+
+<!--jatkuu-->
+
+<p><strong>Sisällysluettelo</strong></p>
+
+<ol>
+  <li>Osa 1 - johdanto</li>
+  <li><a href="https://blog.matematiikkakilpailut.fi/2019/06/05/PYA10esitiedot.html">Osa 2 - esitiedot</a></li>
+  <li><a href="https://blog.matematiikkakilpailut.fi/2019/06/05/PYA09tulokset.html">Osa 3 - tulokset</a></li>
+  <li><a href="https://blog.matematiikkakilpailut.fi/2019/06/05/PYA08motivaatio.html">Osa 4 - motivaatio</a></li>
+  <li><a href="https://blog.matematiikkakilpailut.fi/2019/06/05/PYA07heikko.html">Osa 5 - heikko versio</a></li>
+  <li><a href="https://blog.matematiikkakilpailut.fi/2019/06/05/PYA06yleinen.html">Osa 6 - yleinen tapaus</a></li>
+  <li><a href="https://blog.matematiikkakilpailut.fi/2019/06/05/PYA05lause2.html">Osa 7 - lause 2</a></li>
+  <li><a href="https://blog.matematiikkakilpailut.fi/2019/06/05/PYA04lause3.html">Osa 8 - lause 3</a></li>
+  <li><a href="https://blog.matematiikkakilpailut.fi/2019/06/05/PYA03lause4.html">Osa 9 - lause 4</a></li>
+  <li><a href="https://blog.matematiikkakilpailut.fi/2019/06/05/PYA02sovelluksia.html">Osa 10 - sovelluksia</a></li>
+  <li><a href="https://blog.matematiikkakilpailut.fi/2019/06/05/PYA01lisaaiheita.html">Osa 11 - lisäaiheita</a></li>
+</ol>
+
+<p><strong>Mistä on kyse?</strong></p>
+
+<p>Olen opiskellut <a href="https://www.matematiikkalinja.fi/">Päivölän matematiikkalinjalla</a>, jossa toisen vuoden opiskelijat tekevät tutkielman. <a href="https://www.matematiikkalinja.fi/tutkielma/">Tutkielmassa</a> tavoitteena on opetella jatko-opiskelussa hyödyllisiä taitoja, kuten kirjoittamista ja tiedonhakua.</p>
+
+<p><strong>Lyhyt kuvaus työn sisällöstä</strong></p>
+
+<p>Olen jo jonkin aikaa ollut kiinnostunut polynomien alkutekijöistä. Polynomin $P \in \mathbb{Z}[x]$ alkutekijöiksi kutsutaan niitä alkulukuja $p$, joilla yhtälöllä $P(x) \equiv 0 \pmod{p}$ on ratkaisu. <a href="https://blog.matematiikkakilpailut.fi/2018/05/27/Schur.html">Schurin lauseen</a> nojalla näitä on äärettömän monta (kun $P$ ei ole vakio), mutta tämä antaa varaa laajentaa tulosta:</p>
+
+<ol>
+  <li>
+    <p>Tutkitaan vain niitä $p$, joilla yhtälöllä $P(x) \equiv 0 \pmod{p^2}$ on ratkaisu. Onko näitä edelleen äärettömän monta?</p>
+  </li>
+  <li>
+    <p>Onko kahden (tai useamman) polynomin yhteisiä alkutekijöitä äärettömän monta?</p>
+  </li>
+  <li>
+    <p>Kuinka suuri osa alkuluvuista on $P$:n alkutekijöitä? Esimerkiksi luvun $2$ potenssit $2^n$ ovat hyvin harvassa kokonaislukujen joukossa, mutta parillisia lukuja on melko tiheästi, joten luonnollinen laajennus alkutekijöiden äärettömyydestä on niiden tiheyden tutkiminen.</p>
+  </li>
+</ol>
+
+<p>Tämä toimi tutkielman lähtökohtana. Tässä ei, ainakaan joillain standardeilla, ole riittävää materiaalia tutkielmaan: jokaiseen kysymyksistä 1-3 on vastattu jo! Tuloksia ei kuitenkaan ole “yhdistetty”, eli en löytänyt kirjallisuudesta viitteitä vaikkapa kysymykseen “Kuinka suuri osa alkuluvuista on kahden polynomin A ja B yhteisiä alkutekijöitä?” vastausta.</p>
+
+<p>Tutkielmassani keskityin enimmäkseen polynomien yhteisiin alkutekijöihin. Päätuloksena toimii seuraava väite:</p>
+
+<p>Olkoot $P_1, P_2, \ldots , P_n \in \mathbb{Z}[x]$. On olemassa polynomi $D \in \mathbb{Z}[x]$, jolla on seuraava ominaisuus: polynomien $P_1, P_2, \ldots , P_n$ yhteiset alkutekijät ovat polynomin $D$ alkutekijöitä, ja toisin päin.</p>
+
+<p>Tämä on, ainakin omasta mielestäni, varsin kaunis tulos: päätuloksen avulla ongelmat, jotka käsittelevät polynomien yhteisiä alkutekijöitä, voidaan redusoida yhden polynomin alkutekijöiden tutkimiseen.</p>
+
+<p>Päätulos ja sen todistus antavat seurauksena monia muita tuloksia, joihin perehdytään myöhemmin.</p>
+
+<p><strong>Aiheen valikoituminen</strong></p>
+
+<p>Aiheen valitseminen alkoi ensimmäisen opiskeluvuoteni keväällä 2018 ollessani <a href="https://boi2018.progolymp.se/">BOI-kilpailussa</a> Tukholmassa. Jostain mieleeni heräsi kysymys, joka on sama kuin Schurin lauseen väite (en kuitenkaan vielä tuohon aikaan tiennyt, että tuloksella on oma nimensä). Keksin todistuksen väitteelle varsin nopeasti (todistukseni oli sama kuin postauksessa <a href="https://blog.matematiikkakilpailut.fi/2018/05/27/Schur.html">Schurin lause</a> esitetty jälkimmäinen todistus).</p>
+
+<p>Palattuani Suomeen aloin miettiä samoja kysymyksiä kuin yllä luetellut. Sain selvitettyä, että jokaiseen kysymykseen on vastaus, mutta todistukset olivat jokaisessa liian vaikeita. Todellisuudessa kysymyksiin 1 ja 2 vastaaminen ja vastauksen osoittaminen oikeaksi on kohtuullisen helppoa. Kysymys 3 on vaikea, tästä lisää myöhemmin. Jätin aiheen tutkimisen kevään osalta tähän.</p>
+
+<p>Kesän loppupuolella ajattelin uudestaan tutkielma-aiheita, ja ajattelin, että jostain pitää kuitenkin tutkielma tehdä. Mietin uudelleen polynomien alkutekijöiden tutkimista, ja totesin sen olevan paras idea mitä minulla on.</p>
+
+<p>Mistä itse tutkiminen sitten alkoi? Kysymyksen 2 käsittelevä todistus muodostaa kahdelle polynomille $A, B \in \mathbb{Z}[x]$ sellaisen polynomin $D \in \mathbb{Z}[x]$, jolla $D$:n alkutekijät ovat $A$:n ja $B$:n alkutekijöitä (poislukien äärellisen monta alkulukua). Tällä polynomilla $D$ tuntui olevan se ominaisuus, että kaikki $A$:n ja $B$:n alkutekijät ovat myös $D$:n alkutekijöitä, jälleen poislukien äärellisen monta alkulukua. Sain tämän selville kirjoittamalla ohjelman, joka määrittää annetuille $A, B$ kyseisen $D$, ja joka tutkii alkutekijöitä.</p>
+
+<p><strong>Syy kirjoittamiseen</strong></p>
+
+<p>Lyhyesti syitä, miksi haluan kirjoittaa työstäni blogiin:</p>
+
+<ol>
+  <li>
+    <p>Tulokset ovat mielestäni hyvin mielenkiintoisia. Alkutekijän määritelmä on hyvin luonnollinen, ja niin ovat niistä yllä esittämäni kysymykset.</p>
+  </li>
+  <li>
+    <p>Todistusten taustalla on teoriaa, joka on (mielestäni) myös hyvin mielenkiintoista, vaikka henkilökohtaisesti pidän matematiikassa enemmän ongelmien kuin teorian tutkimisesta.</p>
+  </li>
+  <li>
+    <p>Työhön liittyvä teoria esitetään mielestäni hyvin vaikeasti, vaikka ajatukset ja ideat ovat hyvin luonnollisia.</p>
+  </li>
+  <li>
+    <p>Kyseisen teorian ymmärtäminen on auttanut ymmärtämään paremmin kilpailumatematiikassa esiintyviä lukuteorian rakenteita, ja jotkin tehtävät jopa ratkeavat melko suoraan näillä ideoilla.</p>
+  </li>
+  <li>
+    <p>Pääsen harjoittelemaan kirjoittamista - en ole vielä täydellinen kirjoittaja.</p>
+  </li>
+</ol>
+
+<p>Edellisistä syistä johtuen tavoittelen tekstissäni helppolukuisuutta ja ideoiden selittämistä.</p>
+
+<p><strong>Aikajana ja työprosessi</strong></p>
+
+<p>Minua olisi kiinnostanut kuulla ennen työni aloittamista, millainen on muiden ihmisten työprosessi matematiikan parissa. Tässä siis kuvaus omista työtavoistani ja työn aikajanasta.</p>
+
+<p>Aivan projektin alussa käytin aikaa ohjelmoimiseen ja konjekturointiin: koitin hahmottaa, millaisesta ongelmasta on kyse. Ajattelin, että on varmaankin olemassa valmista teoriaa, jolla päätuloksen todistuksen vaikein kohta saataisiin selätettyä, joten luin myös jonkin verran kirjallisuutta, yhtenä lähteenä Evan Chenin kirjoittama <a href="http://web.evanchen.cc/napkin.html">Napkin</a>. Mitä enemmän teoriaa luin, sitä syvemmälle ja kauemmas se johdatti minut ongelman ratkaisusta, joten aloin improvisoimaan. Suoraan sanoen en oikeastaan osannut paljoakaan teoriaa työhön liittyen, vaan improvisoin todistukset. Päätuloksen todistamiseen kesti suunnilleen kuukauden verran - minulla oli varsin pitkään karkea idea todistuksesta, mutta en vain saanut ajatuksia formaalisti paperille. Työtä hidasti myös se, että ongelma oli hieman vaikeampi kuin luulin: yksinkertainen ideani ei suoraan toiminut, vaan se vaati ylimääräisen kikan, jota en aiemmin keksinyt.</p>
+
+<p>Päätuloksen todistamisen jälkeen oli pitkään melko hiljainen aikajakso: ajattelin, että kaikki on nyt tehty, työ on hiomisia vaille valmis. Suurimmilta osin näin olikin, mutta todistukset vaativat vielä viilailua. Lisäksi tässä vaiheessa en ollut ajattelut kovin pitkälle muita tuloksia, joita päätuloksesta saa irti, ja näitä voi pitää yhtä tärkeänä osana työtä kuin itse päätulosta. Muita tuloksia varten kirjoitin myös paljon eri ohjelmia ja tutkin esimerkkitapauksia.</p>
+
+<p>Kirjoitin tutkielmaani Latexilla puhtaaksi sitä mukaa tietokoneelle kun sain väitteitä todistettua. Tässä oli hyvät ja huonot puolensa: toisaalta kirjoittaessani pystyin varmistumaan siitä, että todistukset todella toimivat, koska jouduin kirjoittamaan ne tarpeeksi yksityiskohtaisesti, että ulkopuolinen pystyy lukemaan ne. Toisaalta kirjoittamiseen kului hyvin suuri määrä aikaa, ja jouduin kirjoittamaan monia kohtia useita kertoja uudelleen. En ole varma, tekisinkö jotain toisin. Tulevaisuutta ajatellen olen päättänyt miettiä tarkemmin tiedostojen ja eri versioiden organisointia.</p>
+
+<p>Projektiin upposi paljon aikaa. Tuntimääriä on vaikea sanoa, koska mietin ongelmia aina sivumennen kävellessäni paikasta toiseen, syödessä, jne., mutta kokoluokka on satoja tunteja. Käytin joitain viikonloppuja kotona pelkästään tutkielman tekemiseen, jolloin parin vuorokauden aikana työhön saattoi upota 20-30 tuntia. Eniten aikaa vievät askareet olivat juurikin kirjoittaminen, mutta aikaa vei myös ihan vain konseptien tarkastelu monesta eri näkökulmasta ja ohjelmien ajaminen esimerkkitapauksilla. Olin hyvin varovainen, koska en suoraan sanoen luottanut itseeni.</p>
+
+<p>Työn saaminen valmiiksi tuntuu hyvin palkitsevalta, ja tunnetta vahvistaa se, että itse ajattelen tuloksien olevan kauniita. Lisäksi olen keksinyt paljon jatkotutkimusaiheita ja oppinut muiden kehittämää teoriaa.</p>
+
+<p><strong>Kuinka lukea postaussarjaa?</strong></p>
+
+<p>Suosittelen lukemaan postauksia pienissä paloissa - materiaalia on sen verran paljon, ettei kannata koittaa lukea kaikkea yhdeltä istumalta. Tarvittaessa voi etsiä netistä vastauksia joihinkin kysymyksiin.</p>
+
+<p>Materiaalin paljous varmistaa myös sen, että kirjoitusvirheitä, huonoja lauserakenteita, ja niin edelleen, löytyy varmasti tekstin seasta. Myös virheet ovat mahdollisia. Ei kannata juuttua liikaa yksityiskohtiin. Korjauksia ja kysymyksiä voi lähettää vaikkapa sähköpostiini olli.jarviniemi@gmail.com.</p>
+
+<p><strong>Huomautus</strong></p>
+
+<p>Suurin osa materiaalista on kirjoitettu suunnilleen vuoden 2019 tammikuussa. Tilanne tuolloin oli se, että tutkielman palauttamisen deadlineen oli vielä noin kuukausi (deadlinehan on 1.2.).</p>
+
+<p>Tämä huomautus on kirjoitettu vuoden 2019 kesäkuun alussa. Olen saanut varmemman otteen työhön liittyvästä teoriasta ja työn kytköksistä muiden ihmisten tuloksiin, joten olen päättänyt tehdä pieniä muokkauksia kirjoituksiini.</p>
+
+<p>Olen myös keksinyt yksinkertaisempia todistuksia joillekin tuloksille, ja saanut työn yleisen rakenteen yksinkertaisemmaksi.</p>
+
+<p>Lisäksi lyhyt päivitys kilpailujen näkökulmasta: työni pääsi Tutki-Kokeile-Kehitä -kilpailun finaaliin, ja voitin kilpailun! (Voittajatöitä valitaan perinteisesti kaksi, ja olin toinen niistä.) Siispä minä edustan Suomea European Union Competition for Young Scientists -kilpailussa syyskuussa 2019. Kilpailuun työtä tuli tiivistää vielä entisestään - maksimipituus oli 10 sivua. Palautettuani kilpailutyöni EUCYSiin aloin muokkaamaan näitä blogipostauksia.</p>
+
+<p><a href="https://blog.matematiikkakilpailut.fi/2019/06/05/PYA10esitiedot.html">Seuraava postaus.</a></p>
+
+  </section>
+  <footer class="post-footer">
+    <p><time datetime="2019-06-05">5. 6. 2019</time>
+       • Olli Järviniemi
+      <span class="share-buttons">
+  <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fblog-drafts.matematiikkakilpailut.fi%2F2019%2F06%2F05%2FPYA11johdanto.html&quote=Polynomien+yhteiset+alkutekij%C3%A4t%2C+osa+1%3A+johdanto"
+     title="Jaa Facebookissa" target="_blank" rel="noopener noreferrer nofollow">
+    <svg aria-label="Jaa Facebookissa" role="img" viewBox="0 0 24 24"><title lang="en">Facebook</title><use xlink:href="/assets/images/icons.svg#facebook"/></svg></a>
+  <a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fblog-drafts.matematiikkakilpailut.fi%2F2019%2F06%2F05%2FPYA11johdanto.html&text=Polynomien+yhteiset+alkutekij%C3%A4t%2C+osa+1%3A+johdanto"
+     target="_blank" rel="noopener noreferrer nofollow" title="Jaa Twitterissä">
+    <svg aria-label="Jaa Twitterissä" role="img" viewBox="0 0 24 24"><title lang="en">Twitter</title><use xlink:href="/assets/images/icons.svg#twitter"/></svg></a>
+  <a href="https://pinterest.com/pin/create/button/?url=https%3A%2F%2Fblog-drafts.matematiikkakilpailut.fi%2F2019%2F06%2F05%2FPYA11johdanto.html&description=Polynomien+yhteiset+alkutekij%C3%A4t%2C+osa+1%3A+johdanto"
+     target="_blank" rel="noopener noreferrer nofollow" title="Jaa Pinterestissä">
+    <svg aria-label="Jaa Pinterestissä" role="img" viewBox="0 0 24 24"><title lang="en">Pinterest</title><use xlink:href="/assets/images/icons.svg#pinterest"/></svg></a>
+  <a href="https://www.reddit.com/submit?url=https%3A%2F%2Fblog-drafts.matematiikkakilpailut.fi%2F2019%2F06%2F05%2FPYA11johdanto.html&title=Polynomien+yhteiset+alkutekij%C3%A4t%2C+osa+1%3A+johdanto"
+     target="_blank" rel="noopener noreferrer nofollow" title="Jaa Redditissä">
+    <svg aria-label="Jaa Redditissä" role="img" viewBox="0 0 24 24"><title lang="en">Reddit</title><use xlink:href="/assets/images/icons.svg#reddit"/></svg></a>
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fblog-drafts.matematiikkakilpailut.fi%2F2019%2F06%2F05%2FPYA11johdanto.html&title=Polynomien+yhteiset+alkutekij%C3%A4t%2C+osa+1%3A+johdanto&source=https%3A%2F%2Fblog-drafts.matematiikkakilpailut.fi"
+     target="_blank" rel="noopener noreferrer nofollow" title="Jaa LinkedInissä">
+    <svg aria-label="Jaa Linkedinissä" role="img" viewBox="0 0 24 24"><title lang="en">LinkedIn</title><use xlink:href="/assets/images/icons.svg#linkedin"/></svg></a>
+  <a href="https://pinboard.in/add?url=https%3A%2F%2Fblog-drafts.matematiikkakilpailut.fi%2F2019%2F06%2F05%2FPYA11johdanto.html&title=Polynomien+yhteiset+alkutekij%C3%A4t%2C+osa+1%3A+johdanto"
+     target="_blank" rel="noopener noreferrer nofollow" title="Talleta Pinboardiin">
+    <svg aria-label="Talleta Pinboardiin" role="img" viewBox="0 0 24 24"><title lang="en">Pinboard</title><use xlink:href="/assets/images/icons.svg#pinboard"/></svg></a>
+</span>
+
+    </p>
+  </footer>
+</article>
+
+    </section>
+
+    <section class="site-footer">
+      <p>Tekijänoikeus kirjoittajilla. Käytämme sivuilla evästeitä: <a href="/tietosuoja.html">tietosuojalauseke</a>.</p>
+    </section>
+    
+
+  </body>
+</html>

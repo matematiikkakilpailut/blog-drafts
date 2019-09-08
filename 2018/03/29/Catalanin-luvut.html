@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="fi">
+  <head>
+    <meta charset="UTF-8">
+    <!-- Begin Jekyll SEO tag v2.5.0 -->
+<title>Catalan | Matematiikkakilpailijat</title>
+<meta name="generator" content="Jekyll v3.8.5" />
+<meta property="og:title" content="Catalan" />
+<meta name="author" content="Olli Järviniemi" />
+<meta property="og:locale" content="fi" />
+<meta name="description" content="Tämän postauksen tavoite on selittää alkeet Catalanin luvuista." />
+<meta property="og:description" content="Tämän postauksen tavoite on selittää alkeet Catalanin luvuista." />
+<link rel="canonical" href="https://blog-drafts.matematiikkakilpailut.fi/2018/03/29/Catalanin-luvut.html" />
+<meta property="og:url" content="https://blog-drafts.matematiikkakilpailut.fi/2018/03/29/Catalanin-luvut.html" />
+<meta property="og:site_name" content="Matematiikkakilpailijat" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2018-03-29T00:00:00+00:00" />
+<meta property="fb:app_id" content="964806940344711" />
+<script type="application/ld+json">
+{"url":"https://blog-drafts.matematiikkakilpailut.fi/2018/03/29/Catalanin-luvut.html","author":{"@type":"Person","name":"Olli Järviniemi"},"headline":"Catalan","dateModified":"2018-03-29T00:00:00+00:00","datePublished":"2018-03-29T00:00:00+00:00","description":"Tämän postauksen tavoite on selittää alkeet Catalanin luvuista.","mainEntityOfPage":{"@type":"WebPage","@id":"https://blog-drafts.matematiikkakilpailut.fi/2018/03/29/Catalanin-luvut.html"},"@type":"BlogPosting","@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#157878">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/assets/css/style.css?v=2c669b5e01ecebd0ccd9a63f1cd21eeeb0cf1936">
+    <link href="/feed.xml" type="application/atom+xml" rel="alternate" title="Sivuston verkkosyöte">
+
+    <script type="text/x-mathjax-config">
+ MathJax.Hub.Config({
+   tex2jax: {
+     inlineMath: [['$', '$'], ['\\(', '\\)']],
+     displayMath: [['$$', '$$']],
+     processEscapes: true
+   }
+ });
+</script>
+<script
+  type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS_CHTML" 
+  integrity="sha256-nvJJv9wWKEm88qvoQl9ekL2J+k/RWIsaSScxxlsrv8k="
+  crossorigin="anonymous">
+</script>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/fonts/HTML-CSS/TeX/woff/MathJax_Main-Regular.woff"
+      rel="preload" as="font" type="font/woff" crossorigin="anonymous">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/fonts/HTML-CSS/TeX/woff/MathJax_Size1-Regular.woff"
+      rel="preload" as="font" type="font/woff" crossorigin="anonymous">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/fonts/HTML-CSS/TeX/woff/MathJax_Math-Italic.woff"
+      rel="preload" as="font" type="font/woff" crossorigin="anonymous">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/fonts/HTML-CSS/TeX/woff/MathJax_Size2-Regular.woff"
+      rel="preload" as="font" type="font/woff" crossorigin="anonymous">
+
+  </head>
+  <body>
+    <section class="page-header">
+      <h1 class="project-name">Matematiikkakilpailijat</h1>
+      <h2 class="project-tagline">Matematiikan olympiavalmennuksen osallistujien kokemuksia</h2>
+    </section>
+
+    <section class="main-content">
+      <article class="post">
+  <header class="post-header">
+    <h1 class="post-title">Catalan</h1>
+  </header>
+  <section class="post-content">
+    <p>Tämän postauksen tavoite on selittää alkeet Catalanin luvuista. <!--jatkuu-->Seuraavan kilpailutehtävän (yksi) ratkaisu perustuu Catalanin lukujen ominaisuuksiin. Ratkaisu on esitetty lopussa.</p>
+
+<p><strong>Tehtävä (pohjoismainen, 2012, tehtävä 4)</strong></p>
+
+<p>Taululle on kirjoitettu luku 1. Sen jälkeen taululle kirjoitetaan vaiheittain lisää lukuja seuraavasti: kussakin vaiheessa jokainen taululla oleva luku $a$ korvataan luvuilla $a-1$ ja $a+1$; jos taululle ilmestyy luku 0, se pyyhitään pois. Jos jokin luku ilmestyy taululle useammin kuin kerran, kaikki esiintymät jätetään taululle. Siten vaiheessa 0 taululla on luku 1, vaiheessa 1 luku 2, vaiheessa 2 luvut 1 ja 3, vaiheessa 3 luvut 2, 2, ja 4 jne. Montako lukua taululla on vaiheessa n?</p>
+
+<p><strong>Catalanin lukujen määritelmä</strong></p>
+
+<p>$n$:nnes Catalanin luku määritellään kaavalla</p>
+
+<script type="math/tex; mode=display">C_n = {2n \choose n} \frac{1}{n+1} , n = 0, 1, 2, \ldots</script>
+
+<p>Tämä on aina positiivinen kokonaisluku, sillä</p>
+
+<script type="math/tex; mode=display">C_n = {2n \choose n}\frac{1}{n+1} = \frac{(2n)!}{n!(n+1)!} = \frac{(2n)!}{n!n!} \Big( 1 - \frac{n}{n+1}    \Big ) =</script>
+
+<script type="math/tex; mode=display">\frac{(2n)!}{n!n!} - \frac{(2n)!}{(n-1)!(n+1)!}
+= {2n  \choose n} - {2n \choose n+1}</script>
+
+<p>Ensimmäiset Catalanin luvut ovat (alkaen nollasta) $1, 1, 2, 5, 14, 42$. Catalanin luvut antavat vastauksia monenlaisiin kombinatorisiin ongelmiin. Perehdymme näistä vain yhteen, mikä on tärkein esimerkkitehtävän kannalta. Netistä löytyy paljon lisäinformaatiota ihan vain haulla “Catalan’s numbers”.</p>
+
+<p><strong>Kombinatorinen merkitys</strong></p>
+
+<p>Käsitellään seuraavanlaista ongelmaa:</p>
+
+<p><em>Ongelma 1.</em>
+Tutkitaan erilaisia tapoja päästä $xy$-koordinaatiston pisteestä $(0, 0)$ pisteeseen $(2n, 0)$ seuraavin ehdoin:</p>
+<ol>
+  <li>Jokaisella askeleella $x$-koordinaatti kasvaa yhdellä, ja $y$-koordinaatti joko kasvaa tai pienenee yhdellä</li>
+  <li>$y$-koordinaatti ei koskaan ole negatiivinen</li>
+</ol>
+
+<p>Kuinka monta erilaista ehdot täyttävää polkua on olemassa kullekin $n$:n arvolle?</p>
+
+<p>Edellä olevan ongelman voi myös muotoilla seuraavasti</p>
+
+<p><em>Ongelma 2.</em>
+Aloitetaan luvusta $0$. Jokaisella operaatiolla voimme joko kasvattaa tai pienentää lukuamme yhdellä. Kuinka monta tapaa on päästä nollaan $2n$ operaation jälkeen, kun lukumme ei saa missään kohtaa olla negatiivinen?</p>
+
+<p>Todistetaan, että vastaus on $C_n$. Käytetään ratkaisussa jälkimmäistä esitystapaa tehtävälle.</p>
+
+<p><strong>Ratkaisu</strong>
+Jos unohdamme ehdon, että lukumme tulee olla aina epänegatiivinen, on tapojen määrä ${2n \choose n}$, sillä voimme valita meidän $2n$ operaatiosta $n$ kohtaa, joissa kasvatamme lukua yhdellä.
+Jotta saamme selville kelvollisten tapojen määrän, riittää vähentää kaikista tavoista kelpaamattomien tapojen määrä. Selvitetään nyt niiden reittien määrä, jotka eivät ole kelvollisia.</p>
+
+<p>Voimme kuvata operaatiosarjaamme lukujonolla $a_1, a_2, \ldots a_{2n}$, jossa $a_i = \pm 1$ kaikilla $i$. Luku, jossa olemme $k$ operaation jälkeen on $a_1 + a_2 + \ldots + a_k$. Oletetaan nyt, että operaatiosarja ei ole kelvollinen. Tämä tarkoittaa sitä, että olemme jossain kohtaa luvussa, joka on negatiivinen. Valitaan se kohta, jossa ensimmäisenä päädymme negatiiviseen lukuun. Olkoon tämä $m$ operaation jälkeen. Pätee $a_1 + a_2 + \ldots + a_m = -1$, ja $a_m = -1$. Täten $a_1 + a_2 + \ldots + a_{m-1} = 0$. Sillä luku, johon lopussa päädymme on $0$, tulee olla $a_{m+1} + a_{m+2} + \ldots + a_{2n} = 1$.</p>
+
+<p>Muodostetaan nyt uusi lukujono $b_1, b_2, \ldots b_{2n}$ seuraavasti:</p>
+
+<p>Jos $i \le m$, $b_i = -a_i$.
+  Jos $i &gt; m$, $b_i = a_i$.</p>
+
+<p>Tiedämme siis, että $b_1 + b_2 + \ldots + b_{2n} = (b_1 + \ldots + b_{m-1}) + b_m + (b_{m+1} + \ldots + b_{2n}) = 0 + 1 + 1 = 2$</p>
+
+<p>Lukujono $b_1, b_2, \ldots b_{2n}$ kuvaakin siis operaation, jolla päästään aloitusluvusta $0$ lukuun $2$. Osoitetaan, että <em>jokaista</em> operaatiosarjaa, jolla päästään luvusta $0$ lukuun $2$ vastaa lukujono $b_i$, joka on saatu edellä kuvatulla tavalla jostain lukujonosta $a_i$.</p>
+
+<p><strong>Lemma</strong></p>
+
+<p>Olkoon $O$ niiden operaatiosarjojen joukko, joilla pääsemme luvusta $0$ lukuun $2$ lisäämällä aina lukuumme joko $1$ tai $-1$, yhteensä $2n$ kertaa. Olkoon $B$ edellä kuvatulla tavalla muodostettujen jonojen $b_i$ joukko. Joukot $O$ ja $B$ ovat samat.</p>
+
+<p><strong>Lemman todistus</strong></p>
+
+<p>On selvää, että jokainen $B$:n jono sisältyy joukkoon $O$. Todistetaan vielä, että jokainen joukon $O$ jono kuuluu joukkoon $B$.</p>
+
+<p>Valitaan jokin jono joukosta $O$, olkoon se $o_1, o_2, \ldots o_{2n}$. Pätee $o_1 + o_2 + \ldots + o_{2n} = 2$. Valitaan pienin $k$, jolla $o_1 + o_2 + \ldots + o_k &gt; 0$. Vaihtamalla ensimmäiset $k$ termiä lukujonosta vastaluvukseen saamme lukujonon $p_1, p_2, \ldots p_{2n}$. Tämän lukujonon termien summa on täten $0$, ja pätee
+$p_1 + p_2 + \ldots + p_k = -1$</p>
+
+<p>Lukujono $p_1, p_2, \ldots p_{2n}$ kuvaa siis kelvottoman tavan päästä luvusta $0$ lukuun $0$ yhteensä $2n$ operaatiolla. Voimme täten valita pienimmän indeksin $i$, jolla pätee
+$p_1 + p_2 + \ldots p_i &lt; 0$, vaihtaa ensimmäisen $i$ termiä vastaluvukseen, ja näin saada lukujonon, joka kuuluu joukkoon $B$. Selvästi pätee $i = k$ (miksi?), eli tämä lukujono on sama kuin alkuperäinen lukujono $o_1, o_2, \ldots o_{2n}$. Siis alkuperäinen mielivaltainen joukon $O$ jono kuuluu joukkoon $B$. Tästä seuraa $O = B$.</p>
+
+<p>Mitä hyödymme tuloksesta? Tapojen määrä päästä luvusta $0$ lukuun $2$ on tietysti ${2n \choose n+1}$. Siispä kelpaavien tapojen määrä päästä luvusta $0$ lukuun $0$ on</p>
+
+<script type="math/tex; mode=display">{2n \choose n} - {2n \choose n+1} = C_n</script>
+
+<p><strong>Ratkaisu esimerkkitehtävään</strong></p>
+
+<p>Esitetään nyt ratkaisu postauksen alussa esitettyyn tehtävään.</p>
+
+<p>Merkitään luvulla $P(n)$ lukujen määrää vaiheessa $n$, jolloin $P(0) = 1$, $P(1) = 1$, $P(2) = 2$, $P(3) = 3$, $P(4) = 6$, jne. Taululla olevat luvut ovat aina samaa parillisuutta, eli aluksi on vain parittomia, sitten parillisia, sitten parittomia, ja näin edespäin.</p>
+
+<p>Taululla olevien lukujen määrä suunnilleen kaksinkertaistuu, paitsi välillä sieltä poistetaan syntyneet nollat. Nollia ei kuitenkaan synny, jos taululla olevat luvut ovat parillisia: seuraavassa vaiheessa kaikki luvut tulevat olemaan parittomia, eli ei nollia. Tästä saammekin jo tuloksen</p>
+
+<script type="math/tex; mode=display">P(2k) = 2P(2k - 1)</script>
+
+<p>kaikilla $k &gt; 0$.</p>
+
+<p>Olkoon $C(n)$ ykkösten määrä vaiheessa $n$. Tiedämme, että
+<script type="math/tex">P(2k+1) = 2P(2k) - C(2k)</script></p>
+
+<p>Määritetään $C(2k)$, kun $k = 0, 1, \ldots$ Listaamalla saadaan tulokset $1, 1, 2, 5, 14, \ldots $. Nämä näyttävät Catalanin luvuilta!. Enää tämä tulee todistaa:</p>
+
+<p><strong>Lemma</strong></p>
+
+<p>$C(2k) = C_k$, missä $C_k$ on $k$:nnes Catalanin luku.</p>
+
+<p><strong>Todistus</strong></p>
+
+<p>Verrataan tätä ongelmaan $1$. Tutkitaan, miten vaiheen $2k$ ykköset syntyvät. Aloitamme luvusta $1$, ja voimme aina kasvattaa tai vähentää lukuamme yhdellä ($y$-akseli). Emme kuitenkaan saa mennä nollaan, sillä muuten luku pyyhitään pois. Jokaisella operaatiolla me myös menemme yhden operaation eteenpäin ($x$-akseli). Tämä on siis aivan vastaava tilanne kuin ongelmassa $1$. Täten $C(2k) = C_k$.</p>
+
+<p>Sillä
+$C_k = {2k \choose k}\frac{1}{k+1}$</p>
+
+<p>voimme muodostaa rekursioyhtälöt $P$:lle:</p>
+
+<script type="math/tex; mode=display">P(2k) = 2P(2k - 1)</script>
+
+<p>ja</p>
+
+<script type="math/tex; mode=display">P(2k + 1) = 2P(2k) - {2k \choose k}\frac{1}{k+1}</script>
+
+<p>Nämä rekursioyhtälöt eivät vielä ole vastaus tehtävään. Vastaus tehtävään on kuitenkin helppo selvittää niiden avulla: voimme listata muutaman ensimmäisen luvun paperille ja arvata vastauksen. Lukujono näyttää tältä: $1, 1, 2, 3, 6, 10, 20, 35, 60$. Jos lukujonosta ottaa vain joka toisen luvun, se muuttuu muotoon $1, 2, 6, 20, 70$. Nämä ovat luvut ${2n \choose n}$, missä $n = 0, 1, \ldots $. Tämän avulla saamme viimeisteltyä tehtävän: ilmoitetaan vastaus ja todistetaan se induktiolla. Ei ole vaikeaa veikata, että vastaus on:</p>
+
+<p><script type="math/tex">P(2k) = {2k \choose k}</script> ja <script type="math/tex">P(2k + 1) = {2k + 1 \choose k}</script>.</p>
+
+<p>Tämän todistaminen jätetään lukijalle. Todistus on helppoa algebrallista manipulaatiota ja rekursioyhtälöiden soveltamista.</p>
+
+<p>Tehtävän vastaus voidaan esittää kompaktisti yhdellä lausekkeella:</p>
+
+<p>Vaiheessa $n$ olevien lukujen määrä on</p>
+
+<script type="math/tex; mode=display">{n \choose \lfloor \frac{n}{2} \rfloor}</script>
+
+  </section>
+  <footer class="post-footer">
+    <p><time datetime="2018-03-29">29. 3. 2018</time>
+       • Olli Järviniemi
+      <span class="share-buttons">
+  <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fblog-drafts.matematiikkakilpailut.fi%2F2018%2F03%2F29%2FCatalanin-luvut.html&quote=Catalan"
+     title="Jaa Facebookissa" target="_blank" rel="noopener noreferrer nofollow">
+    <svg aria-label="Jaa Facebookissa" role="img" viewBox="0 0 24 24"><title lang="en">Facebook</title><use xlink:href="/assets/images/icons.svg#facebook"/></svg></a>
+  <a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fblog-drafts.matematiikkakilpailut.fi%2F2018%2F03%2F29%2FCatalanin-luvut.html&text=Catalan"
+     target="_blank" rel="noopener noreferrer nofollow" title="Jaa Twitterissä">
+    <svg aria-label="Jaa Twitterissä" role="img" viewBox="0 0 24 24"><title lang="en">Twitter</title><use xlink:href="/assets/images/icons.svg#twitter"/></svg></a>
+  <a href="https://pinterest.com/pin/create/button/?url=https%3A%2F%2Fblog-drafts.matematiikkakilpailut.fi%2F2018%2F03%2F29%2FCatalanin-luvut.html&description=Catalan"
+     target="_blank" rel="noopener noreferrer nofollow" title="Jaa Pinterestissä">
+    <svg aria-label="Jaa Pinterestissä" role="img" viewBox="0 0 24 24"><title lang="en">Pinterest</title><use xlink:href="/assets/images/icons.svg#pinterest"/></svg></a>
+  <a href="https://www.reddit.com/submit?url=https%3A%2F%2Fblog-drafts.matematiikkakilpailut.fi%2F2018%2F03%2F29%2FCatalanin-luvut.html&title=Catalan"
+     target="_blank" rel="noopener noreferrer nofollow" title="Jaa Redditissä">
+    <svg aria-label="Jaa Redditissä" role="img" viewBox="0 0 24 24"><title lang="en">Reddit</title><use xlink:href="/assets/images/icons.svg#reddit"/></svg></a>
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fblog-drafts.matematiikkakilpailut.fi%2F2018%2F03%2F29%2FCatalanin-luvut.html&title=Catalan&source=https%3A%2F%2Fblog-drafts.matematiikkakilpailut.fi"
+     target="_blank" rel="noopener noreferrer nofollow" title="Jaa LinkedInissä">
+    <svg aria-label="Jaa Linkedinissä" role="img" viewBox="0 0 24 24"><title lang="en">LinkedIn</title><use xlink:href="/assets/images/icons.svg#linkedin"/></svg></a>
+  <a href="https://pinboard.in/add?url=https%3A%2F%2Fblog-drafts.matematiikkakilpailut.fi%2F2018%2F03%2F29%2FCatalanin-luvut.html&title=Catalan"
+     target="_blank" rel="noopener noreferrer nofollow" title="Talleta Pinboardiin">
+    <svg aria-label="Talleta Pinboardiin" role="img" viewBox="0 0 24 24"><title lang="en">Pinboard</title><use xlink:href="/assets/images/icons.svg#pinboard"/></svg></a>
+</span>
+
+    </p>
+  </footer>
+</article>
+
+    </section>
+
+    <section class="site-footer">
+      <p>Tekijänoikeus kirjoittajilla. Käytämme sivuilla evästeitä: <a href="/tietosuoja.html">tietosuojalauseke</a>.</p>
+    </section>
+    
+
+  </body>
+</html>

@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="fi">
+  <head>
+    <meta charset="UTF-8">
+    <!-- Begin Jekyll SEO tag v2.5.0 -->
+<title>Polynomien yhteiset alkutekijät, osa 2: esitiedot | Matematiikkakilpailijat</title>
+<meta name="generator" content="Jekyll v3.8.5" />
+<meta property="og:title" content="Polynomien yhteiset alkutekijät, osa 2: esitiedot" />
+<meta name="author" content="Olli Järviniemi" />
+<meta property="og:locale" content="fi" />
+<meta name="description" content="Tässä postauksessa esitetään tutkielman kannalta tärkeitä esitietoja sekä notaatioita." />
+<meta property="og:description" content="Tässä postauksessa esitetään tutkielman kannalta tärkeitä esitietoja sekä notaatioita." />
+<link rel="canonical" href="https://blog-drafts.matematiikkakilpailut.fi/2019/06/05/PYA10esitiedot.html" />
+<meta property="og:url" content="https://blog-drafts.matematiikkakilpailut.fi/2019/06/05/PYA10esitiedot.html" />
+<meta property="og:site_name" content="Matematiikkakilpailijat" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2019-06-05T00:00:00+00:00" />
+<meta property="fb:app_id" content="964806940344711" />
+<script type="application/ld+json">
+{"url":"https://blog-drafts.matematiikkakilpailut.fi/2019/06/05/PYA10esitiedot.html","author":{"@type":"Person","name":"Olli Järviniemi"},"headline":"Polynomien yhteiset alkutekijät, osa 2: esitiedot","dateModified":"2019-06-05T00:00:00+00:00","datePublished":"2019-06-05T00:00:00+00:00","description":"Tässä postauksessa esitetään tutkielman kannalta tärkeitä esitietoja sekä notaatioita.","mainEntityOfPage":{"@type":"WebPage","@id":"https://blog-drafts.matematiikkakilpailut.fi/2019/06/05/PYA10esitiedot.html"},"@type":"BlogPosting","@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#157878">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/assets/css/style.css?v=2c669b5e01ecebd0ccd9a63f1cd21eeeb0cf1936">
+    <link href="/feed.xml" type="application/atom+xml" rel="alternate" title="Sivuston verkkosyöte">
+
+    <script type="text/x-mathjax-config">
+ MathJax.Hub.Config({
+   tex2jax: {
+     inlineMath: [['$', '$'], ['\\(', '\\)']],
+     displayMath: [['$$', '$$']],
+     processEscapes: true
+   }
+ });
+</script>
+<script
+  type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS_CHTML" 
+  integrity="sha256-nvJJv9wWKEm88qvoQl9ekL2J+k/RWIsaSScxxlsrv8k="
+  crossorigin="anonymous">
+</script>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/fonts/HTML-CSS/TeX/woff/MathJax_Main-Regular.woff"
+      rel="preload" as="font" type="font/woff" crossorigin="anonymous">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/fonts/HTML-CSS/TeX/woff/MathJax_Size1-Regular.woff"
+      rel="preload" as="font" type="font/woff" crossorigin="anonymous">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/fonts/HTML-CSS/TeX/woff/MathJax_Math-Italic.woff"
+      rel="preload" as="font" type="font/woff" crossorigin="anonymous">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/fonts/HTML-CSS/TeX/woff/MathJax_Size2-Regular.woff"
+      rel="preload" as="font" type="font/woff" crossorigin="anonymous">
+
+  </head>
+  <body>
+    <section class="page-header">
+      <h1 class="project-name">Matematiikkakilpailijat</h1>
+      <h2 class="project-tagline">Matematiikan olympiavalmennuksen osallistujien kokemuksia</h2>
+    </section>
+
+    <section class="main-content">
+      <article class="post">
+  <header class="post-header">
+    <h1 class="post-title">Polynomien yhteiset alkutekijät, osa 2: esitiedot</h1>
+  </header>
+  <section class="post-content">
+    <p>Tässä postauksessa esitetään tutkielman kannalta tärkeitä esitietoja sekä notaatioita.</p>
+
+<!--jatkuu-->
+
+<p><strong>Sisällysluettelo</strong></p>
+
+<ol>
+  <li><a href="https://blog.matematiikkakilpailut.fi/2019/06/05/PYA11johdanto.html">Osa 1 - johdanto</a></li>
+  <li>Osa 2 - esitiedot</li>
+  <li><a href="https://blog.matematiikkakilpailut.fi/2019/06/05/PYA09tulokset.html">Osa 3 - tulokset</a></li>
+  <li><a href="https://blog.matematiikkakilpailut.fi/2019/06/05/PYA08motivaatio.html">Osa 4 - motivaatio</a></li>
+  <li><a href="https://blog.matematiikkakilpailut.fi/2019/06/05/PYA07heikko.html">Osa 5 - heikko versio</a></li>
+  <li><a href="https://blog.matematiikkakilpailut.fi/2019/06/05/PYA06yleinen.html">Osa 6 - yleinen tapaus</a></li>
+  <li><a href="https://blog.matematiikkakilpailut.fi/2019/06/05/PYA05lause2.html">Osa 7 - lause 2</a></li>
+  <li><a href="https://blog.matematiikkakilpailut.fi/2019/06/05/PYA04lause3.html">Osa 8 - lause 3</a></li>
+  <li><a href="https://blog.matematiikkakilpailut.fi/2019/06/05/PYA03lause4.html">Osa 9 - lause 4</a></li>
+  <li><a href="https://blog.matematiikkakilpailut.fi/2019/06/05/PYA02sovelluksia.html">Osa 10 - sovelluksia</a></li>
+  <li><a href="https://blog.matematiikkakilpailut.fi/2019/06/05/PYA01lisaaiheita.html">Osa 11 - lisäaiheita</a></li>
+</ol>
+
+<p>Tämä on postaussarjan vaikein postaus, koska uusia asioita tulee paljon. Samalla postaus on hyvin pitkä, koska olen koittanut avata sisältöä esimerkkien kautta. Kannattaa edetä rauhassa. Netistä löytää helposti oheismateriaalia, joiden kautta voi etsiä lisäselitystä epäselviin kohtiini. Kaikkia esitietoja ei tulla käyttämään ihan heti, joten niihin voi olla hyvä palata myöhemmin.</p>
+
+<h1 id="perusjuttuja">Perusjuttuja</h1>
+
+<p><strong>Notaatio</strong></p>
+
+<p>Muuttujalla $p$ viitataan <strong>aina</strong> alkulukuun. Muuttujat $n, m, k$ viittaavat kokonaislukuihin, useimmiten positiivisiin kokonaislukuihin.</p>
+
+<p>Kokonaislukukertoimisten polynomien joukkoa merkitään $\mathbb{Z}[x]$. Ei-vakioita kokonaislukukertoimia polynomeja merkitään $\mathbb{Z_c}[x]$ (tämä notaatio siksi, että vakiopolynomit eivät ole mielenkiintoisia).</p>
+
+<p>Polynomin $P$ <strong>alkutekijöiksi</strong> kutsutaan niitä $p$, joilla yhtälöllä $P(x) \equiv 0 \pmod{p}$ on ratkaisu. $P$:n alkutekijöiden joukkoa merkitään notaatiolla $S(P)$. Yleisesti sanotaan, että $m \in \mathbb{Z_+}$ on $P$:n tekijä, jos yhtälöllä $P(x) \equiv 0 \pmod{m}$ on ratkaisu. Tekijöiden joukkoa merkitään $S_d(P)$. Vielä kolmas määritelmä: $p$:tä kutsutaan $P$:n <strong>vahvaksi alkutekijäksi</strong>, jos $p^k \in S_d(P)$ kaikilla $k \in \mathbb{Z_+}$. Vahvojen alkutekijöiden joukkoa merkitään $S_v(P)$. Ei ole ilmeistä, että vahvoja alkutekijöitä on olemassa, mutta <strong>kaikki paitsi äärellisen moni alkutekijä on vahva alkutekijä</strong>. Tämä ei ole triviaalia, ja tähän palataan myöhemmin itse todistuksessa.</p>
+
+<p>Olkoot $S_1, S_2 \subset \mathbb{Z_+}$. Kirjoitetaan, että $S_1 \approx S_2$, ja sanotaan, että joukot $S_1$ ja $S_2$ ovat miltei samat, jos seuraava ehto pätee: on olemassa vain äärellisen monta alkulukua $p$, joita kohden on olemassa $k \in \mathbb{Z_+}$, jolla $p^k$ kuuluu vain toiseen joukoista $S_1, S_2$. Määritelmä voi tuntua tässä kohtaa oudolta. Määritelmän hyödyllisyys perustuu siihen, että joukon $S_d(P)$ alkiot määräytyvät joukon $S_d(P)$ niiden alkioiden perusteella, jotka ovat alkulukujen potensseja (tarkempi kuvaus myöhemmin), joten määritelmä antaa kätevän tavan verrata tällaisia joukkoja.</p>
+
+<p><strong>Polynomit kongruensseissa</strong></p>
+
+<p>Muistutetaan, että jos $a \equiv b \pmod{m}$, niin $P(a) \equiv P(b) \pmod{m}$ kaikilla $P \in \mathbb{Z}[x]$. Tätä tulosta tullaan käyttämään ilman, että sitä erikseen mainitaan. Tämä tulos on myös hyvin oleellinen kilpailumatematiikassa.</p>
+
+<p><strong>Tekijöihinjako</strong></p>
+
+<p><a href="https://math.dartmouth.edu/archive/m31w05/public_html/Q-Z-Reducibility.pdf">On tunnettua</a>, että jos $P \in \mathbb{Z}[x]$ jakautuu rationaalilukukertoimisten polynomien tuloksi, niin se jakautuu myös kokonaislukukertoimisten polynomien tuloksi. Siispä kun työssä jaetaan jotain $P \in \mathbb{Z}[x]$ tekijöihin, valitaan tekijät kokonaislukukertoimisiksi.</p>
+
+<p><strong>Laajennettu jaollisuus</strong></p>
+
+<p>Työssä käytetään paikoittain jaollisuutta rationaaliluvuille. Tästä voi lukea tarkemmin <a href="https://blog.matematiikkakilpailut.fi/2018/11/09/Jaollisuus.html">tästä postauksesta</a>. Tässä on kyse enemmänkin yksinkertaisuudesta ja intuitiosta kuin siitä, että tällä saavutettaisiin mitään konkreettista. Esimerkiksi polynomi $P(x) = \frac{1}{2}x^2 - 1$ käyttäytyy työn kannalta käytännössä katsoen täsmälleen samalla tavalla kuin polynomi $2P(x) = x^2 - 2$. Yleisesti voitaisiin siis kertoa kaikki rationaalilukuja kertovat lausekkeet sopivalla kokonaisluvulla. Tätä ideaa käytetään vain parissa kohdassa, ja mainitsen siitä erikseen.</p>
+
+<p><strong>Tiheys</strong></p>
+
+<p>Aiemmin puhuttiin osuuksista: kysymyksenä 3 oli, kuinka suuri osuus alkuluvuista ovat polynomin $P$ alkutekijöitä. Määritellään tämä eksaktisti:</p>
+
+<p>Olkoon $\mathbb{P}$ alkulukujen joukko, ja olkoon $S$ jokin sen osajoukko. Olkoon $S(x)$ joukon $S$ niiden alkioiden määrä, jotka ovat enintään $x$. Alkulukujen joukolle vastaavaa suuretta merkitään perinteisesti $\pi(x)$, eli $\pi(x)$ on niiden alkulukujen määrä, jotka ovat enintään $x$. Joukon $S$ luonnollinen <strong>tiheys</strong> (joukon $\mathbb{P}$ suhteen) määritellään raja-arvona</p>
+
+<script type="math/tex; mode=display">\lim_{x \to \infty} \frac{S(x)}{\pi(x)}</script>
+
+<p>Tiheyttä merkitään $\delta(S)$. Huomaa, että tiheyden ei välttämättä tarvitse olla olemassa, mutta tässä työssä ei tällaisia joukkoja esiinny (keksitkö sellaisen joukon $S$, jonka tiheys ei ole olemassa?). Esimerkiksi kaikilla $P \in \mathbb{Z}[x]$ tiheys $\delta(S(P))$ on olemassa. Tämä todistetaan myöhemmin.</p>
+
+<p>Tiheyksiä voidaan määritellä myös muiden joukkojen suhteen. On myös muunlaisia tiheyksiä, tunnetuin on Dirichlet’n tiheys (tätä ei tarvita tässä työssä, mutta mainitsen sen yleisen mielenkiinnon vuoksi). Tämä määritellään niin, että suhteen $\frac{S(x)}{\pi(x)}$ sijasta tutkitaankin joukon $S$ enintään $x$ olevien alkioiden käänteislukujen summaa, ja jaetaan tämä vastaavalla suureella kaikkien alkulukujen yli. Osoittautuu, että jos luonnollinen tiheys $\delta(S)$ on olemassa, niin myös Dirichlet’n tiheys on, ja nämä tiheydet ovat samat. Dirichlet’n tiheys voi olla olemassa myös silloin kun $\delta(S)$ ei ole, joten Dirichlet’n tiheyttä voidaan ajatella luonnollisen tiheyden yleistyksenä.</p>
+
+<h1 id="kovempi-kama">Kovempi kama</h1>
+
+<p>Seuraavaksi ne asiat, joita moni lukija ei varmaankaan ole aiemmin nähnyt, mutta toivottavasti oppii tämän ja mahdollisesti muiden materiaalien kautta. Tämän osion asiat ovat se, mihin aiemmin viitattiin korkeammalla matematiikalla. Vastedes viittaan tämäntyyppisiin asioihin käsitteellä algebrallinen lukuteoria, vaikka tämä ei olekaan aivan korrektia.</p>
+
+<p>Ennen teoriaa haluan mainita, että vaikka määritelmissä on monessa kohtaa rationaalilukuja $\mathbb{Q}$, voi määritelmät laajentaa vastaavasti myös muille kunnille. Kunnan määritelmän voi lukea vaikkapa <a href="https://blog.matematiikkakilpailut.fi/2018/09/02/Algebralliset.html">täältä</a>.</p>
+
+<p>Lukua $\alpha$ kutsutaan <strong>algebralliseksi luvuksi</strong>, jos on olemassa sellainen polynomi $P \in \mathbb{Z_c}[x]$, jonka nollakohta se on. Usein algebrallisia lukuja merkitään kirjaimin $\alpha, \beta, \gamma, \ldots$, ja niin tehdään myös näissä blogipostauksissa.</p>
+
+<h3 id="minimaalinen-polynomi">Minimaalinen polynomi</h3>
+
+<p>Jokaiselle algebralliselle luvulle $\alpha$ määritellään ns. <strong>minimaalinen polynomi</strong> $P \in \mathbb{Q}[x]$ olemaan se polynomi, joka toteuttaa seuraavat ehdot:</p>
+
+<ol>
+  <li>
+    <p>$P$:n korkeimman asteen termin kerroin on $1$. Englanniksi termi tällaiselle polynomille on “monic polynomial”. Ilmeisesti suomennos tälle termille on “pääpolynomi”.</p>
+  </li>
+  <li>
+    <p>$P(\alpha) = 0$.</p>
+  </li>
+  <li>
+    <p>$P$ on ehdon 2 täyttävistä polynomeista asteiltaan pienin, kun nollapolynomia ei huomioida.</p>
+  </li>
+</ol>
+
+<p>Minimaalisella polynomilla pätee seuraava ominaisuus: jos $Q(\alpha) = 0$ jollain $\mathbb{Q}(\alpha)$, niin $P \mid Q$. Tämä jätetään harjoitustehtäväksi, vinkkinä mainittaan polynomien jakoyhtälö. <strong>Fakta on erittäin tärkeä, ja sitä tullaan käyttämään myöhemmin.</strong></p>
+
+<p>Esimerkiksi siis luvun $\sqrt{2}$ minimaalinen polynomi on $x^2 - 2$, ja luvun $\frac{\sqrt{2}}{100}$ minimaalinen polynomi on $x^2 - \frac{2}{100^2}$.</p>
+
+<h3 id="kuntalaajennus">Kuntalaajennus</h3>
+
+<p>Olkoon $\alpha$ jokin algebrallinen luku. Olkoon $K$ niiden lukujen joukko, jotka ovat muotoa $P(\alpha)$, missä $P$ käy läpi kaikki rationaalilukukertoimiset polynomit. $K$ on kunta, ja sitä merkitään notaatiolla $\mathbb{Q}(\alpha)$. Tätä kutsutaan kuntalaajennukseksi.</p>
+
+<p>(Mitä tarkalleen kutsutaan kuntalaajennukseksi? Kuntalaajennus on kaksi kuntaa $A, B$, joilla pätee $A \subset B$, ja $A$:n laskutoimitukset ovat samat kuin $B$:n.)</p>
+
+<p><strong>Esimerkki</strong></p>
+
+<p>Jos $\alpha = \sqrt{2}$, on $K = \mathbb{Q}(\sqrt{2})$ luvut muotoa $a + b\sqrt{2}$, missä $a, b \in \mathbb{Q}$. On selvää, että tämä on yhteen- ja kertolaskun suhteen suljettu joukko. Ainoa arvelluttava asia on kunnan erityisominaisuus eli käänteisalkion olemassaolo. Tässä erikoistapauksessa ominaisuus on helppo tarkistaa: luvun $a + b\sqrt{2} \neq 0$ käänteisluvuksi käy</p>
+
+<script type="math/tex; mode=display">\frac{1}{a + b\sqrt{2}} = \frac{a - b\sqrt{2}}{(a + b\sqrt{2})(a - b\sqrt{2})} = \frac{a - b\sqrt{2}}{a^2 - 2b^2}  = \frac{a}{a^2 - 2b^2} + \frac{-b}{a^2 - 2b^2}\sqrt{2}\in \mathbb{Q}(\sqrt{2})</script>
+
+<p>Kyseessä siis todella on kunta.</p>
+
+<p><strong>Perustelu yleiselle tapaukselle</strong></p>
+
+<p>Olkoon $K’$ niiden lukujen joukko, jotka ovat muotoa $q_0 + q_1\alpha + q_2\alpha^2 + \ldots + q_{n-1}\alpha^{n-1}$, missä $q_i$ ovat rationaalilukuja ja $n$ on luvun $\alpha$ minimaalisen polynomin aste. Toisin sanoen, $K’$ sisältää luvut muotoa $Q(\alpha)$, missä $\deg(Q) &lt; n$. Osoitetaan ensin, että $K’ = K$. Tämä on varsin tärkeää muistaa myös jatkossa, koska se helpottaa ajattelua.</p>
+
+<p>Valitaan jokin joukon $K$ alkio, olkoon se $T(\alpha)$, missä $T \in \mathbb{Q}[x]$. Olkoon $P$ luvun $\alpha$ minimaalinen polynomi. Polynomien jakoyhtälöllä saadaan $T(x) = P(x)Q(x) + R(x)$ jollain sopivilla $Q, R \in \mathbb{Q}[x]$, joilla $\deg(R) &lt; \deg(P)$. Siis $T(\alpha) = R(\alpha)$, eli $T(\alpha) = R(\alpha) \in K’$. Siis kaikki $K$:n alkiot ovat $K’$:n alkioita, joten $K$ on $K’$:n osajoukko. Mutta on triviaalia, että $K’$ on $K$:n osajoukko, joten $K = K’$.</p>
+
+<p>Ehkä havainnollistavampi ja minulle mieluisampi tapa edellisen väitteen perustelulle on seuraava: olkoon $\alpha$ vaikkapa polynomin $P(x) = x^3 - x - 1$ juuri. Tällöin</p>
+
+<script type="math/tex; mode=display">\alpha^3 = \alpha + 1 \in K'</script>
+
+<script type="math/tex; mode=display">\alpha^4 = \alpha \cdot \alpha^3 = \alpha (\alpha + 1) = \alpha^2 + \alpha \in K'</script>
+
+<script type="math/tex; mode=display">\alpha^5 = \alpha \cdot \alpha^4 = \alpha (\alpha^2 + \alpha) = \alpha^3 + \alpha^2 = (\alpha + 1) + \alpha^2 = \alpha^2 + \alpha + 1 \in K'</script>
+
+<script type="math/tex; mode=display">\ldots</script>
+
+<p>Ideana siis, että luku $\alpha^m$ voidaan aina esittää pienempien $\alpha$:n potenssien avulla redusoimalla potenssia annetun minimaalisen polynomin avulla. Jos kaikki luvut muotoa $\alpha^n, n \in \mathbb{N}$ kuuluvat joukkoon $K’$, niin varmasti $K = K’$.</p>
+
+<p>On selvää, että $K$ on kertolaskun suhteen suljettu joukko: kahden polynomin tulo on polynomi. Koska $K = K’$, on myös $K’$ kertolaskun suhteen suljettu. Tämän voi myös ajatella niin, että kahden $K’$:n alkion tulo on polynomi $\alpha$:sta, jonka korkeat $\alpha$:n potenssit voidaan redusoida yllä kuvaillulla tavalla.</p>
+
+<p>Tämä siis osoittaa, että $K$ on rengas. Mutta miksi se on kunta, eli miksi käänteisalkio on aina olemassa? En tiedä tälle yksinkertaista todistusta, minkä vuoksi perustelu tässä jää puutteelliseksi. Annan kuitenkin heuristisen perustelun ja teen tästä formaalin käyttäen ns. dimensiolausetta, mutta koska tämä ei oikein liity itse työhön, on tämä perustelu lykätty tämän postauksen loppuun.</p>
+
+<h3 id="kuntalaajennuksen-aste">Kuntalaajennuksen aste</h3>
+
+<p>Huomautus: tätä osiota varten on hyvä lukea postaus <a href="https://blog.matematiikkakilpailut.fi/2018/09/02/Algebralliset.html">Algebrallisista luvuista ja vektoriavaruuksista</a>. Toisaalta, jos osaa olla välittämättä niistä kohdista mitä ei ymmärrä, ja poimii perusidean kuntalaajennuksen asteesta, niin voi pärjätä ihan hyvin.</p>
+
+<p>Kuntalaajennus on siis kaksi kuntaa $A \subset B$. Kunta $B$ voidaan siis tulkita $A$-vektoriavaruutena: $B$ alkioita voidaan laskea yhteen, ja niitä voidaan kertoa $A$:n alkioilla. Olkoon tämän vektoriavaruuden kannan koko $d$. Koon $d$ ei tarvitse olla äärellinen, kuten tapauksessa $A = \mathbb{Q}$, $B = \mathbb{R}$, mutta meitä kiinnostavissa tapauksissa näin on. Tämän kuntalaajennuksen, jota merkitään $B / A$, asteeksi määritellään $d$.</p>
+
+<p>Esimerkiksi jos $A = \mathbb{Q}$, $B = \mathbb{Q}(\sqrt{2})$: määritelmän mukaiseksi kannaksi kelpaa $\lbrace 1, \sqrt{2} \rbrace$, joten kuntalaajennuksen $B / A$ aste on $2$.</p>
+
+<p>Kuntalaajennuksen aste käytännössä katsoen kertoo, kuinka suuri laajennus kyseessä on.</p>
+
+<p>Yleisesti jos $\alpha$ on algebrallinen luku, niin kuntalaajennuksen $\mathbb{Q}(\alpha) / \mathbb{Q}$ aste on sama kuin $\alpha$:n minimaalisen polynomin aste. Tämä siksi, että kuntalaajennuksen asteen määritelmän mukaiseksi kannaksi $\mathbb{Q}$-vektoriavaruudelle $\mathbb{Q}(\alpha)$ voidaan valita joukko $S = \lbrace 1, \alpha, \alpha^2, \ldots , \alpha^{d-1} \rbrace$, missä $d$ on luvun $\alpha$ minimaalisen polynomin aste. Tämä on melko ilmeistä, mutta perustelen sen kuitenkin:</p>
+
+<p>Joukon $S$ alkiot selvästi virittävät, edellisen osion merkintöjä käyttäen, joukon $K’$. Mutta koska $K’ = K = \mathbb{Q}(\alpha)$, virittää joukko $S$ vektoriavaruuden $B = \mathbb{Q}(\alpha)$. Lisäksi $S$:n alkiot ovat keskenään lineaarisesti riippumattomia. Tämän osoittaminen jätetään harjoitustehtäväksi, vinkkinä vastaoletus ja minimaalisen polynomin määritelmä.</p>
+
+<p>Mainitaan vielä uudestaan tärkein asia:</p>
+
+<p><strong>Kuntalaajennuksen $\mathbb{Q}(\alpha) / \mathbb{Q}$ aste on luvun $\alpha$ minimaalisen polynomin aste.</strong></p>
+
+<p>Kuntalaajennuksen $B / A$ astetta merkitään $[B : A]$.</p>
+
+<h3 id="kuntalaajennusten-asteiden-multiplikatiivisuus">Kuntalaajennusten asteiden multiplikatiivisuus</h3>
+
+<p>Olkoot $A \subset B \subset C$ kuntia. Kuntalaajennusten asteille pätee seuraava kaava:</p>
+
+<script type="math/tex; mode=display">[C : A] = [C : B][B : A]</script>
+
+<p>En todista väitettä tässä, vaikka todistus ei vaadikaan mitään kovin ihmeellistä. Tätä multiplikatiivista ominaisuutta ei käytetä itse päätuloksen todistuksessa, mutta sitä käytetään muiden tulosten osoittamisessa. Se ei siis ole aivan kriittisessä roolissa.</p>
+
+<p>Kaava käytännössä kertoo, että $C$:n koko $A$:han verrattuna saadaan tutkimalla $C$:n kokoa $B$:hen verrattuna, ja $B$:n kokoa $A$:han verrattuna. Varsin intuitiivista.</p>
+
+<p>Otetaan tästä vielä esimerkki, joka demonstroi samalla kahta peräkkäistä kuntalaajennusta.</p>
+
+<p><strong>Esimerkki</strong></p>
+
+<p>Olkoot $A = \mathbb{Q}$, $B = \mathbb{Q}(\sqrt{2})$, ja $C = B(\sqrt{3})$. Periaate kuntalaajennukselle $C / B$ toimii kuten rationaalilukujen tapauksessa:</p>
+
+<ol>
+  <li>
+    <p>Määritetään luvun $\sqrt{3}$ minimaalinen polynomi kunnassa $B$. eli se polynomi $P \in B[x]$, jolla $P(\sqrt{3}) = 0$, $P$ on pääpolynomi, ja $P$:n aste on minimaalinen. Ei ole vaikeaa todistaa, että $P$ ei voi olla ensimmäisen asteen polynomi. Siispä sen aste on vähintään 2, joten polynomi $P(x) = x^2 - 3$ on minimaalinen polynomi. Tässä tapauksessa minimaalinen polynomi kunnassa $B$ on sama kuin rationaaliluvuissa $\mathbb{Q}$, mutta aina näin ei ole.</p>
+  </li>
+  <li>
+    <p>$C$ voidaan ajatella $B$-vektoriavaruutena, jonka kanta on $\lbrace 1, \sqrt{3} \rbrace$. Toisin sanoen, $C$ sisältää luvut muotoa $x + y\sqrt{3}$, $x, y \in B$. Tämä on analogista rationaalilukuihin verrattuna.</p>
+  </li>
+  <li>
+    <p>Siispä $[C : B] = 2$.</p>
+  </li>
+</ol>
+
+<p>On helppoa nähdä, että $[B : A] = 2$. Kaavan nojalla tulisi päteä $[C : A] = [C : B][B : A] = 2 \cdot 2 = 4$. Osoitetaan tämä tutkimalla joukon $C$ alkioita. Kohdan 2. nojalla $C$ sisältää luvut muotoa $x + y\sqrt{3}, x, y \in B$. Toisaalta, $B$ sisältää luvut muotoa $a + b\sqrt{2}, a, b \in \mathbb{Q}$. Olkoon siis $x = a + b\sqrt{2}$, $y = c + d\sqrt{3}$. $C$:n alkiot ovat muotoa</p>
+
+<script type="math/tex; mode=display">x + y\sqrt{3} = a + b\sqrt{2} + (c + d\sqrt{2})\sqrt{3} = a + b\sqrt{2} + c\sqrt{3} + d\sqrt{6}</script>
+
+<p>$C$ on $A$-vektoriavaruus, jonka kantana on $\lbrace 1, \sqrt{2}, \sqrt{3}, \sqrt{6} \rbrace$ (on selvää, että nämä luvut virittävät $C$:n, mutta ei aivan ilmeistä, että ne ovat lineaarisesti riippumattomia. Tämän osoittaminen sivuutetaan, vaikkakin se on mahdollista tehdä täysin alkeellisesti). Siis $[C : A] = 4$, kuten kuuluukin.</p>
+
+<h3 id="primitive-element-theorem">Primitive element theorem</h3>
+
+<p>Tutkitaan edellisen esimerkin mukaista $C$. $C$ on siis se kunta, joka saadaan lisäämällä rationaalilukuihin ensiksi luku $\sqrt{2}$ ja sitten luku $\sqrt{3}$. Tämä voidaan kirjoittaa muodossa $C = \mathbb{Q}(\sqrt{2}, \sqrt{3})$. Luonnollinen kysymys on, olisiko tämän laajennuksen voinut tehdä vain yhdellä alkiolla $\gamma$? Toisin sanoen, onko olemassa sellainen $\gamma$, jolla $\mathbb{Q}(\sqrt{2}, \sqrt{3}) = \mathbb{Q}(\gamma)$?</p>
+
+<p>Vastaus on kyllä, esimerkiksi valinta $\gamma = \sqrt{2} + \sqrt{3}$ toimii. Esitetään tälle nopeasti todistus.</p>
+
+<script type="math/tex; mode=display">\frac{1}{\gamma} = \sqrt{3} - \sqrt{2} \in \mathbb{Q}(\gamma)</script>
+
+<p>Siispä</p>
+
+<script type="math/tex; mode=display">\frac{1}{2}(\gamma + \frac{1}{\gamma}) = \sqrt{3} \in \mathbb{Q}(\gamma)</script>
+
+<p>Täten $\sqrt{3} \in \mathbb{Q}(\gamma)$, joten $\sqrt{2} \in \mathbb{Q}(\gamma)$, joten $\mathbb{Q}(\sqrt{2}, \sqrt{3}) \subset \mathbb{Q}(\gamma)$. Toisaalta pätee tietysti $\mathbb{Q}(\gamma) \subset \mathbb{Q}(\sqrt{2}, \sqrt{3})$, joten nämä kunnat ovat samat.</p>
+
+<p>Päteekö tämä yleisestikin? Eli onko kaikilla algebrallisilla luvuilla $\alpha, \beta$ olemassa $\gamma$, joilla $\mathbb{Q}(\alpha, \beta) = \mathbb{Q}(\gamma)$? On olemassa. Tämä tulos tunnetaan nimellä <strong>prmitive element theorem</strong>.</p>
+
+<p>Tämä tulos on (minun mielestäni) niin mielenkiintoinen, että sille esitetään todistus, vaikkei tämä liitykään kovin vahvasti itse työhön (tulosta toki tullaan käyttämään hyvin monessa kohtaa). Todistus on melko vaikea, mutta se antaa lisäharjoitusta kuntalaajennuksista ja minimaalisista polynomeista.</p>
+
+<p>Väite yleistyy suoraviivaisesti induktiolla $n$:lle luvulle, eli laajennus $\mathbb{Q}(\alpha_1, \alpha_2, \ldots , \alpha_n)$ voidaan tehdä yhdellä alkiolla. Toisin sanoen, <strong>kaikki rationaalilukujen (äärelliset) laajennukset ovat muotoa $\mathbb{Q}(\alpha)$.</strong></p>
+
+<p>Väitteen todistus perustuu <a href="http://pi.math.cornell.edu/~kbrown/6310/primitive.pdf">Ken Brownin luentomateriaaliin</a>.</p>
+
+<h3 id="todistus-primitive-element-theorem">Todistus (Primitive element theorem)</h3>
+
+<p>Olkoot $\alpha, \beta$ algebrallisia lukuja, ja olkoot $f, g \in \mathbb{Q}[x]$ niiden minimaaliset polynomit. Olkoon $\gamma = \alpha + \lambda\beta$, missä $\lambda \in \mathbb{Q}$ on myöhemmin valittava vakio. Tulemme valitsemaan luvun $\lambda$ niin, että $\mathbb{Q}(\alpha, \beta) = \mathbb{Q}(\gamma)$.</p>
+
+<p>Olkoon $g_{\gamma}$ luvun $\beta$ minimaalinen polynomi kunnassa $\mathbb{Q}(\gamma)$. Aiomme osoittaa, että $\deg(g_{\gamma}) = 1$. Tämä todistaa väitteen, koska silloin on olemassa $a, b \in \mathbb{Q}(\gamma)$, joilla $g_{\gamma}(x) = ax + b$, eli $0 = g_{\gamma}(\beta) = a\beta + b$, eli $\beta = -\frac{b}{a}$. Tällöin $\beta \in \mathbb{Q}(\gamma)$, eli myös $\alpha = \gamma - \lambda\beta \in \mathbb{Q}(\gamma)$.</p>
+
+<p><strong>Idea:</strong> Etsitään kaksi polynomia, jotka $g_{\gamma}$ jakaa. Osoitetaan, että näiden polynomien syt on 1.</p>
+
+<p>Koska $g \in \mathbb{Q}[x]$, ovat $g$:n kertoimet rationaalilukuja ja täten kunnan $\mathbb{Q}(\gamma)$ alkioita. Voidaan siis kirjoittaa, hieman erikoisesti mutta hyödyllisesti, $g \in \mathbb{Q}(\gamma)[x]$. Lisäksi määritelmän nojalla $g(\beta) = 0$. $g$ on siis polynomi, jonka kertoimet ovat kunnassa $\mathbb{Q}(\gamma)$, ja jolla on nollakohta $\beta$. Sen siis tulee olla jaollinen luvun $\beta$ minimaalisella polynomilla kunnassa $\mathbb{Q}(\gamma)$, eli polynomilla $g_{\gamma}$. Tämä saattaa tuntua hämmentävältä, joten esitetään tämä vielä toisella tavalla:</p>
+
+<p>Jaetaan polynomi $g \in \mathbb{Q}(\gamma)[x]$ polynomilla $g_{\gamma} \in \mathbb{Q}(\gamma)[x]$ jakokulmassa. Siis $g = g_{\gamma}A + B$, missä $\deg(B) &lt; \deg(g_{\gamma})$, $B \in \mathbb{Q}(\gamma)[x]$. Sijoittamalla muuttujaksi $\beta$ saadaan $g(\beta) = g_{\gamma}(\beta)A(\beta) + B(\beta)$. Koska $g(\beta) = 0 = g_{\gamma}(\beta)$, pätee $B(\beta) = 0$. Mutta $g_{\gamma}$ määriteltiin olemaan luvun $\beta$ minimaalinen polynomi, ja pätee $\deg(B) &lt; \deg(g’)$. Tämä on määritelmien nojalla mahdollista vain, jos $B$ on nollapolynomi, eli $g_{\gamma} \mid g$.</p>
+
+<p>Siis</p>
+
+<script type="math/tex; mode=display">g_{\gamma} \mid g.</script>
+
+<p>Etsitään sitten, idean mukaisesti, vielä toinen polynomi $h$, jolla pätee $g_{\gamma} \mid h$. Tämä $h$ valitaan asettamalla $h(x) = f(\gamma - \lambda x)$. Tällöin $h(\beta) = f(\alpha) = 0$, ja $h \in \mathbb{Q}(\gamma)[x]$. Kuten edellä, tulee myös $h$:n olla jaollinen polynomilla $g_{\gamma}$. Siis</p>
+
+<script type="math/tex; mode=display">g_{\gamma} \mid h.</script>
+
+<p>Osoittaaksemme $\deg(g_{\gamma}) = 1$ riittää siis osoittaa, että polynomien $g$ ja $h$ suurimman yhteisen tekijän aste on $1$ (huomaa, että tiedämme sytin asteen olevan vähintään $1$, koska $g(\beta) = h(\beta) = 0$). Osoitetaan tämä vastaoletuksella: polynomien $g$ ja $h$ suurimman yhteisen tekijän aste on vähintään $2$.</p>
+
+<p>Tällöin on olemassa jokin algebrallinen luku $\beta’$, jolla $g(\beta’) = h(\beta’) = 0$. Osoitetaan, että $\beta’ \neq \beta$, eli siis että $\beta$ ei ole $g$:n kaksinkertainen juuri, minkä jälkeen saatetaan todistus maaliin.</p>
+
+<p>Oletetaan, että $\beta$ on $g$:n kaksinkertainen juuri. $g$ on rationaaliluvuissa jaoton (onhan se luvun $\beta$ minimaalinen polynomi). Mutta jos $\beta$ olisi $g$:n kaksinkertainen juuri, voitaisiin kirjoittaa $g(x) = (x - \beta)^2q(x)$ jollain polynomilla $q$. Derivoimalla ja sijoittamalla $x = \beta$ saadaan $g’(\beta) = 0$. Tämä on kuitenkin ristiriidassa sen kanssa, että $g$ on luvun $\beta$ minimaalinen polynomi.</p>
+
+<p>On siis olemassa sellainen $\beta’ \neq \beta$, joka on polynomien $g$ ja $h$ yhteinen nollakohta. Siis $h(\beta’) = 0$. Polynomin $h$ määritelmän nojalla pätee $h(\beta’) = f(\gamma - \lambda\beta’)$. Kirjoitetaan $\alpha’ = \gamma - \lambda\beta’$. Tällöin</p>
+
+<script type="math/tex; mode=display">\alpha' = \gamma - \lambda\beta' = \alpha + \lambda\beta - \lambda\beta' = \alpha + \lambda(\beta - \beta')</script>
+
+<p>Täten</p>
+
+<script type="math/tex; mode=display">\lambda = \frac{\alpha' - \alpha}{\beta - \beta'}</script>
+
+<p>Tässä yhtälössä $\alpha’, \beta’$ ovat polynomien $f$ ja $g$ juuria, joten niille on vain äärellisen monta eri vaihtoehtoa. Siis jos $\lambda$ ei ole muotoa</p>
+
+<script type="math/tex; mode=display">\frac{\alpha' - \alpha}{\beta - \beta'}</script>
+
+<p>olemme saaneet ristiriidan. Tämä todistaa väitteen.</p>
+
+<p><strong>Siis kaikki paitsi äärellisen moni $\lambda$ kelpaa.</strong></p>
+
+<p>Lopuksi vielä aiemmin luvattu perustelu sille, että $\mathbb{Q}(\alpha)$ on näillä määritelmillä kunta.</p>
+
+<h3 id="perustelu-sille-että-mathbbqalphaon-kunta">Perustelu sille, että $\mathbb{Q}(\alpha)$ on kunta</h3>
+
+<p>Olkoon $d$ luvun $\alpha$ minimaalisen polynomin aste kunnan $\mathbb{Q}$ yli. Olkoon $R \in \mathbb{Q}[x]$ jokin polynomi, jolla $R(\alpha) \neq 0$. Tavoitteena on löytää sellainen polynomi $Q \in \mathbb{Q}[x]$, jolla $\frac{1}{R(\alpha)} = Q(\alpha)$. Toisin sanoen, $1 = R(\alpha)Q(\alpha)$.</p>
+
+<p>Olkoon $K’$ kuten aiemmin, eli $\mathbb{Q}$-vektoriavaruus, jonka kanta on $\lbrace 1, \alpha, \alpha^2, \ldots , \alpha^{d-1} \rbrace$ (eli luvut muotoa $q_0 + q_1\alpha + \ldots + q_{d-1}\alpha^{d-1}$). Määritellään kuvaus $L : K’ \to K’$ asettamalla $L(x) = R(\alpha)x$. Riittää osoittaa, että $L$ on surjektio, jolloin voidaan valita sellainen $x$, jolla $L(x) = 1$. Tämä antaa halutun lopputuloksen.</p>
+
+<p>Ennen tätä: olkoon $S$ jokin äärellinen joukko, ja olkoon $f : S \to S$ jokin kuvaus. Vakuuta itsesi siitä, että $f$ on injektio jos ja vain jos se on surjektio.</p>
+
+<p>Ideana $L$:n todistamiseksi surjektioksi on vastaava idea: $L$ on selvästi injektio, koska se on ensimmäisen asteen polynomi. Siispä se on surjektio?</p>
+
+<p>Tämä ei ihan vakuuta. Tämä implikaatio kyllä pätee, mutta se vaatii hieman teoriaa.</p>
+
+<p>$L$ on ns. lineaarikuvaus: $L(x + y) = L(x) + L(y)$ kaikilla $x, y \in K’$, ja $L(ax) = aL(x)$ kaikilla rationaaliluvuilla $a$. Yleisesti vektoriavaruuksille määritellään lineaarikuvaus vastaavasti.</p>
+
+<p>Lineaarikuvaksilla vektoriavaruuksilta itselleen pätee väite “$L$ on injektio jos ja vain jos se on surjektio”. Tämä on erikoistapaus vahvemmasta väitteestä, niin kutsutusta dimensiolauseesta:</p>
+
+<p><strong>Dimensiolause</strong></p>
+
+<p>Olkoon notaatio kuten edellä. Olkoon $A$ niiden $x \in K’$ joukko, joilla $L(x) = 0$ (engl. kernel). Olkoon $B$ niiden $y \in K’$ joukko, joilla on olemassa $x \in K’$, jolla $L(x) = y$ (kuva, engl. image). $A$ ja $B$ ovat $\mathbb{Q}$-vektoriavaruuksia (helppoa todistaa). Olkoot niiden ulottuvuudet $a$ ja $b$. Määritellään $d$ olemaan $\mathbb{Q}$-vektoriavaruuden $K’$ ulottuvuus. Pätee</p>
+
+<script type="math/tex; mode=display">d = a + b</script>
+
+<p>Dimensiolause siis kertoo, että mitä lähempänä injektiivisyyttä $L$ on, sitä lähempänä se on surjektiivisuutta. Erityisesti, jos $A = \lbrace 0 \rbrace$, niin $B = K’$, eli $L$ on surjektio. Tämä todistaa, että $\mathbb{Q}(\alpha)$ on kunta.</p>
+
+<p>Tässä <a href="https://en.wikipedia.org/wiki/Rank%E2%80%93nullity_theorem">Wikipedia-sivu</a> dimensiolauseesta.</p>
+
+<p><a href="https://blog.matematiikkakilpailut.fi/2019/06/05/PYA09tulokset.html">Seuraava postaus.</a></p>
+
+  </section>
+  <footer class="post-footer">
+    <p><time datetime="2019-06-05">5. 6. 2019</time>
+       • Olli Järviniemi
+      <span class="share-buttons">
+  <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fblog-drafts.matematiikkakilpailut.fi%2F2019%2F06%2F05%2FPYA10esitiedot.html&quote=Polynomien+yhteiset+alkutekij%C3%A4t%2C+osa+2%3A+esitiedot"
+     title="Jaa Facebookissa" target="_blank" rel="noopener noreferrer nofollow">
+    <svg aria-label="Jaa Facebookissa" role="img" viewBox="0 0 24 24"><title lang="en">Facebook</title><use xlink:href="/assets/images/icons.svg#facebook"/></svg></a>
+  <a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fblog-drafts.matematiikkakilpailut.fi%2F2019%2F06%2F05%2FPYA10esitiedot.html&text=Polynomien+yhteiset+alkutekij%C3%A4t%2C+osa+2%3A+esitiedot"
+     target="_blank" rel="noopener noreferrer nofollow" title="Jaa Twitterissä">
+    <svg aria-label="Jaa Twitterissä" role="img" viewBox="0 0 24 24"><title lang="en">Twitter</title><use xlink:href="/assets/images/icons.svg#twitter"/></svg></a>
+  <a href="https://pinterest.com/pin/create/button/?url=https%3A%2F%2Fblog-drafts.matematiikkakilpailut.fi%2F2019%2F06%2F05%2FPYA10esitiedot.html&description=Polynomien+yhteiset+alkutekij%C3%A4t%2C+osa+2%3A+esitiedot"
+     target="_blank" rel="noopener noreferrer nofollow" title="Jaa Pinterestissä">
+    <svg aria-label="Jaa Pinterestissä" role="img" viewBox="0 0 24 24"><title lang="en">Pinterest</title><use xlink:href="/assets/images/icons.svg#pinterest"/></svg></a>
+  <a href="https://www.reddit.com/submit?url=https%3A%2F%2Fblog-drafts.matematiikkakilpailut.fi%2F2019%2F06%2F05%2FPYA10esitiedot.html&title=Polynomien+yhteiset+alkutekij%C3%A4t%2C+osa+2%3A+esitiedot"
+     target="_blank" rel="noopener noreferrer nofollow" title="Jaa Redditissä">
+    <svg aria-label="Jaa Redditissä" role="img" viewBox="0 0 24 24"><title lang="en">Reddit</title><use xlink:href="/assets/images/icons.svg#reddit"/></svg></a>
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fblog-drafts.matematiikkakilpailut.fi%2F2019%2F06%2F05%2FPYA10esitiedot.html&title=Polynomien+yhteiset+alkutekij%C3%A4t%2C+osa+2%3A+esitiedot&source=https%3A%2F%2Fblog-drafts.matematiikkakilpailut.fi"
+     target="_blank" rel="noopener noreferrer nofollow" title="Jaa LinkedInissä">
+    <svg aria-label="Jaa Linkedinissä" role="img" viewBox="0 0 24 24"><title lang="en">LinkedIn</title><use xlink:href="/assets/images/icons.svg#linkedin"/></svg></a>
+  <a href="https://pinboard.in/add?url=https%3A%2F%2Fblog-drafts.matematiikkakilpailut.fi%2F2019%2F06%2F05%2FPYA10esitiedot.html&title=Polynomien+yhteiset+alkutekij%C3%A4t%2C+osa+2%3A+esitiedot"
+     target="_blank" rel="noopener noreferrer nofollow" title="Talleta Pinboardiin">
+    <svg aria-label="Talleta Pinboardiin" role="img" viewBox="0 0 24 24"><title lang="en">Pinboard</title><use xlink:href="/assets/images/icons.svg#pinboard"/></svg></a>
+</span>
+
+    </p>
+  </footer>
+</article>
+
+    </section>
+
+    <section class="site-footer">
+      <p>Tekijänoikeus kirjoittajilla. Käytämme sivuilla evästeitä: <a href="/tietosuoja.html">tietosuojalauseke</a>.</p>
+    </section>
+    
+
+  </body>
+</html>

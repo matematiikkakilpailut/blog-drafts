@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="fi">
+  <head>
+    <meta charset="UTF-8">
+    <!-- Begin Jekyll SEO tag v2.5.0 -->
+<title>KöMaL ja ositusongelma | Matematiikkakilpailijat</title>
+<meta name="generator" content="Jekyll v3.8.5" />
+<meta property="og:title" content="KöMaL ja ositusongelma" />
+<meta name="author" content="Olli Järviniemi" />
+<meta property="og:locale" content="fi" />
+<meta name="description" content="KöMaL on unkarilainen “matematiikkalehti”. KöMaLin sivuilta löytyy lisäksi paljon kilpailumatematiikan tehtäviä, vaihdellen helpohkoista hyvin haastaviin. Tässä postauksessa käydään läpi yksi näistä tehtävistä: Tehtävä (KöMaL, A647) Olkoon $k$ epänegatiivinen kokonaisluku. Osoita, että vain äärellisen monella positiivisella kokonaisluvulla $n$ on olemassa joukot $A$ ja $B$, joilla $A \cup B = \lbrace 1, 2, \ldots , n \rbrace $, $A \cap B = \emptyset$ ja" />
+<meta property="og:description" content="KöMaL on unkarilainen “matematiikkalehti”. KöMaLin sivuilta löytyy lisäksi paljon kilpailumatematiikan tehtäviä, vaihdellen helpohkoista hyvin haastaviin. Tässä postauksessa käydään läpi yksi näistä tehtävistä: Tehtävä (KöMaL, A647) Olkoon $k$ epänegatiivinen kokonaisluku. Osoita, että vain äärellisen monella positiivisella kokonaisluvulla $n$ on olemassa joukot $A$ ja $B$, joilla $A \cup B = \lbrace 1, 2, \ldots , n \rbrace $, $A \cap B = \emptyset$ ja" />
+<link rel="canonical" href="https://blog-drafts.matematiikkakilpailut.fi/2018/06/11/Komal.html" />
+<meta property="og:url" content="https://blog-drafts.matematiikkakilpailut.fi/2018/06/11/Komal.html" />
+<meta property="og:site_name" content="Matematiikkakilpailijat" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2018-06-11T00:00:00+00:00" />
+<meta property="fb:app_id" content="964806940344711" />
+<script type="application/ld+json">
+{"url":"https://blog-drafts.matematiikkakilpailut.fi/2018/06/11/Komal.html","author":{"@type":"Person","name":"Olli Järviniemi"},"headline":"KöMaL ja ositusongelma","dateModified":"2018-06-11T00:00:00+00:00","datePublished":"2018-06-11T00:00:00+00:00","description":"KöMaL on unkarilainen “matematiikkalehti”. KöMaLin sivuilta löytyy lisäksi paljon kilpailumatematiikan tehtäviä, vaihdellen helpohkoista hyvin haastaviin. Tässä postauksessa käydään läpi yksi näistä tehtävistä: Tehtävä (KöMaL, A647) Olkoon $k$ epänegatiivinen kokonaisluku. Osoita, että vain äärellisen monella positiivisella kokonaisluvulla $n$ on olemassa joukot $A$ ja $B$, joilla $A \\cup B = \\lbrace 1, 2, \\ldots , n \\rbrace $, $A \\cap B = \\emptyset$ ja","mainEntityOfPage":{"@type":"WebPage","@id":"https://blog-drafts.matematiikkakilpailut.fi/2018/06/11/Komal.html"},"@type":"BlogPosting","@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#157878">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/assets/css/style.css?v=2c669b5e01ecebd0ccd9a63f1cd21eeeb0cf1936">
+    <link href="/feed.xml" type="application/atom+xml" rel="alternate" title="Sivuston verkkosyöte">
+
+    <script type="text/x-mathjax-config">
+ MathJax.Hub.Config({
+   tex2jax: {
+     inlineMath: [['$', '$'], ['\\(', '\\)']],
+     displayMath: [['$$', '$$']],
+     processEscapes: true
+   }
+ });
+</script>
+<script
+  type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS_CHTML" 
+  integrity="sha256-nvJJv9wWKEm88qvoQl9ekL2J+k/RWIsaSScxxlsrv8k="
+  crossorigin="anonymous">
+</script>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/fonts/HTML-CSS/TeX/woff/MathJax_Main-Regular.woff"
+      rel="preload" as="font" type="font/woff" crossorigin="anonymous">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/fonts/HTML-CSS/TeX/woff/MathJax_Size1-Regular.woff"
+      rel="preload" as="font" type="font/woff" crossorigin="anonymous">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/fonts/HTML-CSS/TeX/woff/MathJax_Math-Italic.woff"
+      rel="preload" as="font" type="font/woff" crossorigin="anonymous">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/fonts/HTML-CSS/TeX/woff/MathJax_Size2-Regular.woff"
+      rel="preload" as="font" type="font/woff" crossorigin="anonymous">
+
+  </head>
+  <body>
+    <section class="page-header">
+      <h1 class="project-name">Matematiikkakilpailijat</h1>
+      <h2 class="project-tagline">Matematiikan olympiavalmennuksen osallistujien kokemuksia</h2>
+    </section>
+
+    <section class="main-content">
+      <article class="post">
+  <header class="post-header">
+    <h1 class="post-title">KöMaL ja ositusongelma</h1>
+  </header>
+  <section class="post-content">
+    <p>KöMaL on unkarilainen “matematiikkalehti”. KöMaLin sivuilta <a href="https://www.komal.hu/verseny/feladatok.e.shtml">löytyy</a> lisäksi paljon kilpailumatematiikan tehtäviä, vaihdellen helpohkoista hyvin haastaviin. Tässä postauksessa käydään läpi yksi näistä tehtävistä:</p>
+
+<p><a href="https://www.komal.hu/feladat?a=honap&amp;h=201509&amp;t=mat&amp;l=en">Tehtävä (KöMaL, A647)</a></p>
+
+<p>Olkoon $k$ epänegatiivinen kokonaisluku. Osoita, että vain äärellisen monella positiivisella kokonaisluvulla $n$ on olemassa joukot $A$ ja $B$, joilla $A \cup B = \lbrace 1, 2, \ldots , n \rbrace $, $A \cap B = \emptyset$ ja</p>
+
+<script type="math/tex; mode=display">\Big | \prod_{a \in A} a - \prod_{b \in B} b \Big | = k</script>
+
+<!--jatkuu-->
+
+<p><strong>Ratkaisu</strong></p>
+
+<p>Tehtävän ratkaisu perustuu oleellisesti ottaen seuraavaan huomioon: jos $p$ on alkuluku, jolla $p \nmid k$, niin joukosta $\lbrace 1, 2, \ldots , n \rbrace $ jokaisen $p$:llä jaollisen termin tulee kuulua joko joukkoon $A$, tai jokaisen tulee kuulua joukkoon $B$.</p>
+
+<p>Tätä ideaa on kuitenkin mahdoton soveltaa tapauksessa $k = 0$. Tämä tapaus on kuitenkin helppo ns. Bertrandin postulaatin avulla.</p>
+
+<p><strong>Bertrandin postulaatti</strong></p>
+
+<p>Kaikilla $n &gt; 1$ lukujen $n$ ja $2n$ välillä on alkuluku.</p>
+
+<p>Väitteen todistus (ja lukuisia yleistyksiä) löytyy netistä, esimerkiksi <a href="https://en.wikipedia.org/wiki/Proof_of_Bertrand%27s_postulate">Wikipediasta</a>.</p>
+
+<p>Nyt, tapaus $k = 0$ todistuu sillä huomiolla, että $n!$ ei ole neliöluku millään $n &gt; 1$, koska luvulla $n!$ on jokin alkutekijä, jonka eksponetti on $1$ Bertrandin postulaatin nojalla (lukujen $\frac{n}{2}$ ja $n$ välillä on olemassa alkuluku). Nimittäin, oletetaan että ositus toimii. Tällöin pätee</p>
+
+<script type="math/tex; mode=display">n! = \prod_{a \in A} a \prod_{b \in B} b= \Big( \prod_{a \in A} a \Big)^2</script>
+
+<p>eli $n!$ on neliöluku, mikä on ristiriita.</p>
+
+<p>Tutkitaan sitten tapaus $k &gt; 0$. Olkoon $P$ kaikkien alkulukujen joukko, ja olkoon $k$:n alkutekijöiden joukko $K$ (huomaa, että $K$ voi olla tyhjä).</p>
+
+<p>Valitaan $n$ hyvin suureksi, ja osoitetaan, ettei ositus onnistu (tulemme myöhemmin toteamaan, että tietyt osituksen mahdottomaksi todistavat epäyhtälöt pätevät tarpeeksi suurilla $n$). Tehdään vastaoletus: ositus onnistuu, eli on olemassa halutut $A$ ja $B$. Olkoon joukon $P \setminus K$ pienin alkio $p$. Ilman yleisyyden menettämistä voimme olettaa, että $p \in A$. Aiemmin esitetyn huomion nojalla kaikki $p$:n monikerrat, jotka ovat eninitään $n$, kuuluvat myös joukkoon $A$.</p>
+
+<p>Tutkitaan niitä muotoa $pm$ olevia lukuja, jossa $pm \le n$. Luku $m$ käy läpi eri arvoja, jotka ovat jaollisia jollakin joukon $P \setminus K$ luvuilla, kun $n$ on tarpeeksi suuri. Itse asiassa $m$:n käydessä läpi eri arvoja se on jaollinen täsmälleen niillä joukon $P \setminus K$ luvuilla, jotka ovat enintään $\frac{n}{p}$. Siispä joukossa $A$ tulee olla kaikki ne luvut, joilla on tällaisia “pieniä” alkutekijöitä joukosta $P \setminus K$.</p>
+
+<p>Osoitetaan nyt, että tarpeeksi suurilla $n$ joukon $A$ alkioiden tulo on paljon suurempi kuin joukon $B$ alkioiden tulo. Intuitiivisesti tämä pätee, sillä $B$:n alkioiden alkutekijät on rajoitettu joukkoon $K$ tai suuriin lukua $\frac{n}{p}$ isompiin alkulukuihin. Formaali todistus vaatii hieman laskemista, muttei ole sinänsä vaikea.</p>
+
+<p><strong>Lemma 1</strong></p>
+
+<p>Epäyhtälö</p>
+
+<script type="math/tex; mode=display">\mid B \mid \le C \frac{n}{\log_2(n)}</script>
+
+<p>pätee kaikilla $n &gt; 1$, jostain $n$:stä riippumattomalla vakiolla $C$. $C$ voi riippua $k$:sta.</p>
+
+<p><strong>Todistus</strong></p>
+
+<p>Eräs Schurin lauseen todistuksen <a href="https://blog.matematiikkakilpailut.fi/2018/05/27/Schur.html">lemma</a> sanoo, että niitä lukuja, jotka ovat jaollisia vain joukon $S$ alkuluvuilla ja ovat enintään $N$, on enintään</p>
+
+<p>$C_1 \log_2(N)^{\mid S \mid}$</p>
+
+<p>Tämän nojalla niitä $B$:n alkioita, jotka ovat jaollisia vain lukua $\frac{n}{p}$ pienemmillä alkuluvuilla on enintään $C_2 \log_2(N)^{ \mid  K  \mid }$. Tämä kasvaa hitaammin kuin $\frac{n}{\log_2(n)}$, joten arvio on tältä osin kunnossa. Enää tulee huolehtia siitä, ettei $B$:ssä voi olla liian montaa lukua, jotka ovat jaollisia lukua $\frac{n}{p}$ suuremmalla alkuluvulla.</p>
+
+<p>Valitaan jokin lukua $\frac{n}{p}$ suurempi alkuluku $q$. Luvun $q$ monikertoja on $B$:ssä enintään $pq$. $p$ on vakio, joka riippuu vain $k$:sta. Nyt otetaan avuksi järeämpää kalustoa, jolla saamme tarpeeksi hyvän rajan lukujen $q$ määrälle:</p>
+
+<p><strong>Alkulukulause (Prime number theorem, PNT)</strong></p>
+
+<p>Olkoon $\pi(x)$ lukua $x$ pienempien alkulukujen määrä. Suhde</p>
+
+<script type="math/tex; mode=display">\frac{\pi(x)\ln(x)}{x}</script>
+
+<p>lähestyy ykköstä luvun $x$ lähestyessä ääretöntä. Tämä siis tarkoittaa sitä, että esimerkiksi kaikilla tarpeeksi suurilla $x$ arviot</p>
+
+<script type="math/tex; mode=display">\frac{1}{2} \le \frac{\pi(x)\ln(x)}{x} \le 2</script>
+
+<p>pätevät.</p>
+
+<p>Lauseen todistus vaatii analyyttistä lukuteoriaa ja jonkin verran esitietoja, minkä vuoksi sitä ei esitetä tässä. Lause on kuitenkin (hyvin) tunnettu, eli sitä lienee sallittua käyttää esimerkiksi IMOssa, mutta varmahan asiasta ei voi olla.</p>
+
+<p>Tämän nojalla niitä $B$:n alkioita, jotka ovat jaollisia jollain suurella alkuluvulla, on enintään $C_3 \frac{n}{\log_2(n)}$ kaikilla tarpeeksi suurilla $n$, missä $C_3$ on jokin vakio. $C_3$ riippuu $k$:sta, ja lisäksi sen kokoluokka vaikuttaa siihen, kuinka suurilla $n$ väite pätee. Tärkeintä on kuitenkin jonkin tällaisen vakion $C$ olemassaolo, eikä niinkän sen suuruus.</p>
+
+<p>Tämän nojalla</p>
+
+<script type="math/tex; mode=display">\mid B \mid  \le C_2 \log_2(N)^{ \mid K \mid } + C_3 \frac{n}{\log_2(n)} \le C \frac{n}{\log_2(n)}</script>
+
+<p>jollain $k$:sta, $C_2$:sta ja $C_3$:sta riippuvalla vakiolla $C$, kaikilla tarpeeksi suurilla $n$. Lisäksi kasvattamalla $C$:tä arvion saa pätemään myös pienillä $n$:n arvioilla. Lemman väite siis pätee.</p>
+
+<p>Pidetään loppuratkaisun ajan lemman 1 muuttuja $C$ vakiona.</p>
+
+<p>Lemmasta 1 seuraa, että joukon $B$ alkioiden tulo on enintään</p>
+
+<script type="math/tex; mode=display">n^{ \mid B \mid } \le n^{ C \frac{n}{\log_2(n)} }</script>
+
+<p>Koska <script type="math/tex">\mid A \mid  = n -  \mid B \mid  \ge n - C \frac{n}{\log_2(n)}</script></p>
+
+<p>saamme lemman 1 avulla arvion myös $A$:n alkioiden tulolle. $A$:n alkioiden tulo on pienimmillään, kun se sisältää luvut $1, 2, \ldots,  \mid A \mid $. Tulee siis enää osoittaa, että</p>
+
+<script type="math/tex; mode=display">\mid A \mid ! > k + n^{ \mid B \mid }</script>
+
+<p>Joukossa $A$ on vähintään</p>
+
+<script type="math/tex; mode=display">n - C\frac{n}{\log_2(n)} - \sqrt{n} = t</script>
+
+<p>alkiota, jotka ovat vähintään $\sqrt{n}$. Tästä seuraa, että</p>
+
+<script type="math/tex; mode=display">\mid A \mid ! \ge \sqrt{n^t} = n^\frac{t}{2}</script>
+
+<p>Sillä $t &gt; 2 \mid B \mid + 2$ kaikilla tarpeeksi suurilla $n$ ($t$ on kokoluokkaa $n$, $k$ taas kokoluokkaa $\frac{n}{\log_2(n)}$), pätee kaikilla tarpeeksi suurilla $n$ epäyhtälö</p>
+
+<script type="math/tex; mode=display">n^\frac{t}{2} > n^{ \mid B \mid  + 1} > n^{ \mid B\mid} + k</script>
+
+<p>Tästä seuraa, että $A$:n alkioiden tulo on suurempi kuin $B$:n alkioiden tulo $+ k$ kaikilla tarpeeksi suurilla $n$. Väite näin ollen pätee.</p>
+
+  </section>
+  <footer class="post-footer">
+    <p><time datetime="2018-06-11">11. 6. 2018</time>
+       • Olli Järviniemi
+      <span class="share-buttons">
+  <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fblog-drafts.matematiikkakilpailut.fi%2F2018%2F06%2F11%2FKomal.html&quote=K%C3%B6MaL+ja+ositusongelma"
+     title="Jaa Facebookissa" target="_blank" rel="noopener noreferrer nofollow">
+    <svg aria-label="Jaa Facebookissa" role="img" viewBox="0 0 24 24"><title lang="en">Facebook</title><use xlink:href="/assets/images/icons.svg#facebook"/></svg></a>
+  <a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fblog-drafts.matematiikkakilpailut.fi%2F2018%2F06%2F11%2FKomal.html&text=K%C3%B6MaL+ja+ositusongelma"
+     target="_blank" rel="noopener noreferrer nofollow" title="Jaa Twitterissä">
+    <svg aria-label="Jaa Twitterissä" role="img" viewBox="0 0 24 24"><title lang="en">Twitter</title><use xlink:href="/assets/images/icons.svg#twitter"/></svg></a>
+  <a href="https://pinterest.com/pin/create/button/?url=https%3A%2F%2Fblog-drafts.matematiikkakilpailut.fi%2F2018%2F06%2F11%2FKomal.html&description=K%C3%B6MaL+ja+ositusongelma"
+     target="_blank" rel="noopener noreferrer nofollow" title="Jaa Pinterestissä">
+    <svg aria-label="Jaa Pinterestissä" role="img" viewBox="0 0 24 24"><title lang="en">Pinterest</title><use xlink:href="/assets/images/icons.svg#pinterest"/></svg></a>
+  <a href="https://www.reddit.com/submit?url=https%3A%2F%2Fblog-drafts.matematiikkakilpailut.fi%2F2018%2F06%2F11%2FKomal.html&title=K%C3%B6MaL+ja+ositusongelma"
+     target="_blank" rel="noopener noreferrer nofollow" title="Jaa Redditissä">
+    <svg aria-label="Jaa Redditissä" role="img" viewBox="0 0 24 24"><title lang="en">Reddit</title><use xlink:href="/assets/images/icons.svg#reddit"/></svg></a>
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fblog-drafts.matematiikkakilpailut.fi%2F2018%2F06%2F11%2FKomal.html&title=K%C3%B6MaL+ja+ositusongelma&source=https%3A%2F%2Fblog-drafts.matematiikkakilpailut.fi"
+     target="_blank" rel="noopener noreferrer nofollow" title="Jaa LinkedInissä">
+    <svg aria-label="Jaa Linkedinissä" role="img" viewBox="0 0 24 24"><title lang="en">LinkedIn</title><use xlink:href="/assets/images/icons.svg#linkedin"/></svg></a>
+  <a href="https://pinboard.in/add?url=https%3A%2F%2Fblog-drafts.matematiikkakilpailut.fi%2F2018%2F06%2F11%2FKomal.html&title=K%C3%B6MaL+ja+ositusongelma"
+     target="_blank" rel="noopener noreferrer nofollow" title="Talleta Pinboardiin">
+    <svg aria-label="Talleta Pinboardiin" role="img" viewBox="0 0 24 24"><title lang="en">Pinboard</title><use xlink:href="/assets/images/icons.svg#pinboard"/></svg></a>
+</span>
+
+    </p>
+  </footer>
+</article>
+
+    </section>
+
+    <section class="site-footer">
+      <p>Tekijänoikeus kirjoittajilla. Käytämme sivuilla evästeitä: <a href="/tietosuoja.html">tietosuojalauseke</a>.</p>
+    </section>
+    
+
+  </body>
+</html>

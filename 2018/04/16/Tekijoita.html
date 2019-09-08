@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="fi">
+  <head>
+    <meta charset="UTF-8">
+    <!-- Begin Jekyll SEO tag v2.5.0 -->
+<title>Tekijöihinjakoa | Matematiikkakilpailijat</title>
+<meta name="generator" content="Jekyll v3.8.5" />
+<meta property="og:title" content="Tekijöihinjakoa" />
+<meta name="author" content="Olli Järviniemi" />
+<meta property="og:locale" content="fi" />
+<meta name="description" content="$\newcommand{\syt}{\mathop{\rm syt}}$ Tässä postauksessa käydään läpi muutama asia liittyen tekijöihinjakoon." />
+<meta property="og:description" content="$\newcommand{\syt}{\mathop{\rm syt}}$ Tässä postauksessa käydään läpi muutama asia liittyen tekijöihinjakoon." />
+<link rel="canonical" href="https://blog-drafts.matematiikkakilpailut.fi/2018/04/16/Tekijoita.html" />
+<meta property="og:url" content="https://blog-drafts.matematiikkakilpailut.fi/2018/04/16/Tekijoita.html" />
+<meta property="og:site_name" content="Matematiikkakilpailijat" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2018-04-16T00:00:00+00:00" />
+<meta property="fb:app_id" content="964806940344711" />
+<script type="application/ld+json">
+{"url":"https://blog-drafts.matematiikkakilpailut.fi/2018/04/16/Tekijoita.html","author":{"@type":"Person","name":"Olli Järviniemi"},"headline":"Tekijöihinjakoa","dateModified":"2018-04-16T00:00:00+00:00","datePublished":"2018-04-16T00:00:00+00:00","description":"$\\newcommand{\\syt}{\\mathop{\\rm syt}}$ Tässä postauksessa käydään läpi muutama asia liittyen tekijöihinjakoon.","mainEntityOfPage":{"@type":"WebPage","@id":"https://blog-drafts.matematiikkakilpailut.fi/2018/04/16/Tekijoita.html"},"@type":"BlogPosting","@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#157878">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/assets/css/style.css?v=2c669b5e01ecebd0ccd9a63f1cd21eeeb0cf1936">
+    <link href="/feed.xml" type="application/atom+xml" rel="alternate" title="Sivuston verkkosyöte">
+
+    <script type="text/x-mathjax-config">
+ MathJax.Hub.Config({
+   tex2jax: {
+     inlineMath: [['$', '$'], ['\\(', '\\)']],
+     displayMath: [['$$', '$$']],
+     processEscapes: true
+   }
+ });
+</script>
+<script
+  type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS_CHTML" 
+  integrity="sha256-nvJJv9wWKEm88qvoQl9ekL2J+k/RWIsaSScxxlsrv8k="
+  crossorigin="anonymous">
+</script>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/fonts/HTML-CSS/TeX/woff/MathJax_Main-Regular.woff"
+      rel="preload" as="font" type="font/woff" crossorigin="anonymous">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/fonts/HTML-CSS/TeX/woff/MathJax_Size1-Regular.woff"
+      rel="preload" as="font" type="font/woff" crossorigin="anonymous">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/fonts/HTML-CSS/TeX/woff/MathJax_Math-Italic.woff"
+      rel="preload" as="font" type="font/woff" crossorigin="anonymous">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/fonts/HTML-CSS/TeX/woff/MathJax_Size2-Regular.woff"
+      rel="preload" as="font" type="font/woff" crossorigin="anonymous">
+
+  </head>
+  <body>
+    <section class="page-header">
+      <h1 class="project-name">Matematiikkakilpailijat</h1>
+      <h2 class="project-tagline">Matematiikan olympiavalmennuksen osallistujien kokemuksia</h2>
+    </section>
+
+    <section class="main-content">
+      <article class="post">
+  <header class="post-header">
+    <h1 class="post-title">Tekijöihinjakoa</h1>
+  </header>
+  <section class="post-content">
+    <div class="hidden">
+$\newcommand{\syt}{\mathop{\rm syt}}$
+</div>
+
+<p>Tässä postauksessa käydään läpi muutama asia liittyen tekijöihinjakoon.</p>
+
+<!--jatkuu-->
+
+<p>Tekijöihin jakaminen on tärkeä taito kilpailumatematiikassa niin algebrallisten kuin lukuteoreettistenkin tehtävien parissa. Polynomien oletetaan olevan ennestään jo hieman tuttuja, ja kompleksilukujen perusominaisuudetkaan eivät ole pahitteeksi.</p>
+
+<p><strong>Jakoyhtälö yhden muuttujan polynomeille</strong></p>
+
+<p>Olkoot $P$ ja $Q$ polynomeja, $\deg(P) \ge \deg(Q)$. On olemassa polynomit $S$ ja $R$, joilla pätee</p>
+
+<p><script type="math/tex">P(x) = Q(x)S(x) + R(x)</script> kaikilla $x \in \mathbb{R}$</p>
+
+<p>missä $\deg(Q) &gt; \deg(R)$. Tätä tulosta kutsutaan jakoyhtälöksi.</p>
+
+<p>Saisimme tällä jaettua polynomin $P$ tekijöihin, jos $R$ olisi nollapolynomi.</p>
+
+<p>Valitsemalla $Q$:n sopivasti voimme joskus saada polynomin $R$ nollapolynomiksi. Tämä onnistuu, jos kaikki $Q$:n nollakohdat ovat myös $P$:n nollakohtia (mukaan lukien kompleksinollakohdat).
+Todistus väitteelle etenee seuraavasti: olkoot $x_1, x_2, \ldots x_n$ polynomin $Q$ kaikki nollakohdat (tässä $n = \deg(Q)$). Nyt, jokaisella $i$ pätee</p>
+
+<script type="math/tex; mode=display">R(x_i) = P(x_i) - Q(x_i)S(x_i) = 0 - 0 = 0</script>
+
+<p>Täten polynomilla $R$ on vähintään $n$ nollakohtaa. Mutta $\deg(R) &lt; \deg(Q) = n$, joten $R$:n tulee olla nollapolynomi.</p>
+
+<p>Huomautus: todistuksessa ei kiinnitetty juurikaan huomiota moninkertaisiin nollakohtiin. Todistusta voidaan muokata käsittelemään myös moninkertaiset nollakohdat, mutta yksinkertaisuuden vuoksi jätämme asian sikseen. Lukija voi todistaa väitteen yleiselle tapaukselle.</p>
+
+<p>Tämän avulla voimme jakaa tekijöihin polynomeja löytämällä helppoja nollakohtia,
+kuten on tapana esimerkiksi lukiomatematiikassa. Huomautettakoon, että voimme myös
+ löytää kompleksinollakohtia, joiden avulla saamme polynomille $P$ toisen asteen
+tulontekijän. Esimerkiksi $P(x) = x^5 + x^3 - 2x^2 - 2$ on jaollinen polynomilla $Q(x) = x^2 + 1$. Tämän voi nähdä vaikkapa huomaamalla $P(i) = P(-i) = 0$.</p>
+
+<p><strong>Usean muuttujan polynomit</strong>
+Usein kilpailutehtävissä esiintyy monen muuttujan polynomeja vain yhden muuttujan sijasta. Jakoyhtälö ei suoraan yleisty monelle muuttujalle, mutta samantapainen idea toimii.</p>
+
+<p><strong>Esimerkki</strong> (Valmennustehtävät, helmikuu 2018, tehtävä 12)</p>
+
+<p>Olkoot $x, y, z$ reaalilukuja, jotka toteuttavat ehdot $x + y \ge 2z$ ja $y + z \ge 2x$. Osoita, että</p>
+
+<script type="math/tex; mode=display">5(x^3 + y^3 + z^3) + 12xyz \ge 3(x^2 + y^2 + z^2)(x+y+z)</script>
+
+<p>ja että yhtäsuuruus vallitsee jos ja vain jos $x + y = 2z$ tai $y + z = 2x$.</p>
+
+<p><strong>Ratkaisu</strong></p>
+
+<p>Merkitään $P(x, y, z) = $$5(x^3 + y^3 + z^3) + 12xyz - 3(x^2 + y^2 + z^2)(x+y+z)$. Tehtävänannossa pyydetään osoittamaan muiden asioiden ohessa, että $P(x, y, z) = 0$, kun $2z = x + y$. Tämä on helppoa tarkistaa. Nollakohdan löytyminen tarkoittaa käytännössä sitä, että $P$ on jaollinen termillä $x+y-2z$. Vastaavasti saamme toisesta yhtäsuuruusehtoa koskevasta väitteestä tekijäksi lausekkeen $2x - y - z$. Sillä $P$ on symmetrinen polynomi, on sillä myös kolmas analoginen tekijä. Tästä voimme jo päätellä, että</p>
+
+<script type="math/tex; mode=display">P(x, y, z) = (x + y - 2z)(x - 2y + z)(2x - y - z)Q(x, y, z)</script>
+
+<p>jollain polynomilla $Q$. Sillä $P$:n aste on $3$, ja yhtälön oikean puolen aste on $\deg(Q) + 3$, on $Q$ vakiopolynomi. On helppoa saada kokeilemalla, että $Q = 1$. Tehtävän viimeisteleminen on helppoa, ja jätetään lukijalle.</p>
+
+<p><strong>Identiteetit</strong></p>
+
+<p>Kisatehtävissä tulee usein vastaan erilaiset identiteetit. Niiden opetteleminen ei ole hauskaa, mutta tärkeimmät on hyvä muistaa ulkoa. Kaikkea ei tarvitse opetella ulkoa, mutta tärkeää on kuitenkin tietää, mitkä lausekkeet jakaantuvat tekijöihin ja tarvittaessa pystyä johtamaan tulomuodot.</p>
+
+<p>$x^n - y^n$ jakautuu helposti kahen termin tuloksi, joista toinen on $x - y$. Saamme sijoituksella $z = -y$ tulomuodon lausekkeelle $x^n + y^n$, kun $n$ on pariton. Hieman yllättäen pätee myös, että $x^4 + y^4$ jakautuu tekijöihin:</p>
+
+<p>$x^4 + y^4 = (x^2 + y^2)^2 - (\sqrt{2}xy)^2$</p>
+
+<p>Tämä on kahden neliön erotus, ja voidaan jakaa tekijöihin. Huomaa, että tekijöissä tulee olemaan $\sqrt{2}$ kertoimena, joten emme voi suoraan jakaa lauseketta tekijöihin kokonaisluvuissa.</p>
+
+<p>Toteamme siis, että $x^n \pm y^n$ <strong>jakautuu aina tekijöihin, paitsi tapauksessa $x^2 + y^2$</strong>. Nimittäin, jos luvulla $n$ on pariton alkutekijä, voimme ottaa tulontekijäksi $x+y$, ja jos $n$ on jaollinen neljällä, voimme käyttää tulohajotelmaa lausekkeelle $x^4 + y^4$. (Huomaa siis, että voimme kirjoittaa esimerkiksi $x^8 + y^8 = (x^2)^4 + (y^2)^4$, ja jakaa tämän tekijöihin).</p>
+
+<p>Henkilökohtaisesti pidän seuraavista tekijöihinjaoista:</p>
+
+<p>$a^3 + b^3 + c^3 - 3abc = \frac{1}{2}(a+b+c)((a-b)^2 + (b-c)^2 + (c-a)^2)$</p>
+
+<p>$x^3 + y^3 = (x+y)((x+y)^2 - 3xy)$</p>
+
+<p>Vielä viimeisenä mainitaan Sophie Germainin identiteetti, jonka avulla lauseke $a^4 + 4b^4$ voidaan jakaa tekijöihin. Tässä on hyvä huomata, että tekijöiden kertoimet ovat kokonaislukuja, toisin kuin lausekkeen $x^4 + y^4$ tapauksessa.</p>
+
+<script type="math/tex; mode=display">a^4 + 4b^4 = (a^2 + 2b^2)^2 - (2ab)^2 = (a^2 - 2ab + 2b^2)(a^2 + 2ab + 2b^2)</script>
+
+<p><strong>Esimerkki</strong> (Valmennusviikonloppu 2017, helmikuu, Otte Heinävaaran lukuteoriamoniste, tehtävä 7)</p>
+
+<p>Etsi kaikki epänegatiiviset kokonaisluvut $m$, joilla</p>
+
+<script type="math/tex; mode=display">a_m = (2^{2m+1})^2 + 1</script>
+
+<p>on jaollinen enintään kahdella erisuurella alkuluvlla.</p>
+
+<p><strong>Ratkaisu</strong></p>
+
+<p>Käytetään Sophie-Germainin identiteettiä</p>
+
+<p>$a_m = 4\cdot 2^{4m} + 1= 4\cdot (2^m)^4 + 1 = (2^{2m+1} - 2^{m+1} + 1)(2^{2m + 1} + 2^{m+1} + 1)$</p>
+
+<p>Merkitään $x = 2^{2m + 1} - 2^{m+1} + 1$ ja $y = 2^{2m + 1} + 2^{m+1} + 1$.</p>
+
+<p>Ensinnäkin, $x, y &gt; 1$ kaikilla $m &gt; 0$. $m = 0$ on ratkaisu tehtävään. Sivutetaan se loppuratkaisun ajaksi.</p>
+
+<p>Huomataan, että $\syt(x, y) \mid y - x = 2^{2m+2}$. Mutta $x$ ja $y$ ovat parittomia, joten $\syt(x, y) = 1$. Siispä jos $a_m$ on jaollinen enintään kahdella erisuurella alkuluvulla, tulee sekä luvun $x$ että luvun $y$ olla alkuluvun potenssi.</p>
+
+<p>Tutkimalla modulo $5$ saamme, että $a_m$ on aina jaollinen viidellä. Täten joko $x$ tai $y$ on jaollinen viidellä. Jaetaan ratkaisu kahteen osaan.</p>
+
+<p><strong>Tapaus 1. $x$ on viiden potenssi</strong></p>
+
+<p>Tulee olla $2^{2m + 1} - 2^{m+1} + 1 = 5^k$, eli
+$2^{m+1} (2^m - 1) = 5^k - 1$</p>
+
+<p>Tässä kohtaa ratkaisua käännytään ns. Lifting the Exponent Lemman (LTE) puoleen. Hyvä materiaali aiheesta löytyy osoitteesta</p>
+
+<p><a href="http://s3.amazonaws.com/aops-cdn.artofproblemsolving.com/resources/articles/lifting-the-exponent.pdf">Lifting The Exponent Lemma</a></p>
+
+<p>Osoite sisältää lauseen, todistuksen ja runsaasti harjoitustehtäviä. Sillä LTE on tärkeä, esitetään lause myös tässä:</p>
+
+<p><strong>LTE</strong></p>
+
+<p>Olkoon $p$ pariton alkuluku, jolla $p \mid x - y$, $p \nmid xy$. Olkoon $n \in \mathbb{Z_+}$. Pätee</p>
+
+<script type="math/tex; mode=display">v_p(x^n - y^n) = v_p(x - y) + v_p(n)</script>
+
+<p>missä $v_p(m)$ on suurin $p$:n potenssi, joka jakaa luvun $m$. Lisäksi tapauksessa $p = 2$ pätee (olettaen samat ehdot kuin edellä)</p>
+
+<script type="math/tex; mode=display">v_2(x^n - y^n) = v_2(x-y) + v_2(x+y) + v_2(n) - 1</script>
+
+<p>Sitten, takaisin ratkaisuun.</p>
+
+<p>Tutkitaan suurinta kakkosen eksponettia, joka jakaa yhtälön kunkin puolen. Vasemmalle puolelle tämä on $m+1$, ja oikealle puolelle</p>
+
+<p>$v_2(5^k - 1) =  v_2(k) + 2 = m+1$. Täten, $k \ge 2^{m-1}$.</p>
+
+<p>Luvun $k$ tulee olla hyvin suuri, joten yhtälöllä ei ole kovin montaa ratkaisua. Tarkemmin,</p>
+
+<p>$5^k - 1 \ge 5^{2^{m-1}} - 1 \ge 5^{m+1} - 1 &gt; 4^{m+1} - 1 &gt; 2^{2m+1} - 1 &gt; 2^{m+1}(2^m - 1)$
+kaikilla $m \ge 3$. Siis yhtälöllä voi olla ratkaisuja vain jos $m = 1$ tai $m = 2$.
+$m = 1$ on ratkaisu, ja niin myös $m = 2$, sillä $a_2 = 1025 = 5^2 \cdot 41$.</p>
+
+<p><strong>Tapaus 2. $y$ on viiden potenssi</strong>
+Jos taas $y$ on luvun $5$ potenssi, on</p>
+
+<p>$2^{2m+1} + 2^{m+1} + 1 = 5^k  $</p>
+
+<p>Voimme edetä tässä samalla tavalla kuin aiemmassakin tapauksessa. Emme saa täältä uusia ratkaisuja.</p>
+
+<p>Siis ainoat ratkaisut alkuperäiseen tehtävään ovat $m = 0, 1, 2$.</p>
+
+<p><strong>Harjoitustehtäviä</strong>
+Tässä on pari tehtävää, joiden (yksi) ratkaisu perustuu paljolti tekijöihinjakoon.</p>
+
+<p><strong>Lukion matematiikkakilpailun loppukilpailu, 1999, tehtävä 3</strong></p>
+
+<p>Selvitä, montako alkulukua on jonossa
+<script type="math/tex">101, 10101, 1010101, \ldots</script></p>
+
+<p><strong>Pohjoismainen 2003, tehtävä 2</strong></p>
+
+<p>Etsi kaikki kokonaislukukolmikot $(x, y, z)$, joille</p>
+
+<script type="math/tex; mode=display">x^3 + y^3 + z^3 - 3xyz = 2003</script>
+
+<p><strong>Baltian tie -valintakoe 2016, tehtävä 4</strong></p>
+
+<p>Reaaliluvuille $a$, $b$, $c$ on voimassa</p>
+
+<script type="math/tex; mode=display">(2b-a)^2 + (2b-c)^2 = 2(2b^2 - ac)</script>
+
+<p>Osoita, että $a$, $b$ ja $c$ ovat jonkin aritmeettisen jonon kolme peräkkäistä jäsentä.</p>
+
+<p><strong>Valmennustehtävät 2017, huhti-toukokuu, tehtävä 14</strong></p>
+
+<p>Olkoot $a$, $b$ ja $c$ sellaisia reaalilukuja, ettei niistä minkään kahden summa ole nolla. Osoita, että</p>
+
+<script type="math/tex; mode=display">\frac{a^5 + b^5 + c^5 - (a+b+c)^5}{a^3 + b^3 + c^3 - (a+b+c)^3} \ge \frac{10}{9}(a+b+c)^2</script>
+
+  </section>
+  <footer class="post-footer">
+    <p><time datetime="2018-04-16">16. 4. 2018</time>
+       • Olli Järviniemi
+      <span class="share-buttons">
+  <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fblog-drafts.matematiikkakilpailut.fi%2F2018%2F04%2F16%2FTekijoita.html&quote=Tekij%C3%B6ihinjakoa"
+     title="Jaa Facebookissa" target="_blank" rel="noopener noreferrer nofollow">
+    <svg aria-label="Jaa Facebookissa" role="img" viewBox="0 0 24 24"><title lang="en">Facebook</title><use xlink:href="/assets/images/icons.svg#facebook"/></svg></a>
+  <a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fblog-drafts.matematiikkakilpailut.fi%2F2018%2F04%2F16%2FTekijoita.html&text=Tekij%C3%B6ihinjakoa"
+     target="_blank" rel="noopener noreferrer nofollow" title="Jaa Twitterissä">
+    <svg aria-label="Jaa Twitterissä" role="img" viewBox="0 0 24 24"><title lang="en">Twitter</title><use xlink:href="/assets/images/icons.svg#twitter"/></svg></a>
+  <a href="https://pinterest.com/pin/create/button/?url=https%3A%2F%2Fblog-drafts.matematiikkakilpailut.fi%2F2018%2F04%2F16%2FTekijoita.html&description=Tekij%C3%B6ihinjakoa"
+     target="_blank" rel="noopener noreferrer nofollow" title="Jaa Pinterestissä">
+    <svg aria-label="Jaa Pinterestissä" role="img" viewBox="0 0 24 24"><title lang="en">Pinterest</title><use xlink:href="/assets/images/icons.svg#pinterest"/></svg></a>
+  <a href="https://www.reddit.com/submit?url=https%3A%2F%2Fblog-drafts.matematiikkakilpailut.fi%2F2018%2F04%2F16%2FTekijoita.html&title=Tekij%C3%B6ihinjakoa"
+     target="_blank" rel="noopener noreferrer nofollow" title="Jaa Redditissä">
+    <svg aria-label="Jaa Redditissä" role="img" viewBox="0 0 24 24"><title lang="en">Reddit</title><use xlink:href="/assets/images/icons.svg#reddit"/></svg></a>
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fblog-drafts.matematiikkakilpailut.fi%2F2018%2F04%2F16%2FTekijoita.html&title=Tekij%C3%B6ihinjakoa&source=https%3A%2F%2Fblog-drafts.matematiikkakilpailut.fi"
+     target="_blank" rel="noopener noreferrer nofollow" title="Jaa LinkedInissä">
+    <svg aria-label="Jaa Linkedinissä" role="img" viewBox="0 0 24 24"><title lang="en">LinkedIn</title><use xlink:href="/assets/images/icons.svg#linkedin"/></svg></a>
+  <a href="https://pinboard.in/add?url=https%3A%2F%2Fblog-drafts.matematiikkakilpailut.fi%2F2018%2F04%2F16%2FTekijoita.html&title=Tekij%C3%B6ihinjakoa"
+     target="_blank" rel="noopener noreferrer nofollow" title="Talleta Pinboardiin">
+    <svg aria-label="Talleta Pinboardiin" role="img" viewBox="0 0 24 24"><title lang="en">Pinboard</title><use xlink:href="/assets/images/icons.svg#pinboard"/></svg></a>
+</span>
+
+    </p>
+  </footer>
+</article>
+
+    </section>
+
+    <section class="site-footer">
+      <p>Tekijänoikeus kirjoittajilla. Käytämme sivuilla evästeitä: <a href="/tietosuoja.html">tietosuojalauseke</a>.</p>
+    </section>
+    
+
+  </body>
+</html>

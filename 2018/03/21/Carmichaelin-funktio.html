@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="fi">
+  <head>
+    <meta charset="UTF-8">
+    <!-- Begin Jekyll SEO tag v2.5.0 -->
+<title>Carmichaelin funktio | Matematiikkakilpailijat</title>
+<meta name="generator" content="Jekyll v3.8.5" />
+<meta property="og:title" content="Carmichaelin funktio" />
+<meta name="author" content="Olli Järviniemi" />
+<meta property="og:locale" content="fi" />
+<meta name="description" content="Carmichaelin funktio $\lambda$ määritellään niin, että $\lambda (p^k) = \phi(p^k)$ kaikilla parittomilla alkuluvuilla $p$ ja $k \ge 0$, $\lambda (2^k) = 2^{k-2}$ kaikilla $k &gt; 2$." />
+<meta property="og:description" content="Carmichaelin funktio $\lambda$ määritellään niin, että $\lambda (p^k) = \phi(p^k)$ kaikilla parittomilla alkuluvuilla $p$ ja $k \ge 0$, $\lambda (2^k) = 2^{k-2}$ kaikilla $k &gt; 2$." />
+<link rel="canonical" href="https://blog-drafts.matematiikkakilpailut.fi/2018/03/21/Carmichaelin-funktio.html" />
+<meta property="og:url" content="https://blog-drafts.matematiikkakilpailut.fi/2018/03/21/Carmichaelin-funktio.html" />
+<meta property="og:site_name" content="Matematiikkakilpailijat" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2018-03-21T00:00:00+00:00" />
+<meta property="fb:app_id" content="964806940344711" />
+<script type="application/ld+json">
+{"url":"https://blog-drafts.matematiikkakilpailut.fi/2018/03/21/Carmichaelin-funktio.html","author":{"@type":"Person","name":"Olli Järviniemi"},"headline":"Carmichaelin funktio","dateModified":"2018-03-21T00:00:00+00:00","datePublished":"2018-03-21T00:00:00+00:00","description":"Carmichaelin funktio $\\lambda$ määritellään niin, että $\\lambda (p^k) = \\phi(p^k)$ kaikilla parittomilla alkuluvuilla $p$ ja $k \\ge 0$, $\\lambda (2^k) = 2^{k-2}$ kaikilla $k &gt; 2$.","mainEntityOfPage":{"@type":"WebPage","@id":"https://blog-drafts.matematiikkakilpailut.fi/2018/03/21/Carmichaelin-funktio.html"},"@type":"BlogPosting","@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#157878">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/assets/css/style.css?v=2c669b5e01ecebd0ccd9a63f1cd21eeeb0cf1936">
+    <link href="/feed.xml" type="application/atom+xml" rel="alternate" title="Sivuston verkkosyöte">
+
+    <script type="text/x-mathjax-config">
+ MathJax.Hub.Config({
+   tex2jax: {
+     inlineMath: [['$', '$'], ['\\(', '\\)']],
+     displayMath: [['$$', '$$']],
+     processEscapes: true
+   }
+ });
+</script>
+<script
+  type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS_CHTML" 
+  integrity="sha256-nvJJv9wWKEm88qvoQl9ekL2J+k/RWIsaSScxxlsrv8k="
+  crossorigin="anonymous">
+</script>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/fonts/HTML-CSS/TeX/woff/MathJax_Main-Regular.woff"
+      rel="preload" as="font" type="font/woff" crossorigin="anonymous">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/fonts/HTML-CSS/TeX/woff/MathJax_Size1-Regular.woff"
+      rel="preload" as="font" type="font/woff" crossorigin="anonymous">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/fonts/HTML-CSS/TeX/woff/MathJax_Math-Italic.woff"
+      rel="preload" as="font" type="font/woff" crossorigin="anonymous">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/fonts/HTML-CSS/TeX/woff/MathJax_Size2-Regular.woff"
+      rel="preload" as="font" type="font/woff" crossorigin="anonymous">
+
+  </head>
+  <body>
+    <section class="page-header">
+      <h1 class="project-name">Matematiikkakilpailijat</h1>
+      <h2 class="project-tagline">Matematiikan olympiavalmennuksen osallistujien kokemuksia</h2>
+    </section>
+
+    <section class="main-content">
+      <article class="post">
+  <header class="post-header">
+    <h1 class="post-title">Carmichaelin funktio</h1>
+  </header>
+  <section class="post-content">
+    <div class="hidden">
+$\newcommand{\pyj}{\mathop{\rm pyj}}\newcommand{\syt}{\mathop{\rm syt}}$
+</div>
+
+<p>Tämä on kirjoitettu harjoituksen vuoksi.</p>
+
+<p><strong>Teoria</strong>
+Carmichaelin funktio $\lambda$ määritellään niin, että $\lambda (p^k) = \phi(p^k)$ kaikilla parittomilla alkuluvuilla $p$ ja $k \ge 0$, $\lambda (2^k) = 2^{k-2}$ kaikilla $k &gt; 2$. Lisäksi $\lambda (2) = 1$, $\lambda (4) = 2$. Lambdafunktiolle pätee lisäksi $\lambda (ab) = \pyj(\lambda (a), \lambda (b))$, kun $\syt(a, b) = 1$.</p>
+
+<p>$\lambda (n)$ on pienin kokonaisluku, jolla pätee ehto $a^{\lambda(n)} \equiv 1 \pmod{n}$ kaikilla $\syt(a, n) = 1$.</p>
+
+<p><strong>Tehtävä</strong>
+Osoita, että seuraavat ehdot ovat ekvivalentit.</p>
+<ol>
+  <li>$ x^6 \equiv 1 \pmod{n}$ kaikilla $\syt(x, n) = 1$</li>
+  <li>$n$ jakaa luvun $504$</li>
+</ol>
+
+
+  </section>
+  <footer class="post-footer">
+    <p><time datetime="2018-03-21">21. 3. 2018</time>
+       • Olli Järviniemi
+      <span class="share-buttons">
+  <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fblog-drafts.matematiikkakilpailut.fi%2F2018%2F03%2F21%2FCarmichaelin-funktio.html&quote=Carmichaelin+funktio"
+     title="Jaa Facebookissa" target="_blank" rel="noopener noreferrer nofollow">
+    <svg aria-label="Jaa Facebookissa" role="img" viewBox="0 0 24 24"><title lang="en">Facebook</title><use xlink:href="/assets/images/icons.svg#facebook"/></svg></a>
+  <a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fblog-drafts.matematiikkakilpailut.fi%2F2018%2F03%2F21%2FCarmichaelin-funktio.html&text=Carmichaelin+funktio"
+     target="_blank" rel="noopener noreferrer nofollow" title="Jaa Twitterissä">
+    <svg aria-label="Jaa Twitterissä" role="img" viewBox="0 0 24 24"><title lang="en">Twitter</title><use xlink:href="/assets/images/icons.svg#twitter"/></svg></a>
+  <a href="https://pinterest.com/pin/create/button/?url=https%3A%2F%2Fblog-drafts.matematiikkakilpailut.fi%2F2018%2F03%2F21%2FCarmichaelin-funktio.html&description=Carmichaelin+funktio"
+     target="_blank" rel="noopener noreferrer nofollow" title="Jaa Pinterestissä">
+    <svg aria-label="Jaa Pinterestissä" role="img" viewBox="0 0 24 24"><title lang="en">Pinterest</title><use xlink:href="/assets/images/icons.svg#pinterest"/></svg></a>
+  <a href="https://www.reddit.com/submit?url=https%3A%2F%2Fblog-drafts.matematiikkakilpailut.fi%2F2018%2F03%2F21%2FCarmichaelin-funktio.html&title=Carmichaelin+funktio"
+     target="_blank" rel="noopener noreferrer nofollow" title="Jaa Redditissä">
+    <svg aria-label="Jaa Redditissä" role="img" viewBox="0 0 24 24"><title lang="en">Reddit</title><use xlink:href="/assets/images/icons.svg#reddit"/></svg></a>
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fblog-drafts.matematiikkakilpailut.fi%2F2018%2F03%2F21%2FCarmichaelin-funktio.html&title=Carmichaelin+funktio&source=https%3A%2F%2Fblog-drafts.matematiikkakilpailut.fi"
+     target="_blank" rel="noopener noreferrer nofollow" title="Jaa LinkedInissä">
+    <svg aria-label="Jaa Linkedinissä" role="img" viewBox="0 0 24 24"><title lang="en">LinkedIn</title><use xlink:href="/assets/images/icons.svg#linkedin"/></svg></a>
+  <a href="https://pinboard.in/add?url=https%3A%2F%2Fblog-drafts.matematiikkakilpailut.fi%2F2018%2F03%2F21%2FCarmichaelin-funktio.html&title=Carmichaelin+funktio"
+     target="_blank" rel="noopener noreferrer nofollow" title="Talleta Pinboardiin">
+    <svg aria-label="Talleta Pinboardiin" role="img" viewBox="0 0 24 24"><title lang="en">Pinboard</title><use xlink:href="/assets/images/icons.svg#pinboard"/></svg></a>
+</span>
+
+    </p>
+  </footer>
+</article>
+
+    </section>
+
+    <section class="site-footer">
+      <p>Tekijänoikeus kirjoittajilla. Käytämme sivuilla evästeitä: <a href="/tietosuoja.html">tietosuojalauseke</a>.</p>
+    </section>
+    
+
+  </body>
+</html>

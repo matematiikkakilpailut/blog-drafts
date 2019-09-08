@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="fi">
+  <head>
+    <meta charset="UTF-8">
+    <!-- Begin Jekyll SEO tag v2.5.0 -->
+<title>Polynomien yhteiset alkutekijät, osa 9: lause 4 | Matematiikkakilpailijat</title>
+<meta name="generator" content="Jekyll v3.8.5" />
+<meta property="og:title" content="Polynomien yhteiset alkutekijät, osa 9: lause 4" />
+<meta name="author" content="Olli Järviniemi" />
+<meta property="og:locale" content="fi" />
+<meta name="description" content="Tässä postauksessa todistetaan tutkielman lause 4, eli että kaikki välin $[0, 1]$ rationaaliluvut esiintyvät jonkin polynomin alkutekijöiden tiheytenä." />
+<meta property="og:description" content="Tässä postauksessa todistetaan tutkielman lause 4, eli että kaikki välin $[0, 1]$ rationaaliluvut esiintyvät jonkin polynomin alkutekijöiden tiheytenä." />
+<link rel="canonical" href="https://blog-drafts.matematiikkakilpailut.fi/2019/06/05/PYA03lause4.html" />
+<meta property="og:url" content="https://blog-drafts.matematiikkakilpailut.fi/2019/06/05/PYA03lause4.html" />
+<meta property="og:site_name" content="Matematiikkakilpailijat" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2019-06-05T00:00:00+00:00" />
+<meta property="fb:app_id" content="964806940344711" />
+<script type="application/ld+json">
+{"url":"https://blog-drafts.matematiikkakilpailut.fi/2019/06/05/PYA03lause4.html","author":{"@type":"Person","name":"Olli Järviniemi"},"headline":"Polynomien yhteiset alkutekijät, osa 9: lause 4","dateModified":"2019-06-05T00:00:00+00:00","datePublished":"2019-06-05T00:00:00+00:00","description":"Tässä postauksessa todistetaan tutkielman lause 4, eli että kaikki välin $[0, 1]$ rationaaliluvut esiintyvät jonkin polynomin alkutekijöiden tiheytenä.","mainEntityOfPage":{"@type":"WebPage","@id":"https://blog-drafts.matematiikkakilpailut.fi/2019/06/05/PYA03lause4.html"},"@type":"BlogPosting","@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#157878">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/assets/css/style.css?v=2c669b5e01ecebd0ccd9a63f1cd21eeeb0cf1936">
+    <link href="/feed.xml" type="application/atom+xml" rel="alternate" title="Sivuston verkkosyöte">
+
+    <script type="text/x-mathjax-config">
+ MathJax.Hub.Config({
+   tex2jax: {
+     inlineMath: [['$', '$'], ['\\(', '\\)']],
+     displayMath: [['$$', '$$']],
+     processEscapes: true
+   }
+ });
+</script>
+<script
+  type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS_CHTML" 
+  integrity="sha256-nvJJv9wWKEm88qvoQl9ekL2J+k/RWIsaSScxxlsrv8k="
+  crossorigin="anonymous">
+</script>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/fonts/HTML-CSS/TeX/woff/MathJax_Main-Regular.woff"
+      rel="preload" as="font" type="font/woff" crossorigin="anonymous">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/fonts/HTML-CSS/TeX/woff/MathJax_Size1-Regular.woff"
+      rel="preload" as="font" type="font/woff" crossorigin="anonymous">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/fonts/HTML-CSS/TeX/woff/MathJax_Math-Italic.woff"
+      rel="preload" as="font" type="font/woff" crossorigin="anonymous">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/fonts/HTML-CSS/TeX/woff/MathJax_Size2-Regular.woff"
+      rel="preload" as="font" type="font/woff" crossorigin="anonymous">
+
+  </head>
+  <body>
+    <section class="page-header">
+      <h1 class="project-name">Matematiikkakilpailijat</h1>
+      <h2 class="project-tagline">Matematiikan olympiavalmennuksen osallistujien kokemuksia</h2>
+    </section>
+
+    <section class="main-content">
+      <article class="post">
+  <header class="post-header">
+    <h1 class="post-title">Polynomien yhteiset alkutekijät, osa 9: lause 4</h1>
+  </header>
+  <section class="post-content">
+    <p>Tässä postauksessa todistetaan tutkielman lause 4, eli että kaikki välin $[0, 1]$ rationaaliluvut esiintyvät jonkin polynomin alkutekijöiden tiheytenä.</p>
+
+<!--jatkuu-->
+
+<p><strong>Sisällysluettelo</strong></p>
+
+<ol>
+  <li><a href="https://blog.matematiikkakilpailut.fi/2019/06/05/PYA11johdanto.html">Osa 1 - johdanto</a></li>
+  <li><a href="https://blog.matematiikkakilpailut.fi/2019/06/05/PYA10esitiedot.html">Osa 2 - esitiedot</a></li>
+  <li><a href="https://blog.matematiikkakilpailut.fi/2019/06/05/PYA09tulokset.html">Osa 3 - tulokset</a></li>
+  <li><a href="https://blog.matematiikkakilpailut.fi/2019/06/05/PYA08motivaatio.html">Osa 4 - motivaatio</a></li>
+  <li><a href="https://blog.matematiikkakilpailut.fi/2019/06/05/PYA07heikko.html">Osa 5 - heikko versio</a></li>
+  <li><a href="https://blog.matematiikkakilpailut.fi/2019/06/05/PYA06yleinen.html">Osa 6 - yleinen tapaus</a></li>
+  <li><a href="https://blog.matematiikkakilpailut.fi/2019/06/05/PYA05lause2.html">Osa 7 - lause 2</a></li>
+  <li><a href="https://blog.matematiikkakilpailut.fi/2019/06/05/PYA04lause3.html">Osa 8 - lause 3</a></li>
+  <li>Osa 9 - lause 4</li>
+  <li><a href="https://blog.matematiikkakilpailut.fi/2019/06/05/PYA02sovelluksia.html">Osa 10 - sovelluksia</a></li>
+  <li><a href="https://blog.matematiikkakilpailut.fi/2019/06/05/PYA01lisaaiheita.html">Osa 11 - lisäaiheita</a></li>
+</ol>
+
+<p>Frobeniuksen lauseen nojalla $\delta(S(P))$ on aina rationaalinen, joten keskitytään rationaalilukujen tutkimiseen.</p>
+
+<p>Suunnitelmana on osoittaa väite induktiolla, mikä onnistuu rationaaliluvuilla näppärästi. Saamme luotua polynomeja, joilla on halutunlaisia tiheyksiä käyttäen alla esitettyä lemmaa 4.2. ja lausetta 3.</p>
+
+<p>Tavoitteena on siis käyttää lausetta 3. Tätä varten pitää luoda metodi, jolla voidaan generoida lauseen 3 mukaisesti riippumattomia polynomeja. Tämän hoitaa lemma 4.2.</p>
+
+<p>Todistuksen lähtökohtana toimii seuraava jo itsessään kaunis tulos:</p>
+
+<h2 id="lemma-41">Lemma 4.1.</h2>
+
+<p>Olkoon $k \in \mathbb{Z_+}$, ja olkoon $S$ niiden $1 \le n \le k$ joukko, joilla $syt(n, k) = 1$. Olkoon $H$ jokin $S$:n osajoukko, joka on kertolaskun suhteen suljettu, kun kertolasku tehdään modulo $k$. On olemassa polynomi $P \in \mathbb{Z_c}[x]$, jolla on seuraavat ominaisuudet:</p>
+
+<ol>
+  <li>
+    <p>$p \in S(P)$ jos ja vain jos $p \equiv h \pmod{k}$ jollain $h \in H$.</p>
+  </li>
+  <li>
+    <p>$P$:n juurikunta $F_P$ on kunnan $\mathbb{Q}(\zeta_k)$ osakunta.</p>
+  </li>
+</ol>
+
+<p>Tässä $\zeta_k$ on ns. primiitivien $k$:nnes yksikköjuuri (engl. roots of unity). Siis $\zeta_k^k = 1$, mutta $\zeta_k^n \neq 1$ kaikilla $1 \le n &lt; k$.</p>
+
+<p><strong>Todistus</strong></p>
+
+<p>Tuloksen ovat osoittaneet Ram Murty ja Nithum Thain artikkelissaan <a href="https://projecteuclid.org/euclid.facm/1229442627">Primes in Certain Arithmetic Progressions</a> (Funct. Approx. Comment. Math. Volume 35 (2006), 249-259.). Ehto 1 seuraa lauseista 4 ja 5, ja ehto 2 seuraa konstruktiosta.</p>
+
+<p>Esimerkiksi syklotomiset polynomit toteuttavat ehdon, kun $H = \lbrace 1 \rbrace$.</p>
+
+<p><strong>Huomautus</strong></p>
+
+<p>Myös seuraava, samanhenkinen ja kaunis tulos pätee:</p>
+
+<p>Olkoon $k$ jokin positiivinen kokonaisluku, ja olkoon $T$ jokin $S$:n osajoukko, missä $S$ on kuten lemmassa 4.1.. Oletetaan, että on olemassa polynomi $P \in \mathbb{Z}[x]$ niin, että kaikilla paitsi äärellisen monella $p$ pätee $p \in S(P) \implies p \equiv t \pmod{k}$ jollain $t \in T$. Tällöin $T$:n tulee olla $S$:n jokin kertolaskun suhteen suljettu osajoukko, kun kertolasku tehdään modulo $p$.</p>
+
+<p>Tämän todistus löytyy artikkelista <a href="https://kconrad.math.uconn.edu/blurbs/gradnumthy/dirichleteuclid.pdf">Euclidean Proofs of Dirichlet’s Theorem</a>, jonka on kirjoittanut Keith Conrad. Artikkelin johdanto on kaikelle yleisölle sopiva ja hyvin mielenkiintoinen, kannattaa vilkaista!</p>
+
+<h2 id="lemma-42">Lemma 4.2.</h2>
+
+<p>Lemman 4.1. avulla saadaan tarkoituksiamme varten hyvä tulos. Kannattaa yrittää itse todistaa tulos ennen todistuken lukemista - todistus on alkeellinen, eikä kovin vaikea.</p>
+
+<h3 id="väite">Väite</h3>
+
+<p>Olkoon $n \ge 2$ kokonaisluku. On olemassa äärettömän monta $p$, joita kohden on olemassa $P$, jolla pätee seuraavat ominaisuudet:</p>
+
+<ol>
+  <li>
+    <p>$\delta(S(P)) = \frac{1}{n}$</p>
+  </li>
+  <li>
+    <p>Polynomin $P$ juurikunta on kunnan $\mathbb{Q}(\zeta_p)$ osakunta.</p>
+  </li>
+</ol>
+
+<h3 id="todistus">Todistus</h3>
+
+<p>Avainsana on primitiivijuuri. Valitaan $p \equiv 1 \pmod{n}$. Dirichlet’n lauseen nojalla tällaisia $p$ on äärettömän monta. Olkoon $g$ primitiivijuuri modulo $p$.</p>
+
+<p>Olkoon $p-1 = mn, m \in \mathbb{Z_+}$. Valitaan lemman 4.1. mukaiseksi $H$ luvut muotoa $g^{ni}$, $i = 0, 1, \ldots , m-1$. On helppoa nähdä (Fermat’n pienen lauseen avulla), että $H$ on kertolaskun suhteen suljettu joukko, jonka koko on $m$.</p>
+
+<p>Dirichlet’n lauseen tiheysversion nojalla niiden $q$ tiheys, joilla $q \equiv h \pmod{p}$ jollain $h \in H$ on $\frac{m}{p-1} = \frac{1}{n}$.</p>
+
+<p>Valtiaan siis $P$ kuten lemmassa 4.1 tätä $H$ vastaavaksi. Tämä kelpaa.</p>
+
+<h3 id="huomautus">Huomautus</h3>
+
+<p>Lemman 4.1. avulla voidaan generoida ainoastaan tiheyksiä muotoa $\frac{1}{n}$. Tämä perustuu siihen faktaan, että osaryhmän koko jakaa ryhmän koon, eli siis $\mid H \mid$ jakaa $\mid S \mid \ = \phi(k)$. On siis luonnollista tutkia, miten näitä tiheyksiä voidaan generoida, ja sovittaa muu osa todistuksesta tähän. Siirrymme tähän seuraavaksi.</p>
+
+<h1 id="lauseen-todistus">Lauseen todistus</h1>
+
+<h2 id="motivaatio">Motivaatio</h2>
+
+<p>Millaisia operaatioita voimme tehdä tiheyksille? Tiedämme, että lauseen 3 avulla kaksi tiheyttä voidaan monessa tapauksessa kertoa keskenään. Tästä ei kuitenkaan ole nyt juurikaan apua: kahden muotoa $\frac{1}{n}$ olevan luvun tulo on tätä muotoa. Ideana on käyttää inkluusio-ekskluusiota. Jos olemme luoneet polynomit $X$ ja $Y$, joiden alkutekijöiden tiheydet ovat $x$ ja $y$, lauseen 3 mukaan yhteisten alkutekijöiden tiheys on $xy$, joten polynomin $XY$ alkutekijöiden tiheys on $x + y - xy$. Tämä osoittautuu hyödyllisemmäksi.</p>
+
+<p>Aiomme varmaankin valita toisen luvuista $x, y$ olemaan muotoa $\frac{1}{n}$ lemman 4.2. mukaisesti. Kokeilin muutamaa eri ideaa, ja lopulta päädyin seuraavaan ratkaisuun.</p>
+
+<h2 id="ratkaisu">Ratkaisu</h2>
+
+<p>Osoitetaan induktiolla muuttujan $k$ suhteen, että $\frac{m}{k}$ voidaan esittää jonkin polynomin $P$ alkutekijöiden tiheytenä kaikilla $0 \le m \le k$.</p>
+
+<p>Tapaus $k = 1$ on selvä. Oletetaan, että väite pätee arvolla $k &lt; n$ ja osoitetaan väite arvolla $k = n$.</p>
+
+<p>Ratkaisu perustuu identiteettiin</p>
+
+<script type="math/tex; mode=display">\frac{m-1}{n-1} + \frac{1}{n} - \frac{m-1}{n(n-1)} = \frac{m}{n}</script>
+
+<p>$m = 0$ on triviaali tapaus, joten oletetaan $m &gt; 0$. Olkoon $P$ sellainen, jolla $\delta(S(P)) = \frac{m-1}{n-1}$.</p>
+
+<p>Enää tulee siis vain osoittaa, että voimme valita sellaisen $Q$, jolla $\delta(S(Q)) = \frac{1}{n}$ ja jolla $P$:n ja $Q$:n juurikunnat eivät leikkaa, jolloin lauseen 3 nojalla</p>
+
+<script type="math/tex; mode=display">\delta(S(PQ)) = \delta(S(P)) + \delta(S(Q)) - \delta(S(P))\delta(S(Q)) = \frac{m}{n}</script>
+
+<p>Tämä vaatii vielä viimeisen puristuksen.</p>
+
+<p>Tutkitaan lemman 4.2. mukaisia polynomeja eri $p$:n arvoilla. Nämä polynomit ovat sellaisia, joiden juurikunta on kunnan $\mathbb{Q}(\zeta_p)$ osakuntia. Väite, jonka haluamme osoittaa onkin seuraava:</p>
+
+<p>$P$:n juurikunta ei leikkaa kuntaa $\mathbb{Q}(\zeta_p)$, kun $p$ on tarpeeksi suuri.</p>
+
+<p>Hyvin uskottavan kuuloista.</p>
+
+<p>Ikävä kyllä minulla ei ole tähän mitään helppoa one-liner -ratkaisua. Ainakin voin opettaa vielä yhden asian teoriasta.</p>
+
+<h2 id="fundamental-theorem-of-galois-theory">Fundamental theorem of Galois theory</h2>
+
+<p>Esitän vain version, joka käsittelee rationaalilukujen laajennuksia. Yleinen tapaus ei liene vaikeampi, mutta rationaaliluvut ovat tutumpia niin minulle kuin lukijoille.</p>
+
+<p>Olkoon $F$ jonkin polynomin juurikunta, ja olkoon $G$ sen Galois’n ryhmä. Ennen lauseen väitettä määritellään ns. fixed field. En tiedä tälle termille suomennosta, joten käytän englanninkielistä termiä.</p>
+
+<p><strong>Määritelmä - fixed field</strong></p>
+
+<p>Olkoon $\sigma \in G$ jokin isomorfismi. Olkoon $K$ niiden $x \in F$ joukko, joilla $\sigma(x) = x$. Joukkoa $K$ kutsutaan $\sigma$:n fixed field:ksi. On helppoa osoittaa, että $K$ todella on kunta.</p>
+
+<p>Fundamental theorem of Galois theory (suomeksi Galois’n teorian peruslause?) kertoo, että $F$:n osakunnilla ja $G$:n osaryhmien välillä on luonnollinen bijektio. Lauseen yhteyteen listataan usein monia eri ominaisuuksia, tässä tyydytään yhteen yksinkertaiseen lisätulokseen.</p>
+
+<p><strong>Galois’n teorian peruslause</strong></p>
+
+<p>Olkoon $F$ juurikunta ja olkoon $G$ sen Galois’n ryhmä. Olkoon $H$ jokin $G$:n osaryhmä, ja olkoon $K$ $H$:n alkioiden fixed field:ien leikkaus.</p>
+
+<p>Olkoon $f$ kuvaus $G$:n osaryhmiltä $F$:n osakunnille, joka määritellään kuvaamalla $H$ kunnalle $K$.</p>
+
+<p>Väite: $f$ on bijektio.</p>
+
+<p>Lisäksi, jos $G$:n osaryhmillä $H_1, H_2$ pätee $H_1 \subset H_2$, niin $f(H_2) \subset f(H_1)$.</p>
+
+<p><strong>Esimerkki</strong></p>
+
+<p>Tutkitaan polynomin $x^2 - 2$ juurikuntaa $\mathbb{Q}(\sqrt{2})$ ja sen Galois’n ryhmää $G$. $G$:hen kuuluu kaksi alkiota $\sigma_1, \sigma_2$, joilla</p>
+
+<script type="math/tex; mode=display">\sigma_1(a + b\sqrt{2}) = a + b\sqrt{2}, a, b \in \mathbb{Q}</script>
+
+<p>ja</p>
+
+<script type="math/tex; mode=display">\sigma_2(a + b\sqrt{2}) = a - b\sqrt{2}, a, b \in \mathbb{Q}</script>
+
+<p>Kuvauksen $\sigma_1$ fixed field on $\mathbb{Q}(\sqrt{2})$, ja kuvauksen $\sigma_2$ fixed field on $\mathbb{Q}$.</p>
+
+<p>$G$:llä on kaksi osaryhmää: toinen sisältää vain kuvauksen $\sigma_1$, ja toinen sisältää molemmat kuvaukset $\sigma_1$ ja $\sigma_2$. Huomaa, että $\lbrace \sigma_2 \rbrace$ <strong>ei</strong> ole $G$:n osa<strong>ryhmä</strong>: kuvauksen $\sigma(x) = \sigma_2(\sigma_2(x))$ tulisi kuulua tähän osa<strong>ryhmään</strong>, mutta näin ei ole.</p>
+
+<p>Ensin mainitun $G$:n osaryhmän määritelmän mukainen $K$ on $\mathbb{Q}(\sqrt{2})$. Siispä osaryhmä $\lbrace \sigma_1 \rbrace$ kuvataan kunnan $\mathbb{Q}(\sqrt{2})$ osakunnalle $K = \mathbb{Q}(\sqrt{2})$.</p>
+
+<p>Jälkimmäisen $G$:n osaryhmän $K$ on vain $\mathbb{Q}$, joten $G$:n osaryhmä $\lbrace \sigma_1, \sigma_2 \rbrace$ kuvataan kunnan $\mathbb{Q}(\sqrt{2})$ osakunnalle $\mathbb{Q}$.</p>
+
+<h2 id="todistuksen-viimeistely">Todistuksen viimeistely</h2>
+
+<p>Galois’n teorian peruslause on varsin kaunis tulos, mutta miten se hyödyttää meitä? Näin:</p>
+
+<p>Olkoon $F_P$ jonkin polynomin $P$ juurikunta. $F_P$:llä on vain äärellinen määrä osakuntia (tarkemmin sanoen $P$:n Galois’n ryhmän osaryhmien määrän verran osakuntia).</p>
+
+<p>Myös muilla kunnilla kuin juurikunnilla on vain äärellinen määrä osakuntia, koska ne voidaan laajentaa juurikunniksi. En ole varma, onko näille väitteille helpompia todistuksia kuin esittämäni. Oli miten oli, tulokset lienevät uskottavia.</p>
+
+<p>Mihin jäimme lauseen todistuksen kanssa? Halusimme osoittaa, että $\mathbb{Q}(\zeta_p)$ ei voi leikata $P$:n juurikuntaa äärettömän monella $p$.</p>
+
+<p>Osoitetaan tämä vastaoletuksella. Määritellään $K_p = \mathbb{Q}(\zeta_p) \cap F_P$ kaikilla äärettömän monella lemman 4.2. mukaisella $p$. $K_p$ on kunnan $F_P$ osakunta, joita on edellisen nojalla äärellisen monta. Lisäksi vastaoletuksen nojalla $K_p \neq \mathbb{Q}$ kaikilla näillä $p$.</p>
+
+<p>On siis olemassa kaksi alkulukua $p \neq q$, joilla $K_p = K_q \neq \mathbb{Q}$. Siis kunnilla $\mathbb{Q}(\zeta_p)$ ja $\mathbb{Q}(\zeta_q)$ on muitakin yhteisiä alkioita kuin rationaaliluvut: kaikilla $x \in K_p = K_q$ pätee $x \in \mathbb{Q}(\zeta_p) \cap \mathbb{Q}(\zeta_q)$.</p>
+
+<p>Tämä vaikuttaa ristiriidalta, ja sitä se onkin. Kukapa muukaan kuin Keith Conrad on kirjoittanut monisteen <a href="http://www.math.uconn.edu/~kconrad/blurbs/galoistheory/cyclotomic.pdf">Cyclotomic extensions</a>, jonka lause 3.4. osoittaa seuraavan väitteen:</p>
+
+<p>Olkoot $m$ ja $n$ positiivisia kokonaislukuja, joiden syt on $d$. Tällöin</p>
+
+<script type="math/tex; mode=display">\mathbb{Q}(\zeta_m) \cap \mathbb{Q}(\zeta_n) = \mathbb{Q}(\zeta_d).</script>
+
+<p>Todistus ei ole kamalan vaikea, joten näistä aiheista kiinnostunut lukija voi yrittää ymmärtää sen.</p>
+
+<p><a href="https://blog.matematiikkakilpailut.fi/2019/06/05/PYA02sovelluksia.html">Seuraava postaus.</a></p>
+
+  </section>
+  <footer class="post-footer">
+    <p><time datetime="2019-06-05">5. 6. 2019</time>
+       • Olli Järviniemi
+      <span class="share-buttons">
+  <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fblog-drafts.matematiikkakilpailut.fi%2F2019%2F06%2F05%2FPYA03lause4.html&quote=Polynomien+yhteiset+alkutekij%C3%A4t%2C+osa+9%3A+lause+4"
+     title="Jaa Facebookissa" target="_blank" rel="noopener noreferrer nofollow">
+    <svg aria-label="Jaa Facebookissa" role="img" viewBox="0 0 24 24"><title lang="en">Facebook</title><use xlink:href="/assets/images/icons.svg#facebook"/></svg></a>
+  <a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fblog-drafts.matematiikkakilpailut.fi%2F2019%2F06%2F05%2FPYA03lause4.html&text=Polynomien+yhteiset+alkutekij%C3%A4t%2C+osa+9%3A+lause+4"
+     target="_blank" rel="noopener noreferrer nofollow" title="Jaa Twitterissä">
+    <svg aria-label="Jaa Twitterissä" role="img" viewBox="0 0 24 24"><title lang="en">Twitter</title><use xlink:href="/assets/images/icons.svg#twitter"/></svg></a>
+  <a href="https://pinterest.com/pin/create/button/?url=https%3A%2F%2Fblog-drafts.matematiikkakilpailut.fi%2F2019%2F06%2F05%2FPYA03lause4.html&description=Polynomien+yhteiset+alkutekij%C3%A4t%2C+osa+9%3A+lause+4"
+     target="_blank" rel="noopener noreferrer nofollow" title="Jaa Pinterestissä">
+    <svg aria-label="Jaa Pinterestissä" role="img" viewBox="0 0 24 24"><title lang="en">Pinterest</title><use xlink:href="/assets/images/icons.svg#pinterest"/></svg></a>
+  <a href="https://www.reddit.com/submit?url=https%3A%2F%2Fblog-drafts.matematiikkakilpailut.fi%2F2019%2F06%2F05%2FPYA03lause4.html&title=Polynomien+yhteiset+alkutekij%C3%A4t%2C+osa+9%3A+lause+4"
+     target="_blank" rel="noopener noreferrer nofollow" title="Jaa Redditissä">
+    <svg aria-label="Jaa Redditissä" role="img" viewBox="0 0 24 24"><title lang="en">Reddit</title><use xlink:href="/assets/images/icons.svg#reddit"/></svg></a>
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fblog-drafts.matematiikkakilpailut.fi%2F2019%2F06%2F05%2FPYA03lause4.html&title=Polynomien+yhteiset+alkutekij%C3%A4t%2C+osa+9%3A+lause+4&source=https%3A%2F%2Fblog-drafts.matematiikkakilpailut.fi"
+     target="_blank" rel="noopener noreferrer nofollow" title="Jaa LinkedInissä">
+    <svg aria-label="Jaa Linkedinissä" role="img" viewBox="0 0 24 24"><title lang="en">LinkedIn</title><use xlink:href="/assets/images/icons.svg#linkedin"/></svg></a>
+  <a href="https://pinboard.in/add?url=https%3A%2F%2Fblog-drafts.matematiikkakilpailut.fi%2F2019%2F06%2F05%2FPYA03lause4.html&title=Polynomien+yhteiset+alkutekij%C3%A4t%2C+osa+9%3A+lause+4"
+     target="_blank" rel="noopener noreferrer nofollow" title="Talleta Pinboardiin">
+    <svg aria-label="Talleta Pinboardiin" role="img" viewBox="0 0 24 24"><title lang="en">Pinboard</title><use xlink:href="/assets/images/icons.svg#pinboard"/></svg></a>
+</span>
+
+    </p>
+  </footer>
+</article>
+
+    </section>
+
+    <section class="site-footer">
+      <p>Tekijänoikeus kirjoittajilla. Käytämme sivuilla evästeitä: <a href="/tietosuoja.html">tietosuojalauseke</a>.</p>
+    </section>
+    
+
+  </body>
+</html>

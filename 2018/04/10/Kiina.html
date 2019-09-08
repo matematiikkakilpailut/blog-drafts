@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="fi">
+  <head>
+    <meta charset="UTF-8">
+    <!-- Begin Jekyll SEO tag v2.5.0 -->
+<title>Kiinatehtävä, osa 2 | Matematiikkakilpailijat</title>
+<meta name="generator" content="Jekyll v3.8.5" />
+<meta property="og:title" content="Kiinatehtävä, osa 2" />
+<meta name="author" content="Olli Järviniemi" />
+<meta property="og:locale" content="fi" />
+<meta name="description" content="Tässä postauksessa käsitellään seuraavan tehtävän ratkaisu: Kiinan IMO-joukkueen valintakoe 5, 2010, tehtävä 3 Olkoon $k$ positiivinen kokonaisluku. Osoita, että on olemassa sellainen positiivinen kokonaisluku $N$, niin että kaikilla $n \ge N$ luvulla ${n \choose k}$ on vähintään $k$ erisuurta alkutekijää." />
+<meta property="og:description" content="Tässä postauksessa käsitellään seuraavan tehtävän ratkaisu: Kiinan IMO-joukkueen valintakoe 5, 2010, tehtävä 3 Olkoon $k$ positiivinen kokonaisluku. Osoita, että on olemassa sellainen positiivinen kokonaisluku $N$, niin että kaikilla $n \ge N$ luvulla ${n \choose k}$ on vähintään $k$ erisuurta alkutekijää." />
+<link rel="canonical" href="https://blog-drafts.matematiikkakilpailut.fi/2018/04/10/Kiina.html" />
+<meta property="og:url" content="https://blog-drafts.matematiikkakilpailut.fi/2018/04/10/Kiina.html" />
+<meta property="og:site_name" content="Matematiikkakilpailijat" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2018-04-10T00:00:00+00:00" />
+<meta property="fb:app_id" content="964806940344711" />
+<script type="application/ld+json">
+{"url":"https://blog-drafts.matematiikkakilpailut.fi/2018/04/10/Kiina.html","author":{"@type":"Person","name":"Olli Järviniemi"},"headline":"Kiinatehtävä, osa 2","dateModified":"2018-04-10T00:00:00+00:00","datePublished":"2018-04-10T00:00:00+00:00","description":"Tässä postauksessa käsitellään seuraavan tehtävän ratkaisu: Kiinan IMO-joukkueen valintakoe 5, 2010, tehtävä 3 Olkoon $k$ positiivinen kokonaisluku. Osoita, että on olemassa sellainen positiivinen kokonaisluku $N$, niin että kaikilla $n \\ge N$ luvulla ${n \\choose k}$ on vähintään $k$ erisuurta alkutekijää.","mainEntityOfPage":{"@type":"WebPage","@id":"https://blog-drafts.matematiikkakilpailut.fi/2018/04/10/Kiina.html"},"@type":"BlogPosting","@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#157878">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/assets/css/style.css?v=2c669b5e01ecebd0ccd9a63f1cd21eeeb0cf1936">
+    <link href="/feed.xml" type="application/atom+xml" rel="alternate" title="Sivuston verkkosyöte">
+
+    <script type="text/x-mathjax-config">
+ MathJax.Hub.Config({
+   tex2jax: {
+     inlineMath: [['$', '$'], ['\\(', '\\)']],
+     displayMath: [['$$', '$$']],
+     processEscapes: true
+   }
+ });
+</script>
+<script
+  type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS_CHTML" 
+  integrity="sha256-nvJJv9wWKEm88qvoQl9ekL2J+k/RWIsaSScxxlsrv8k="
+  crossorigin="anonymous">
+</script>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/fonts/HTML-CSS/TeX/woff/MathJax_Main-Regular.woff"
+      rel="preload" as="font" type="font/woff" crossorigin="anonymous">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/fonts/HTML-CSS/TeX/woff/MathJax_Size1-Regular.woff"
+      rel="preload" as="font" type="font/woff" crossorigin="anonymous">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/fonts/HTML-CSS/TeX/woff/MathJax_Math-Italic.woff"
+      rel="preload" as="font" type="font/woff" crossorigin="anonymous">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/fonts/HTML-CSS/TeX/woff/MathJax_Size2-Regular.woff"
+      rel="preload" as="font" type="font/woff" crossorigin="anonymous">
+
+  </head>
+  <body>
+    <section class="page-header">
+      <h1 class="project-name">Matematiikkakilpailijat</h1>
+      <h2 class="project-tagline">Matematiikan olympiavalmennuksen osallistujien kokemuksia</h2>
+    </section>
+
+    <section class="main-content">
+      <article class="post">
+  <header class="post-header">
+    <h1 class="post-title">Kiinatehtävä, osa 2</h1>
+  </header>
+  <section class="post-content">
+    <p>Tässä postauksessa käsitellään seuraavan tehtävän ratkaisu:</p>
+
+<p><strong>Kiinan IMO-joukkueen valintakoe 5, 2010, tehtävä 3</strong></p>
+
+<p>Olkoon $k$ positiivinen kokonaisluku. Osoita, että on olemassa sellainen positiivinen kokonaisluku $N$, niin että kaikilla $n \ge N$ luvulla ${n \choose k}$ on vähintään $k$ erisuurta alkutekijää.</p>
+
+<!--jatkuu-->
+
+<p><strong>Ratkaisu</strong></p>
+
+<p>Ohessa ratkaisu, joka on lähes suoraan ajatuskulkuni tehtävää ratkoessani. Tästä syystä ratkaisu sisältää joitakin “turhia” osioita. Ratkaisussa käytetään varsin yleistä ja hyödyllistä notaatiota: $v_p(n)$ on suurin $p$:n potenssi, joka jakaa luvun $n$. Toisin sanoen, $p^{v_p(n)} \mid n$, mutta $p^{v_p(n) + 1} \nmid n$.</p>
+
+<p>Tehdään yksinkertaisuuden vuoksi sijoitus $n = m + k$. Nyt, tutkittavana on luku</p>
+
+<script type="math/tex; mode=display">\frac{(m+k)(m+k-1)\ldots (m+1)}{k!}</script>
+
+<p>Jos tällä luvulla on alle $k$ erisuurta alkutekijää, tulee yhtälön</p>
+
+<script type="math/tex; mode=display">(m+k)(m+k-1)\ldots (m+1) = k! p_1^{a_1}p_2^{a_2} \ldots p_{k-1}^{a_{k-1}}  \ (1)</script>
+
+<p>päteä jollain alkuluvuilla $p_i$ ja epänegatiivisilla kokonaisluvuilla $a_i$. Alkuperäinen tehtävänanto on ekvivalentti seuraavan väitteen kanssa:</p>
+
+<p>Yhtälöllä $(1)$ on ratkaisu vain äärellisen monella $m$.</p>
+
+<p>On suhteellisen helppoa huomata, että yhtälöllä ei ole kovin montaa ratkaisua, jos $p_i &gt; k$ kaikilla $i$. Tämä johtuu seuraavasta havainnosta:</p>
+
+<p>Jos $p_i \mid m + a$ ja $p_i \mid m + b$, niin $p_i \mid a - b$.</p>
+
+<p>Siis jos kaikki $p_i$:t olisivat suuria, tulisi olla olemassa jokin $a$, jolla $p_i \nmid m + a$ kaikilla $i$. Tämän seurauksena luvulla $m + a$ ei tule olla mitään lukua $k$ suurempia alkutekijöitä, sillä muuten jokin alkuluku $p &gt; k$, $p \neq p_i$ jakaisi yhtälön $(1)$ vasemman puolen, muttei oikeaa. Samoin nähdään myös, että jos $p \mid m + a$, niin $p$:n eksponentin tulee olla enintään $v_p(k!)$. Täten tulee olla $m + a \le k!$, eli $m \le k!$.</p>
+
+<p>Mutta entä sitten, jos $p_i \le k$ jollain $i$? Voisimme silti yrittää soveltaa aiemmin esitettyä ideaa: osoitimme aiemmin, että on olemassa jokin $a$, jolla $p_i \nmid m + a$ kaikilla $i$. Nyt emme pysty aivan samaan, mutta huomaamme kuitenkin, että kovin suuri $p_i$:n potenssi ei voi jakaa lukua $m + a$, kaikilla $a$, jollain $i$. Paremmin muotoiltuna:</p>
+
+<p><strong>Lemma 1</strong></p>
+
+<p>Käytetään yhtälön $(1)$ merkintöjä. On olemassa jokin $a$ jolla pätee seuraava väite: $p_i^c \nmid m + a$ kaikilla $i$, jollain luvusta $k$ riippuvalla vakiolla $c$.</p>
+
+<p>Tämän väitteen todistus on suhteellisen intuitiivinen.</p>
+
+<p><strong>Todistus</strong></p>
+
+<p>Olkoon $p \in \lbrace p_1, p_2, \ldots , p_{k-1} \rbrace $. Olkoon $m + b$ se luku joukosta $\lbrace m+1, m+2, \ldots , m+k \rbrace $ jolla $v_p(m + b)$ on maksimaalinen (jos vaihtoehtoja on monta, valitaan mikä vain). Tällaisia $b$ on yhteensä enintään $k-1$, kun $p$ käy läpi kaikki joukon $\lbrace p_1, \ldots , p_{k-1} \rbrace $ alkuluvut. Täten on olemassa jokin luku $a$, jolla $v_p(m + a)$ ei ole millään $p \in \lbrace p_1, p_2 \ldots , p_{k-1} \rbrace $ tällainen maksimaalinen luku.</p>
+
+<p>Pidetään $p$ vakiona. Merkitään $v_p(m + b) = t$. Pyritään nyt saamaan jokin yläraja luvulle $v_p(m + a)$, $a \neq b$.</p>
+
+<p>Mikä on niiden lukujen määrä välillä $[m+1, m+k]$ joiden tekijänä on luku $p^u$, missä $u \le t$ on vakio? Tämä määrä on tietysti enintään $\lceil \frac{k}{p^u} \rceil$. Jos jätämme huomiotta luvun $n + b$, on näiden lukujen määrä enintään $\lfloor \frac{k}{p^u} \rfloor \le \frac{k}{p^u}$. Siispä, pätee</p>
+
+<script type="math/tex; mode=display">v_p((m+1)(m+2) \ldots (m+b-1)(m+b+1)\ldots (m+k)) \le</script>
+
+<script type="math/tex; mode=display">\frac{k}{p} + \frac{k}{p^2} + \ldots + \frac{k}{p^u} \le \frac{k}{p-1}</script>
+
+<p>Tässä ensimmäinen epäyhtälö seurasi aiemmasta päättelystä luvun $p$ potenssien esiintymisestä välin $[m+1, m+k]$ lukujen tekijöinä, ja jälkimmäinen epäyhtälö seurasi geometrisen summan kaavasta.</p>
+
+<p>Tästä seuraa, että lemman halutuksi vakioksi $c$ kelpaa $k+1$, sillä $p \ge 2$ kaikilla alkuluvuilla $p$.</p>
+
+<p><strong>Ratkaisun viimeistely</strong></p>
+
+<p>Tutkitaan nyt lukua $m + a$. Se ei voi olla enää kovin suuri: se ei ole jaollinen millään alkuluvulla, joka olisi suurempaa kuin $k$. Lemman nojalla se ei myöskään ole jaollinen kovin suurilla alkuluvun potensseilla. Tarkemmin:</p>
+
+<p>Olkoon $p$ jokin alkuluku väliltä $[1, k]$. Mikä on sen suurin mahdollinen potenssi $p^u$ joka jakaa luvun $m + a$?
+Tutkitaan erikseen kahta tapausta</p>
+
+<ol>
+  <li>
+    <p>$p \in \lbrace p_1, p_2, \ldots p_{k-1} \rbrace $.
+Lemman nojalla pätee $u \le k$.</p>
+  </li>
+  <li>
+    <p>$p$ ei kuulu joukkoon $\lbrace p_1, p_2, \ldots p_{k-1} \rbrace$ Tällöin suurin $p$:n potenssi, joka jakaa yhtälön $(1)$ vasemman puolen on sama kuin suurin potenssi, joka jakaa yhtälön oikean puolen. Tämä on $v_p(k!) \le k$.</p>
+  </li>
+</ol>
+
+<p>Siis $v_p(m+a) \le k$ kaikilla $p \in [1, k]$.</p>
+
+<p>Täten, $m + a \le 1^k \cdot 2^k \cdot 3^k \cdot \ldots \cdot k^k = k!^k$. Tämä pätee kaikilla ratkaisuilla $m$. Olemme näin ollen saaneet ylärajan luvulle $m$, jos haluamme, että luvulla ${m + k \choose k}$ on alle $k$ alkutekijää. Tämä todistaa väitteen.</p>
+
+  </section>
+  <footer class="post-footer">
+    <p><time datetime="2018-04-10">10. 4. 2018</time>
+       • Olli Järviniemi
+      <span class="share-buttons">
+  <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fblog-drafts.matematiikkakilpailut.fi%2F2018%2F04%2F10%2FKiina.html&quote=Kiinateht%C3%A4v%C3%A4%2C+osa+2"
+     title="Jaa Facebookissa" target="_blank" rel="noopener noreferrer nofollow">
+    <svg aria-label="Jaa Facebookissa" role="img" viewBox="0 0 24 24"><title lang="en">Facebook</title><use xlink:href="/assets/images/icons.svg#facebook"/></svg></a>
+  <a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fblog-drafts.matematiikkakilpailut.fi%2F2018%2F04%2F10%2FKiina.html&text=Kiinateht%C3%A4v%C3%A4%2C+osa+2"
+     target="_blank" rel="noopener noreferrer nofollow" title="Jaa Twitterissä">
+    <svg aria-label="Jaa Twitterissä" role="img" viewBox="0 0 24 24"><title lang="en">Twitter</title><use xlink:href="/assets/images/icons.svg#twitter"/></svg></a>
+  <a href="https://pinterest.com/pin/create/button/?url=https%3A%2F%2Fblog-drafts.matematiikkakilpailut.fi%2F2018%2F04%2F10%2FKiina.html&description=Kiinateht%C3%A4v%C3%A4%2C+osa+2"
+     target="_blank" rel="noopener noreferrer nofollow" title="Jaa Pinterestissä">
+    <svg aria-label="Jaa Pinterestissä" role="img" viewBox="0 0 24 24"><title lang="en">Pinterest</title><use xlink:href="/assets/images/icons.svg#pinterest"/></svg></a>
+  <a href="https://www.reddit.com/submit?url=https%3A%2F%2Fblog-drafts.matematiikkakilpailut.fi%2F2018%2F04%2F10%2FKiina.html&title=Kiinateht%C3%A4v%C3%A4%2C+osa+2"
+     target="_blank" rel="noopener noreferrer nofollow" title="Jaa Redditissä">
+    <svg aria-label="Jaa Redditissä" role="img" viewBox="0 0 24 24"><title lang="en">Reddit</title><use xlink:href="/assets/images/icons.svg#reddit"/></svg></a>
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fblog-drafts.matematiikkakilpailut.fi%2F2018%2F04%2F10%2FKiina.html&title=Kiinateht%C3%A4v%C3%A4%2C+osa+2&source=https%3A%2F%2Fblog-drafts.matematiikkakilpailut.fi"
+     target="_blank" rel="noopener noreferrer nofollow" title="Jaa LinkedInissä">
+    <svg aria-label="Jaa Linkedinissä" role="img" viewBox="0 0 24 24"><title lang="en">LinkedIn</title><use xlink:href="/assets/images/icons.svg#linkedin"/></svg></a>
+  <a href="https://pinboard.in/add?url=https%3A%2F%2Fblog-drafts.matematiikkakilpailut.fi%2F2018%2F04%2F10%2FKiina.html&title=Kiinateht%C3%A4v%C3%A4%2C+osa+2"
+     target="_blank" rel="noopener noreferrer nofollow" title="Talleta Pinboardiin">
+    <svg aria-label="Talleta Pinboardiin" role="img" viewBox="0 0 24 24"><title lang="en">Pinboard</title><use xlink:href="/assets/images/icons.svg#pinboard"/></svg></a>
+</span>
+
+    </p>
+  </footer>
+</article>
+
+    </section>
+
+    <section class="site-footer">
+      <p>Tekijänoikeus kirjoittajilla. Käytämme sivuilla evästeitä: <a href="/tietosuoja.html">tietosuojalauseke</a>.</p>
+    </section>
+    
+
+  </body>
+</html>

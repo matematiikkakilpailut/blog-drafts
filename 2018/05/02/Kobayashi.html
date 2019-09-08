@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="fi">
+  <head>
+    <meta charset="UTF-8">
+    <!-- Begin Jekyll SEO tag v2.5.0 -->
+<title>Kobayashin lause | Matematiikkakilpailijat</title>
+<meta name="generator" content="Jekyll v3.8.5" />
+<meta property="og:title" content="Kobayashin lause" />
+<meta name="author" content="Olli Järviniemi" />
+<meta property="og:locale" content="fi" />
+<meta name="description" content="$\newcommand{\syt}{\mathop{\rm syt}}$ Tässä postauksessa käsitellään Kobayashin lausetta." />
+<meta property="og:description" content="$\newcommand{\syt}{\mathop{\rm syt}}$ Tässä postauksessa käsitellään Kobayashin lausetta." />
+<link rel="canonical" href="https://blog-drafts.matematiikkakilpailut.fi/2018/05/02/Kobayashi.html" />
+<meta property="og:url" content="https://blog-drafts.matematiikkakilpailut.fi/2018/05/02/Kobayashi.html" />
+<meta property="og:site_name" content="Matematiikkakilpailijat" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2018-05-02T00:00:00+00:00" />
+<meta property="fb:app_id" content="964806940344711" />
+<script type="application/ld+json">
+{"url":"https://blog-drafts.matematiikkakilpailut.fi/2018/05/02/Kobayashi.html","author":{"@type":"Person","name":"Olli Järviniemi"},"headline":"Kobayashin lause","dateModified":"2018-05-02T00:00:00+00:00","datePublished":"2018-05-02T00:00:00+00:00","description":"$\\newcommand{\\syt}{\\mathop{\\rm syt}}$ Tässä postauksessa käsitellään Kobayashin lausetta.","mainEntityOfPage":{"@type":"WebPage","@id":"https://blog-drafts.matematiikkakilpailut.fi/2018/05/02/Kobayashi.html"},"@type":"BlogPosting","@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#157878">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/assets/css/style.css?v=2c669b5e01ecebd0ccd9a63f1cd21eeeb0cf1936">
+    <link href="/feed.xml" type="application/atom+xml" rel="alternate" title="Sivuston verkkosyöte">
+
+    <script type="text/x-mathjax-config">
+ MathJax.Hub.Config({
+   tex2jax: {
+     inlineMath: [['$', '$'], ['\\(', '\\)']],
+     displayMath: [['$$', '$$']],
+     processEscapes: true
+   }
+ });
+</script>
+<script
+  type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS_CHTML" 
+  integrity="sha256-nvJJv9wWKEm88qvoQl9ekL2J+k/RWIsaSScxxlsrv8k="
+  crossorigin="anonymous">
+</script>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/fonts/HTML-CSS/TeX/woff/MathJax_Main-Regular.woff"
+      rel="preload" as="font" type="font/woff" crossorigin="anonymous">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/fonts/HTML-CSS/TeX/woff/MathJax_Size1-Regular.woff"
+      rel="preload" as="font" type="font/woff" crossorigin="anonymous">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/fonts/HTML-CSS/TeX/woff/MathJax_Math-Italic.woff"
+      rel="preload" as="font" type="font/woff" crossorigin="anonymous">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/fonts/HTML-CSS/TeX/woff/MathJax_Size2-Regular.woff"
+      rel="preload" as="font" type="font/woff" crossorigin="anonymous">
+
+  </head>
+  <body>
+    <section class="page-header">
+      <h1 class="project-name">Matematiikkakilpailijat</h1>
+      <h2 class="project-tagline">Matematiikan olympiavalmennuksen osallistujien kokemuksia</h2>
+    </section>
+
+    <section class="main-content">
+      <article class="post">
+  <header class="post-header">
+    <h1 class="post-title">Kobayashin lause</h1>
+  </header>
+  <section class="post-content">
+    <div class="hidden">
+$\newcommand{\syt}{\mathop{\rm syt}}$
+</div>
+
+<p>Tässä postauksessa käsitellään Kobayashin lausetta.
+<!--jatkuu--></p>
+
+<p><strong>Määritelmä</strong></p>
+
+<p>Olkoon $a_1, a_2, \ldots $ ääretön, ei-rajoitettu lukujono kokonaislukuja (ei välttämättä positiivisia). Sanotaan, että tällä lukujonolla on $P$-ominaisuus, jos on olemassa vain äärellisen monta alkulukua $p$, jolla $p \mid a_i$ jollain $i$.</p>
+
+<p>Määritelmää sovelletaan myöhemmin myös lukujoukoille vastaavasti.</p>
+
+<p>Kobayashin lause on vahva lause. Sitä ei voi soveltaa jokaiseen kisassa vastaan tulevaan tehtävään, mutta jos sitä pystyy käyttämään järkevästi, voi tehtävä ratketa hyvinkin helposti.</p>
+
+<p>Se, mitä useissa kisamatematiikan lähteissä kutsutaan Kobayashin lauseeksi, on seuraavanlainen tulos:</p>
+
+<p><strong>Kobayashin lause (heikko versio)</strong></p>
+
+<p>Olkoon $a_n$ lukujono, jolla on $P$-ominaisuus. Tällöin lukujonolla $b_n = a_n + c$, missä $c \neq 0$ on kokonaislukuvakio, ei ole $P$-ominaisuutta.</p>
+
+<p>Kobayashin lauseelle on vielä yleisempikin muoto, johon palataan myöhemmin tässä kirjoituksessa. Kuitenkin jo tällä heikommalla versiolla saadaan todistettua hyvin suoraviivaisesti monia ei-triviaaleja tuloksia, esimerkiksi:</p>
+
+<p>On olemassa äärettömän monta alkulukua $p$, jotka jakavat jonkin Fermat’n luvun $F_n = 2^{2^n} + 1$</p>
+
+<p>Olkoon $k \in Z$, ($k \neq 0$). On olemassa äärettömän monta alkulukua $p$, jolla $k$ on neliönjäännös modulo $p$ (eli $p \mid x^2 - k$ jollain $x \in \mathbb{Z}$). Tämä tulos yleistyy suoraan kuutionjäännöksille, neljänsien potenssien jäännöksille, ja niin edespäin. Todistus jätetään (helpoksi) harjoitustehtäväksi.</p>
+
+<p>Olkoon $P$ kokonaislukukertoiminen polynomi, jolla on rationaalilukunollakohta $r \neq 0$. Olkoon $a_n$ lukujono, jolla on $P$-ominaisuus. Lukujonolla $b_n = P(a_n)$ ei ole $P$-ominaisuutta. Esimerkiksi on olemassa äärettömän monta alkulukua, jotka jakavat lausekkeen $2^{3n} - 2^{2n + 1} + 2^{n+1} - 1$, kun $n$ käy positiiviset kokonaisluvut läpi.</p>
+
+<p>Viimeisen tuloksen todistus ei ole aivan ilmeinen, joten se esitetään tässä. Olkoon $P(x) = (x-r)Q(x)$, missä $Q$ on polynomi. $Q$:n kertoimet ovat rationaalilukuja (miksi?), joten voimme kertoa yhtälön puolittain sopivalla kokonaisluvuilla $k$ ja $m$, $km \neq 0$ niin, että $kr$ on kokonaisluku ja $mQ$ on kokonaislukukertoiminen.
+Nyt, määritellään $c_n = kmP(a_n) = (ka_n - kr)mQ(a_n)$. Sillä lukujonolla $ka_n$ on $P$-ominaisuus, ei lukujonolla $ka_n - kr$ ole $P$-ominaisuutta. Täten lukujonolla $c_n$ ei myöskään ole $P$-ominaisuutta. On siis olemassa äärettömän monta alkulukua $p$, joilla pätee $p \mid c_i = km\cdot b_i$ jollain $i$, ja lisäksi $p &gt; km$. Näillä $p$ pätee myös, että $p \mid b_i$. Siispä lukujonolla $b_n$ ei ole $P$-ominaisuutta.</p>
+
+<p>Kobayashin lauseen koko versio on seuraava (käännös tekstistä <a href="https://projecteuclid.org/download/pdf_1/euclid.tjm/1270215162">On Existence of Infinitely Many Prime Divisors in a Given Set, Hiroshi Kobayashi</a>, notaatiota muutettu)</p>
+
+<p><strong>Kobayashin lause</strong></p>
+
+<p>Olkoon $M$ ei-rajoitettu joukko kokonaislukuja, jolla on $P$-ominaisuus. Olkoon $a \neq 0$ kokonaisluku, ja $m \ge 3$ kokonaisluku. Olkoon $(b_t)$, $t \in M$ lukujono kokonaislukuja, jonka indeksijoukko on $M$. Asetetaan $N = \lbrace a + b_t^m \cdot t \mid t \in M\rbrace$. Jos $N$ on ääretön joukko, niin sillä ei ole $P$-ominaisuutta.</p>
+
+<p>Huomaa, että lukujonolla $b_t$ ei tarvitse olla $P$-ominaisuutta.</p>
+
+<p>Asettamalla $M = \lbrace a_1, a_2, a_3, \ldots \rbrace$ ja $b_t = 1$ kaikilla $t \in M$ saamme aiemmin esitetyn heikomman version lauseesta.</p>
+
+<p><strong>Esimerkkitehtävä (Kiinan kansallisen kilpailun finaali, 2011, tehtävä 6)</strong></p>
+
+<p>Olkoot $n$ ja $m$ positiivisia kokonaislukuja. Osoita, että on olemassa äärettömän monta paria $(a, b)$, $a, b \in N$, niin että</p>
+
+<p>$a + b \mid am^a + bn^b$, ja $\syt(a, b) = 1$</p>
+
+<p><strong>Ratkaisu</strong></p>
+
+<p>Tehtävänannnon ehto ei ole kovin sievä, joten luonnollinen idea on sieventää sitä.</p>
+
+<p>$am^a + bn^b \equiv am^a - (a + b - b)n^b \equiv a(m^a - n^b) \pmod{a+b}$</p>
+
+<p>Sillä $\syt(a, b) = 1$, riittää todistaa $a + b \mid m^a - n^b$ äärettömän monella $a, b$.</p>
+
+<p>Usein on helpompaa tutkia asioita modulo alkuluku yleisen tapauksen sijasta. Valitaan $a + b = p$, missä $p$ on alkuluku. Haluamme löytää sellaiset $a$ ja $b$, joilla $p \mid m^a - n^b$. Lisäksi jos $p \nmid n$, riitää löytää $a$ ja $b$ niin, että $p \mid n^a(m^a - n^b) = (nm)^a - n^{a+b} \equiv (nm)^a - n$</p>
+
+<p>Jotta luvuille $a, b$ olisi äärettömän monta vaihtoehtoa, tulisi myös $p$:lle olla. Siis lukujonolla $(nm)^a - n$ tulee olla äärettömän monta alkulukujakajaa, kun $a$ vaihtelee (unohdetaan hetkeksi ehto $a + b = p$). Tämä onnistuu Kobayashin lauseen nojalla (paitsi jos $nm = 1$, mutta tämä tapaus on onneksi helppo).</p>
+
+<p>Valitaan siis sellainen $p &gt; nm$, jolla on olemassa jokin $c &gt; 0$, jolla $p \mid (nm)^c - n$. Valitaan pienin tällainen $c$. Fermat’n pienen lauseen avulla voimme pienentää $c$:tä aina luvulla $p-1$, mikäli se on liian suuri. Siis pienimmälle ratkaisulle pätee $0 &lt; c \le p-1$. Valitaan nyt $a = c$, $b = p - c$. Tällä valinnalla ehto $\syt(a, b) = 1$ pätee, sillä $\syt(a, b) \mid a + b = p$. Lisäksi jaollisuusehto pätee edellisen päättelyn nojalla.</p>
+
+<p><strong>Harjoitustehtäviä</strong></p>
+
+<p>Seuraavien harjoitustehtävien tulisi olla kohtalaisen helppoja. Ainakin jälkimmäiseen tehtävään on hyvä miettiä myös ratkaisu ilman Kobayashin lausetta.</p>
+
+<p><strong>Iranin IMO-valintakoe, 2009, päivä 1, tehtävä 2</strong></p>
+
+<p>Olkoon $a &gt; 0$ kokonaisluku. Osoita, että joukon $2^{2^n} + a$, $n = 1, 2, \ldots$ alkutekijöiden joukko on ääretön.</p>
+
+<p><strong>IMO-lyhytlista 2011, N2</strong></p>
+
+<p>Olkoon $P(x) = (x + d_1)(x + d_2) \ldots (x + d_9)$, missä $d_1, d_2, \ldots d_9$ ovat $9$ erisuurta kokonaislukua. Osoita, että on olemassa $N$, niin että kaikilla $x \ge N$ luvulla $P(x)$ on alkutekijä, joka on suurempi kuin $20$.</p>
+
+  </section>
+  <footer class="post-footer">
+    <p><time datetime="2018-05-02">2. 5. 2018</time>
+       • Olli Järviniemi
+      <span class="share-buttons">
+  <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fblog-drafts.matematiikkakilpailut.fi%2F2018%2F05%2F02%2FKobayashi.html&quote=Kobayashin+lause"
+     title="Jaa Facebookissa" target="_blank" rel="noopener noreferrer nofollow">
+    <svg aria-label="Jaa Facebookissa" role="img" viewBox="0 0 24 24"><title lang="en">Facebook</title><use xlink:href="/assets/images/icons.svg#facebook"/></svg></a>
+  <a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fblog-drafts.matematiikkakilpailut.fi%2F2018%2F05%2F02%2FKobayashi.html&text=Kobayashin+lause"
+     target="_blank" rel="noopener noreferrer nofollow" title="Jaa Twitterissä">
+    <svg aria-label="Jaa Twitterissä" role="img" viewBox="0 0 24 24"><title lang="en">Twitter</title><use xlink:href="/assets/images/icons.svg#twitter"/></svg></a>
+  <a href="https://pinterest.com/pin/create/button/?url=https%3A%2F%2Fblog-drafts.matematiikkakilpailut.fi%2F2018%2F05%2F02%2FKobayashi.html&description=Kobayashin+lause"
+     target="_blank" rel="noopener noreferrer nofollow" title="Jaa Pinterestissä">
+    <svg aria-label="Jaa Pinterestissä" role="img" viewBox="0 0 24 24"><title lang="en">Pinterest</title><use xlink:href="/assets/images/icons.svg#pinterest"/></svg></a>
+  <a href="https://www.reddit.com/submit?url=https%3A%2F%2Fblog-drafts.matematiikkakilpailut.fi%2F2018%2F05%2F02%2FKobayashi.html&title=Kobayashin+lause"
+     target="_blank" rel="noopener noreferrer nofollow" title="Jaa Redditissä">
+    <svg aria-label="Jaa Redditissä" role="img" viewBox="0 0 24 24"><title lang="en">Reddit</title><use xlink:href="/assets/images/icons.svg#reddit"/></svg></a>
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fblog-drafts.matematiikkakilpailut.fi%2F2018%2F05%2F02%2FKobayashi.html&title=Kobayashin+lause&source=https%3A%2F%2Fblog-drafts.matematiikkakilpailut.fi"
+     target="_blank" rel="noopener noreferrer nofollow" title="Jaa LinkedInissä">
+    <svg aria-label="Jaa Linkedinissä" role="img" viewBox="0 0 24 24"><title lang="en">LinkedIn</title><use xlink:href="/assets/images/icons.svg#linkedin"/></svg></a>
+  <a href="https://pinboard.in/add?url=https%3A%2F%2Fblog-drafts.matematiikkakilpailut.fi%2F2018%2F05%2F02%2FKobayashi.html&title=Kobayashin+lause"
+     target="_blank" rel="noopener noreferrer nofollow" title="Talleta Pinboardiin">
+    <svg aria-label="Talleta Pinboardiin" role="img" viewBox="0 0 24 24"><title lang="en">Pinboard</title><use xlink:href="/assets/images/icons.svg#pinboard"/></svg></a>
+</span>
+
+    </p>
+  </footer>
+</article>
+
+    </section>
+
+    <section class="site-footer">
+      <p>Tekijänoikeus kirjoittajilla. Käytämme sivuilla evästeitä: <a href="/tietosuoja.html">tietosuojalauseke</a>.</p>
+    </section>
+    
+
+  </body>
+</html>

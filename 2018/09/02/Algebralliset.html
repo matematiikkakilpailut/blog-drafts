@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="fi">
+  <head>
+    <meta charset="UTF-8">
+    <!-- Begin Jekyll SEO tag v2.5.0 -->
+<title>Algebrallisista luvuista ja vektoriavaruuksista | Matematiikkakilpailijat</title>
+<meta name="generator" content="Jekyll v3.8.5" />
+<meta property="og:title" content="Algebrallisista luvuista ja vektoriavaruuksista" />
+<meta name="author" content="Olli Järviniemi" />
+<meta property="og:locale" content="fi" />
+<meta name="description" content="Tässä postauksessa esitetään yksi todistus sille, miksi kahden algebrallisen luvun summa/tulo on myös algebrallinen. Tämän todistamiseksi määritellään vektoriavaruus ja kanta." />
+<meta property="og:description" content="Tässä postauksessa esitetään yksi todistus sille, miksi kahden algebrallisen luvun summa/tulo on myös algebrallinen. Tämän todistamiseksi määritellään vektoriavaruus ja kanta." />
+<link rel="canonical" href="https://blog-drafts.matematiikkakilpailut.fi/2018/09/02/Algebralliset.html" />
+<meta property="og:url" content="https://blog-drafts.matematiikkakilpailut.fi/2018/09/02/Algebralliset.html" />
+<meta property="og:site_name" content="Matematiikkakilpailijat" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2018-09-02T00:00:00+00:00" />
+<meta property="fb:app_id" content="964806940344711" />
+<script type="application/ld+json">
+{"url":"https://blog-drafts.matematiikkakilpailut.fi/2018/09/02/Algebralliset.html","author":{"@type":"Person","name":"Olli Järviniemi"},"headline":"Algebrallisista luvuista ja vektoriavaruuksista","dateModified":"2018-09-02T00:00:00+00:00","datePublished":"2018-09-02T00:00:00+00:00","description":"Tässä postauksessa esitetään yksi todistus sille, miksi kahden algebrallisen luvun summa/tulo on myös algebrallinen. Tämän todistamiseksi määritellään vektoriavaruus ja kanta.","mainEntityOfPage":{"@type":"WebPage","@id":"https://blog-drafts.matematiikkakilpailut.fi/2018/09/02/Algebralliset.html"},"@type":"BlogPosting","@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#157878">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/assets/css/style.css?v=2c669b5e01ecebd0ccd9a63f1cd21eeeb0cf1936">
+    <link href="/feed.xml" type="application/atom+xml" rel="alternate" title="Sivuston verkkosyöte">
+
+    <script type="text/x-mathjax-config">
+ MathJax.Hub.Config({
+   tex2jax: {
+     inlineMath: [['$', '$'], ['\\(', '\\)']],
+     displayMath: [['$$', '$$']],
+     processEscapes: true
+   }
+ });
+</script>
+<script
+  type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS_CHTML" 
+  integrity="sha256-nvJJv9wWKEm88qvoQl9ekL2J+k/RWIsaSScxxlsrv8k="
+  crossorigin="anonymous">
+</script>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/fonts/HTML-CSS/TeX/woff/MathJax_Main-Regular.woff"
+      rel="preload" as="font" type="font/woff" crossorigin="anonymous">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/fonts/HTML-CSS/TeX/woff/MathJax_Size1-Regular.woff"
+      rel="preload" as="font" type="font/woff" crossorigin="anonymous">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/fonts/HTML-CSS/TeX/woff/MathJax_Math-Italic.woff"
+      rel="preload" as="font" type="font/woff" crossorigin="anonymous">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/fonts/HTML-CSS/TeX/woff/MathJax_Size2-Regular.woff"
+      rel="preload" as="font" type="font/woff" crossorigin="anonymous">
+
+  </head>
+  <body>
+    <section class="page-header">
+      <h1 class="project-name">Matematiikkakilpailijat</h1>
+      <h2 class="project-tagline">Matematiikan olympiavalmennuksen osallistujien kokemuksia</h2>
+    </section>
+
+    <section class="main-content">
+      <article class="post">
+  <header class="post-header">
+    <h1 class="post-title">Algebrallisista luvuista ja vektoriavaruuksista</h1>
+  </header>
+  <section class="post-content">
+    <p>Tässä postauksessa esitetään yksi todistus sille, miksi kahden algebrallisen luvun summa/tulo on myös algebrallinen. Tämän todistamiseksi määritellään vektoriavaruus ja kanta.</p>
+
+<!--jatkuu-->
+
+<p><strong>Määritelmä</strong></p>
+
+<p>Lukua $\alpha$ sanotaan algebralliseksi, jos se on jonkin kokonaislukukertoimisen (ei-vakion) polynomin nollakohta. Ekvivalentti määritelmä on, että $\alpha$ on jonkin rationaalikertoimisen polynomin nollakohta.</p>
+
+<p>Todistus perustuu vektoriavaruuksiin ja niiden kantoihin. Tekstin rakenne on seuraava:</p>
+
+<ol>
+  <li>Kunnan määritelmä</li>
+  <li>Esimerkki vektoriavaruudesta</li>
+  <li>Vektoriavaruuden määritelmä</li>
+  <li>Esimerkki vektoriavaruudesta</li>
+  <li>Esimerkki kannasta</li>
+  <li>Kannan määritelmä</li>
+  <li>Esimerkki kannasta</li>
+  <li>Väitteen todistus</li>
+  <li>Harjoitustehtäviä</li>
+</ol>
+
+<p>Ne, jotka tietävät ennestään vektoriavaruuksien ja kantojen perusteet, voivat edetä suoraan väitteen todistukseen. Muussa tapauksessa kannattaa keskittyä koko postaukseen, sillä vektoriavaruudet ja kunnat ovat kohtalaisen yleisiä käsitteitä.</p>
+
+<p><strong>Määritelmä (kunta)</strong></p>
+
+<p>Olkoon $K$ joukko, ja $\cdot$ sekä $+$ operaatioita. Sanotaan, että $(K, \cdot, +)$ on kunta (tai $K$ on kunta, jos operaatioiden määrittelyt ovat selviä kontekstista), jos seuraavat ehdot pätevät:</p>
+
+<ol>
+  <li>Kaikilla $a, b \in K$ pätee $a + b = b + a$ ja $a\cdot b = b \cdot a$.</li>
+  <li>On olemassa sellainen $0 \in K$, jolla $a + 0 = a$ kaikilla $a \in K$. Vastaavasti, on olemassa sellainen $1 \in K$, jolla $1 \cdot a = a$ kaikilla $a \in K$.</li>
+  <li>Kaikilla $a, b, c \in K$ pätee $a + (b + c) = (a + b) + c$ ja $a \cdot (b \cdot c) = (a \cdot b) \cdot c$</li>
+  <li>Kaikilla $a \in K$ on olemassa sellainen $b \in K$, jolla $a + b = 0$. Vastaavasti, kaikilla $a \in K, a \neq 0$ on olemassa sellainen $b \in K$, jolla $a \cdot b = 1$.</li>
+  <li>Kaikilla $a, b, c \in K$ pätee $a(b+c) = ab + ac$.</li>
+</ol>
+
+<p>Esimerkiksi rationaalilukujen joukko on kunta, kun $\cdot$ ja $+$ määritellään tavallisesti. Samoin reaali- ja kompleksiluvut ovat kunta. Huomaa, että kokonaisluvut eivät ole kunta, koska ehto 4 ei päde kertolaskulle: esimerkiksi luvulla $2$ ei ole olemassa sellaista kokonaislukua $b$, jolla $2b = 1$.</p>
+
+<p><strong>Huomautus</strong></p>
+
+<p>Tässä postauksessa kaikkein tärkein esimerkki kunnista on rationaalilukujen kunta $\mathbb{Q}$, ja kannattaa monessa tilanteessa ajatellan kunnan $K$ sijasta helppoa esimerkkiä $\mathbb{Q}$. Ehdot ovat lisäksi loppujen lopuksi hyvin intuitiivisia, eli ei kannata liikaa ajatella, että ne pitäisi “opetella ulkoa”. Jos mietit kysymystä “kuuluuko ehto x kunnan määritelmiin”, intuitiivisin vastaus on todennäköisesti oikein.</p>
+
+<p><strong>Huomautus</strong></p>
+
+<p>Ehdoille on annettu omat “nimensä”. Ehtoa 1 kutsutaan kommutatiivisuudeksi, ehtoo 2 on neutraalialkion olemassaolo, 3 on assosiatiivisuus, 4 on käänteisalkion olemassaolo, 5 on osittelulaki.</p>
+
+<p><strong>Huomautus</strong></p>
+
+<p>On olemassa muitakin mielenkiintoisia algebrallisia rakenteita kuin kunnat. Esimerkiksi unohtamalla ehdon 4 operaatiolle $\cdot$ (mutta säilyttämällä sen opreaatiolle $+$) saadaan ns. renkaat. Esimerkiksi kokonaislukujen joukko on rengas.</p>
+
+<p><strong>Huomautus</strong></p>
+
+<p>Jos $K$ on reaalilukujen osajoukko, tässä postauksessa $\cdot$ ja $+$ määritellään kuten tavallinen kertolasku ja yhteenlasku.</p>
+
+<p>Ennen kuin määritellään vektoriavaruus, otetaan esimerkki vektoriavaruudesta.</p>
+
+<p><strong>Esimerkki (vektoriavaruus)</strong></p>
+
+<p>Olkoon $\mathbb{R}$ reaalilukujen joukko, ja olkoon $V$ kaksiulotteisen tason vektorien joukko. $V$:n alkioita voidaan kertoa mielivaltaisilla reaaliluvuilla, vektoreita voidaan laskea yhteen, ja $(a + b)v = av + bv$ kaikilla $a, b \in \mathbb{R}, v \in V$. $V$:n alkioita ei kuitenkaan suoraan voi kertoa keskenään (paitsi ehkäpä pistetulolla, mutta ei välitetä tästä). Sanomme, että $V$ on $R$-vektoriavaruus.</p>
+
+<p><strong>Määritelmä (vektoriavaruus)</strong></p>
+
+<p>Olkoon $(K, \cdot, +)$ kunta (esimerkiksi rationaaliluvut). Olkoon $V$ jokin joukko, jolla on operaatio $\bigoplus$. Lisäksi olkoon $\bigodot$ operaatio, joka kuvaa jokaiselle parille $(a, v)$ vektorin $w$, missä $a \in K, v, w \in V$. Sanotaan, että $V$ (eli $(V, \bigoplus)$) on $K$-vektoriavaruus, jos seuraavat ehdot pätevät:</p>
+
+<ol>
+  <li>
+    <p>$(V, \bigoplus)$ toteuttaa kunnan määritelmistä 1-4 ne, jotka koskevat operaatiota $+$.</p>
+  </li>
+  <li>
+    <p>$(a + b) \bigodot v = (a \bigodot v) \bigoplus (b \bigodot v)$, kaikilla $a, b \in K, v \in v$.</p>
+  </li>
+  <li>
+    <p>$a \bigodot (b \bigodot v) = (a \cdot b) \bigodot v$, kaikilla $a, b \in K, v \in v$.</p>
+  </li>
+  <li>
+    <p>$1 \bigodot v = v$ kaikilla $v \in V$, missä $1$ on $K$:n kertolaskun neutraalialkio,</p>
+  </li>
+  <li>
+    <p>$a \bigodot (v \bigoplus w) = (a \bigodot v) \bigoplus (a \bigodot w$).</p>
+  </li>
+</ol>
+
+<p><strong>Huomautus</strong></p>
+
+<p>Usein operaatiot $\bigoplus$ ja $\bigodot$ ovat hyvin samanlaisia kuin operaatiot $+$ ja $\cdot$. Nyrkkisääntö: jos $\bigoplus$ tai $\bigodot$ valitaan jollain muulla kuin kaikkein selkeimmällä tavalla, se mainitaan erikseen.</p>
+
+<p>Jälleen, määritelmät ovat intuitiivisia, vaikkeikaan ehkä niin luonnollisia kuin kunnan tapauksessa. Otetaan vielä toinen esimerkki.</p>
+
+<p><strong>Esimerkki (vektoriavaruus)</strong></p>
+
+<p>Olkoon $\mathbb{Q}$ rationaalilukujen joukko, ja olkoon $V$ funktioiden $f : \mathbb{Q} \to \mathbb{Q}$ joukko. Voimme määritellä $f \bigoplus g$ luonnollisesti funktioksi $h$, jolla $h(a) = f(a) + g(a)$ kaikilla $a \in \mathbb{Q}$. Vastaavasti määritellään kertolasku rationaaliluvulla: $V$:n alkio $a \bigodot f$ on se funktio $h$, jolla $h(b) = a \cdot f(b)$ kaikilla $b \in \mathbb{Q}$.</p>
+
+<p>On helppoa todistaa, että $V$ on $\mathbb{Q}$-avaruus käymällä jokaisen tarvittavan ehdon läpi (tämän pitäisi myös olla melko intuitiivista). Huomaa, että jälleen ei ole määritelty, millainen olisi “kertolasku” $V$:n alkioiden välillä, eikä tarvitsekaan.</p>
+
+<p>Kuten edellä, käydään ensin läpi esimerkki vektoriavaruuden kannasta ennen määritelmää.</p>
+
+<p><strong>Esimerkki (kanta)</strong></p>
+
+<p>Olkoon $V$ joukko, joka sisältää luvut muotoa $a + b\sqrt{2}$, missä $a, b \in \mathbb{Q}$. Määritellään yhteenlasku $V$:n alkioiden välillä samalla tavalla kuin yhteenlasku reaaliluvuille. Tällöin $V$ on $\mathbb{Q}$-vektoriavaruus, kun määrittelemme vektoriavaruuden määritelmässä esiintyvän operaation $\bigodot$ kuten kertolaskun reaaliluvuilla (ei kovin yllättäen).</p>
+
+<p>$\lbrace 1, \sqrt{2} \rbrace $ on kanta vektoriavaruudelle $V$, koska jokainen $V$:n alkio voidaan kirjoittaa muodossa $a \cdot 1 + b \cdot \sqrt{2}$, missä $a$ ja $b$ ovat kunnan $\mathbb{Q}$ alkioita. Tämä ei ole ainoa kanta, esimerkiksi $\lbrace 3, 1 + 2\sqrt{2} \rbrace $ on myös kanta, koska jokainen $V$:n alkio voidaan kirjoittaa muodossa $a \cdot 3 + b \cdot (1 + 2\sqrt{2})$, missä $a, b \in \mathbb{Q}$.</p>
+
+<p><strong>Määritelmä (kanta)</strong></p>
+
+<p>Olkoon $V$ $K$-vektoriavaruus. Sanotaan, että $V$:n alkiot $\lbrace v_1, v_2, \ldots , v_n \rbrace $ ovat vektoriavaruuden $V$ kanta, jos seuraavat kaksi ehtoa pätevät:</p>
+
+<ol>
+  <li>
+    <p>Jokaisella $w \in V$ on olemassa $a_1, a_2 \ldots , a_n \in K$, joilla $w = a_1v_1 + \ldots + a_nv_n$.</p>
+  </li>
+  <li>
+    <p>Jos joukosta ${v_1, v_2, \ldots , v_n }$ poistaa minkä tahansa alkion, ei ehto 1 enää päde. Tämä on ekvivalenttia (miksi?) sen kanssa, että mitään $v_i$ ei voida esittää muodossa $a_1v_1 + a_2v_2 + \ldots + a_{i-1}v_{i-1} + a_{i+1}v_{i+1} + \ldots + a_nv_n$, missä $a_i \in K$.</p>
+  </li>
+</ol>
+
+<p><strong>Huomautus</strong></p>
+
+<p>Ehto 2 käytännössä tarkoittaa sitä, että kanta ei sisällä “turhia” alkioita.</p>
+
+<p><strong>Huomautus</strong></p>
+
+<p>Näillekin ehdoille on omat nimensä. Ehtoon 1 viitataan sanomalla, että vektorit $v_1, \ldots , v_n$ virittävät vektoriavaruuden $V$. Lisäksi sanotaan, että $w$ voidaan esittää vektorien $v_1, \ldots , v_n$ lineaarikombinaationa. Ehto 2 esitetään usein sanomalla, että vektorit $v_i$ ovat lineaarisesti riippumattomia. Tällä tarkoitetaan, että mikäli $a_1v_1 + a_2v_2 + \ldots + a_nv_n = 0$, niin $a_1 = a_2 = \ldots = a_n = 0$.</p>
+
+<p><strong>Esimerkki (kanta)</strong></p>
+
+<p>Olkoon $S$ niiden enintään toisen asteen polynomien joukko (mukaanlukien vakiopolynomit), joiden kertoimet ovat rationaalilukuja. Tällöin $S$ on $\mathbb{Q}$-vektoriavaruus, ja sillä on kanta $\lbrace 1, x, x^2 \rbrace$. On helppoa nähdä, että molemmat ehdot toteutuvat. Jälleen, kanta ei ole uniikki, sillä esimerkiksi $\lbrace x^2 - 1, x^2, x \rbrace$ on myös kanta.</p>
+
+<p><strong>Todistus (kahden algebrallisen luvun summa on algebrallinen)</strong></p>
+
+<p>Olkoot $\alpha$ ja $\beta$ joidenkin kahden polynomin $P, Q$ nollakohtia, missä $P$ ja $Q$ ovat kokonaislukukertoimisia. Olkoon $n = \deg(P)$ ja $m = \deg(Q)$. Olkoon $V$ se $\mathbb{Q}$-vektoriavaruus, joka sisältää kaikki luvut muotoa $q_0 + q_1\alpha + q_2\alpha^2 + \ldots q_k\alpha^k$, missä $q_i \in \mathbb{Q}$ ja $k$ on kokonaisluku.. On selvää, että $\lbrace 1, \alpha, \alpha^2, \ldots \rbrace $ virittää $V$:n, mutta tämä ei ole kanta: luku $\alpha^n$ voidaan esittää lukujen $1, \alpha, \ldots , \alpha^{n-1}$ avulla. Esimerkiksi jos $P(x) = x^3 - x - 1$, niin $\alpha^3 - \alpha - 1 = 0$, eli $\alpha^3 = \alpha + 1$, ja näin $\alpha^3$ voidaan esittää pienempien luvun $\alpha$ potenssien avulla.</p>
+
+<p>Vastaavasti millä tahansa $k \ge n$ luku $\alpha^k$ voidaan esittää lukujen $1, \alpha, \ldots , \alpha^{n-1}$ lineaarikombinaationa. Tämän vuoksi $\lbrace 1, \alpha, \alpha^2, \ldots \alpha^{n-1}\rbrace $ virittää vektoriavaruuden $V$. Tämäkään ei vielä välttämättä ole kanta, koska alkiot eivät välttämättä ole lineaarisesti riippumattomia, mutta ei välitetä siitä (jos $P$ on jaoton polynomi, niin kyseessä on kanta, ja muuten ei - todistus sivuutetaan). Määritellään $W$ vastaavasti luvulle $\beta$, jolloin $\lbrace 1, \beta, \ldots , \beta^{m-1} \rbrace $ virittää $W$:n.</p>
+
+<p>Olkoon nyt $U$ niiden lukujen joukko, jotka voidaan esittää muotoa $q \alpha^i \beta^j$, missä $q \in \mathbb{Q}$, $i, j \in \mathbb{Z_{\ge 0}}$, olevien termien summana. Tämä $U$ voidaan virittää lukujoukolla $B$, joka sisältää luvut muotoa $\alpha^i \beta^j$, missä $i &lt; n$ ja $j &lt; m$. Miksi? On selvää, että jos unohdamme ehdon $i &lt; n$, $j &lt; $m, niin väite pätee. Jos $i \ge n$, voidaan luku $\alpha^i\beta^j$ kirjoittaa lukujen $\alpha^k\beta^j$ lineaarikombinaationa, missä $0 \le k &lt; n$. Aiemmin esitettiin tämä redusointimenetelmä tapauksessa $P(x) = x^3 - x - 1$, nyt uutena asiana on kerroin $\beta^j$, joka ei kuitenkaan oleellisesti muuta tilannetta. Tämän takia luvut muotoa $\alpha^i\beta^j$, missä $i \ge n$ tai $j \ge m$, ovat “turhia”, sillä ne voidaan esittää pienemmän eksponentin omaavilla luvuilla.</p>
+
+<p>Osoitetaan nyt, että $\alpha + \beta$ on algebrallinen. Olkoon $T$ se $\mathbb{Q}$-vektoriavaruus, joka sisältää luvut muotoa $q(\alpha + \beta)^i$, $q \in \mathbb{Q}, i \in \mathbb{Z_{\ge 0}}$, ja tätä muotoa olevien lukujen summat. $T$ on $U$:n osajoukko, joten $T$:n voi virittää äärellisellä määrällä (tarkemmin, $nm$ kappalella) alkioita. Tämä tarkoittaa, että $(\alpha + \beta)^{nm}$, voidaan esittää luvun $\alpha + \beta$ pienempien potenssien lineaarikombinaationa, eli $(\alpha + \beta)^{nm} = q_0 + q_1(\alpha + \beta)^1 + \ldots + q_{nm-1}(\alpha + \beta)^{nm - 1}$ jollain rationaaliluvuilla $q_i$. Tämä antaa suoraan polynomin, jonka nollakohtana on $\alpha + \beta$. Siis $\alpha + \beta$ on algebrallinen.</p>
+
+<p><strong>Huomautus</strong></p>
+
+<p>Jos todistuksen viimeisen kappaleen termit $\alpha + \beta$ korvaa termeillä $\alpha \beta$, on meillä valmis todistus sille, että $\alpha \beta$ on algebrallinen.</p>
+
+<p><strong>Esimerkki / toinen tapa ajatella asiaa</strong></p>
+
+<p>Olkoot $\alpha = \sqrt{2}$ ja $\beta = i$. Väite sanoo, että $\alpha + \beta$ on algebrallinen, eli jonkin polynomin nollakohta, ja todistus vielä osoittaa, että tällaisen polynomin aste voidaan valita olemaan $4$. Osoitetaan tämä tutkimalla luvun $\gamma \alpha + \beta$ potensseja:</p>
+
+<script type="math/tex; mode=display">\gamma^0 = (\alpha + \beta)^0 = 1</script>
+
+<script type="math/tex; mode=display">\gamma^1 = (\alpha + \beta)^1 = \alpha + \beta</script>
+
+<script type="math/tex; mode=display">\gamma^2 = (\alpha + \beta)^2 = \alpha^2 + 2\alpha\beta + \beta^2 = 1 + 2\alpha\beta</script>
+
+<p>Huomaa, että tässä käytettiin ehtoa $\alpha^2 = 2$, eli kuten todistuksessa todettiin, luvun $\alpha$ suuret potenssit voidaan esittää pienempien potenssien avulla. Samalla idealla voidaan sieventää vielä seuraavat potenssit:</p>
+
+<script type="math/tex; mode=display">\gamma^3 = (\alpha + \beta)^3 = (\alpha + \beta)^2(\alpha + \beta) = (1 + 2\alpha\beta)(\alpha + \beta) = (\alpha + 4\beta) + (\beta - 2\alpha) = -\alpha + 5\beta</script>
+
+<script type="math/tex; mode=display">\gamma^4 = (\alpha + \beta)^4 = (-\alpha + 5\beta)(\alpha + \beta) = -7 + 4\alpha\beta</script>
+
+<p>Yritetään nyt löytää neljännen asteen polynomi, jonka nollakohta $\gamma$ on. Toisin sanoen,</p>
+
+<script type="math/tex; mode=display">q_4\gamma^4 + q_3\gamma^3 + q_2\gamma^2 + q_1\gamma + q_0 = 0</script>
+
+<p>jollain rationaaliluvuilla $q_i$. Tämän yhtälön vasemman puolen voi esittää lukujen $1, \alpha, \beta$ ja $\alpha\beta$ rationaalisten monikertojen summana käyttäen yllä laskettuja esityksiä luvuille $\gamma^i$. Yhtälö toteutuu ainakin silloin, jos lukujen $1, \alpha, \beta, \alpha\beta$ kertoimet ovat $0$. Tästä saadaan yhtälöryhmä luvuille $q_i$. Esimerkiksi luvun $\alpha$ kertoimeksi saadaan purkamalla esitykset $\gamma^i$</p>
+
+<script type="math/tex; mode=display">0q_4 + (-q_3) + 0q_2 + (q_1) + 0q_0 = q_1 - q_3</script>
+
+<p>Siis valitaan $q_1 = q_3$.</p>
+
+<p>Vastaavasti voidaan muiden kertoimien kautta muodostaa yhtälöitä. Tällä yhtälöryhmällä on tässä tapauksessa, ja yleisestikin, ratkaisu, jossa kaikki $q_i$ eivät ole nollia. Syynä sille, miksi aina löytyy ratkaisu, on se, että muuttujia on $nm$ (tässä $nm = 2 \cdot 2 = 4$) kappaletta, ja samoin yhtälöitä on $nm$. Yhtälöt eivät voi olla keskenään ristiriidassa, kuten yhtälöparissa $x+y = 0, 3x+3y = 2$, koska yhtälöryhmällä on aina ratkaisu $q_0 = q_1 = \ldots = 0$.</p>
+
+<p>Tässä tapauksessa saadaan, että luku $\gamma = \alpha + \beta = \sqrt{2} + i$ on polynomin $x^4 - 2x^2 + 9$ nollakohta.</p>
+
+<p><strong>Harjoitustehtäviä</strong></p>
+
+<ol>
+  <li>
+    <p>Olkoon $\alpha \neq 0$ algebrallinen. Osoita, että $\frac{1}{\alpha}$ on algebrallinen. Tämä todistaa yhdessä yllä olevien väitteiden kanssa, että algebrallisten lukujen joukko on kunta.</p>
+  </li>
+  <li>
+    <p>Sanotaan, että algebrallinen luku $\alpha$ on algebrallinen kokonaisluku, jos on olemassa sellainen kokonaislukukertoiminen polynomi $P$, jonka nollakohta $\alpha$ on, ja $P$:n korkeimman asteen termin kerroin on 1. Esimerkiksi $\sqrt{2}$ on algebrallinen kokonaisluku, koska se on polynomin $x^2 - 2$ nollakohta, mutta $\frac{\sqrt{2}}{2}$ ei kuitenkaan ole algebrallinen kokonaisluku. Osoita, että kaikilla algebrallisilla luvuilla $\alpha$ on olemassa sellainen $n \in \mathbb{Z_{&gt; 0}}$, jolla $n\alpha$ on algebrallinen kokonaisluku.</p>
+  </li>
+</ol>
+
+  </section>
+  <footer class="post-footer">
+    <p><time datetime="2018-09-02">2. 9. 2018</time>
+       • Olli Järviniemi
+      <span class="share-buttons">
+  <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fblog-drafts.matematiikkakilpailut.fi%2F2018%2F09%2F02%2FAlgebralliset.html&quote=Algebrallisista+luvuista+ja+vektoriavaruuksista"
+     title="Jaa Facebookissa" target="_blank" rel="noopener noreferrer nofollow">
+    <svg aria-label="Jaa Facebookissa" role="img" viewBox="0 0 24 24"><title lang="en">Facebook</title><use xlink:href="/assets/images/icons.svg#facebook"/></svg></a>
+  <a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fblog-drafts.matematiikkakilpailut.fi%2F2018%2F09%2F02%2FAlgebralliset.html&text=Algebrallisista+luvuista+ja+vektoriavaruuksista"
+     target="_blank" rel="noopener noreferrer nofollow" title="Jaa Twitterissä">
+    <svg aria-label="Jaa Twitterissä" role="img" viewBox="0 0 24 24"><title lang="en">Twitter</title><use xlink:href="/assets/images/icons.svg#twitter"/></svg></a>
+  <a href="https://pinterest.com/pin/create/button/?url=https%3A%2F%2Fblog-drafts.matematiikkakilpailut.fi%2F2018%2F09%2F02%2FAlgebralliset.html&description=Algebrallisista+luvuista+ja+vektoriavaruuksista"
+     target="_blank" rel="noopener noreferrer nofollow" title="Jaa Pinterestissä">
+    <svg aria-label="Jaa Pinterestissä" role="img" viewBox="0 0 24 24"><title lang="en">Pinterest</title><use xlink:href="/assets/images/icons.svg#pinterest"/></svg></a>
+  <a href="https://www.reddit.com/submit?url=https%3A%2F%2Fblog-drafts.matematiikkakilpailut.fi%2F2018%2F09%2F02%2FAlgebralliset.html&title=Algebrallisista+luvuista+ja+vektoriavaruuksista"
+     target="_blank" rel="noopener noreferrer nofollow" title="Jaa Redditissä">
+    <svg aria-label="Jaa Redditissä" role="img" viewBox="0 0 24 24"><title lang="en">Reddit</title><use xlink:href="/assets/images/icons.svg#reddit"/></svg></a>
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fblog-drafts.matematiikkakilpailut.fi%2F2018%2F09%2F02%2FAlgebralliset.html&title=Algebrallisista+luvuista+ja+vektoriavaruuksista&source=https%3A%2F%2Fblog-drafts.matematiikkakilpailut.fi"
+     target="_blank" rel="noopener noreferrer nofollow" title="Jaa LinkedInissä">
+    <svg aria-label="Jaa Linkedinissä" role="img" viewBox="0 0 24 24"><title lang="en">LinkedIn</title><use xlink:href="/assets/images/icons.svg#linkedin"/></svg></a>
+  <a href="https://pinboard.in/add?url=https%3A%2F%2Fblog-drafts.matematiikkakilpailut.fi%2F2018%2F09%2F02%2FAlgebralliset.html&title=Algebrallisista+luvuista+ja+vektoriavaruuksista"
+     target="_blank" rel="noopener noreferrer nofollow" title="Talleta Pinboardiin">
+    <svg aria-label="Talleta Pinboardiin" role="img" viewBox="0 0 24 24"><title lang="en">Pinboard</title><use xlink:href="/assets/images/icons.svg#pinboard"/></svg></a>
+</span>
+
+    </p>
+  </footer>
+</article>
+
+    </section>
+
+    <section class="site-footer">
+      <p>Tekijänoikeus kirjoittajilla. Käytämme sivuilla evästeitä: <a href="/tietosuoja.html">tietosuojalauseke</a>.</p>
+    </section>
+    
+
+  </body>
+</html>

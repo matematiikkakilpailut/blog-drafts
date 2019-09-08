@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="fi">
+  <head>
+    <meta charset="UTF-8">
+    <!-- Begin Jekyll SEO tag v2.5.0 -->
+<title>Polynomien yhteiset alkutekijät, osa 8: lause 3 | Matematiikkakilpailijat</title>
+<meta name="generator" content="Jekyll v3.8.5" />
+<meta property="og:title" content="Polynomien yhteiset alkutekijät, osa 8: lause 3" />
+<meta name="author" content="Olli Järviniemi" />
+<meta property="og:locale" content="fi" />
+<meta name="description" content="Tässä postauksessa esitetään todistus lauseelle 3, eli muodostetaan tapa laskea polynomien yhteisten alkutekijöiden tiheys tietyin oletuksin." />
+<meta property="og:description" content="Tässä postauksessa esitetään todistus lauseelle 3, eli muodostetaan tapa laskea polynomien yhteisten alkutekijöiden tiheys tietyin oletuksin." />
+<link rel="canonical" href="https://blog-drafts.matematiikkakilpailut.fi/2019/06/05/PYA04lause3.html" />
+<meta property="og:url" content="https://blog-drafts.matematiikkakilpailut.fi/2019/06/05/PYA04lause3.html" />
+<meta property="og:site_name" content="Matematiikkakilpailijat" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2019-06-05T00:00:00+00:00" />
+<meta property="fb:app_id" content="964806940344711" />
+<script type="application/ld+json">
+{"url":"https://blog-drafts.matematiikkakilpailut.fi/2019/06/05/PYA04lause3.html","author":{"@type":"Person","name":"Olli Järviniemi"},"headline":"Polynomien yhteiset alkutekijät, osa 8: lause 3","dateModified":"2019-06-05T00:00:00+00:00","datePublished":"2019-06-05T00:00:00+00:00","description":"Tässä postauksessa esitetään todistus lauseelle 3, eli muodostetaan tapa laskea polynomien yhteisten alkutekijöiden tiheys tietyin oletuksin.","mainEntityOfPage":{"@type":"WebPage","@id":"https://blog-drafts.matematiikkakilpailut.fi/2019/06/05/PYA04lause3.html"},"@type":"BlogPosting","@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#157878">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/assets/css/style.css?v=2c669b5e01ecebd0ccd9a63f1cd21eeeb0cf1936">
+    <link href="/feed.xml" type="application/atom+xml" rel="alternate" title="Sivuston verkkosyöte">
+
+    <script type="text/x-mathjax-config">
+ MathJax.Hub.Config({
+   tex2jax: {
+     inlineMath: [['$', '$'], ['\\(', '\\)']],
+     displayMath: [['$$', '$$']],
+     processEscapes: true
+   }
+ });
+</script>
+<script
+  type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS_CHTML" 
+  integrity="sha256-nvJJv9wWKEm88qvoQl9ekL2J+k/RWIsaSScxxlsrv8k="
+  crossorigin="anonymous">
+</script>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/fonts/HTML-CSS/TeX/woff/MathJax_Main-Regular.woff"
+      rel="preload" as="font" type="font/woff" crossorigin="anonymous">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/fonts/HTML-CSS/TeX/woff/MathJax_Size1-Regular.woff"
+      rel="preload" as="font" type="font/woff" crossorigin="anonymous">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/fonts/HTML-CSS/TeX/woff/MathJax_Math-Italic.woff"
+      rel="preload" as="font" type="font/woff" crossorigin="anonymous">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/fonts/HTML-CSS/TeX/woff/MathJax_Size2-Regular.woff"
+      rel="preload" as="font" type="font/woff" crossorigin="anonymous">
+
+  </head>
+  <body>
+    <section class="page-header">
+      <h1 class="project-name">Matematiikkakilpailijat</h1>
+      <h2 class="project-tagline">Matematiikan olympiavalmennuksen osallistujien kokemuksia</h2>
+    </section>
+
+    <section class="main-content">
+      <article class="post">
+  <header class="post-header">
+    <h1 class="post-title">Polynomien yhteiset alkutekijät, osa 8: lause 3</h1>
+  </header>
+  <section class="post-content">
+    <p>Tässä postauksessa esitetään todistus lauseelle 3, eli muodostetaan tapa laskea polynomien yhteisten alkutekijöiden tiheys tietyin oletuksin.</p>
+
+<!--jatkuu-->
+
+<p><strong>Sisällysluettelo</strong></p>
+
+<ol>
+  <li><a href="https://blog.matematiikkakilpailut.fi/2019/06/05/PYA11johdanto.html">Osa 1 - johdanto</a></li>
+  <li><a href="https://blog.matematiikkakilpailut.fi/2019/06/05/PYA10esitiedot.html">Osa 2 - esitiedot</a></li>
+  <li><a href="https://blog.matematiikkakilpailut.fi/2019/06/05/PYA09tulokset.html">Osa 3 - tulokset</a></li>
+  <li><a href="https://blog.matematiikkakilpailut.fi/2019/06/05/PYA08motivaatio.html">Osa 4 - motivaatio</a></li>
+  <li><a href="https://blog.matematiikkakilpailut.fi/2019/06/05/PYA07heikko.html">Osa 5 - heikko versio</a></li>
+  <li><a href="https://blog.matematiikkakilpailut.fi/2019/06/05/PYA06yleinen.html">Osa 6 - yleinen tapaus</a></li>
+  <li><a href="https://blog.matematiikkakilpailut.fi/2019/06/05/PYA05lause2.html">Osa 7 - lause 2</a></li>
+  <li>Osa 8 - lause 3</li>
+  <li><a href="https://blog.matematiikkakilpailut.fi/2019/06/05/PYA03lause4.html">Osa 9 - lause 4</a></li>
+  <li><a href="https://blog.matematiikkakilpailut.fi/2019/06/05/PYA02sovelluksia.html">Osa 10 - sovelluksia</a></li>
+  <li><a href="https://blog.matematiikkakilpailut.fi/2019/06/05/PYA01lisaaiheita.html">Osa 11 - lisäaiheita</a></li>
+</ol>
+
+<p><strong>Tavoite:</strong></p>
+
+<p>Olkoot $P_1, P_2, \ldots , P_n \in \mathbb{Z_c}[x]$. Olkoon $F_i$ polynomin $P_i$ juurikunta, ja olkoon $F$ polynomin $P_1P_2 \ldots P_n$ juurikunta. Oletetaan, että</p>
+
+<script type="math/tex; mode=display">[F : \mathbb{Q}] = [F_1 : \mathbb{Q}] \ldots [F_n : \mathbb{Q}].</script>
+
+<p>Tällöin</p>
+
+<script type="math/tex; mode=display">\delta(S(P_1) \cap \ldots \cap S(P_n)) = \delta(S(P_1)) \ldots \delta(S(P_n)).</script>
+
+<p><strong>Idea:</strong></p>
+
+<p>Alkuperäinen ideani ei toiminut, ja huomasin virheen vasta tätä blogipostausta kirjoittaessani. Ideanani oli tutkia lauseen 1 antamia $D$, eli yhteiset alkutekijät karakterisoivaa polynomia. Tämä on kuitenkin turhan monimutkaista, koska saman voi tehdä tutkimalla polynomien tuloja:</p>
+
+<p>Tutkitaan hetken ajan tapausta $n = 2$. Inkluusio-ekskluusion nojalla pätee</p>
+
+<script type="math/tex; mode=display">\delta(S(P_1) \cap S(P_2)) + \delta(S(P_1) \cup S(P_2)) = \delta(S(P_1)) + \delta(S(P_2)).</script>
+
+<p>Miksi voimme käyttää inkluusioekskluusiota tiheyksille? Tämä toimii kyllä (ja lienee melko intuitiivista): olkoon $S(P, x)$ niiden $P$:n alkutekijöiden $p$ joukko, joilla $p \le x$. Tällöin tavallisen inkluusio-ekskluusion avulla (eli siis $\mid A \cup B \mid + \mid A \cap B \mid \ = \ \mid A \mid + \mid B \mid$) saadaan</p>
+
+<script type="math/tex; mode=display">\mid S(P_1, x) \cap S(P_2, x) \mid + \mid S(P_1, x) \cup S(P_2, x) \mid \ = \ \mid S(P_1, x) \mid + \mid S(P_2, x) \mid.</script>
+
+<p>Jaetaan yhtälö puolittain suureella $\pi(x)$, eli niiden alkulukujen määrällä, jotka ovat enintään $x$. Annetaan vielä $x$:n lähestyä ääretöntä. Yhtälön molemmilla puolilla summataan termejä muotoa</p>
+
+<script type="math/tex; mode=display">\lim_{x \to \infty} \frac{\mid S(P_1, x) \mid}{\pi(x)}.</script>
+
+<p>Mutta tämä on luonnollisen tiheyden määritelmä.</p>
+
+<p>Jos siis saamme laskettua joukon $S(P_1) \cup S(P_2)$, eli joukon $S(P_1P_2)$, tiheyden, saamme myös tiheyden $\delta(S(P_1) \cap S(P_2))$ laskettua. Tämä on helpompaa kuin se, että generoisimme lauseen 1 avulla sellaisen $D$, jolla $S(D) = S(P_1) \cap S(P_2)$, ja tutkisimme joukon $S(D)$ tiheyttä. Syy tämän taustalla on se, että aiomme käyttää Frobeniuksen lausetta tiheyksien laskemiseen, ja tämä vaatii tietoa polynomien juurista. Tiedämme heti, mitä ovat polynomin $P_1P_2$ juuret, mutta polynomin $D$ juurien käsittely on vaikeampaa.</p>
+
+<p>Ennen kuin mennään lauseen todistukseen, kirjoittelen muutamia huomioita.</p>
+
+<p><strong>Huomautus</strong></p>
+
+<p>Kirjoitin tulokset-postauksessa siitä, kuinka lauseen ehto on vain tapa sanoa se, että polynomit $P_i$ eivät kommunikoi keskenään. Tässä kohtaa väite voi tuntua jo hieman uskottavammalta: Frobeniuksen lause ottaa sisään tietoa juurista ja niiden generoimista kuntalaajennuksista, ja antaa takaisin tietoa alkutekijöistä.</p>
+
+<p>Mainitsin aiemmin myös siitä, että tapauksessa $n = 2$ ehto on ekvivalenttia sen kanssa, että $F_1 \cap F_2 = \mathbb{Q}$ (tämä on melko intuitiivista). Yleisessä tapauksessa ehdosta seuraa kyllä, että juurikunnat eivät leikkaa toisiaan (paitsi rationaaliluvuissa), mutta tämä ei ole riittävä ehto. Ekvivalentti ehto voitaisiin muotoilla seuraavasti:</p>
+
+<p>Olkoon $P$ polynomien $P_i$ tulo. Oletetaan, että kaikilla $1 \le i \le n$ polynomien $\frac{P}{P_i}$ ja $P_i$ juurikuntien leikkaus on rationaaliluvut.</p>
+
+<p><strong>Huomautus</strong></p>
+
+<p>Olkoot $P_1(x) = x^3 - 2$ ja $P_2(x) = x^2 + x + 1$. Näiden polynomien juurikunnat leikkaavat: jos $\omega$ on jokin $P_2$:n juuri, niin $\omega^3 = 1$, ja $P_1$:n juuret ovat $\sqrt[3]{2}, \sqrt[3]{2}\omega$ ja $\sqrt[3]{2}\omega^2$. Selvästi $\omega$ kuuluu $P_1$:n juurikuntaan.</p>
+
+<p>Tällä esimerkillä on mielenkiintoisia ominaisuuksia.</p>
+
+<p>Jaottomien kolmannen asteen polynomien alkutekijöiden tiheys on joko $\frac{1}{3}$ tai $\frac{2}{3}$ (ei ole vaikeaa osoittaa Frobeniuksen lauseen nojalla, joukolla $\lbrace 1, 2, 3 \rbrace$ kun on vain $6$ permutaatiota, ja ei kovin montaa osaryhmää).</p>
+
+<p>Osoittautuu, että $\delta(S(P_1)) = \frac{2}{3}$. Lisäksi (jaottomille) toisen asteen polynomeilla pätee $\delta(S(P_2)) = \frac{1}{2}$.</p>
+
+<p>Yhteisten alkutekijöiden tiheyden olettaisi olevan siis $\frac{1}{3}$, mutta näin ei ole. Tiheys on <strong>vähemmän</strong>, $\frac{1}{6}$. Inkluusio-ekskluusion nojalla (kts. yllä) $\delta(S(P_1) \cup S(P_2)) = \frac{1}{2} + \frac{1}{3} - \frac{1}{6} = 1$</p>
+
+<p>Esimerkissä on kolme mielenkiintoista pointtia:</p>
+
+<ol>
+  <li>
+    <p>Yhteisten alkutekijöiden tiheys on vähemmän kuin annettujen polynomien alkutekijöiden tiheys. Tämä yllätti minut täysin - olin pitkään ajatellut tämän olevan mahdotonta, eli ajattelin epäyhtälön $\delta(S(A) \cap S(B)) \ge \delta(S(A))\delta(S(B))$ pätevän aina. Lisäksi en näe intuitiivista syytä sille, mistä tämä johtuu: helpossa esimerkeissä tapahtumat “p on $A$:n alkutekijä” ja “p on $B$:n alkutekijä” ovat riippumattomia, tai toisen pätevyys aiheuttaa suuremman todennäköisyyden myös toiselle päteä. Näin käy esimerkiksi jos $A(x) = x^{10} - 2$ ja $B(x) = x^6 - 2$, mutta nyt tilanne on päinvastainen.</p>
+  </li>
+  <li>
+    <p>$\delta(S(P_1) \cup S(P_2)) = 1$. Tämä ei vielä todista, että kaikki $p$ ovat polynomin $P_1P_2$ alkutekijöitä (poikkeustapauksia voisi olla hyvin harvassa ilman, että tämä vaikuttaa tiheyteen), mutta tämäkin pätee. Aiemmin esitettiin polynomi $(x^2 - 2)(x^2 - 3)(x^2 - 6)$ ratkaisuna ongelmaan “onko olemassa polynomia, jolla ei ole rationaalisia juuria, mutta jonka alkutekijöitä ovat kaikki alkuluvut?”. Polynomi $P_1P_2$ antaa ratkaisun, jonka aste on $5$. Epätriviaaliksi harjoitustehtäväksi jätetään sen osoittaminen, että ei ole olemassa ratkaisua, jonka aste on alle $5$.</p>
+  </li>
+  <li>
+    <p>Jos $\alpha$ ja $\beta$ ovat mielivaltaiset polynomien $P_1$ ja $P_2$ juuret, niin pätee $[\mathbb{Q}(\alpha, \beta) : \mathbb{Q}] = 6$. Tästä huolimatta juurikunnat leikkaavat.</p>
+  </li>
+</ol>
+
+<p>Miksi kaikki alkuluvut ovat joko $P_1$:n tai $P_2$:n alkutekijöitä? Jos $p \equiv 1 \pmod{3}$, niin se on kolmannen syklotomisen polynomin $P_2$ alkutekijä. Jos taas $p \equiv 2 \pmod{3}$, niin funktio $f(x) = x^3$ on bijektio mod $p$, eli $p \in S(P_1)$. Jos taas $p = 3$, niin $p \in S(P_1)$.</p>
+
+<p>Seuraavaksi osoitetaan lause 3. Todistus ei sisällä mitään kovin mielenkiintoista, mutta demonstroi Frobeniuksen lauseen käyttämistä tositilanteissa. Itse pidän todistusta hieman puuduttavana, lähinnä koska todistuksen toteutus on melko vaivalloinen. Idea lauseessa 3 on siitä huolimatta hyvin luonnollinen.</p>
+
+<h2 id="todistus">Todistus</h2>
+
+<p>Todistan väitteen vain tapauksessa $n = 2$. Todistin työssäni yleisen tapauksen induktiolla - todistus oli mielestäni hyvin puuduttava, eikä sisältänyt mitään oivaltavaa. Siispä keskitytään hieman mielenkiintoisempaan osaan todistuksesta.</p>
+
+<p>Oletetaan siis, että $n = 2$.</p>
+
+<p>Olkoon $G_1$ polynomin $P_1$ Galois’n ryhmä, $G_2$ vastaavasti $P_2$:n, ja vielä $G_{12}$ polynomin $P_1P_2$ Galois’n ryhmä.</p>
+
+<p>Jos $A, B$ ovat joukkoja, joukolla $A \times B$ viitataan parien $(a, b), a \in A, b \in B$ joukkoon.</p>
+
+<p>Keith Conradin <a href="http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.211.2314&amp;rep=rep1&amp;type=pdf">Galois Theory At Work</a>-monisteen (linkki) lause 5.1. kertoo, että $G_{12}$ on isomorfinen joukon $G_1 \times G_2$ kanssa, seuraten ehdosta $[F : \mathbb{Q}] = [F_1 : \mathbb{Q}][F_2 : \mathbb{Q}]$. On siis olemassa bijektio $f$ näiden joukkojen välillä. Tämä bijektio on varsin luonnollinen: olkoon $\sigma_{12} \in G_{12}$ jokin alkio. Määritellään $\sigma_1(x) = \sigma_{12}(x)$ kaikilla $x \in F_1$, ja määritellään vastaavasti $\sigma_2$. On selvää, että $\sigma_i \in G_i$, $i = 1, 2$. Kuvataan $f(\sigma_{12}) = (\sigma_1, \sigma_2)$.</p>
+
+<p>Joukon $G_{12}$ koko on bijektion olemassaolon vuoksi joukkojen $G_1$ ja $G_2$ kokojen tulo.</p>
+
+<p>Suunnitelmana on käyttää Frobeniuksen lausetta polynomin $P_1P_2$ alkutekijöiden tiheyden määrittämiseen. Tätä varten meidän tulee määrittää niiden $\sigma_{12} \in G_{12}$ määrä, jotka kuvaavat jonkin polynomin $P_1P_2$ juurista itselleen. Olkoon näiden kuvausten joukko $N_{12}$. Määritellään vastaavasti $N_1$ ja $N_2$.</p>
+
+<p>Frobeniuksen lause sanoo siis, että</p>
+
+<script type="math/tex; mode=display">\delta(S(P_1P_2)) = \frac{\mid N_{12} \mid}{\mid G_{12} \mid}.</script>
+
+<p>Miten määritämme joukon $N_{12}$ koon? Ideana on valita joukon $G_{12}$ alkioita $\sigma_{12}$, ja tutkia, millainen pari $(\sigma_1, \sigma_2)$ tulee ulos kuvatessa bijektiolla $f$. Tähän on neljä tapausta:</p>
+
+<ol>
+  <li>
+    <p>$\sigma_1 \in N_1, \sigma_2 \in N_2$. Tämä tarkoittaa siis, että on olemassa polynomin $P_1$ juuri $\alpha_1$, jolla $\sigma_1(\alpha_1) = \alpha_1$ (ja vastaavasti polynomille $P_2$). Bijektion määrittelyn nojalla nyt pätee $\sigma_{12}(\alpha_1) = \sigma_1(\alpha_1) = \alpha_1$. Siis kuvaus $\sigma_{12}$ kuvaa polynomin $P_1P_2$ juuren $\alpha_1$ itselleen, eli $\sigma_{12} \in N_{12}$. Siis jos $f(\sigma_{12}) \in N_1 \times N_2$, pätee $\sigma_{12} \in N_{12}$.</p>
+  </li>
+  <li>
+    <p>$\sigma_1 \in N_1$, mutta $\sigma_2 \not\in N_2$. Voimme edetä kuten tapauksessa 1: missään kohtaa ei käytetty tietoa $\sigma_2 \in N_2$. Tässä tapauksessa pätee myös $\sigma_{12} \in N_{12}$.</p>
+  </li>
+  <li>
+    <p>$\sigma_1 \not\in N_1$ ja $\sigma_2 \in N_2$. Tapauksen 1 käsittely toimii tutkimalla kuvausta $\sigma_2$ ja jotain polynomin $P_2$ juurta $\alpha_2$. SIis $\sigma_{12} \in N_{12}$.</p>
+  </li>
+  <li>
+    <p>$\sigma_1 \not\in N_1$ ja $\sigma_2 \not\in N_2$. Tässä tapauksessa päteekin $\sigma_{12} \not\in N_{12}$. Tämä on helppoa osoittaa vastaoletuksella: oletetaan, että olisi olemassa jokin polynomin $P_1P_2$ juuri $\alpha$, jolla $\sigma_{12}(\alpha) = \alpha$. Jos $\alpha$ on $P_1$:n juuri, pätee bijektion määrittelyn nojalla $\sigma_1(\alpha) = \sigma_{12}(\alpha) = \alpha$, ristiriita ehdon $\sigma_1 \not\in N_1$ kanssa. Vastaavasti ristiriita, jos $\alpha$ on $P_2$:n juuri.</p>
+  </li>
+</ol>
+
+<p>Tapauskäsittelyn pohjalta on helppoa laskea joukon $N_{12}$ koko: se on tapausten $1, 2, 3$ mukaisten parien $(\sigma_1, \sigma_2)$ määrä. Ensimmäisen tapauksen kuvaksien määrä on $\mid N_1 \mid \cdot \mid N_2 \mid$. Toisen tapauksen mukaisia pareja on</p>
+
+<script type="math/tex; mode=display">\mid N_1 \mid (\mid G_2 \mid - \mid N_2 \mid).</script>
+
+<p>Kolmannen tapauksen mukaisia taas on</p>
+
+<script type="math/tex; mode=display">(\mid G_1 \mid - \mid N_1 \mid)\mid N_2 \mid.</script>
+
+<p>Summaamalla nämä yhteen saadaan</p>
+
+<script type="math/tex; mode=display">\mid N_{12} \mid \ =  \ \mid N_1 \mid \mid G_2 \mid + \mid N_2 \mid\mid G_1 \mid - \mid N_1 \mid \mid N_2 \mid.</script>
+
+<p>Frobeniuksen lauseen nojalla</p>
+
+<script type="math/tex; mode=display">\delta(S(P_1P_2)) = \frac{\mid N_{12} \mid}{\mid G_{12} \mid} = \frac{\mid N_1 \mid }{\mid G_1 \mid} + \frac{\mid N_2 \mid}{\mid G_2 \mid} - \frac{\mid N_1 \mid \mid N_2 \mid}{\mid G_1 \mid \mid G_2 \mid},</script>
+
+<p>missä on Frobeniuksen lauseen nojalla</p>
+
+<script type="math/tex; mode=display">\delta(S(P_i)) = \frac{\mid N_i \mid}{\mid G_i \mid},</script>
+
+<p>joten yllä oleva summa on vain</p>
+
+<script type="math/tex; mode=display">\delta(S(P_1)) + \delta(S(P_2)) - \delta(S(P_1))\delta(S(P_2)).</script>
+
+<p>Inkluusio-ekskluusion nojalla $\delta(S(P_1) \cap \delta(S(P_2)) = \delta(S(P_1))\delta(S(P_2))$.</p>
+
+<p><a href="https://blog.matematiikkakilpailut.fi/2019/06/05/PYA03lause4.html">Seuraava postaus.</a></p>
+
+  </section>
+  <footer class="post-footer">
+    <p><time datetime="2019-06-05">5. 6. 2019</time>
+       • Olli Järviniemi
+      <span class="share-buttons">
+  <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fblog-drafts.matematiikkakilpailut.fi%2F2019%2F06%2F05%2FPYA04lause3.html&quote=Polynomien+yhteiset+alkutekij%C3%A4t%2C+osa+8%3A+lause+3"
+     title="Jaa Facebookissa" target="_blank" rel="noopener noreferrer nofollow">
+    <svg aria-label="Jaa Facebookissa" role="img" viewBox="0 0 24 24"><title lang="en">Facebook</title><use xlink:href="/assets/images/icons.svg#facebook"/></svg></a>
+  <a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fblog-drafts.matematiikkakilpailut.fi%2F2019%2F06%2F05%2FPYA04lause3.html&text=Polynomien+yhteiset+alkutekij%C3%A4t%2C+osa+8%3A+lause+3"
+     target="_blank" rel="noopener noreferrer nofollow" title="Jaa Twitterissä">
+    <svg aria-label="Jaa Twitterissä" role="img" viewBox="0 0 24 24"><title lang="en">Twitter</title><use xlink:href="/assets/images/icons.svg#twitter"/></svg></a>
+  <a href="https://pinterest.com/pin/create/button/?url=https%3A%2F%2Fblog-drafts.matematiikkakilpailut.fi%2F2019%2F06%2F05%2FPYA04lause3.html&description=Polynomien+yhteiset+alkutekij%C3%A4t%2C+osa+8%3A+lause+3"
+     target="_blank" rel="noopener noreferrer nofollow" title="Jaa Pinterestissä">
+    <svg aria-label="Jaa Pinterestissä" role="img" viewBox="0 0 24 24"><title lang="en">Pinterest</title><use xlink:href="/assets/images/icons.svg#pinterest"/></svg></a>
+  <a href="https://www.reddit.com/submit?url=https%3A%2F%2Fblog-drafts.matematiikkakilpailut.fi%2F2019%2F06%2F05%2FPYA04lause3.html&title=Polynomien+yhteiset+alkutekij%C3%A4t%2C+osa+8%3A+lause+3"
+     target="_blank" rel="noopener noreferrer nofollow" title="Jaa Redditissä">
+    <svg aria-label="Jaa Redditissä" role="img" viewBox="0 0 24 24"><title lang="en">Reddit</title><use xlink:href="/assets/images/icons.svg#reddit"/></svg></a>
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fblog-drafts.matematiikkakilpailut.fi%2F2019%2F06%2F05%2FPYA04lause3.html&title=Polynomien+yhteiset+alkutekij%C3%A4t%2C+osa+8%3A+lause+3&source=https%3A%2F%2Fblog-drafts.matematiikkakilpailut.fi"
+     target="_blank" rel="noopener noreferrer nofollow" title="Jaa LinkedInissä">
+    <svg aria-label="Jaa Linkedinissä" role="img" viewBox="0 0 24 24"><title lang="en">LinkedIn</title><use xlink:href="/assets/images/icons.svg#linkedin"/></svg></a>
+  <a href="https://pinboard.in/add?url=https%3A%2F%2Fblog-drafts.matematiikkakilpailut.fi%2F2019%2F06%2F05%2FPYA04lause3.html&title=Polynomien+yhteiset+alkutekij%C3%A4t%2C+osa+8%3A+lause+3"
+     target="_blank" rel="noopener noreferrer nofollow" title="Talleta Pinboardiin">
+    <svg aria-label="Talleta Pinboardiin" role="img" viewBox="0 0 24 24"><title lang="en">Pinboard</title><use xlink:href="/assets/images/icons.svg#pinboard"/></svg></a>
+</span>
+
+    </p>
+  </footer>
+</article>
+
+    </section>
+
+    <section class="site-footer">
+      <p>Tekijänoikeus kirjoittajilla. Käytämme sivuilla evästeitä: <a href="/tietosuoja.html">tietosuojalauseke</a>.</p>
+    </section>
+    
+
+  </body>
+</html>
